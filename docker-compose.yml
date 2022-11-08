@@ -38,11 +38,7 @@ services:
         - 3306
     volumes:
         - ./itcamp.sql:/docker-entrypoint-initdb.d/itcamp.sql
-    environment:
-        MYSQL_ROOT_PASSWORD: secret
-        MYSQL_DATABASE: lomba
-        MYSQL_USER: user
-        MYSQL_PASSWORD: password
+    env_file: .env
     networks:
       app-network:
 # Names our volume
