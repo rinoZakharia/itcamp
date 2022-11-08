@@ -1,0 +1,52 @@
+{
+    "nama_lomba":"<span>Short Movie</span> Competition",  
+    "deskripsi_lomba1":"Short Movie Competition merupakan rangkaian kompetisi dari event FESTIVE dibawah naungan Fasilkom Festival yang diadakan oleh BEM Fakultas Ilmu Komputer Universitas Pembangunan Nasional “Veteran” Jawa Timur dengan tujuan memberikan wadah untuk berkreasi serta menampilkan karya kreatif dan inovatif dari peserta, mengekspresikan seni sesuai dengan norma yang berbasis budaya bangsa serta menumbuh kembangkan motivasi peserta untuk mengekspresikan diri melalui kegiatan sesuai dengan minat bakat dan kemampuannya.",
+    "link_guidebook":"https://intip.in/GUIDEBOOKSHORTMOVIECOMPETITION",
+    "link_pendaftaran":"https://intip.in/PendaftaranShortMovieCompetition",
+    "gambar1":"/assets/images/resources/smc.webp",
+    "gambar2":"/assets/images/resources/smc.webp",
+    "deskripsi_lomba2":"<b>Short Movie Competition</b> diperuntukkan untuk siswa/i SMP/SMA/SMK Sederajat dan mahasiswa/i. Short Movie Competition mengusung tema <b>“Motivated to Survive in Pandemic”</b> dengan harapan peserta dapat meningkatkan kreatifitasnya serta kemampuannya dalam bidang videography dengan menjadikan ajang pengembangan prestasi dan karakter peserta serta kecintaan seni dan budaya bangsa.",
+    "benefit":[
+        "E-sertifikat",
+        "Hadiah jutaan rupiah",
+        "Menambah pengalaman"
+    ],
+    "additional":[
+        
+    ],
+    "timeline":[
+        {"tahap":"Pendaftaran","tanggal":"18 November 2021 - 1 Januari 2022"},
+        {"tahap":"Webinar","tanggal":"19 Desember 2021"},
+        {"tahap":"Pengumpulan Video","tanggal":"15 Desember 2021 - 13 Januari 2022"},
+        {"tahap":"Penjurian","tanggal":"14 Januari 2022 - 22 Januari 2022"},
+        {"tahap":"Pengumuman dan Penampilan Video Finalis","tanggal":"29 Januari 2022"},
+        {"tahap":"Closing Party","tanggal":"29 Januari 2022"}
+    ],
+    "faq":[
+        {"pertanyaan":"Apa itu Short Movie Competition ?","jawaban":"Kompetisi di bidang videography lebih khususnya ke short movie/film pendek yang diperuntukan bagi siswa/i SMP/SMA/SMK Sederajat dan mahasiswa/i atau maksimal berusia 25 tahun dengan tujuan mendorong siswa untuk meningkatkan minat dan kemampuan di bidang videography."},
+        {"pertanyaan":"Berapa biaya pendaftaran untuk Short Movie Competition ?","jawaban":"Setiap group akan dikenakan biaya 35.000,-"},
+        {"pertanyaan":"Short Movie Competition dilakukan secara apa ?","jawaban":"Short Movie ini dilakukan secara online dimana nantinya karya peserta akan diupload di sosial media"},
+        {"pertanyaan":"Dokumen apa yang dibutuhkan untuk mendaftar Short Movie Competition ?","jawaban":"Hanya memerlukan scan KTP/Kartu Pelajar/KTM, screenshot/foto bukti transfer pendaftaran, dan screenshot bukti follow akun Instagram Fasilkom Fest serta subscribe channel Youtube Fasilkom Fest."},
+        {"pertanyaan":"Berapa babak yang ada dalam Short Movie Competition ?","jawaban":"Untuk Short Movie Competition hanya ada 1 babak. Untuk Pengumuman Finalis Juara 1,2,3 dan Favorit akan diumumkan pada saat closing party."} 
+    ],
+    "prize":{
+        "juara1":"Rp.800.000",
+        "juara2":"Rp.450.000",
+        "juara3":"Rp.300.000",
+        "tambahan":[
+           {"title":"Juara Favorit","sub":"Rp.200.000"}
+        ]
+    },
+    "kontak":[
+        {
+            "judul":"Whatsapp",
+            "icon":"whatsapp",
+            "list":[ 
+                {"nama":"Dhika Wira", "kontak":"+6281333881214", "link":"https://wa.me/6281333881214"},
+                {"nama":"Angel", "kontak":"+6281231236960", "link":"https://wa.me/6281231236960"}
+            ]
+        }
+        
+      
+    ]
+}

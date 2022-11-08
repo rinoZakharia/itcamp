@@ -1,0 +1,55 @@
+{
+    "nama_lomba":"<span>Music Cover</span> Competition",  
+    "deskripsi_lomba1":"Music Cover Competition merupakan rangkaian kompetisi dari event FESTIVE di bawah naungan Fasilkom Festival yang diadakan oleh BEM Fakultas Ilmu Komputer Universitas Pembangunan Nasional “Veteran” Jawa Timur dengan tujuan memberikan wadah untuk berkreasi serta menampilkan karya kreatif dan inovatif dari peserta, mengekspresikan seni sesuai dengan norma yang berbasis budaya bangsa serta menumbuh kembangkan motivasi peserta untuk mengekspresikan diri melalui kegiatan sesuai dengan minat bakat dan kemampuannya.",
+    "link_guidebook":"https://intip.in/GUIDEBOOKMUSICOVERCOMPETITION",
+    "link_pendaftaran":"https://intip.in/PendaftaranMusicCoverCompetition",
+    "gambar1":"/assets/images/resources/mcc.webp",
+    "gambar2":"/assets/images/resources/mcc.webp",
+    "deskripsi_lomba2":"<b>Music Cover Competition</b> diperuntukkan untuk siswa/i SMA/SMK Sederajat dan mahasiswa/i atau berusia maksimal 25 tahun. Music Cover Competition mengusung tema <b>“Let’s Preserve Our Culture during The Pandemic”</b> dengan harapan peserta dapat meningkatkan wawasan serta kemampuannya dalam bidang musik dengan menjadikan ajang pengembangan prestasi dan karakter peserta serta kecintaan seni dan budaya bangsa.",
+    "benefit":[
+        "E-sertifikat",
+        "Hadiah jutaan rupiah",
+        "Menambah pengalaman"
+    ],
+    "additional":[
+        
+    ], 
+    "prize":{
+        "juara1":"Rp.1.000.000",
+        "juara2":"Rp.750.000",
+        "juara3":"Rp.500.000",
+        "tambahan":[
+           {"title":"Juara Favorit","sub":"Rp.250.000"}
+        ]
+    },
+
+    "timeline":[
+        {"tahap":"Pendaftaran","tanggal":"18 November 2021 - 8 Januari 2022"},
+        {"tahap":"Technical Meeting","tanggal":"9 Januari 2022"},
+        {"tahap":"Pengumpulan Karya","tanggal":"9 - 18 Januari 2022"},
+        {"tahap":"Penilaian Babak Penyisihan","tanggal":"19 - 22 Januari 2022"},
+        {"tahap":"Pengumuman Lolos ke Babak Final","tanggal":"23 Januari 2022"},
+        {"tahap":"Vote Juara Favorit","tanggal":"23 - 28 Januari 2022"},
+        {"tahap":"Closing Party","tanggal":"29 Januari 2022"}
+    ],
+    "faq":[
+        {"pertanyaan":"Apa itu Music Cover Competition ?","jawaban":"Kompetisi di bidang musik yang diperuntukan bagi siswa/i SMA/SMK Sederajat dan mahasiswa/i atau maksimal berusia 25 tahun dengan tujuan mendorong siswa untuk meningkatkan minat dan kemampuan di bidang musik."},
+        {"pertanyaan":"Berapa biaya pendaftaran untuk Music Cover Competition ?","jawaban":"Setiap group akan dikenakan biaya 50.000,-"},
+        {"pertanyaan":"Music Cover Competition dilakukan secara apa ?","jawaban":"Secara Hybrid. Beberapa rangkaian kompetisi ini akan dilakukan secara daring dan luring"},
+        {"pertanyaan":"Dokumen apa yang dibutuhkan untuk mendaftar Music Cover Competition ?","jawaban":"Hanya memerlukan scan KTP/Kartu Pelajar/KTM, screenshot/foto bukti transfer pendaftaran, dan screenshot bukti follow akun Instagram Fasilkom Fest serta subscribe channel Youtube Fasilkom Fest."},
+        {"pertanyaan":"Berapa babak yang ada dalam Music Cover Competition ?","jawaban":"Terdapat 2 babak, yaitu Penyisihan dan Final."}
+       
+    ],
+    "kontak":[
+        {
+            "judul":"Whatsapp",
+            "icon":"whatsapp",
+            "list":[ 
+                {"nama":"ARIEL S", "kontak":"+6289676256343", "link":"https://wa.me/6289676256343"},
+                {"nama":"TANTRI ARISA ", "kontak":"+6282234059951", "link":"https://wa.me/6282234059951"}
+            ]
+        }
+        
+      
+    ]
+}

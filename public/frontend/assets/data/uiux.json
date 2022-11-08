@@ -1,0 +1,72 @@
+{
+    "nama_lomba":"<span>UI/UX Design</span> Competition",  
+    "deskripsi_lomba1":"UI/UX Design Competition merupakan salah satu lomba yang pada kegiatan NEOICT Competition dibawah naungan Fasilkom Fest 2021 yang diadakan oleh Badan Eksekutif Mahasiswa (BEM) Fakultas Ilmu Komputer UPN \"Veteran\" Jawa Timur. Perlombaan ini berfokus pada penerapan UI/UX design di tengah perkembangan teknologi yang pesat.",
+    "link_guidebook":"https://drive.google.com/file/d/1V5g7IVQaidjcgC4Gc3Ed8WarPfSI2srs/view",
+    "link_pendaftaran":"close",
+    "gambar1":"/assets/images/resources/uiux.webp",
+    "gambar2":"/assets/images/resources/uiux.webp",
+    "deskripsi_lomba2":"<b>UI/UX Design Competition</b> merupakan salah satu lomba yang pada kegiatan NEOICT Competition dibawah naungan Fasilkom Fest 2021 yang diadakan oleh Badan Eksekutif Mahasiswa (BEM) Fakultas Ilmu Komputer UPN \"Veteran\" Jawa Timur.  Perlombaan ini berfokus pada penerapan UI/UX design di tengah perkembangan teknologi yang pesat.<br/><br/>Lomba ini terbagi menjadi 2 babak, babak penyisihan berupa submisi proposal dan hasil design, dan babak final. Dalam Fasilkom Fest 2021 kali ini, tema dalam UI/UX Design Competition yang diangkat adalah <br/><b>\"Memajukan Generasi Bangsa dengan Teknologi Digital di Tengah Perkembangan Teknologi yang Pesat\"</b>",
+    "benefit":[
+        "E-sertifikat",
+        "Hadiah jutaan rupiah",
+        "Menambah portofolio dan pengalaman"
+    ],
+    "additional":[
+        {
+            "judul":"Informasi Lomba", 
+            "isi":"",
+            "footer":"<div class=\"text-center mx-2 mt-5  d-md-flex justify-content-center\"><a target=\"_blank\" target=\"_blank\" href=\"https://bit.ly/TemplateProposalUIUXFF2021\" class=\" mx-2 w-100 thm-btn mb-2 mt-1\"><span style=\"font-size: 14px;\">Template Proposal<i class=\"fa fa-download ml-1\"></i></span></a><a target=\"_blank\" href=\"https://forms.gle/GcUCTEVkp2QHWRHD7\" class=\"mx-2 w-100 thm-btn mb-2 ml-1 mt-1\"><span style=\"font-size: 14px;\">Pengumpulan Proposal<i class=\"fa fa-upload ml-3\"></i></span></a><a target=\"_blank\" href=\"https://forms.gle/rqiZNzZadXZ2Nuxs8\" class=\"mx-2 w-100 thm-btn mb-2 ml-1 mt-1\"><span style=\"font-size: 14px;\">Pengumpulan PPT<i class=\"fa fa-upload ml-3\"></i></span></a></div>",
+            "list":[
+                "Seluruh peserta diwajibkan membaca guidebook sebelum melakukan pendaftaran",
+                "Peserta mendaftarkan timnya pada registrasi pendaftaran UI/UX Design",
+                "Bila tim sudah menyelesaikan proses pembayaran dan pendaftaran setiap tim harus mengirimkan proposal pada laman perlombaan UI/UX Design",
+                "Seluruh Rangkaian Kompetisi Akan Diselenggarakan Secara Daring"
+            ]
+        }
+    ],
+    "prize":{
+        "juara1":"Rp.1.250.000",
+        "juara2":"Rp.750.000",
+        "juara3":"Rp.500.000",
+        "tambahan":[
+           
+        ]
+    },
+    "timeline":[
+        {"tahap":"Pendaftaran Gelombang 1","tanggal":"18 November 2021 - 25 November 2021"},
+        {"tahap":"Pendaftaran Gelombang 2","tanggal":"26 November - 17 Desember 2021"},
+        {"tahap":"Pengumpulan Proposal dan Karya","tanggal":"18 November - 24 Desember 2021"},
+        {"tahap":"Seleksi Babak Penyisihan","tanggal":"25 Desember 2021 - 30 Desember 2021"},
+        {"tahap":"Pengumuman Finalis","tanggal":"1 Januari 2022"},
+        {"tahap":"Technical Meeting Final","tanggal":"3 Januari 2022"},
+        {"tahap":"Babak Final","tanggal":"9 Januari 2022"},
+        {"tahap":"Pengumuman Pemenang","tanggal":"18 -19 Januari 2022"}
+    ],
+    "faq":[
+        {"pertanyaan":"Apa itu UI/UX Design Competition ?","jawaban":"Merupakan serangkaian lomba pada event NEOICT Competition dimana sasaran dari lomba ini adalah mahasiswa/i D3/D4/S1/Sederajat dan Umum maksimal 25 tahun dengan tujuan mewadahi kreatifitas dan skill desain para peserta lomba pada bidang UI/UX design."},
+        {"pertanyaan":"Bagaimana cara mendaftarkan diri dalam kompetisi UI/UX Design Competition ?","jawaban":"Peserta telah mengikuti prosedur pendaftaran pada website resmi NEOICT Competition melengkapi data pendaftaran dengan benar. Peserta yang tidak memenuhi persyaratan pendaftaran sampai waktu yang ditentukan akan dinyatakan gugur."},
+        {"pertanyaan":"Berapa biaya kompetisi UI/UX Design ?","jawaban":"Setiap tim akan dikenakan biaya Rp. 60.000"},
+        {"pertanyaan":"Apakah setiap peserta harus melengkapi data pribadi secara terpisah ?","jawaban":"Pengunggahan data diwakilkan oleh ketua tim dengan melampirkan foto/scan bukti pembayaran dan Foto/scan Kartu Tanda Mahasiswa."},
+        {"pertanyaan":"Bolehkah seorang peserta menjadi anggota dari beberapa tim di kompetisi UI/UX ?","jawaban":"Tidak, peserta hanya diperbolehkan mendaftarkan namanya dalam satu tim saja."} ,
+        {"pertanyaan":"Bagaimana sistem kompetisi UI/UX ?","jawaban":"Pada kompetisi ini terdapat dua babak, babak penyisihan berupa pengumpulan proposal dan hasil karya, dan babak final berupa presentasi yang dilaksanakan secara daring serta pengumpulan presentasi dan video dokumentasi."}  
+    ],
+    "kontak":[
+        {
+            "judul":"Whatsapp",
+            "icon":"whatsapp",
+            "list":[ 
+                {"nama":"Felliani", "kontak":"+6281217824729", "link":"https://wa.me/6281217824729"},
+                {"nama":"Septiani", "kontak":"+62895383310117", "link":"https://wa.me/62895383310117"},
+                {"nama":"Nisa", "kontak":"+6285110358688", "link":"https://wa.me/6285110358688"}
+            ]
+        },
+        {
+            "judul":"Instagram",
+            "icon":"instagram",
+            "list":[
+                {"nama":"", "kontak":"fasilkomfest.academic", "link":"https://www.instagram.com/fasilkomfest.academic/"}
+            ]
+        }
+      
+    ]
+}

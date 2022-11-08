@@ -1,0 +1,42 @@
+{
+    "nama_lomba":"<span>Valorant</span> Competition",  
+    "deskripsi_lomba1":"Valorant Competition merupakan lomba/turnamen game Valorant yang diadakan untuk semua kalangan(umum). Yang diharapkan dengan diadakannya Valorant Competition ini menjadi wadah bagi para pemain Valorant untuk menunjukkan skillnya dan mendapatkan pengalaman yang lebih agar bisa bermanfaat dan bisa menjadi awalan karir ke jenjang profesional.",
+    "link_guidebook":"https://bit.ly/GuidebookVALORANTff21",
+    "link_pendaftaran":"https://bit.ly/FasilkomFest2021Valorant",
+    "gambar1":"/assets/images/resources/valo.png",
+    "gambar2":"/assets/images/resources/valo.png",
+    "deskripsi_lomba2":"<b>Valorant Competition</b> merupakan lomba/turnamen game Valorant yang diadakan untuk semua kalangan(umum). Yang diharapkan dengan diadakannya Valorant Competition ini menjadi wadah bagi para pemain Valorant untuk menunjukkan skillnya dan mendapatkan pengalaman yang lebih agar bisa bermanfaat dan bisa menjadi awalan karir ke jenjang profesional.",
+    "benefit":[
+        "E-sertifikat",
+        "Prize Pool: 1.120.000"
+    ],
+    "additional":[
+       
+    ],
+    "timeline":[
+        {"tahap":"Pendaftaran Gelombang 1","tanggal":"1 Desember 2021 - 15 Desember 2021"},
+        {"tahap":"Pendaftaran Gelombang 2","tanggal":"16 Desember 2021 - 12 Januari 2022"},
+        {"tahap":"Technical Meeting","tanggal":"14 Januari 2022"},
+        {"tahap":"Kualifikasi","tanggal":"17-19 Januari 2022"},
+        {"tahap":"Semifinal dan Grandfinal","tanggal":"23 Januari 2022"}
+       
+    ],
+    "faq":[
+        {"pertanyaan":"Bagaimana cara mendaftarkan diri dalam Valorant Competition?","jawaban":"Peserta telah mengikuti prosedur pendaftaran, dengan memenuhi syarat pendaftaran dan mengisi Gform Pendaftaran."},
+        {"pertanyaan":"Berapa biaya kompetisi Valorant Competition?","jawaban":"Setiap tim akan dikenakan biaya Rp. 70.000,-"},
+        {"pertanyaan":"Bagaimana sistemasi turnamen nya, untuk babak kualifikasi sampai grandfinal?","jawaban":"Untuk sistemasi, BO 1 untuk babak penyisihan serta BO 3 untuk babak semifinal dan grandfinal"},
+        {"pertanyaan":"Berapa slot yang dibuka untuk Valorant Competition?","jawaban":"Untuk slot kami membuka hanya 16 tim yang akan bertanding di Valorant Competition"},
+        {"pertanyaan":"Apa saja yang didapatkan jika mengikuti Valorant Competition?","jawaban":"Dengan mengikuti Valorant Competition ini kalian pasti akan mendapatkan pengalaman lebih dan pastinya bisa menjadi jenjang awal ke karir profesional. Jika mendapatkan juara akan mendapatkan hadiah sesuai prizepool dan E-sertifikat."}
+    ],
+    "kontak":[
+        {
+            "judul":"Whatsapp",
+            "icon":"whatsapp",
+            "list":[ 
+                {"nama":"Raihan Thobie", "kontak":"+62878-8375-0214", "link":"https://wa.me/6287883750214"}
+            ]
+        }
+        
+      
+    ]
+}

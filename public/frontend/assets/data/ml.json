@@ -1,0 +1,50 @@
+{
+    "nama_lomba":"<span>Mobile Legend</span> Competition",  
+    "deskripsi_lomba1":"Mobile Legends Competition merupakan lomba/turnamen game Mobile Legends yang diadakan untuk semua kalangan(umum). Yang diharapkan dengan diadakannya Mobile Legends Competition ini menjadi wadah bagi para pemain Mobile Legends untuk menunjukkan skillnya dan mendapatkan pengalaman yang lebih agar bisa bermanfaat dan bisa menjadi awalan karir ke jenjang profesional.",
+    "link_guidebook":"https://bit.ly/GuidebookMLff21",
+    "link_pendaftaran":"https://bit.ly/RegistMLff2021",
+    "gambar1":"/assets/images/resources/ml.webp",
+    "gambar2":"/assets/images/resources/ml.webp",
+    "deskripsi_lomba2":"<b>Mobile Legends Competition</b> merupakan lomba/turnamen game Mobile Legends yang diadakan untuk semua kalangan(umum). Yang diharapkan dengan diadakannya Mobile Legends Competition ini menjadi wadah bagi para pemain Mobile Legends untuk menunjukkan skillnya dan mendapatkan pengalaman yang lebih agar bisa bermanfaat dan bisa menjadi awalan karir ke jenjang profesional.",
+    "benefit":[
+        "E-sertifikat",
+        "Uang Pembinaan"
+    
+    ],
+    "prize":{
+        "juara1":"50% prizepool",
+        "juara2":"30% prizepool",
+        "juara3":"20% prizepool",
+        "tambahan":[
+           
+        ]
+    },
+    "additional":[
+        
+    ],
+    "timeline":[
+        {"tahap":"Pendaftaran Gelombang 1","tanggal":"1 Desember 2021 - 12 Desember 2021"},
+        {"tahap":"Pendaftaran Gelombang 2","tanggal":"13 Desember 2021 - 6 Januari 2022"},
+        {"tahap":"Technical Meeting","tanggal":"8 Januari 2022"},
+        {"tahap":"Kualifikasi","tanggal":"11-14 Januari 2022"},
+        {"tahap":"Semifinal dan Grandfinal","tanggal":"21 Januari 2022 - 22 Januari 2022"}
+       
+    ],
+    "faq":[
+        {"pertanyaan":"Bagaimana cara mendaftarkan diri dalam Mobile Legends Competition?","jawaban":"Peserta telah mengikuti prosedur pendaftaran, dengan memenuhi syarat pendaftaran dan mengisi Gform Pendaftaran"},
+        {"pertanyaan":"Berapa biaya kompetisi Mobile Legends Competition?","jawaban":"Setiap tim akan dikenakan biaya Rp. 50.000,-"},
+        {"pertanyaan":"Bagaimana sistemasi turnamen nya, untuk babak kualifikasi sampai grandfinal?","jawaban":"Untuk sistemasi, menggunakan Single Elimination, Double Bracket (kanan kiri), Babak 64 besar – Bronze Match (BO 3) dan Grandfinal (BO 5)"},
+        {"pertanyaan":"Berapa slot yang dibuka untuk Mobile Legends Competition?","jawaban":"Untuk slot kami membuka hanya 64 tim yang akan bertanding di Mobile Legends Competition"},
+        {"pertanyaan":"Apa saja yang didapatkan jika mengikuti Mobile Legends Competition?","jawaban":"Dengan mengikuti Mobile Legends Competition ini kalian pasti akan mendapatkan pengalaman lebih dan pastinya bisa menjadi jenjang awal ke karir profesional. Jika mendapatkan juara akan mendapatkan hadiah sesuai prizepool dan E-sertifikat."}
+        ],
+    "kontak":[
+        {
+            "judul":"Whatsapp",
+            "icon":"whatsapp",
+            "list":[ 
+                {"nama":"Mahendra Priyo Wibisono", "kontak":"+628990978887", "link":"https://wa.me/628990978887"}
+            ]
+        }
+      
+    ]
+}

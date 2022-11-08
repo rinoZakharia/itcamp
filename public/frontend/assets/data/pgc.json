@@ -1,0 +1,52 @@
+{
+    "nama_lomba":"<span>Photography</span> Competition",  
+    "deskripsi_lomba1":"Photography Competition merupakan merupakan rangkaian kompetisi dari event FESTIVE di bawah naungan Fasilkom Festival yang diadakan oleh BEM Fakultas Ilmu Komputer Universitas Pembangunan Nasional “Veteran” Jawa Timur dengan tujuan memberikan wadah untuk berkreasi serta menampilkan karya kreatif dan inovatif dari peserta, mengekspresikan seni sesuai dengan norma yang berbasis budaya bangsa serta menumbuh kembangkan motivasi peserta untuk mengekspresikan diri melalui kegiatan sesuai dengan minat bakat dan kemampuannya.",
+    "link_guidebook":"https://intip.in/GUIDEBOOKPHOTOGRPAHYCOMPETITION/",
+    "link_pendaftaran":"https://intip.in/PendaftaranPhotographyCompetiition",
+    "gambar1":"/assets/images/resources/pgc.webp",
+    "gambar2":"/assets/images/resources/pgc.webp",
+    "deskripsi_lomba2":"<b>Photography Competition</b> diperuntukan untuk Siswa/i SMP/SMA/SMK dan Mahasiswa/i atau umum berusia maksimal 25 tahun. Photography Competition mengusung tema <b>“Survive In Pandemic”</b> dengan harapan peserta dapat terus survive dalam berkarya dan mengasah kemampuannya dalam ajang pengembangan prestasi bidang fotografi di kondisi pandemi seperti sekarang ini.",
+    "benefit":[
+        "E-sertifikat",
+        "Hadiah jutaan rupiah",
+        "Mengasah skill dan Menambah pengalaman"
+    ],
+    "additional":[
+        
+    ],
+    "timeline":[
+        {"tahap":"Pendaftaran","tanggal":"18 November 2021 - 1 Januari 2022"},
+        {"tahap":"Pengumpulan Karya","tanggal":"18 November 2021 - 1 Januari 2022"},
+        {"tahap":"Pengumuman Peserta Lolos ke Babak 10 Besar","tanggal":"6 Januari 2022"},
+        {"tahap":"Voting Karya di Instagram","tanggal":"6 Januari 2022 - 14 Januari 2022"},
+        {"tahap":"Presentasi Karya 10 Besar","tanggal":"9 Januari 2022"},
+        {"tahap":"Pengumuman Juara 1, 2, 3 dan Hasil Vote Juara Favorit","tanggal":"15 Januari 2022"}
+    ],
+    "faq":[
+        {"pertanyaan":"Apa itu Photography Competition ?","jawaban":"Kompetisi di bidang fotografi yang diperuntukan bagi untuk Siswa/i SMP/SMA/SMK dan Mahasiswa/i atau umum berusia maksimal 25 tahun dengan tujuan mendorong peserta untuk meningkatkan minat dan kemampuan dalam bidang fotografi."},
+        {"pertanyaan":"Berapa biaya pendaftaran untuk Photography Competition ?","jawaban":"Biaya pendaftarannya sebesar Rp 30.000,00,-/orang."},
+        {"pertanyaan":"Photography Competition dilakukan secara apa ?","jawaban":"Dilaksanakan secara online dimana nantinya karya peserta akan diupload di sosial media dan presentasi karya juga akan dilaksanakan secara online."},
+        {"pertanyaan":"Dokumen apa yang dibutuhkan untuk mendaftar Photography Competition ?","jawaban":"File yang dibutukan yaitu scan KTP/Kartu Pelajar/KTM, Screenshot/Foto bukti transfer pendaftaran, dan Screenshot bukti follow instagram Fasilkom Fest serta subscribe channel Youtube Fasilkom Fest."},
+        {"pertanyaan":"Berapa babak yang ada dalam Photography Competition ?","jawaban":"Untuk Photography Competition hanya ada 2 babak, yaitu penyisihan dan 10 besar"}
+    ],
+    "prize":{
+        "juara1":"Rp.700.000",
+        "juara2":"Rp.500.000",
+        "juara3":"Rp.300.000",
+        "tambahan":[
+           {"title":"Juara Favorit","sub":"Rp.150.000"}
+        ]
+    },
+    "kontak":[
+        {
+            "judul":"Whatsapp",
+            "icon":"whatsapp",
+            "list":[ 
+                {"nama":"Bintang", "kontak":"+6287855399625", "link":"https://wa.me/6287855399625"},
+                {"nama":"Clara", "kontak":"+6285707369067", "link":"https://wa.me/6285707369067"}
+            ]
+        }
+        
+      
+    ]
+}

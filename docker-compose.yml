@@ -1,0 +1,48 @@
+version: '3.8'
+
+networks:
+  app-network:
+    driver: bridge
+volumes:
+  app-data:
+
+services:
+  webserver:
+    image: nginx:1.21.6-alpine
+    container_name: webserver
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    volumes:
+      - ./:/var/www
+      - .docker/nginx:/etc/nginx/conf.d
+    networks:
+      app-network:
+
+  backend:
+    build:
+      context: .docker/php
+      dockerfile: dockerfile
+    container_name: backend
+    volumes:
+      - ./:/var/www
+      - .docker/php/php.ini:/usr/local/etc/php/conf.d/local.ini
+    networks:
+      app-network:
+  mysql:
+    image: mysql:latest
+    container_name: mysql-container
+    ports:
+        - 3306:3306
+    expose:
+        - 3306
+    volumes:
+        - ./itcamp.sql:/docker-entrypoint-initdb.d/itcamp.sql
+    environment:
+        MYSQL_ROOT_PASSWORD: secret
+        MYSQL_DATABASE: lomba
+        MYSQL_USER: user
+        MYSQL_PASSWORD: password
+    networks:
+      app-network:
+# Names our volume

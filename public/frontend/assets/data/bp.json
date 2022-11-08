@@ -1,0 +1,73 @@
+{
+    "nama_lomba":"<span>Business</span> Plan",  
+    "deskripsi_lomba1":"Business Plan Competition merupakan sebuah kompetisi dimana peserta merancang suatu ide bisnis baru yang bertemakan teknologi. Lomba ini mengangkat tema “Menumbuhkan Semangat Wirausaha yang Kreatif dan Inovatif di Era Ekonomi Digital” yang bertujuan mendorong generasi muda memiliki jiwa entrepreneur serta mengembangkan ide bisnis yang inovatif dan kreatif",
+    "link_guidebook":"https://drive.google.com/file/d/1sC0hB2CSdhSDNDhpHnWjNkx60ofNuqbE/view",
+    "link_pendaftaran":"close",
+    "gambar1":"/assets/images/resources/bp.webp",
+    "gambar2":"/assets/images/resources/bp.webp",
+    "deskripsi_lomba2":"<b>Business Plan Competition</b> merupakan bagian dari rangkaian acara NEOICT Competition di bawah naungan Fasilkom Fest  2021 yang diselenggarakan oleh BEM Fakultas Ilmu Komputer, UPN “Veteran” Jawa Timur. Lomba ini  terdiri dari dua babak, yaitu : <ol style=\"margin-top:10px\" className=\"list-unstyled mt-5\"><li>  <p className=\"list-text font-weight-bold\"><b>Babak Penyisihan</b></p><p className=\"list-text mt-0\">Proposal yang telah dikumpulkan peserta akan dinilai oleh juri dan dipilih 10 tim terbaik untuk melanjutkan ke babak final.</p></li><li>  <p className=\"list-text font-weight-bold\"> <b>Babak Final</b></p> <p className=\"list-text mt-0\">10 tim terbaik mempresentasikan isi proposal yang telah dibuat dalam bentuk power point di hadapan juri disertai sesi tanya jawab.</p></li></ol>",
+    "benefit":[
+        "E-sertifikat",
+        "Uang Pembinaan",
+        "Pengetahuan dan Pengalaman"
+    ],
+    "prize":{
+        "juara1":"Rp.1.000.000",
+        "juara2":"Rp.500.000",
+        "juara3":"Rp.300.000",
+        "tambahan":[
+           
+        ]
+    },
+    "additional":[
+        {
+            "judul":"Informasi Lomba", 
+            "isi":"",
+            "footer":"<div class=\"text-center mx-2 mt-5  d-md-flex justify-content-center\"><a target=\"_blank\" href=\"https://drive.google.com/drive/folders/1wMGlwcgH3USGzvuWoVw7VkI6R3Ls7aYK\" class=\" mx-2 w-100 thm-btn mb-2 mt-1\"><span style=\"font-size: 14px;\">Lampiran<i class=\"fa fa-download ml-1\"></i></span></a><a target=\"_blank\" href=\"https://bit.ly/Proposal-BusinessPlan\" class=\"mx-2 w-100 thm-btn mb-2 ml-1 mt-1\"><span style=\"font-size: 14px;\">Pengumpulan Proposal<i class=\"fa fa-upload ml-3\"></i></span></a><a target=\"_blank\" href=\"https://bit.ly/PPT-BP\" class=\"mx-2 w-100 thm-btn mb-2 ml-1 mt-1\"><span style=\"font-size: 14px;\">Pengumpulan PPT<i class=\"fa fa-upload ml-3\"></i></span></a></div>",
+            "list":[
+                "Lomba bersifat tim dan ditujukan untuk siswa/i SMA/SMK/MA",
+                "Seluruh rangkaian acara diselenggarakan secara daring",
+                "Pendaftaran bisa dilakukan di laman perlombaan Business Plan",
+                "Peserta diharapkan membaca guidebook  sebelum melakukan pendaftaran",
+                "Untuk info lebih lanjut silahkan mengunjungi instagram Fasilkom Fest"
+                
+               ]
+        }
+    ],
+    "timeline":[
+        {"tahap":"Pendaftaran","tanggal":"18 November 2021 - 17 Desember 2021"},
+        {"tahap":"Batas Akhir Pengumpulan Proposal","tanggal":"24 Desember 2021"},
+        {"tahap":"Seleksi Babak Penyisihan","tanggal":"24 Desember 2021 - 30 Desember 2021"},
+        {"tahap":"Pengumuman Finalis","tanggal":"1 Januari 2021"},
+        {"tahap":"Technical Meeting Final","tanggal":"4 Januari 2022"},
+        {"tahap":"Babak Final","tanggal":"16 Januari 2022"},
+        {"tahap":"Pengumuman Pemenang","tanggal":"18 -19 Januari 2022"}
+    ],
+    "faq":[
+        {"pertanyaan":"Apa itu Business Plan Competition ?","jawaban":"Merupakan serangkaian lomba pada event NEOICT Competition dimana sasaran dari  lomba ini adalah siswa/i SMA/SMK/MA sederajat untuk mencari bibit unggul sebagai pengusaha muda yang dapat menciptakan lapangan pekerjaan di era digital."},
+        {"pertanyaan":"Berapa biaya pendaftaran lomba Business Plan ini ?","jawaban":"Biaya pendaftaran sebesar Rp 50.000/Tim"},
+        {"pertanyaan":"Bagaimana cara mendaftar di lomba ini ?","jawaban":"Untuk tata cara pendaftaran dan semua persyaratan bisa dilihat di guidebook"},
+        {"pertanyaan":"Berapa anggota dalam satu tim ?","jawaban":"Setiap tim terdiri dari 2-3 orang yang berada di satu sekolah yang sama"},
+        {"pertanyaan":"Apa saja batasan materi dari lomba Business Plan ini ?","jawaban":"Batasan materi dari business plan ini adalah teknologi"},
+        {"pertanyaan":"Apakah lomba ini dilakukan secara daring ?","jawaban":"Ya, seluruh rangkaian lomba ini diselenggarakan secara daring via zoom"}
+    ],
+    "kontak":[
+        {
+            "judul":"Whatsapp",
+            "icon":"whatsapp",
+            "list":[ 
+                {"nama":"Iqbal Ramadhan", "kontak":"+6281914787114", "link":"https://wa.me/6281914787114"},
+                {"nama":"Diana Eka", "kontak":"+6285807270732", "link":"https://wa.me/6285807270732"}
+            ]
+        },
+       
+        {
+            "judul":"Instagram",
+            "icon":"instagram",
+            "list":[
+                {"nama":"", "kontak":"fasilkomfest.academic", "link":"https://www.instagram.com/fasilkomfest.academic/"}
+            ]
+        }
+      
+    ]
+}

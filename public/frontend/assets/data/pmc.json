@@ -1,0 +1,43 @@
+{
+    "nama_lomba":"<span>PUBG Mobile</span> Competition",  
+    "deskripsi_lomba1":"PUBG Mobile Competition merupakan lomba/turnamen game PUBG Mobile yang diadakan untuk semua kalangan(umum). Yang diharapkan dengan diadakannya PUBG Mobile Competition ini menjadi wadah bagi para pemain PUBGM untuk menunjukkan skillnya dan mendapatkan pengalaman yang lebih agar bisa bermanfaat dan bisa menjadi awalan karir ke jenjang profesional.",
+    "link_guidebook":"https://bit.ly/GuidebookPUBGff21",
+    "link_pendaftaran":"https://bit.ly/RegistPUBGff2021",
+    "gambar1":"/assets/images/resources/pubg.webp",
+    "gambar2":"/assets/images/resources/pubg.webp",
+    "deskripsi_lomba2":"<b>PUBG Mobile Competition</b> merupakan lomba/turnamen game PUBG Mobile yang diadakan untuk semua kalangan(umum). Yang diharapkan dengan diadakannya PUBG Mobile Competition ini menjadi wadah bagi para pemain PUBGM untuk menunjukkan skillnya dan mendapatkan pengalaman yang lebih agar bisa bermanfaat dan bisa menjadi awalan karir ke jenjang profesional.",
+    "benefit":[
+        "E-sertifikat",
+        "Prize Pool: 2.400.000"
+    
+    ],
+    "additional":[
+       
+    ],
+    "timeline":[
+        {"tahap":"Pendaftaran Gelombang 1","tanggal":"1 Desember 2021 - 19 Desember 2021"},
+        {"tahap":"Pendaftaran Gelombang 2","tanggal":"20 Desember 2021 - 11 Januari 2022"},
+        {"tahap":"Technical Meeting","tanggal":"13 Januari 2022"},
+        {"tahap":"Kualifikasi","tanggal":"14 Januari 2022"},
+        {"tahap":"Semifinal dan Grandfinal","tanggal":"15 Januari 2022 - 16 Januari 2022"}
+       
+    ],
+    "faq":[
+        {"pertanyaan":"Bagaimana cara mendaftarkan diri dalam PUBG Mobile Competition?","jawaban":"Peserta telah mengikuti prosedur pendaftaran, dengan memenuhi syarat pendaftaran dan mengisi Gform Pendaftaran"},
+        {"pertanyaan":"Berapa biaya kompetisi PUBG Mobile Competition?","jawaban":"Setiap tim akan dikenakan biaya Rp. 50.000,-"},
+        {"pertanyaan":"Bagaimana sistemasi turnamen nya, untuk babak kualifikasi sampai grandfinal?","jawaban":"Untuk sistemasi, di Babak Kualifikasi dibagi menjadi 3 grup dari tiap grup akan diambil peringkat 5 teratas serta peringkat 6 terbaik dari salah satu grup yang akan melanjutkan ke Babak Grandfinal."},
+        {"pertanyaan":"Berapa slot yang dibuka untuk PUBG Mobile Competition?","jawaban":"Untuk slot kami membuka hanya 48 tim yang akan bertanding di PUBG Mobile Competition"},
+        {"pertanyaan":"Apa saja yang didapatkan jika mengikuti PUBG Mobile Competition?","jawaban":"Dengan mengikuti PUBG Mobile Competition ini kalian pasti akan mendapatkan pengalaman lebih dan pastinya bisa menjadi jenjang awal ke karir profesional. Jika mendapatkan juara akan mendapatkan hadiah sesuai prizepool dan E-sertifikat."}
+        
+    ],
+    "kontak":[
+        {
+            "judul":"Whatsapp",
+            "icon":"whatsapp",
+            "list":[ 
+                {"nama":"Muhammad Adam Rachman", "kontak":"+6281233895599", "link":"https://wa.me/6281233895599"}
+            ]
+        }
+      
+    ]
+}
