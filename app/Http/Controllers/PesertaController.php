@@ -47,7 +47,7 @@ class PesertaController extends Controller
         $peserta->nama = $request->nama;
         $peserta->email = $request->email;
         $peserta->password = bcrypt($request->password);
-        $peserta->isVeried = 1;
+        $peserta->isVerified = 1;
         $peserta->save();
 
         Token::requestTokenRegister($peserta->email);

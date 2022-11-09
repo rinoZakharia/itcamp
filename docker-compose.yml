@@ -36,8 +36,8 @@ services:
         - 3306:3306
     expose:
         - 3306
-    volumes:
-        - ./itcamp.sql:/docker-entrypoint-initdb.d/itcamp.sql
+    # volumes:
+    #     - ./itcamp.sql:/docker-entrypoint-initdb.d/itcamp.sql
     env_file: .env
     networks:
       app-network:

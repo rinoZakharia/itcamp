@@ -26,6 +26,11 @@ class PesertaLoginMiddleware
             if ($user) {
                 // to dashboard
                 return redirect()->route('peserta.dashboard');
+            } else {
+                // remove sessuon
+                session()->forget('login.peserta');
+                session()->forget('email.peserta');
+                session()->forget('nama.peserta');
             }
         }
 
