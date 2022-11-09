@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('password');
             $table->string('kelamin')->default('Laki-laki');
             $table->string('telp')->default('');
-            $table->string('instansi')->default('');
+            $table->string('instansi')->default('Umum');
             $table->boolean('isVerified')->default(false);
             $table->timestamps();
         });

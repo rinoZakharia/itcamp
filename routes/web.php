@@ -52,8 +52,11 @@ Route::get('/back/user', [UserController::class, 'index']);
 
 // Peserta
 Route::middleware(PesertaMiddleware::class)->group(function () {
-    Route::get('/dashboard', [PesertaController::class, 'index'])->name('peserta.dashboard');
+    Route::get('/account', [PesertaController::class, 'index'])->name('peserta.account');
     Route::get("/logout", [PesertaController::class, 'logout'])->name('peserta.logout');
+
+    Route::post('/change_account', [PesertaController::class, 'changeProfile'])->name('peserta.change.account');
+    Route::post('/change_password', [PesertaController::class, 'changePassword'])->name('peserta.change.password');
 });
 
 Route::middleware(PesertaLoginMiddleware::class)->group(function () {

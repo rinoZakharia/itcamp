@@ -9,7 +9,7 @@
     <!-- Fav Icon  -->
     <link rel="shortcut icon" href="./images/favicon.png">
     <!-- Page Title  -->
-    <title>Blank - Layout | DashLite Admin Template</title>
+    <title>{{$title}} | ITCamp</title>
     <link rel="stylesheet" href="{{url('')}}/peserta/assets/css/dashlite.min.css?ver=2.4.0">
     <link id="skin-default" rel="stylesheet" href="{{url('')}}/peserta/assets/css/theme.css?ver=2.4.0">
 </head>
@@ -41,7 +41,7 @@
                                     <h6 class="overline-title text-primary-alt">Dashboards</h6>
                                 </li><!-- .nk-menu-item -->
                                 <li class="nk-menu-item">
-                                    <a href="html/index.html" class="nk-menu-link">
+                                    <a href="{{route('peserta.account')}}" class="nk-menu-link">
                                         <!-- account icon-->
                                         <span class="nk-menu-icon"><em class="icon ni ni-dashboard-fill"></em></span>
                                         <span class="nk-menu-text">Akun</span>
@@ -174,28 +174,12 @@
                     <div class="container-fluid">
                         <div class="nk-content-inner">
                             <div class="nk-content-body">
-                                <p>Starter page for demo2 layout.</p>
+                                @yield('content')
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- content @e -->
-                <!-- footer @s -->
-                <div class="nk-footer">
-                    <div class="container-fluid">
-                        <div class="nk-footer-wrap">
-                            <div class="nk-footer-copyright"> &copy; 2020 DashLite. Template by <a href="https://softnio.com" target="_blank">Softnio</a>
-                            </div>
-                            <div class="nk-footer-links">
-                                <ul class="nav nav-sm">
-                                    <li class="nav-item"><a class="nav-link" href="#">Terms</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#">Privacy</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#">Help</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
                 <!-- footer @e -->
             </div>
             <!-- wrap @e -->
@@ -204,8 +188,21 @@
     </div>
     <!-- app-root @e -->
     <!-- JavaScript -->
+ 
     <script src="{{url('')}}/peserta/assets/js/bundle.js?ver=2.4.0"></script>
     <script src="{{url('')}}/peserta/assets/js/scripts.js?ver=2.4.0"></script>
+    @if(session()->has('success'))
+    <script>
+        (function(NioApp, $) {
+            'use strict';
+            toastr.clear();
+            NioApp.Toast('{{ session()->get('success') }}', 'success', {
+                    position: 'top-right'
+                });
+        })(NioApp, jQuery);
+    </script>
+    @endif
+
 </body>
 
 </html>

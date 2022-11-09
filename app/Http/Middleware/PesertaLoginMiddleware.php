@@ -25,7 +25,7 @@ class PesertaLoginMiddleware
             $user = User::where('email', $email)->first();
             if ($user) {
                 // to dashboard
-                return redirect()->route('peserta.dashboard');
+                return redirect()->route('peserta.account');
             } else {
                 // remove sessuon
                 session()->forget('login.peserta');
