@@ -24,6 +24,8 @@ class PesertaLoginMiddleware
             // check account
             $user = User::where('email', $email)->first();
             if ($user) {
+                // if account is payed
+
                 // to dashboard
                 return redirect()->route('peserta.account');
             } else {
@@ -31,6 +33,7 @@ class PesertaLoginMiddleware
                 session()->forget('login.peserta');
                 session()->forget('email.peserta');
                 session()->forget('nama.peserta');
+                session()->forget('check.peserta');
             }
         }
 

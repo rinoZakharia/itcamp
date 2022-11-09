@@ -12,3 +12,58 @@
 .logo{
     max-height: 120px;
 }
+.icon-pay{
+    max-height: 50px;
+    max-width: 60px;
+    margin-right: 16px;
+    object-fit: contain;
+}
+.transfer-card .lead-text{
+    font-size: 16px;
+    font-weight: bold;
+}
+.transfer-card .sub-text{
+    font-size: 14px;
+    font-weight: 200 ;
+}
+
+.card-pay{
+    padding-bottom: 16px;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 16px;
+}
+
+.card-pay-list{
+    padding :16px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.card-pay-list:hover{
+    background-color: #f5f5f5;
+}
+.card-pay-list:last-child{
+    border-bottom: none;
+    margin-bottom: 0;
+}
+.order-status ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  .order-status ul li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  .order-status ul li:last-child {
+    border: none;
+  }
+  .order-status ul li div {
+    font-size: 14px;
+    font-weight: normal;
+    color: #444;
+  }
+  .order-status ul li div:last-child {
+    font-weight: bold;
+    color: #526484;
+  }

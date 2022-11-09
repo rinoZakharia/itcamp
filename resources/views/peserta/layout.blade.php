@@ -48,19 +48,23 @@
                                     </a>
                                 </li>
                                 <li class="nk-menu-item">
-                                    <a href="html/index.html" class="nk-menu-link">
+                                    <a href="{{route('peserta.payment')}}" class="nk-menu-link">
                                         <!-- Payment -->
                                         <span class="nk-menu-icon"><em class="icon ni ni-money"></em></span>
                                         <span class="nk-menu-text">Pembayaraan</span>
                                     </a>
                                 </li>
                                 <!-- Informasi Peserta -->
+                                @if(session()->get('check.peserta'))
                                 <li class="nk-menu-item">
                                     <a href="html/index.html" class="nk-menu-link">
                                         <!-- account icon-->
                                         <span class="nk-menu-icon"><em class="icon ni ni-user-fill"></em></span>
                                         <span class="nk-menu-text">Informasi Peserta</span>
                                     </a>
+                                </li>
+                                @endif
+
                                     <!-- signout -->
                                 <li class="nk-menu-item">
                                     <a href="{{route("peserta.logout")}}" class="nk-menu-link">
@@ -188,9 +192,10 @@
     </div>
     <!-- app-root @e -->
     <!-- JavaScript -->
- 
+    @yield("modal")
     <script src="{{url('')}}/peserta/assets/js/bundle.js?ver=2.4.0"></script>
     <script src="{{url('')}}/peserta/assets/js/scripts.js?ver=2.4.0"></script>
+    @yield("script")
     @if(session()->has('success'))
     <script>
         (function(NioApp, $) {

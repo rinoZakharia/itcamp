@@ -92,5 +92,16 @@
     <!-- JavaScript -->
     <script src="{{url('')}}/peserta/assets/js/bundle.js?ver=2.4.0"></script>
     <script src="{{url('')}}/peserta/assets/js/scripts.js?ver=2.4.0"></script>
+    @if(session()->has('success'))
+    <script>
+        (function(NioApp, $) {
+            'use strict';
+            toastr.clear();
+            NioApp.Toast('{{ session()->get('success') }}', 'success', {
+                    position: 'top-right'
+                });
+        })(NioApp, jQuery);
+    </script>
+    @endif
 
 </html>

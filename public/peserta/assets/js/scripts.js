@@ -118,7 +118,7 @@
 
   NioApp.PassSwitch = function () {
     NioApp.Passcode('.passcode-switch');
-  }; // Toastr Message @v1.0 
+  }; // Toastr Message @v1.0
 
 
   NioApp.Toast = function (msg, ttype, opt) {
@@ -397,7 +397,7 @@
     });
   }; // Dropzone @v1.1
 
-
+  var dropimg;
   NioApp.Dropzone = function (elm, opt) {
     if ($(elm).exists()) {
       $(elm).each(function () {
@@ -414,17 +414,64 @@
           acceptedFiles: acceptedFiles
         },
             attr = opt ? extend(def, opt) : def;
-        $(this).addClass('dropzone').dropzone(attr);
+        dropimg=$(this).addClass('dropzone').dropzone(attr);
       });
     }
   }; // Dropzone Init @v1.0
 
 
   NioApp.Dropzone.init = function () {
-    NioApp.Dropzone('.upload-zone', {
-      url: "/images"
-    });
-  }; // Wizard @v1.0
+    NioApp.Dropzone('.upload-zone',{
+        url: "https://httpbin.org/post",
+        autoProcessQueue: false,
+        init: function(){
+            $("button[type=submit]").attr("disabled", "disabled")
+            $(".dz-remove").show()
+            let myDropzone = this;
+            this.on("addedfile", function(file) {
+                let inputfile = $("input.dropzone-file")
+                if(inputfile.length > 0){
+                    let dataTransfer = new DataTransfer();
+                    dataTransfer.items.add(file);
+                    inputfile[0].files = dataTransfer.files;
+                    // active button submit
+                    $("button[type=submit]").removeAttr("disabled")
+                }
+                // remove progress bar
+                $(".dz-progress").remove();
+                $(".dz-remove").show()
+                this.emit("success", file, 'success');
+                $(".dz-remove").click(function(){
+                    myDropzone.removeFile(file);
+                    $(".dz-remove").hide()
+                    let inputfile = $("input.dropzone-file")
+                    if(inputfile.length > 0){
+                        // remove files from input
+                        inputfile[0].files = new DataTransfer().files;
+                    }
+                    // disable button submit
+                    $("button[type=submit]").attr("disabled", "disabled")
+                })
+            })
+            // validation error
+            this.on("error", function(file, message) {
+                $(".dz-remove").hide()
+                myDropzone.removeFile(file);
+                toastr.clear();
+                NioApp.Toast(message, 'error', {
+                    position: 'top-right'
+                });
+                $("button[type=submit]").attr("disabled", "disabled")
+            });
+        },
+
+    })
+    $(".dz-remove").hide()
+
+  };
+
+
+  // Wizard @v1.0
 
 
   NioApp.Wizard = function () {
@@ -668,7 +715,7 @@
 
   NioApp.Slider.init = function () {
     NioApp.Slick('.slider-init');
-  }; // Number Spinner 
+  }; // Number Spinner
 
 
   NioApp.NumberSpinner = function (elm, opt) {

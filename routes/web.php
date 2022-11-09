@@ -54,7 +54,8 @@ Route::get('/back/user', [UserController::class, 'index']);
 Route::middleware(PesertaMiddleware::class)->group(function () {
     Route::get('/account', [PesertaController::class, 'index'])->name('peserta.account');
     Route::get("/logout", [PesertaController::class, 'logout'])->name('peserta.logout');
-
+    Route::get("/payment", [PesertaController::class, 'payment'])->name('peserta.payment');
+    Route::post("/pay", [PesertaController::class, 'uploadPayment'])->name('peserta.pay');
     Route::post('/change_account', [PesertaController::class, 'changeProfile'])->name('peserta.change.account');
     Route::post('/change_password', [PesertaController::class, 'changePassword'])->name('peserta.change.password');
 });

@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Bayar extends Model
 {
     use HasFactory;
+    // without timestamp
+    public $timestamps = false;
 }

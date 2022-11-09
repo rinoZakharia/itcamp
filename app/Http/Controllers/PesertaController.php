@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\StorePesertaRequest;
 use App\Http\Requests\UpdatePesertaRequest;
+use App\Models\Bayar;
 use App\Models\Peserta;
 use App\Models\Token;
 use App\Models\User;
@@ -75,6 +76,7 @@ class PesertaController extends Controller
                     session(['login.peserta' => true]);
                     session(['email.peserta' => $peserta->email]);
                     session(['nama.peserta' => $peserta->nama]);
+                    session(['check.peserta' => User::isPayed()]);
                     return redirect()->route('peserta.account');
                 } else {
                     return redirect()->route('peserta.login')->withErrors(['email' => 'Akun belum diverifikasi'])->withInput();
@@ -95,6 +97,7 @@ class PesertaController extends Controller
         session()->forget('login.peserta');
         session()->forget('email.peserta');
         session()->forget('nama.peserta');
+        session()->forget('check.peserta');
         return redirect()->route('peserta.login');
     }
 
@@ -111,7 +114,8 @@ class PesertaController extends Controller
         if ($request->telp) {
             $request->validate([
                 'nama' => 'required',
-                'instansi' => 'required'
+                'instansi' => 'required',
+                'telp' => 'digits_between:10,15',
             ]);
         } else {
             $request->validate([
@@ -148,5 +152,38 @@ class PesertaController extends Controller
         } else {
             return redirect()->route('peserta.account')->withErrors(['old_password' => 'Password Lama anda salah'])->withInput();
         }
+    }
+
+    public function payment()
+    {
+        if(User::isChecked()){
+            $data = User::getLastPayment();
+            return view('peserta.dashboard.payment_status', [
+                'title' => 'Status Pembayaran',
+                'data' => $data
+            ]);
+        }else{
+            return view('peserta.dashboard.payment', [
+                'title' => 'Pembayaran',
+            ]);
+        }
+
+    }
+
+    public function uploadPayment(Request $request)
+    {
+        $request->validate([
+            'bukti_pembayaran' => 'required|image|mimes:jpeg,png,jpg|max:2048',
+        ]);
+        $file = $request->file('bukti_pembayaran');
+        $fileName = Str::random(20) . '.' . $file->getClientOriginalExtension();
+        $file->move(public_path('uploads/bukti_pembayaran'), $fileName);
+        $bayar = new Bayar();
+        $bayar->email = session()->get('email.peserta');
+        $bayar->gambarBayar = $fileName;
+        $bayar->tglDaftar = date('Y-m-d');
+        $bayar->save();
+        return redirect()->route('peserta.payment')->with('success', 'Berhasil mengupload bukti pembayaran');
+
     }
 }

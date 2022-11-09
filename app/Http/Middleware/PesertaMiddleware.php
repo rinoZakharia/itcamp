@@ -24,6 +24,9 @@ class PesertaMiddleware
             // check account
             $user = User::where('email', $email)->first();
             if ($user) {
+                if(!session()->get('check.peserta')) {
+                    session()->put('check.peserta', User::isPayed());
+                }
                 return $next($request);
             }
         }
