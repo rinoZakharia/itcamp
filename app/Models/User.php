@@ -12,15 +12,25 @@ class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array<int, string>
-     */
+
+    public static function isPayed()
+    {
+        $user = Bayar::where(['email' => session('peserta.email'), 'flag' => 1])->first();
+        if ($user) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
     protected $fillable = [
         'name',
         'email',
         'password',
+        'kelamin',
+        'telp',
+        'instansi',
+        'isVerified'
     ];
 
     /**
