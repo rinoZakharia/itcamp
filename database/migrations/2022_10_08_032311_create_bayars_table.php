@@ -15,12 +15,12 @@ return new class extends Migration
     {
         Schema::create('bayars', function (Blueprint $table) {
             $table->id('idBayar');
-            $table->unsignedBigInteger('idUser');
+            $table->string('email');
             $table->date('tglDaftar');
             $table->date('tglAcc')->nullable();
             $table->integer('flag')->default('0');
             $table->string('gambarBayar')->nullable();
-            $table->foreign('idUser')->references('idUser')->on('users')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreign('email')->references('email')->on('users')->onDelete('cascade')->onUpdate('cascade');
         });
     }
 

@@ -5,7 +5,7 @@
     "link_pendaftaran":"close",
     "gambar1":"/assets/images/resources/bp.webp",
     "gambar2":"/assets/images/resources/bp.webp",
-    "deskripsi_lomba2":"<b>Business Plan Competition</b> merupakan bagian dari rangkaian acara NEOICT Competition di bawah naungan Fasilkom Fest  2021 yang diselenggarakan oleh BEM Fakultas Ilmu Komputer, UPN “Veteran” Jawa Timur. Lomba ini  terdiri dari dua babak, yaitu : <ol style=\"margin-top:10px\" className=\"list-unstyled mt-5\"><li>  <p className=\"list-text font-weight-bold\"><b>Babak Penyisihan</b></p><p className=\"list-text mt-0\">Proposal yang telah dikumpulkan peserta akan dinilai oleh juri dan dipilih 10 tim terbaik untuk melanjutkan ke babak final.</p></li><li>  <p className=\"list-text font-weight-bold\"> <b>Babak Final</b></p> <p className=\"list-text mt-0\">10 tim terbaik mempresentasikan isi proposal yang telah dibuat dalam bentuk power point di hadapan juri disertai sesi tanya jawab.</p></li></ol>",
+    "deskripsi_lomba2":"<b>Business Plan Competition</b> merupakan bagian dari rangkaian acara NEOICT Competition di bawah naungan ITCamp  2021 yang diselenggarakan oleh BEM Fakultas Ilmu Komputer, UPN “Veteran” Jawa Timur. Lomba ini  terdiri dari dua babak, yaitu : <ol style=\"margin-top:10px\" className=\"list-unstyled mt-5\"><li>  <p className=\"list-text font-weight-bold\"><b>Babak Penyisihan</b></p><p className=\"list-text mt-0\">Proposal yang telah dikumpulkan peserta akan dinilai oleh juri dan dipilih 10 tim terbaik untuk melanjutkan ke babak final.</p></li><li>  <p className=\"list-text font-weight-bold\"> <b>Babak Final</b></p> <p className=\"list-text mt-0\">10 tim terbaik mempresentasikan isi proposal yang telah dibuat dalam bentuk power point di hadapan juri disertai sesi tanya jawab.</p></li></ol>",
     "benefit":[
         "E-sertifikat",
         "Uang Pembinaan",
@@ -29,7 +29,7 @@
                 "Seluruh rangkaian acara diselenggarakan secara daring",
                 "Pendaftaran bisa dilakukan di laman perlombaan Business Plan",
                 "Peserta diharapkan membaca guidebook  sebelum melakukan pendaftaran",
-                "Untuk info lebih lanjut silahkan mengunjungi instagram Fasilkom Fest"
+                "Untuk info lebih lanjut silahkan mengunjungi instagram ITCamp"
                 
                ]
         }

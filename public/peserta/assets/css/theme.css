@@ -1,0 +1,14 @@
+/*!
+ * Theme Name: Default
+ * Package : DashLite
+ * Author: Softnio
+ * Author URI: http://themeforest.net/user/softnio
+ * Version	 :	1.0.0
+ * Updated	 :	07.23.2020
+**/
+#auth-nk{
+    background-image: linear-gradient(40deg, #0db8ff 0%, #f332ff 100%);
+}
+.logo{
+    max-height: 120px;
+}

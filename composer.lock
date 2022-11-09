@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ccbd816a07b206f971042295b899d1ba",
+    "content-hash": "5e4592548369707731bed45fff8fba8e",
     "packages": [
         {
             "name": "brick/math",
@@ -61,6 +61,52 @@
                 }
             ],
             "time": "2022-08-10T22:54:19+00:00"
+        },
+        {
+            "name": "caouecs/laravel-lang",
+            "version": "7.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/caouecs/lang.git",
+                "reference": "2cb9932f781415f1669ce27d29e5b86399ab164a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/caouecs/lang/zipball/2cb9932f781415f1669ce27d29e5b86399ab164a",
+                "reference": "2cb9932f781415f1669ce27d29e5b86399ab164a",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*"
+            },
+            "suggest": {
+                "andrey-helldar/laravel-lang-publisher": "Easy installation and update of translation files for your project",
+                "arcanedev/laravel-lang": "Translations manager and checker for Laravel 5",
+                "overtrue/laravel-lang": "Command to add languages in your project"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "caouecs",
+                    "email": "caouecs@caouecs.net"
+                }
+            ],
+            "description": "Languages for Laravel",
+            "keywords": [
+                "lang",
+                "languages",
+                "laravel",
+                "lpm"
+            ],
+            "support": {
+                "source": "https://github.com/caouecs/lang/tree/7.0.3"
+            },
+            "abandoned": "https://github.com/Laravel-Lang/lang",
+            "time": "2020-08-23T08:17:21+00:00"
         },
         {
             "name": "dflydev/dot-access-data",
@@ -5621,6 +5667,81 @@
                 "source": "https://github.com/hamcrest/hamcrest-php/tree/v2.0.1"
             },
             "time": "2020-07-09T08:09:16+00:00"
+        },
+        {
+            "name": "laravel-lang/lang",
+            "version": "12.1.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Laravel-Lang/lang.git",
+                "reference": "75420b91ca6e940075752f9a8fe3ccf79986d6fe"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Laravel-Lang/lang/zipball/75420b91ca6e940075752f9a8fe3ccf79986d6fe",
+                "reference": "75420b91ca6e940075752f9a8fe3ccf79986d6fe",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*"
+            },
+            "conflict": {
+                "laravel-lang/publisher": "<14.0"
+            },
+            "require-dev": {
+                "laravel-lang/publisher": "^14.0",
+                "laravel-lang/status-generator": "^1.3.7",
+                "php": "^8.1",
+                "phpunit/phpunit": "^9.5",
+                "symfony/var-dumper": "^5.0 || ^6.0"
+            },
+            "suggest": {
+                "arcanedev/laravel-lang": "Translations manager and checker for Laravel",
+                "laravel-lang/attributes": "Translations for field names of the forms",
+                "laravel-lang/http-statuses": "Translations for HTTP statuses",
+                "laravel-lang/publisher": "Easy installation and update of translation files for your project"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LaravelLang\\Lang\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaravelLang\\Lang\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Laravel-Lang Team",
+                    "homepage": "https://github.com/Laravel-Lang"
+                }
+            ],
+            "description": "Languages for Laravel",
+            "keywords": [
+                "lang",
+                "languages",
+                "laravel",
+                "lpm"
+            ],
+            "support": {
+                "issues": "https://github.com/Laravel-Lang/lang/issues",
+                "source": "https://github.com/Laravel-Lang/lang"
+            },
+            "funding": [
+                {
+                    "url": "https://opencollective.com/laravel-lang",
+                    "type": "open_collective"
+                }
+            ],
+            "time": "2022-11-07T17:36:07+00:00"
         },
         {
             "name": "laravel/pint",

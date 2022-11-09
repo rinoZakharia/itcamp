@@ -1009,7 +1009,7 @@ var Blog = /*#__PURE__*/function (_Component) {
           lineNumber: 90,
           columnNumber: 37
         }
-      }, " Fasilkomfest.com "), " "), " "), " "), " "), " "), " "), " ");
+      }, "itcamp.com "), " "), " "), " "), " "), " "), " "), " ");
     }
   }]);
 
@@ -1055,9 +1055,9 @@ var Header = function Header() {
       lineNumber: 5,
       columnNumber: 7
     }
-  }, "Fasilkom Fest"), __jsx("meta", {
+  }, "ITCamp"), __jsx("meta", {
     name: "description",
-    content: "Fasilkom Fest Perlombaan yang diadakan oleh Fakultas Ilmu Komputer UPN Veteran Jawa Timur untuk Mahasiswa dan Siswa/Siswi SMA/SMK sederajat bidang akademik,seni, dan e-sport",
+    content: "ITCamp Perlombaan yang diadakan oleh Fakultas Ilmu Komputer UPN Veteran Jawa Timur untuk Mahasiswa dan Siswa/Siswi SMA/SMK sederajat bidang akademik,seni, dan e-sport",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -25682,7 +25682,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 var HomePage = function HomePage() {
   return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    pageTitle: "Fasilkom Fest",
+    pageTitle: "ITCamp",
     __self: _this,
     __source: {
       fileName: _jsxFileName,

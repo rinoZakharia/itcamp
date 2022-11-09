@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="/frontend/assets/plugins/dimon-icons/style.css" />
     <link rel="stylesheet" href="/frontend/assets/css/style.css" />
     <link rel="stylesheet" href="/frontend/assets/css/responsive.css" />
-    <title>Fasilkom Fest</title>
-    <meta name="description" content="Fasilkom Fest Perlombaan yang diadakan oleh Fakultas Ilmu Komputer UPN Veteran Jawa Timur untuk Mahasiswa dan Siswa/Siswi SMA/SMK sederajat bidang akademik,seni, dan e-sport" />
+    <title>ITCamp</title>
+    <meta name="description" content="ITCamp Perlombaan yang diadakan oleh Fakultas Ilmu Komputer UPN Veteran Jawa Timur untuk Mahasiswa dan Siswa/Siswi SMA/SMK sederajat bidang akademik,seni, dan e-sport" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="keywords" content="lomba it, lomba sma, lomba smk, lomba mahasiswa, fasilkom, upn veteran jawa timur, lomba bisnis, lomba seni, lomba esport, mobile legend competition, pubg competition, valorant competition, lomba bisnis case, lomba bisnis plan, bisnis case, bisnis plan, uiux design, uiux design competition, short video competition, lomba, olimpiade" />
     <meta name="next-head-count" content="16" />
@@ -433,7 +433,7 @@
                             <div class="container">
                                 <div class="inner-container text-center">
                                     <div class="d-md-flex d-sm-block w-100 align-items-center justify-content-between"><img src="/frontend/assets/images/resources/logo.png" width="50" alt="" class="d-sm-none" />
-                                        <p class="site-footer__copy mt-2">&amp; copy; Copyright 2021 by <a href="#"> Fasilkomfest.com </a> </p>
+                                        <p class="site-footer__copy mt-2">&amp; copy; Copyright 2021 by <a href="#">itcamp.com </a> </p>
                                     </div>
                                 </div>
                             </div>
