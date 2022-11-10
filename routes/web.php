@@ -53,8 +53,6 @@ Route::middleware(AdminMiddleware::class)->group(function () {
     // confirmation
     Route::get('/back/confirmation/{id}', [UserController::class, 'confirmation'])->name('admin.confirmation');
     Route::get('/back/reject/{id}', [UserController::class, 'reject'])->name('admin.reject');
-
-
 });
 
 

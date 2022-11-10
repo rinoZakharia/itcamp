@@ -27,7 +27,7 @@
             <td>{{$a->bank}}</td>
             <!-- button trigger modal  -->
             <td>
-                <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#bukti{{$a->id}}">Bukti</button>
+                <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#bukti{{$a->idBayar}}">Bukti</button>
                 <!-- download -->
                 <a download href="{{url('uploads/bukti_pembayaran') .'/'.$a->gambarBayar}}" class="btn btn-sm btn-success">Download</a>
             </td>
@@ -39,7 +39,7 @@
           </tr>
           <?php $count++ ?>
           <!-- make modal show bukti image -->
-          <div class="modal fade" id="bukti{{$a->id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal fade" id="bukti{{$a->idBayar}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
               <div class="modal-content">
                 <div class="modal-header">
@@ -86,7 +86,7 @@
             <td>{{$a->bank}}</td>
             <!-- button trigger modal  -->
             <td>
-                <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#bukti{{$a->id}}">Bukti</button>
+                <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#bukti{{$a->idBayar}}">Bukti</button>
                 <!-- download -->
                 <a download href="{{url('uploads/bukti_pembayaran') .'/'.$a->gambarBayar}}" class="btn btn-sm btn-success">Download</a>
             </td>
@@ -94,7 +94,7 @@
           </tr>
           <?php $count++ ?>
           <!-- make modal show bukti image -->
-          <div class="modal fade" id="bukti{{$a->id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal fade" id="bukti{{$a->idBayar}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
               <div class="modal-content">
                 <div class="modal-header">
