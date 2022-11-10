@@ -22,7 +22,7 @@
             <div class="nk-sidebar nk-sidebar-fixed is-light " data-content="sidebarMenu">
                 <div class="nk-sidebar-element nk-sidebar-head">
                     <div class="nk-sidebar-brand">
-                        <a href="html/index.html" class="logo-link nk-sidebar-logo">
+                        <a href="{{url('')}}" class="logo-link nk-sidebar-logo">
                             <img class="logo-light logo-img" src="{{url('icon.png')}}" alt="logo">
                             <img class="logo-dark logo-img" src="{{url('icon.png')}}" alt="logo-dark">
                             <img class="logo-small logo-img logo-img-small" src="{{url('icon.png')}}" alt="logo-small">
@@ -57,7 +57,7 @@
                                 <!-- Informasi Peserta -->
                                 @if(session()->get('check.peserta'))
                                 <li class="nk-menu-item">
-                                    <a href="html/index.html" class="nk-menu-link">
+                                    <a href="{{url('')}}" class="nk-menu-link">
                                         <!-- account icon-->
                                         <span class="nk-menu-icon"><em class="icon ni ni-user-fill"></em></span>
                                         <span class="nk-menu-text">Informasi Peserta</span>
@@ -88,7 +88,7 @@
                                 <a href="#" class="nk-nav-toggle nk-quick-nav-icon" data-target="sidebarMenu"><em class="icon ni ni-menu"></em></a>
                             </div>
                             <div class="nk-header-brand d-xl-none">
-                                <a href="html/index.html" class="logo-link">
+                                <a href="{{url('')}}" class="logo-link">
                                     <img class="logo-light logo-img" src="{{url('icon.png')}}" alt="logo">
                                     <img class="logo-dark logo-img" src="{{url('icon.png')}}" alt="logo-dark">
                                 </a>

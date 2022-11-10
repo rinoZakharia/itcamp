@@ -56,21 +56,20 @@
 
           <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
             <h2 class="bi bi-person-circle mt-2"></h2>
-            <span class="d-none d-md-block dropdown-toggle ps-2">K. Anderson</span>
+            <span class="d-none d-md-block dropdown-toggle ps-2">Admin</span>
           </a><!-- End Profile Iamge Icon -->
 
           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
             <li class="dropdown-header">
               <h1 class="bi bi-person-circle mb-2"></h1>
-              <h6>Kevin Anderson</h6>
-              <span>Web Designer</span>
+              <h6>Admin</h6>
             </li>
             <li>
               <hr class="dropdown-divider">
             </li>
 
             <li>
-              <a class="dropdown-item d-flex align-items-center" href="#">
+              <a class="dropdown-item d-flex align-items-center" href="{{route('admin.logout')}}">
                 <i class="bi bi-box-arrow-right"></i>
                 <span>Sign Out</span>
               </a>
@@ -97,33 +96,32 @@
       </li><!-- End Dashboard Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="{{ url('/back/admin') }}">
-          <i class="bi bi-person-badge"></i>
-          <span>Admin</span>
-        </a>
-      </li><!-- End Profile Page Nav -->
-      
-      <li class="nav-item">
         <a class="nav-link collapsed" href="{{ url('/back/medpart') }}">
           <i class="ri ri-broadcast-fill"></i>
           <span>Media Partner</span>
         </a>
       </li><!-- End Profile Page Nav -->
-      
+
       <li class="nav-item">
         <a class="nav-link collapsed" href="{{ url('/back/sponsor') }}">
           <i class="bi bi-display"></i>
           <span>Sponsor</span>
         </a>
       </li><!-- End Profile Page Nav -->
-      
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="{{ url('/back/bayar') }}">
+          <i class="bi bi-cash"></i>
+          <span>Pembayaran</span>
+        </a>
+      </li><!-- End Profile Page Nav -->
+
       <li class="nav-item">
         <a class="nav-link collapsed" href="{{ url('/back/user') }}">
           <i class="bi bi-people"></i>
           <span>Peserta</span>
         </a>
       </li><!-- End Profile Page Nav -->
-      
+
     </ul>
 
   </aside><!-- End Sidebar-->

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Admin;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 
 class AdminController extends Controller
 {
@@ -12,55 +13,41 @@ class AdminController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
-        $data = Admin::all();
 
-        return view('back.admin.index',compact(['data']));
+    public function login()
+    {
+        if(session()->has('key.admin'))
+        {
+            if(session()->get('key.admin') == env('APP_KEY'))
+            {
+                return redirect()->route('admin.dashboard');
+            }
+        }
+        return view('back.login');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
+    public function signin(Request $request){
+        $request->validate([
+            'email' => 'required|email',
+            'password' => 'required|min:6',
+        ]);
+
+        $admin = Admin::where('emailAdmin',$request->email)->first();
+        if($admin){
+            if(Hash::check($request->password,$admin->passwordAdmin)){
+                session()->put('key.admin', env('APP_KEY'));
+                return redirect()->route('admin.dashboard');
+            }else{
+                return redirect()->back()->withErrors(['password' => 'Password salah']);
+            }
+        }else{
+            return redirect()->back()->withErrors(['email' => 'Email tidak terdaftar']);
+        }
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Admin  $admin
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Admin $admin)
-    {
-        //
-    }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Admin  $admin
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, Admin $admin)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\Admin  $admin
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Admin $admin)
-    {
-        //
+    public function logout(){
+        session()->forget('key.admin');
+        return redirect()->route('admin.login');
     }
 }

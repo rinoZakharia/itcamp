@@ -18,7 +18,7 @@ class NotificationController extends Controller
         {
             return ["error" => "You are not logged in"];
         }else{
-            $notifications = Notification::where("email", $email)->get();
+            $notifications = Notification::where("email", $email)->orderBy('created_at','desc')->get();
             return ["data" => $notifications];
         }
     }

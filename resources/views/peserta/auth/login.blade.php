@@ -28,7 +28,7 @@
                         <div class="card">
                             <div class="card-inner card-inner-lg">
                                 <div class="brand-logo pb-2  text-center">
-                                    <a href="html/index.html" class="logo-link">
+                                    <a href="{{url('')}}" class="logo-link">
                                         <img class="logo" src="{{url('icon.png')}}" alt="logo">
                                     </a>
                                 </div>
