@@ -25,7 +25,12 @@ class PesertaMiddleware
             $user = User::where('email', $email)->first();
             if ($user) {
                 if(!session()->get('check.peserta')) {
-                    session()->put('check.peserta', User::isPayed());
+                    // next with success
+                    if(User::isPayed()){
+                        session()->put('check.peserta',true);
+                        $request->session()->flash('success', 'Pembayaran telah dikonfirmasi cek informasi peserta !');
+                        // return redirect()->route('peserta.information');
+                    }
                 }
                 return $next($request);
             }

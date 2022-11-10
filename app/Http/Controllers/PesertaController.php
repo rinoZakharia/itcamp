@@ -6,6 +6,7 @@ use App\Http\Requests\StorePesertaRequest;
 use App\Http\Requests\UpdatePesertaRequest;
 use App\Mail\ResetMail;
 use App\Models\Bayar;
+use App\Models\Config;
 use App\Models\Notification;
 use App\Models\Peserta;
 use App\Models\Token;
@@ -110,6 +111,34 @@ class PesertaController extends Controller
     public function forgotPassword()
     {
         return view('peserta.auth.forgot');
+    }
+
+    public function information(){
+        // check is payed
+        if (!User::isPayed()) {
+            return redirect()->route('peserta.account');
+        }
+        $data = Config::find("message.payed");
+        if($data==null){
+            $data= new Config();
+            $data->key= 'message.payed';
+            $data->value= '<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; line-height: normal; mso-outline-level: 2;"><strong><span style="font-family: helvetica, arial, sans-serif;"><span style="font-size: 18pt;">Terima Kasih</span></span></strong></p>
+            <p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; line-height: normal;"><span style="font-size: 12pt; font-family: helvetica, arial, sans-serif;">Telah bergabung dengan <strong>HIMATIFA X Partnership UI/UX Mini Bootcamp</strong>. <strong>HIMATIFA X Partnership UI/UX Mini Bootcamp</strong> merupakan rangkaian mini bootcamp yang diadakan oleh <strong>Himpunan Mahasiswa Informatika Universitas Pembangunan Nasional "Veteran" Jawa Timur</strong> dengan tujuan untuk mengenalkan UI/UX dikalangan pelajar/mahasiswa/umum.</span></p>
+            <p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; line-height: normal;"><span style="font-family: helvetica, arial, sans-serif;"><strong><span style="font-size: 12pt;">HIMATIFA X Partnership UI/UX Mini Bootcamp</span></strong><span style="font-size: 12pt;">&nbsp;diperuntukan untuk pelajar/mahasiswa/umum. Acara ini mengusung tema "<strong>Show Your Skills and Build Your Career</strong>" dengan harapan peserta dapat meningkatkan wawasan, kemampuan serta dapat karir di bidang UI/UX</span></span></p>
+            <ul type="disc">
+            <li class="MsoNormal" style="line-height: normal; font-family: helvetica, arial, sans-serif;"><span style="font-size: 12pt; font-family: helvetica, arial, sans-serif;">&nbsp;E-sertifikat</span></li>
+            <li class="MsoNormal" style="line-height: normal; font-family: helvetica, arial, sans-serif;"><span style="font-size: 12pt; font-family: helvetica, arial, sans-serif;">&nbsp;Ilmu</span></li>
+            <li class="MsoNormal" style="line-height: normal; font-family: helvetica, arial, sans-serif;"><span style="font-size: 12pt; font-family: helvetica, arial, sans-serif;">&nbsp;Menambah pengalaman dan networking</span></li>
+            </ul>
+            <p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; line-height: normal;">&nbsp;</p>
+            <p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; line-height: normal;"><span style="font-size: 12pt; font-family: helvetica, arial, sans-serif;">Untuk informasi lebih lanjut terkait acara anda dapat bergabung pada link berikut :</span></p>
+            <p><a class="btn btn-success" href="#">Bergabung dengan Whatsapp</a></p>';
+            $data->save();
+        }
+        return view('peserta.dashboard.information',[
+            'title' => 'Informasi',
+            'data' => $data
+        ]);
     }
 
     public function requestReset(Request $request){

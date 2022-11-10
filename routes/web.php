@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BackController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\ConfigController;
 use App\Http\Controllers\MedpartController;
 use App\Http\Controllers\PesertaController;
 use App\Http\Controllers\SponsorController;
@@ -10,6 +11,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Middleware\AdminMiddleware;
 use App\Http\Middleware\PesertaLoginMiddleware;
 use App\Http\Middleware\PesertaMiddleware;
+use App\Models\Config;
 
 /*
 |--------------------------------------------------------------------------
@@ -53,6 +55,8 @@ Route::middleware(AdminMiddleware::class)->group(function () {
     // confirmation
     Route::get('/back/confirmation/{id}', [UserController::class, 'confirmation'])->name('admin.confirmation');
     Route::get('/back/reject/{id}', [UserController::class, 'reject'])->name('admin.reject');
+    Route::get('/back/editor', [ConfigController::class, 'create'])->name('admin.editor');
+    Route::post('/back/editor/save', [ConfigController::class, 'store'])->name('admin.save.editor');
 });
 
 
@@ -63,6 +67,7 @@ Route::middleware(PesertaMiddleware::class)->group(function () {
     Route::get('/account', [PesertaController::class, 'index'])->name('peserta.account');
     Route::get("/logout", [PesertaController::class, 'logout'])->name('peserta.logout');
     Route::get("/payment", [PesertaController::class, 'payment'])->name('peserta.payment');
+    Route::get("/information", [PesertaController::class, 'information'])->name('peserta.information');
     Route::post("/pay", [PesertaController::class, 'uploadPayment'])->name('peserta.pay');
     Route::post('/change_account', [PesertaController::class, 'changeProfile'])->name('peserta.change.account');
     Route::post('/change_password', [PesertaController::class, 'changePassword'])->name('peserta.change.password');

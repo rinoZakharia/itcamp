@@ -57,7 +57,7 @@
                                 <!-- Informasi Peserta -->
                                 @if(session()->get('check.peserta'))
                                 <li class="nk-menu-item">
-                                    <a href="{{url('')}}" class="nk-menu-link">
+                                    <a href="{{route('peserta.information')}}" class="nk-menu-link">
                                         <!-- account icon-->
                                         <span class="nk-menu-icon"><em class="icon ni ni-user-fill"></em></span>
                                         <span class="nk-menu-text">Informasi Peserta</span>
