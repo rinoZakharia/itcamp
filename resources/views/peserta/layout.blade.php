@@ -97,73 +97,16 @@
                                 <ul class="nk-quick-nav">
                                     <li class="dropdown notification-dropdown">
                                         <a href="#" class="dropdown-toggle nk-quick-nav-icon" data-toggle="dropdown">
-                                            <div class="icon-status icon-status-info"><em class="icon ni ni-bell"></em></div>
+                                            <div id="icon-notif"><em class="icon ni ni-bell"></em></div>
                                         </a>
                                         <div class="dropdown-menu dropdown-menu-xl dropdown-menu-right">
                                             <div class="dropdown-head">
                                                 <span class="sub-title nk-dropdown-title">Notifications</span>
-                                                <a href="#">Mark All as Read</a>
                                             </div>
                                             <div class="dropdown-body">
                                                 <div class="nk-notification">
-                                                    <div class="nk-notification-item dropdown-inner">
-                                                        <div class="nk-notification-icon">
-                                                            <em class="icon icon-circle bg-warning-dim ni ni-curve-down-right"></em>
-                                                        </div>
-                                                        <div class="nk-notification-content">
-                                                            <div class="nk-notification-text">You have requested to <span>Widthdrawl</span></div>
-                                                            <div class="nk-notification-time">2 hrs ago</div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="nk-notification-item dropdown-inner">
-                                                        <div class="nk-notification-icon">
-                                                            <em class="icon icon-circle bg-success-dim ni ni-curve-down-left"></em>
-                                                        </div>
-                                                        <div class="nk-notification-content">
-                                                            <div class="nk-notification-text">Your <span>Deposit Order</span> is placed</div>
-                                                            <div class="nk-notification-time">2 hrs ago</div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="nk-notification-item dropdown-inner">
-                                                        <div class="nk-notification-icon">
-                                                            <em class="icon icon-circle bg-warning-dim ni ni-curve-down-right"></em>
-                                                        </div>
-                                                        <div class="nk-notification-content">
-                                                            <div class="nk-notification-text">You have requested to <span>Widthdrawl</span></div>
-                                                            <div class="nk-notification-time">2 hrs ago</div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="nk-notification-item dropdown-inner">
-                                                        <div class="nk-notification-icon">
-                                                            <em class="icon icon-circle bg-success-dim ni ni-curve-down-left"></em>
-                                                        </div>
-                                                        <div class="nk-notification-content">
-                                                            <div class="nk-notification-text">Your <span>Deposit Order</span> is placed</div>
-                                                            <div class="nk-notification-time">2 hrs ago</div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="nk-notification-item dropdown-inner">
-                                                        <div class="nk-notification-icon">
-                                                            <em class="icon icon-circle bg-warning-dim ni ni-curve-down-right"></em>
-                                                        </div>
-                                                        <div class="nk-notification-content">
-                                                            <div class="nk-notification-text">You have requested to <span>Widthdrawl</span></div>
-                                                            <div class="nk-notification-time">2 hrs ago</div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="nk-notification-item dropdown-inner">
-                                                        <div class="nk-notification-icon">
-                                                            <em class="icon icon-circle bg-success-dim ni ni-curve-down-left"></em>
-                                                        </div>
-                                                        <div class="nk-notification-content">
-                                                            <div class="nk-notification-text">Your <span>Deposit Order</span> is placed</div>
-                                                            <div class="nk-notification-time">2 hrs ago</div>
-                                                        </div>
-                                                    </div>
+
                                                 </div><!-- .nk-notification -->
-                                            </div><!-- .nk-dropdown-body -->
-                                            <div class="dropdown-foot center">
-                                                <a href="#">View All</a>
                                             </div>
                                         </div>
                                     </li>
@@ -207,6 +150,86 @@
         })(NioApp, jQuery);
     </script>
     @endif
+    <script>
+        (function(NioApp, $) {
+            'use strict';
+            // fetch notification
+
+            function fetchNotification() {
+                $.ajax({
+                    url: "{{url('api/notification')}}?email={{session()->get('email.peserta')}}",
+                    type: "GET",
+                    dataType: "json",
+                    success: function(response) {
+                        $(".nk-notification").html("");
+                        let messageNotRead=false;
+                        response.data.forEach(element => {
+                            // check if read
+                            if(!element.is_read){
+                                messageNotRead=true;
+                            }
+                            // diff created notification without library
+                            const date1 = new Date(element.created_at);
+                            const date2 = new Date();
+                            const diffTime = Math.abs(date2 - date1);
+                            const diffDays = Math.round(diffTime / (1000 * 60 * 60 * 24));
+                            const diffHours = Math.round(diffTime / (1000 * 60 * 60));
+                            const diffMinutes = Math.round(diffTime / (1000 * 60));
+                            let diff = "";
+                            if (diffDays > 0) {
+                                diff = diffDays + " hari yang lalu";
+                            } else if (diffHours > 0) {
+                                diff = diffHours + " jam yang lalu";
+                            } else if (diffMinutes > 0) {
+                                diff = diffMinutes + " menit yang lalu";
+                            } else {
+                                diff = "Baru saja";
+
+                            }
+
+                            let bg = element.is_read == 1 ? "bg-success-dim" : "bg-warning-dim";
+
+                            let item =`<div class="nk-notification-item dropdown-inner">
+                                                        <div class="nk-notification-icon">
+                                                            <em class="icon icon-circle ${bg} ni ni-bell"></em>
+                                                        </div>
+                                                        <div class="nk-notification-content">
+                                                            <div class="nk-notification-text">${element.notification}</div>
+                                                            <div class="nk-notification-time">${diff}</div>
+                                                        </div>
+                                                    </div>`;
+                                                    $(".nk-notification").append(item);
+                                                });
+
+                            if(messageNotRead){
+                                $("#icon-notif").addClass("icon-status icon-status-info");
+                                $('.notification-dropdown').on('show.bs.dropdown', function () {
+                                        if($("#icon-notif").hasClass("icon-status-info")){
+                                            $("#icon-notif").removeClass("icon-status-info");
+                                            $("#icon-notif").removeClass("icon-status");
+
+                                            // make all notification read
+                                            $.ajax({
+                                                url: "{{url('api/read_notif')}}?email={{session()->get('email.peserta')}}",
+                                                type: "GET",
+                                                success: function(response) {
+
+                                                }
+                                            });
+                                        }else{
+                                            $(".nk-notification-icon .ni-bell").removeClass("bg-warning-dim");
+                                            $(".nk-notification-icon .ni-bell").addClass("bg-success-dim");
+                                        }
+                                });
+                            }
+                            }
+
+
+                        });
+            }
+            fetchNotification();
+        })(NioApp, jQuery);
+    </script>
 
 </body>
 

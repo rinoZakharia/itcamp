@@ -4,11 +4,14 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\StorePesertaRequest;
 use App\Http\Requests\UpdatePesertaRequest;
+use App\Mail\ResetMail;
 use App\Models\Bayar;
+use App\Models\Notification;
 use App\Models\Peserta;
 use App\Models\Token;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Str;
 
 class PesertaController extends Controller
@@ -106,7 +109,64 @@ class PesertaController extends Controller
 
     public function forgotPassword()
     {
-        return view('peserta.auth.forgot-password');
+        return view('peserta.auth.forgot');
+    }
+
+    public function requestReset(Request $request){
+        $request->validate([
+            'email' => 'required|email',
+        ]);
+
+        $lastRequest = Token::where('email', $request->email)->where('type', 'resetPassword')->orderBy('created_at', 'desc')->first();
+        if ($lastRequest) {
+            if (strtotime($lastRequest->created_at) + 600 > time()) {
+                return redirect()->route('peserta.forgot')->with('error', 'Anda sudah melakukan permintaan reset password, silahkan cek email anda');
+            }
+        }
+        $token = Token::requestTokenResetPassword($request->email);
+
+        // send email url
+        $url = route('peserta.reset', ['token' => $token->token]);
+        $email = $request->email;
+        $nama = User::where('email', $email)->first()->nama;
+        $data = [
+            'nama' => $nama,
+            'url' => $url,
+        ];
+        // send emails
+        Mail::to($email)->send(new ResetMail($data));
+        return redirect()->route('peserta.login')->with('success', 'Silahkan cek email anda');
+    }
+
+    public function resetPassword($token)
+    {
+        $token = Token::where('token', $token)->first();
+        if ($token) {
+            return view('peserta.auth.reset', [
+                'token' => $token->token,
+            ]);
+        } else {
+            return redirect()->route('peserta.login')->with('error', 'Token tidak ditemukan');
+        }
+    }
+
+    public function resetPasswordPost(Request $request)
+    {
+        $request->validate([
+            'password' => 'required|min:6',
+            'password_confirmation' => 'required|same:password',
+        ]);
+
+        $token = Token::where('token', $request->token)->first();
+        if ($token) {
+            $peserta = User::where('email', $token->email)->first();
+            $peserta->password = bcrypt($request->password);
+            $peserta->save();
+            $token->delete();
+            return redirect()->route('peserta.login')->with('success', 'Berhasil mereset password');
+        } else {
+            return redirect()->route('peserta.login')->with('error', 'Token tidak ditemukan');
+        }
     }
 
     public function changeProfile(Request $request)
@@ -132,6 +192,8 @@ class PesertaController extends Controller
             $user->telp = $request->telp;
         }
         $user->save();
+
+
         return redirect()->route('peserta.account')->with('success', 'Berhasil mengubah profil');
     }
 
@@ -182,7 +244,15 @@ class PesertaController extends Controller
         $bayar->email = session()->get('email.peserta');
         $bayar->gambarBayar = $fileName;
         $bayar->tglDaftar = date('Y-m-d');
+        $bayar->bank = $request->bank;
         $bayar->save();
+
+        // make notification
+        $notif = new Notification();
+        $notif->email = session()->get('email.peserta');
+        $notif->notification = 'Pembayaran berhasil diupload, silahkan tunggu konfirmasi dari panitia';
+        $notif->save();
+
         return redirect()->route('peserta.payment')->with('success', 'Berhasil mengupload bukti pembayaran');
 
     }

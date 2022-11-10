@@ -52,10 +52,9 @@ class Token extends Model
     public static function requestTokenResetPassword($email)
     {
         //   if already another token with type register not delete it
-        $token = Token::where('email', $email)->where([
-            ['isUsed', '=', false],
+        Token::where('email', $email)->where([
             ['type', '=', 'resetPassword']
-        ])->update(['isUsed' => true]);
+        ])->delete();
 
         $token = Token::create([
             'token' => Token::generateToken(),

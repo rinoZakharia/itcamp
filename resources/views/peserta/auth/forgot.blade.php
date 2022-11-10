@@ -2,7 +2,6 @@
 <html lang="zxx" class="js">
 
 <head>
-    <base href="../../../">
     <meta charset="utf-8">
     <meta name="author" content="Softnio">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -12,103 +11,55 @@
     <!-- Page Title  -->
     <title>Reset | DashLite Admin Template</title>
     <!-- StyleSheets  -->
-    <link rel="stylesheet" href="./assets/css/dashlite.css?ver=2.4.0">
-    <link id="skin-default" rel="stylesheet" href="./assets/css/theme.css?ver=2.4.0">
+    <link rel="stylesheet" href="{{url('')}}/peserta/assets/css/dashlite.css?ver=2.4.0">
+    <link id="skin-default" rel="stylesheet" href="{{url('')}}/peserta/assets/css/theme.css?ver=2.4.0">
 </head>
 
 <body class="nk-body bg-white npc-default pg-auth">
     <div class="nk-app-root">
         <!-- main @s -->
-        <div class="nk-main ">
+        <div class="nk-main " id="auth-nk">
             <!-- wrap @s -->
             <div class="nk-wrap nk-wrap-nosidebar">
                 <!-- content @s -->
                 <div class="nk-content ">
                     <div class="nk-block nk-block-middle nk-auth-body  wide-xs">
-                        <div class="brand-logo pb-4 text-center">
-                            <a href="html/index.html" class="logo-link">
-                                <img class="logo-light logo-img logo-img-lg" src="./images/logo.png" srcset="./images/logo2x.png 2x" alt="logo">
-                                <img class="logo-dark logo-img logo-img-lg" src="./images/logo-dark.png" srcset="./images/logo-dark2x.png 2x" alt="logo-dark">
-                            </a>
-                        </div>
+
                         <div class="card">
                             <div class="card-inner card-inner-lg">
+                                <div class="brand-logo pb-4 text-center">
+                                <a href="html/index.html" class="logo-link">
+                                    <img class="logo-light logo-img logo-img-lg"  src="{{url('icon.png')}}" alt="logo">
+                                    <img class="logo-dark logo-img logo-img-lg"  src="{{url('icon.png')}}" alt="logo-dark">
+                                </a>
+                            </div>
                                 <div class="nk-block-head">
                                     <div class="nk-block-head-content">
                                         <h5 class="nk-block-title">Reset password</h5>
                                         <div class="nk-block-des">
-                                            <p>If you forgot your password, well, then we’ll email you instructions to reset your password.</p>
+                                            <p>Jika kamu lupa dengan passwordmu kami akan mengirim link ke emailmu untuk meresetnya.</p>
                                         </div>
                                     </div>
                                 </div>
-                                <form action="html/pages/auths/auth-success-v2.html">
+                                <form action="{{route('peserta.forgot.post')}}" method="POST">
+                                    @csrf
                                     <div class="form-group">
                                         <div class="form-label-group">
                                             <label class="form-label" for="default-01">Email</label>
                                         </div>
-                                        <input type="text" class="form-control form-control-lg" id="default-01" placeholder="Enter your email address">
+                                        <input type="text" name="email" class="form-control form-control-lg" id="default-01" placeholder="Masukan Email Anda">
+                                        @error('email')
+                                        <small class="text-danger mt-2">
+                                            {{ $message }}
+                                        </small>
+                                        @enderror
                                     </div>
                                     <div class="form-group">
-                                        <button class="btn btn-lg btn-primary btn-block">Send Reset Link</button>
+                                        <button class="btn btn-lg btn-primary btn-block">Kirim</button>
                                     </div>
                                 </form>
                                 <div class="form-note-s2 text-center pt-4">
-                                    <a href="html/pages/auths/auth-login-v2.html"><strong>Return to login</strong></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="nk-footer nk-auth-footer-full">
-                        <div class="container wide-lg">
-                            <div class="row g-3">
-                                <div class="col-lg-6 order-lg-last">
-                                    <ul class="nav nav-sm justify-content-center justify-content-lg-end">
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Terms & Condition</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Privacy Policy</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Help</a>
-                                        </li>
-                                        <li class="nav-item dropup">
-                                            <a class="dropdown-toggle dropdown-indicator has-indicator nav-link" data-toggle="dropdown" data-offset="0,10"><span>English</span></a>
-                                            <div class="dropdown-menu dropdown-menu-sm dropdown-menu-right">
-                                                <ul class="language-list">
-                                                    <li>
-                                                        <a href="#" class="language-item">
-                                                            <img src="./images/flags/english.png" alt="" class="language-flag">
-                                                            <span class="language-name">English</span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" class="language-item">
-                                                            <img src="./images/flags/spanish.png" alt="" class="language-flag">
-                                                            <span class="language-name">Español</span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" class="language-item">
-                                                            <img src="./images/flags/french.png" alt="" class="language-flag">
-                                                            <span class="language-name">Français</span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" class="language-item">
-                                                            <img src="./images/flags/turkey.png" alt="" class="language-flag">
-                                                            <span class="language-name">Türkçe</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="nk-block-content text-center text-lg-left">
-                                        <p class="text-soft">&copy; 2019 CryptoLite. All Rights Reserved.</p>
-                                    </div>
+                                    <a href="{{route('peserta.login')}}"><strong>Kembali ke halaman login</strong></a>
                                 </div>
                             </div>
                         </div>
@@ -122,7 +73,17 @@
     </div>
     <!-- app-root @e -->
     <!-- JavaScript -->
-    <script src="./assets/js/bundle.js?ver=2.4.0"></script>
-    <script src="./assets/js/scripts.js?ver=2.4.0"></script>
-
+    <script src="{{url('')}}/peserta/assets/js/bundle.js?ver=2.4.0"></script>
+    <script src="{{url('')}}/peserta/assets/js/scripts.js?ver=2.4.0"></script>
+    @if(session()->has('error'))
+    <script>
+        (function(NioApp, $) {
+            'use strict';
+            toastr.clear();
+            NioApp.Toast('{{ session()->get('error') }}', 'error', {
+                    position: 'top-right'
+                });
+        })(NioApp, jQuery);
+    </script>
+    @endif
 </html>

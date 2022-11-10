@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\MedpartController;
+use App\Http\Controllers\NotificationController;
 use App\Http\Controllers\SponsorController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -23,3 +24,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::get('sponsor', [SponsorController::class, 'getAPI']);
 Route::get('medpart', [MedpartController::class, 'getAPI']);
+
+Route::get('notification', [NotificationController::class, 'index']);
+Route::get('read_notif', [NotificationController::class, 'markAsRead']);

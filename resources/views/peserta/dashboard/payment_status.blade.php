@@ -39,6 +39,10 @@
                             <div>Tanggal Bayar:</div>
                             <div>{{$data->tglDaftar}}</div>
                         </li>
+                        <li>
+                            <div>Metode Pembayaran:</div>
+                            <div>{{$data->bank}}</div>
+                        </li>
                         @if($data->flag == 1)
                         <li>
                             <div>Tanggal Konfirmasi:</div>

@@ -63,6 +63,11 @@ Route::middleware(PesertaMiddleware::class)->group(function () {
 Route::middleware(PesertaLoginMiddleware::class)->group(function () {
     Route::get('/login', [PesertaController::class, 'login'])->name('peserta.login');
     Route::get('/register', [PesertaController::class, 'register'])->name('peserta.register');
+    // forgot
+    Route::get('/forgot', [PesertaController::class, 'forgotPassword'])->name('peserta.forgot');
+    Route::post('/request_reset', [PesertaController::class, 'requestReset'])->name('peserta.forgot.post');
+    Route::get('/reset/{token}', [PesertaController::class, 'resetPassword'])->name('peserta.reset');
+    Route::post('/reset_password', [PesertaController::class, 'resetPasswordPost'])->name('peserta.reset.post');
     Route::post('/signup', [PesertaController::class, 'signup'])->name('peserta.signup');
     Route::post('/signin', [PesertaController::class, 'signin'])->name('peserta.signin');
 });

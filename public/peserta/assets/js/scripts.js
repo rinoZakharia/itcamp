@@ -859,6 +859,8 @@
     NioApp.coms.winLoad.push(NioApp.ModeSwitch);
   };
 
+
+
   NioApp.init();
   return NioApp;
 }(NioApp, jQuery);

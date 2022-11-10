@@ -20,6 +20,7 @@ return new class extends Migration
             $table->date('tglAcc')->nullable();
             $table->integer('flag')->default('0');
             $table->string('gambarBayar')->nullable();
+            $table->string('bank');
             $table->foreign('email')->references('email')->on('users')->onDelete('cascade')->onUpdate('cascade');
         });
     }

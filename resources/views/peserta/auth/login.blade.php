@@ -2,7 +2,6 @@
 <html lang="zxx" class="js">
 
 <head>
-    <base href="../../../">
     <meta charset="utf-8">
     <meta name="author" content="Softnio">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -57,7 +56,7 @@
                                     <div class="form-group">
                                         <div class="form-label-group">
                                             <label class="form-label" for="password">Password</label>
-                                            <a class="link link-primary link-sm" href="html/pages/auths/auth-reset-v2.html">Lupa Password ?</a>
+                                            <a class="link link-primary link-sm" href="{{route('peserta.forgot')}}">Lupa Password ?</a>
                                         </div>
                                         <div class="form-control-wrap">
                                             <a href="#" class="form-icon form-icon-right passcode-switch" data-target="password">
@@ -98,6 +97,17 @@
             'use strict';
             toastr.clear();
             NioApp.Toast('{{ session()->get('success') }}', 'success', {
+                    position: 'top-right'
+                });
+        })(NioApp, jQuery);
+    </script>
+    @endif
+    @if(session()->has('error'))
+    <script>
+        (function(NioApp, $) {
+            'use strict';
+            toastr.clear();
+            NioApp.Toast('{{ session()->get('error') }}', 'error', {
                     position: 'top-right'
                 });
         })(NioApp, jQuery);
