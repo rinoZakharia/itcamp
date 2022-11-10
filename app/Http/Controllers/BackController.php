@@ -15,7 +15,7 @@ class BackController extends Controller
         // getCount users
         $countUser = User::count();
         // count bayar group by email where flag = 1
-        $countBayar = Bayar::where('flag',1)->groupBy("email")->count();
+        $countBayar = Bayar::where('flag',1)->count();
         return view('back.index',compact(['countUser','countBayar']));
     }
 }
