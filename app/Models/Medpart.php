@@ -14,6 +14,7 @@ class Medpart extends Model
 
     protected $fillable = [
         'namaMed',
+        'urlMed',
         'gambarMed'
     ];
 }

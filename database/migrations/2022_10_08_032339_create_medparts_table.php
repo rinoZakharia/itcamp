@@ -16,6 +16,7 @@ return new class extends Migration
         Schema::create('medparts', function (Blueprint $table) {
             $table->id('idMed');
             $table->string('namaMed');
+            $table->string('urlMed');
             $table->string('gambarMed');
         });
     }

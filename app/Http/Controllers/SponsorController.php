@@ -41,6 +41,7 @@ class SponsorController extends Controller
         $data = [
             "namaSponsor" => $request->namaSponsor,
             "ukuranSponsor" => $request->ukuranSponsor,
+            "urlSponsor" => $request->urlSponsor,
             "gambarSponsor" => $fileName
         ];
         Sponsor::create($data);
@@ -70,6 +71,7 @@ class SponsorController extends Controller
     {
         $data = [
             "namaSponsor" => $request->namaSponsor,
+            "urlSponsor" => $request->urlSponsor,
             "ukuranSponsor" => $request->ukuranSponsor
         ];
         if ($request->file('gambarSponsor')) {
@@ -82,6 +84,7 @@ class SponsorController extends Controller
             $data = [
                 "namaSponsor" => $request->namaSponsor,
                 "ukuranSponsor" => $request->ukuranSponsor,
+                "urlSponsor" => $request->urlSponsor,
                 "gambarSponsor" => $fileName
             ];
         }

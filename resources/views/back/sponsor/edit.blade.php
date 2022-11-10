@@ -19,6 +19,12 @@
         </div>
       </div>
       <div class="row mb-3">
+        <label for="inputText" class="col-sm-3 col-form-label">Url Sponsor</label>
+        <div class="col-sm-9">
+          <input required type="text" name="urlSponsor" value="{{ $data->urlSponsor }}" class="form-control" autocomplete="off">
+        </div>
+      </div>
+      <div class="row mb-3">
         <label class="col-sm-3 col-form-label">Ukuran Gambar</label>
         <div class="col-sm-9">
           <select name="ukuranSponsor" class="form-select" aria-label="Default select example">

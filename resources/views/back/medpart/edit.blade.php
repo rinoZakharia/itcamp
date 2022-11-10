@@ -19,6 +19,12 @@
         </div>
       </div>
       <div class="row mb-3">
+        <label for="inputText" class="col-sm-3 col-form-label">Url Media</label>
+        <div class="col-sm-9">
+          <input required type="text" name="urlMed" class="form-control" value="{{$data->urlMed}}" autocomplete="off">
+        </div>
+      </div>
+      <div class="row mb-3">
         <label for="inputNumber" class="col-sm-3 col-form-label">Upload gambar</label>
         <div class="col-sm-9">
           <input class="form-control" name="gambarMed" type="file" id="formFile">

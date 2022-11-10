@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id('idSponsor');
             $table->string('namaSponsor');
             $table->string('ukuranSponsor');
+            $table->string('urlSponsor');
             $table->string('gambarSponsor');
         });
     }

@@ -13,6 +13,7 @@
             <th scope="col">#</th>
             <th scope="col">Nama</th>
             <th scope="col">Ukuran</th>
+            <th scope="col">Url</th>
             <th scope="col">Edit</th>
             <th scope="col">Delete</th>
           </tr>
@@ -24,6 +25,7 @@
             <th scope="row"><a href="#">{{$count;}}</a></th>
             <td>{{$a->namaSponsor}}</td>
             <td>{{$a->ukuranSponsor}}</td>
+            <td>{{$a->urlSponsor}}</td>
             <td class="text-primary"><a class="btn btn-outline-primary btn-sm" href="/back/sponsor/{{$a->idSponsor}}/edit"><i class="bi bi-pen"></i></a></td>
             <td class="text-primary">
               <form action="/back/sponsor/delete/{{$a->idSponsor}}/{{$a->gambarSponsor}}" method="post">

@@ -40,6 +40,7 @@ class MedpartController extends Controller
 
         $data = [
             "namaMed" => $request->namaMed,
+            "urlMed" => $request->urlMed,
             "gambarMed" => $fileName
         ];
         Medpart::create($data);
@@ -68,7 +69,8 @@ class MedpartController extends Controller
     public function update($id,$gambarMed,Request $request)
     {
         $data = [
-            "namaMed" => $request->namaMed
+            "namaMed" => $request->namaMed,
+            "urlMed" => $request->urlMed,
         ];
         if ($request->file('gambarMed')) {
             // Hapus file di storage
@@ -79,6 +81,7 @@ class MedpartController extends Controller
             $file->move(public_path('uploads/media'), $fileName);
             $data = [
                 "namaMed" => $request->namaMed,
+                "urlMed" => $request->urlMed,
                 "gambarMed" => $fileName
             ];
         }
