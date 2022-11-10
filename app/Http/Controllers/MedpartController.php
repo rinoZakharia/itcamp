@@ -4,7 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Medpart;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
+use Illuminate\Support\Facades\File; 
 
 class MedpartController extends Controller
 {
@@ -33,13 +34,13 @@ class MedpartController extends Controller
      */
     public function store(Request $request)
     {
-        $extension = $request->file('gambarMed')->extension();
-        $newName = $request->namaMed.'-'.now()->timestamp.'.'.$extension;
-        Storage::putFileAs('media',$request->file('gambarMed'),$newName,'private');
+        $file = $request->file('gambarMed');
+        $fileName = Str::random(20) . '.' . $file->getClientOriginalExtension();
+        $file->move(public_path('uploads/media'), $fileName);
 
         $data = [
             "namaMed" => $request->namaMed,
-            "gambarMed" => $newName
+            "gambarMed" => $fileName
         ];
         Medpart::create($data);
         return redirect('/back/medpart');
@@ -71,14 +72,14 @@ class MedpartController extends Controller
         ];
         if ($request->file('gambarMed')) {
             // Hapus file di storage
-            Storage::delete('media/'.$gambarMed);
+            File::delete(public_path('uploads/media/'.$gambarMed));
 
-            $extension = $request->file('gambarMed')->extension();
-            $newName = $request->namaMed.'-'.now()->timestamp.'.'.$extension;
-            Storage::putFileAs('media',$request->file('gambarMed'),$newName,'private');
+            $file = $request->file('gambarMed');
+            $fileName = Str::random(20) . '.' . $file->getClientOriginalExtension();
+            $file->move(public_path('uploads/media'), $fileName);
             $data = [
                 "namaMed" => $request->namaMed,
-                "gambarMed" => $newName
+                "gambarMed" => $fileName
             ];
         }
 
@@ -95,7 +96,7 @@ class MedpartController extends Controller
      */
     public function destroy($id,$gambarMed)
     {
-        Storage::delete('media/'.$gambarMed);
+        File::delete(public_path('uploads/media/'.$gambarMed));
 
         $medpart = Medpart::find($id);
         $medpart->delete();

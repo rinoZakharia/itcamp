@@ -4,7 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Sponsor;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
+use Illuminate\Support\Facades\File; 
 
 class SponsorController extends Controller
 {
@@ -33,14 +34,14 @@ class SponsorController extends Controller
      */
     public function store(Request $request)
     {
-        $extension = $request->file('gambarSponsor')->extension();
-        $newName = $request->namaSponsor.'-'.now()->timestamp.'.'.$extension;
-        Storage::putFileAs('sponsor',$request->file('gambarSponsor'),$newName,'private');
+        $file = $request->file('gambarSponsor');
+        $fileName = Str::random(20) . '.' . $file->getClientOriginalExtension();
+        $file->move(public_path('uploads/sponsor'), $fileName);
 
         $data = [
             "namaSponsor" => $request->namaSponsor,
             "ukuranSponsor" => $request->ukuranSponsor,
-            "gambarSponsor" => $newName
+            "gambarSponsor" => $fileName
         ];
         Sponsor::create($data);
         return redirect('/back/sponsor');
@@ -73,15 +74,15 @@ class SponsorController extends Controller
         ];
         if ($request->file('gambarSponsor')) {
             // Hapus file di storage
-            Storage::delete('sponsor/'.$gambarSponsor);
+            File::delete(public_path('uploads/sponsor/'.$gambarSponsor));
 
-            $extension = $request->file('gambarSponsor')->extension();
-            $newName = $request->namaSponsor.'-'.now()->timestamp.'.'.$extension;
-            Storage::putFileAs('sponsor',$request->file('gambarSponsor'),$newName,'private');
+            $file = $request->file('gambarSponsor');
+            $fileName = Str::random(20) . '.' . $file->getClientOriginalExtension();
+            $file->move(public_path('uploads/sponsor'), $fileName);
             $data = [
                 "namaSponsor" => $request->namaSponsor,
                 "ukuranSponsor" => $request->ukuranSponsor,
-                "gambarSponsor" => $newName
+                "gambarSponsor" => $fileName
             ];
         }
 
@@ -98,7 +99,7 @@ class SponsorController extends Controller
      */
     public function destroy($id,$gambarSponsor)
     {
-        Storage::delete('sponsor/'.$gambarSponsor);
+        File::delete(public_path('uploads/sponsor/'.$gambarSponsor));
 
         $sponsor = Sponsor::find($id);
         $sponsor->delete();

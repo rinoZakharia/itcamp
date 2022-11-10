@@ -9,7 +9,7 @@
       @csrf
       <div class="row mb-3">
         <div class="col-sm-12">
-          <img src="{{ url('/storage/media/'.$data->gambarMed) }}" style="height: 150px;" alt="">
+          <img src="{{ url('/uploads/media/'.$data->gambarMed) }}" style="height: 150px;" alt="">
         </div>
       </div>
       <div class="row mb-3">
