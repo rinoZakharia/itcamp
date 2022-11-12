@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BackController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\Auth\SocialiteController;
 use App\Http\Controllers\ConfigController;
 use App\Http\Controllers\MedpartController;
 use App\Http\Controllers\PesertaController;
@@ -76,6 +77,11 @@ Route::middleware(PesertaMiddleware::class)->group(function () {
 Route::middleware(PesertaLoginMiddleware::class)->group(function () {
     Route::get('/login', [PesertaController::class, 'login'])->name('peserta.login');
     Route::get('/register', [PesertaController::class, 'register'])->name('peserta.register');
+    /**
+ * socialite auth
+ */
+    Route::get('/auth/login/{provider}', [SocialiteController::class, 'redirectToProvider'])->name('socialite.auth');
+    Route::get('/auth/{provider}/callback', [SocialiteController::class, 'handleProvideCallback']);
     // forgot
     Route::get('/forgot', [PesertaController::class, 'forgotPassword'])->name('peserta.forgot');
     Route::post('/request_reset', [PesertaController::class, 'requestReset'])->name('peserta.forgot.post');

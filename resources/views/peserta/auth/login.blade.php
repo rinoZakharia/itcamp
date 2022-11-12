@@ -75,7 +75,10 @@
                                         <button class="btn btn-lg btn-primary btn-block">Login</button>
                                     </div>
                                 </form>
-                                <div class="form-note-s2 text-center pt-4"> Belum punya akun ? <a href="{{route("peserta.register")}}">Buat Akun</a>
+                                <div class="text-center pt-4 pb-3">
+                                    <h6 class="overline-title overline-title-sap"><span>OR</span></h6>
+                                </div>
+                                <a href="{{route("socialite.auth",['provider'=>'google'])}}" class="btn btn-block btn-outline-danger"><em class="icon ni ni-google"></em><span>Login dengan Google</span> </a>
                                 </div>
                             </div>
                         </div>
