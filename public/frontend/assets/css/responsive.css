@@ -392,6 +392,15 @@
 }
 
 @media (max-width: 769px) {
+    .time_rundown{
+        font-size: 1rem;
+        font-weight: bold;
+      }
+      .border-peach{
+        /* border-color: #ff7387 ; */
+        /* border size */
+        margin: 0 0;
+    }
     #event .img-fluid {
         max-height: 380px;
         display: block;
@@ -445,7 +454,42 @@
 }
 
 @media (max-width: 575px) {
+    .time_rundown{
+        font-size: 0.7rem;
+        font-weight: bold;
+      }
+      .bg-peach .p-2{
+        padding: 0.5rem !important;
+      }
+      .border-peach{
+        /* border-color: #ff7387 ; */
+        /* border size */
+        margin: 0 0;
+    }
+    .min-w-\[130px\] {
+        min-width: 100px;
+    }
+    .body-rundown{
+        padding: 14px;
+    }
+    .title-rundown{
+        font-size: 0.8rem;
+    }
+    .sub-rundown{
+        margin-top: 7.5px;
+        font-size: 0.7rem;
+        line-height: 1.3;
+    }
+    .header-rundown{
+        font-size: 1.1rem;
+    }
+    .card-header-orange{
+        padding: 0.3rem;
+    }
     
+    .content-rundown{
+        margin-left: 0.7rem!important;
+    }
     .medpart img {
         padding-left: 0!important;
         padding-right: 0!important;

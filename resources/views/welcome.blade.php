@@ -4,16 +4,16 @@
 <head>
     <meta charSet="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/frontend/assets/images/resources/logo.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/frontend/assets/images/resources/logo.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/frontend/assets/images/resources/logo.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="{{url('')}}/frontend/assets/images/resources/logo.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="{{url('')}}/frontend/assets/images/resources/logo.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="{{url('')}}/frontend/assets/images/resources/logo.png" />
     <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900&amp;display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="/frontend/assets/css/animate.min.css" />
-    <link rel="stylesheet" href="/frontend/assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/frontend/assets/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="/frontend/assets/plugins/dimon-icons/style.css" />
-    <link rel="stylesheet" href="/frontend/assets/css/style.css" />
-    <link rel="stylesheet" href="/frontend/assets/css/responsive.css" />
+    <link rel="stylesheet" href="{{url('')}}/frontend/assets/css/animate.min.css" />
+    <link rel="stylesheet" href="{{url('')}}/frontend/assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="{{url('')}}/frontend/assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="{{url('')}}/frontend/assets/plugins/dimon-icons/style.css" />
+    <link rel="stylesheet" href="{{url('')}}/frontend/assets/css/style.css" />
+    <link rel="stylesheet" href="{{url('')}}/frontend/assets/css/responsive.css" />
     <title>ITCamp</title>
     <meta name="description" content="ITCamp Perlombaan yang diadakan oleh Fakultas Ilmu Komputer UPN Veteran Jawa Timur untuk Mahasiswa dan Siswa/Siswi SMA/SMK sederajat bidang akademik,seni, dan e-sport" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -21,8 +21,8 @@
     <meta name="next-head-count" content="16" />
     <link rel="preload" href="{{url('')}}/frontend/_next/static/css/styles.747dca15.chunk.css" as="style" />
     <link rel="stylesheet" href="{{url('')}}/frontend/_next/static/css/styles.747dca15.chunk.css" />
-    <link rel="preload" href="{{url('')}}/frontend/_next/static/KKfm1RaKon5A-UN0McA2_/pages/index.js" as="script" />
-    <link rel="preload" href="{{url('')}}/frontend/_next/static/KKfm1RaKon5A-UN0McA2_/pages/_app.js" as="script" />
+    <link rel="preload" href="{{url('')}}/frontend/_next/static/-yF4Cuw08yoCsZgpUjLaQ/pages/index.js" as="script" />
+    <link rel="preload" href="{{url('')}}/frontend/_next/static/-yF4Cuw08yoCsZgpUjLaQ/pages/_app.js" as="script" />
     <link rel="preload" href="{{url('')}}/frontend/_next/static/runtime/webpack-0744fffc018367bd1f9d.js" as="script" />
     <link rel="preload" href="{{url('')}}/frontend/_next/static/chunks/framework.504af639ffd40f515d05.js" as="script" />
     <link rel="preload" href="{{url('')}}/frontend/_next/static/chunks/commons.19809b0290a3469b536b.js" as="script" />
@@ -38,7 +38,7 @@
                 <header class="site-header site-header__header-one" style="z-index:10200">
                     <nav class="navbar navbar-expand-lg navbar-light header-navigation stricky ">
                         <div class="container clearfix">
-                            <div class="logo-box clearfix"><a class="navbar-brand" href="/"><img src="/frontend/assets/images/resources/logo.png" class="main-logo" width="50" alt="Awesome Image" /></a><button class="menu-toggler"><span class="fa fa-bars"></span></button></div>
+                            <div class="logo-box clearfix"><a class="navbar-brand" href="/"><img src="{{url('')}}/frontend/assets/images/resources/logo.png" class="main-logo" width="50" alt="Awesome Image" /></a><button class="menu-toggler"><span class="fa fa-bars"></span></button></div>
                             <div class="main-navigation">
                                 <ul class=" one-page-scroll-menu navigation-box">
                                     <li class="scrollToLink"><a href="/">Home</a></li>
@@ -46,7 +46,7 @@
                                     <li class="scrollToLink"><a href="#timeline">Timeline</a></li>
                                     <li class="scrollToLink"><a href="#faq">FAQ</a></li>
                                     <li class="scrollToLink"><a href="#sponsor">Sponsor</a></li>
-                                    <li class="scrollToLink"><a class="btn btn-primary" href="{{url('login')}}">Login</a></li>
+                                    <li class="scrollToLink"><a class="btn btn-primary" href="/login">Login</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -56,7 +56,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-xl-12">
-                                <div class="banner-one__content text-center mb-1"><img src="/frontend/assets/images/resources/logo.png" class="img-fluid w-25" alt="Awesome Image" />
+                                <div class="banner-one__content text-center mb-1"><img src="{{url('')}}/frontend/assets/images/resources/logo.png" class="img-fluid w-25" alt="Awesome Image" />
                                     <h3 class="banner-one__title utama mt-1 text-blue"> <span>IT Camp</span> </h3>
                                     <p class="banner-one__text">
                                         <!-- -->Mini Bootcamp yang diadakan oleh<br />Program Studi Informatika<br />UPN Veteran Jawa Timur
@@ -71,7 +71,7 @@
                 <section class="mb-5 pt-5 py-4" id="event">
                     <div class="container">
                         <div class="row flex-row-reverse pb-3 pt-4">
-                            <div class="col-xl-6"><img class="img-fluid mx-2 p-5" src="/frontend/assets/images/resources/design.png" alt="HIMATIFA X Partnership UI/UX Mini Bootcamp" /> </div>
+                            <div class="col-xl-6"><img class="img-fluid mx-2 p-5" src="{{url('')}}/frontend/assets/images/resources/design.png" alt="HIMATIFA X Partnership UI/UX Mini Bootcamp" /> </div>
                             <div class="col-xl-6">
                                 <div class="banner-one__content mt-5">
                                     <h5 class="banner-one__title">
@@ -93,7 +93,7 @@
                 <section class="pb-5 mb-5 display-relative" style="z-index:1200" id="detail">
                     <div class="container">
                         <div class="row ">
-                            <div class="col-xl-6 m-auto"><img class="img-fluid text-center img-section" src="/frontend/assets/images/resources/design2.png" alt="HIMATIFA X Partnership UI/UX Mini Bootcamp" /> </div>
+                            <div class="col-xl-6 m-auto"><img class="img-fluid text-center img-section" src="{{url('')}}/frontend/assets/images/resources/design2.png" alt="HIMATIFA X Partnership UI/UX Mini Bootcamp" /> </div>
                             <div class="col-xl-6">
                                 <div class="banner-one__content justify-content-center align-items-center">
                                     <p class="banner-one__text"> <b>HIMATIFA X Partnership UI/UX Mini Bootcamp</b> diperuntukan untuk pelajar/mahasiswa/umum. Acara ini mengusung tema &quot;Show Your Skills and Build Your Career&quot; dengan harapan peserta dapat meningkatkan wawasan, kemampuan serta dapat karir di bidang UI/UX
@@ -127,16 +127,16 @@
                         </div>
                     </div>
                 </section>
-                <section class="video-one mx-2 mb-5" id="video"><img src="/frontend/assets/images/background/video-one-bg.png" alt="Awesome Image" class="video-one__bg" />
+                <section class="video-one mx-2 mb-5" id="video"><img src="{{url('')}}/frontend/assets/images/background/video-one-bg.png" alt="Awesome Image" class="video-one__bg" />
                     <div class="container wow fadeInUp" data-wow-duration="1500ms">
-                        <div class="video-one__box "><img src="/frontend/assets/images/resources/video.webp" alt="" />
+                        <div class="video-one__box "><img src="{{url('')}}/frontend/assets/images/resources/video.webp" alt="" />
                             <div class="video-one__content">
                                 <div class="video-popup video-one__btn"><i class="fa fa-play"></i></div>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section class="box-timeline py-5 mb-5 position-relative" style="z-index:1201" id="timeline"><img src="/frontend/assets/images/background/faq-one-bg.png" alt="Awesome Image" class="bg-timeline" />
+                <section class="box-timeline py-5 mb-5 position-relative" style="z-index:1201" id="timeline"><img src="{{url('')}}/frontend/assets/images/background/faq-one-bg.png" alt="Awesome Image" class="bg-timeline" />
                     <div class="header-timeline my-4">
                         <div class="block-title text-center my-5">
                             <h2 class="block-title__title"><span> Timeline </span> </h2>
@@ -268,10 +268,10 @@
                         </div>
                     </div>
                 </section>
-                <section class="box-timeline py-5 mb-5 position-relative" style="z-index:1200" id="banner"><img src="/frontend/assets/images/background/video-one-bg.png" alt="Awesome Image" class="video-one__bg" />
+                <section class="box-timeline py-5 mb-5 position-relative" style="z-index:1200" id="banner"><img src="{{url('')}}/frontend/assets/images/background/video-one-bg.png" alt="Awesome Image" class="video-one__bg" />
                     <div class="header-timeline">
                         <div class="block-title text-center">
-                            <h2 class="block-title__title"><span> Kurikulum </span> </h2>
+                            <h2 class="block-title__title"><span> Rundown </span> </h2>
                         </div>
                     </div>
                     <div class="container">
@@ -279,15 +279,56 @@
                             <div>
                                 <div class="tab-buttons"><button class="tab-button active">Hari 1</button><button class="tab-button">Hari 2</button><button class="tab-button">Hari 3</button></div>
                                 <div class="tab-content">
-                                    <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0xIAJciTxzjZZM-viJfHk_Ezlv0nn8fft3ORQ9UkoP2mPd5pm" />
-                                        <p>Tab 1 content</p>
+                                    <div>
+                                        <div class="container">
+                                            <div class="card border-peach box-peach">
+                                                <div class="card-header-orange">
+                                                    <h3 class="header-rundown">Event Rundown</h3>
+                                                </div>
+                                                <div class="card-body body-rundown">
+                                                    <div class="d-flex align-items-center justify-content-center mb-4">
+                                                        <div class="min-w-[130px]">
+                                                            <div class="rounded-xl bg-peach p-2">
+                                                                <h5 class="time_rundown">08:00 - 19:20</h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="flex-grow-1 text-left ml-4 content-rundown">
+                                                            <h5 class="title-rundown">Opening Ceremony</h5>
+                                                            <p class="sub-rundown">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex align-items-center justify-content-center mb-4">
+                                                        <div class="min-w-[130px]">
+                                                            <div class="rounded-xl bg-peach p-2">
+                                                                <h5 class="time_rundown">08:00 - 19:20</h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="flex-grow-1 text-left ml-4 content-rundown">
+                                                            <h5 class="title-rundown">Opening Ceremony</h5>
+                                                            <p class="sub-rundown">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex align-items-center justify-content-center mb-4">
+                                                        <div class="min-w-[130px]">
+                                                            <div class="rounded-xl bg-peach p-2">
+                                                                <h5 class="time_rundown">08:00 - 19:20</h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="flex-grow-1 text-left ml-4 content-rundown">
+                                                            <h5 class="title-rundown">Opening Ceremony</h5>
+                                                            <p class="sub-rundown">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section class="faq-one pt-5" id="faq"><img src="/frontend/assets/images/background/faq-one-bg.png" alt="Awesome Image" class="bg-timeline" />
+                <section class="faq-one pt-5" id="faq"><img src="{{url('')}}/frontend/assets/images/background/faq-one-bg.png" alt="Awesome Image" class="bg-timeline" />
                     <div class="container">
                         <div class="block-title text-center mt-5">
                             <h2 class="block-title__title mt-5"><span>FAQ</span> <br /></h2>
@@ -374,7 +415,7 @@
                             <h2 class="block-title__title"><span>Sponsor</span></h2>
                         </div>
                         <div class="row justify-content-center medpart">
-                            <div class="col-4 item  text-center d-flex align-items-center "><a href="https://www.dewaweb.com/"><img class="img-fluid w-100  my-1" src="/frontend/assets/images/sponsor/dewaweb.webp" alt="DewaWeb" /></a></div>
+                            <div class="col-4 item  text-center d-flex align-items-center "><a href="https://www.dewaweb.com/"><img class="img-fluid w-100  my-1" src="{{url('')}}/frontend/assets/images/sponsor/dewaweb.webp" alt="DewaWeb" /></a></div>
                         </div>
                     </div>
                 </section>
@@ -384,38 +425,38 @@
                             <h2 class="block-title__title"><span> Media Partner </span> </h2>
                         </div>
                         <div class="row justify-content-center medpart">
-                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="/frontend/assets/images/medpart/medpart1.webp" alt="" /></div>
-                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="/frontend/assets/images/medpart/medpart2.webp" alt="" /></div>
-                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="/frontend/assets/images/medpart/medpart3.webp" alt="" /></div>
-                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="/frontend/assets/images/medpart/medpart4.webp" alt="" /></div>
-                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="/frontend/assets/images/medpart/medpart5.webp" alt="" /></div>
-                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="/frontend/assets/images/medpart/medpart6.webp" alt="" /></div>
-                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="/frontend/assets/images/medpart/medpart7.webp" alt="" /></div>
-                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="/frontend/assets/images/medpart/medpart8.webp" alt="" /></div>
-                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="/frontend/assets/images/medpart/medpart9.webp" alt="" /></div>
-                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="/frontend/assets/images/medpart/medpart10.webp" alt="" /></div>
-                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="/frontend/assets/images/medpart/medpart11.webp" alt="" /></div>
-                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="/frontend/assets/images/medpart/medpart12.webp" alt="" /></div>
-                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="/frontend/assets/images/medpart/medpart13.webp" alt="" /></div>
-                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="/frontend/assets/images/medpart/medpart14.webp" alt="" /></div>
-                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="/frontend/assets/images/medpart/medpart15.webp" alt="" /></div>
-                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="/frontend/assets/images/medpart/medpart16.webp" alt="" /></div>
-                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="/frontend/assets/images/medpart/medpart17.webp" alt="" /></div>
-                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="/frontend/assets/images/medpart/medpart18.webp" alt="" /></div>
-                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="/frontend/assets/images/medpart/medpart19.webp" alt="" /></div>
-                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="/frontend/assets/images/medpart/medpart20.webp" alt="" /></div>
-                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="/frontend/assets/images/medpart/medpart21.webp" alt="" /></div>
-                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="/frontend/assets/images/medpart/medpart22.webp" alt="" /></div>
-                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="/frontend/assets/images/medpart/medpart23.webp" alt="" /></div>
-                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="/frontend/assets/images/medpart/medpart24.webp" alt="" /></div>
-                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="/frontend/assets/images/medpart/medpart25.webp" alt="" /></div>
-                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="/frontend/assets/images/medpart/medpart26.webp" alt="" /></div>
-                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="/frontend/assets/images/medpart/medpart27.webp" alt="" /></div>
-                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="/frontend/assets/images/medpart/medpart28.webp" alt="" /></div>
-                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="/frontend/assets/images/medpart/medpart29.webp" alt="" /></div>
-                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="/frontend/assets/images/medpart/medpart30.webp" alt="" /></div>
-                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="/frontend/assets/images/medpart/medpart31.webp" alt="" /></div>
-                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="/frontend/assets/images/medpart/medpart32.webp" alt="" /></div>
+                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="{{url('')}}/frontend/assets/images/medpart/medpart1.webp" alt="" /></div>
+                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="{{url('')}}/frontend/assets/images/medpart/medpart2.webp" alt="" /></div>
+                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="{{url('')}}/frontend/assets/images/medpart/medpart3.webp" alt="" /></div>
+                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="{{url('')}}/frontend/assets/images/medpart/medpart4.webp" alt="" /></div>
+                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="{{url('')}}/frontend/assets/images/medpart/medpart5.webp" alt="" /></div>
+                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="{{url('')}}/frontend/assets/images/medpart/medpart6.webp" alt="" /></div>
+                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="{{url('')}}/frontend/assets/images/medpart/medpart7.webp" alt="" /></div>
+                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="{{url('')}}/frontend/assets/images/medpart/medpart8.webp" alt="" /></div>
+                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="{{url('')}}/frontend/assets/images/medpart/medpart9.webp" alt="" /></div>
+                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="{{url('')}}/frontend/assets/images/medpart/medpart10.webp" alt="" /></div>
+                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="{{url('')}}/frontend/assets/images/medpart/medpart11.webp" alt="" /></div>
+                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="{{url('')}}/frontend/assets/images/medpart/medpart12.webp" alt="" /></div>
+                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="{{url('')}}/frontend/assets/images/medpart/medpart13.webp" alt="" /></div>
+                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="{{url('')}}/frontend/assets/images/medpart/medpart14.webp" alt="" /></div>
+                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="{{url('')}}/frontend/assets/images/medpart/medpart15.webp" alt="" /></div>
+                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="{{url('')}}/frontend/assets/images/medpart/medpart16.webp" alt="" /></div>
+                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="{{url('')}}/frontend/assets/images/medpart/medpart17.webp" alt="" /></div>
+                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="{{url('')}}/frontend/assets/images/medpart/medpart18.webp" alt="" /></div>
+                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="{{url('')}}/frontend/assets/images/medpart/medpart19.webp" alt="" /></div>
+                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="{{url('')}}/frontend/assets/images/medpart/medpart20.webp" alt="" /></div>
+                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="{{url('')}}/frontend/assets/images/medpart/medpart21.webp" alt="" /></div>
+                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="{{url('')}}/frontend/assets/images/medpart/medpart22.webp" alt="" /></div>
+                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="{{url('')}}/frontend/assets/images/medpart/medpart23.webp" alt="" /></div>
+                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="{{url('')}}/frontend/assets/images/medpart/medpart24.webp" alt="" /></div>
+                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="{{url('')}}/frontend/assets/images/medpart/medpart25.webp" alt="" /></div>
+                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="{{url('')}}/frontend/assets/images/medpart/medpart26.webp" alt="" /></div>
+                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="{{url('')}}/frontend/assets/images/medpart/medpart27.webp" alt="" /></div>
+                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="{{url('')}}/frontend/assets/images/medpart/medpart28.webp" alt="" /></div>
+                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="{{url('')}}/frontend/assets/images/medpart/medpart29.webp" alt="" /></div>
+                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="{{url('')}}/frontend/assets/images/medpart/medpart30.webp" alt="" /></div>
+                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="{{url('')}}/frontend/assets/images/medpart/medpart31.webp" alt="" /></div>
+                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="{{url('')}}/frontend/assets/images/medpart/medpart32.webp" alt="" /></div>
                         </div>
                     </div>
                 </div>
@@ -425,15 +466,15 @@
                             <div class="container justify-content-center">
                                 <h5 class="footer-title-sosmed" style="color:black">Kunjungi sosial media IT Camp </h5>
                                 <div class="footer-widget my-4">
-                                    <div class="justify-content-center mt-2 d-flex pb-4"><a href="https://www.instagram.com/fasilkomfest/" class="fa fa-instagram icon mr-3"></a> <a href="https://www.youtube.com/channel/UCj6FDNuEMnfgcuWydW1ys9Q" style="background:linear-gradient(to right, #ed213a, #93291e)" class="fa fa-youtube icon ml-3"></a> </div>
+                                    <div class="justify-content-center mt-2 d-flex pb-4"><a href="https://www.instagram.com/itcamp/" class="fa fa-instagram icon mr-3"></a> <a href="https://www.youtube.com/channel/UCj6FDNuEMnfgcuWydW1ys9Q" style="background:linear-gradient(to right, #ed213a, #93291e)" class="fa fa-youtube icon ml-3"></a> </div>
                                 </div>
                             </div>
                         </div>
                         <div class="site-footer__bottom  mt-4">
                             <div class="container">
                                 <div class="inner-container text-center">
-                                    <div class="d-md-flex d-sm-block w-100 align-items-center justify-content-between"><img src="/frontend/assets/images/resources/logo.png" width="50" alt="" class="d-sm-none" />
-                                        <p class="site-footer__copy mt-2">&amp; copy; Copyright 2021 by <a href="#">itcamp.com </a> </p>
+                                    <div class="d-md-flex d-sm-block w-100 align-items-center justify-content-between"><img src="{{url('')}}/frontend/assets/images/resources/logo.png" width="50" alt="" class="d-sm-none" />
+                                        <p class="site-footer__copy mt-2">&amp; copy; Copyright 2021 by <a href="#"> itcamp.com </a> </p>
                                     </div>
                                 </div>
                             </div>
@@ -450,7 +491,7 @@
             },
             "page": "/",
             "query": {},
-            "buildId": "KKfm1RaKon5A-UN0McA2_",
+            "buildId": "-yF4Cuw08yoCsZgpUjLaQ",
             "assetPrefix": "{{url('frontend')}}",
             "nextExport": true,
             "autoExport": true,
@@ -458,16 +499,16 @@
         }
     </script>
     <script nomodule="" src="{{url('')}}/frontend/_next/static/runtime/polyfills-839280c13975fe777c38.js"></script>
-    <script async="" data-next-page="/" src="{{url('')}}/frontend/_next/static/KKfm1RaKon5A-UN0McA2_/pages/index.js"></script>
-    <script async="" data-next-page="/_app" src="{{url('')}}/frontend/_next/static/KKfm1RaKon5A-UN0McA2_/pages/_app.js"></script>
+    <script async="" data-next-page="/" src="{{url('')}}/frontend/_next/static/-yF4Cuw08yoCsZgpUjLaQ/pages/index.js"></script>
+    <script async="" data-next-page="/_app" src="{{url('')}}/frontend/_next/static/-yF4Cuw08yoCsZgpUjLaQ/pages/_app.js"></script>
     <script src="{{url('')}}/frontend/_next/static/runtime/webpack-0744fffc018367bd1f9d.js" async=""></script>
     <script src="{{url('')}}/frontend/_next/static/chunks/framework.504af639ffd40f515d05.js" async=""></script>
     <script src="{{url('')}}/frontend/_next/static/chunks/commons.19809b0290a3469b536b.js" async=""></script>
     <script src="{{url('')}}/frontend/_next/static/chunks/styles.b0fccb77bb4868d92fcb.js" async=""></script>
     <script src="{{url('')}}/frontend/_next/static/runtime/main-dd0b70ae1f10d8d09c85.js" async=""></script>
     <script src="{{url('')}}/frontend/_next/static/chunks/a4c92b5b.b13a80d16605e7b56b9c.js" async=""></script>
-    <script src="{{url('')}}/frontend/_next/static/KKfm1RaKon5A-UN0McA2_/_buildManifest.js" async=""></script>
-    <script src="{{url('')}}/frontend/_next/static/KKfm1RaKon5A-UN0McA2_/_ssgManifest.js" async=""></script>
+    <script src="{{url('')}}/frontend/_next/static/-yF4Cuw08yoCsZgpUjLaQ/_buildManifest.js" async=""></script>
+    <script src="{{url('')}}/frontend/_next/static/-yF4Cuw08yoCsZgpUjLaQ/_ssgManifest.js" async=""></script>
 </body>
 
 </html>

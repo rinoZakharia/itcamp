@@ -739,7 +739,7 @@ a:visited {
     perspective: 150px;
 }
 
-.banner-one__shape-2 {
+.banner-one__shape-2 {  
     background-image: linear-gradient(40deg, #2b76b8 0%, #6dc9ff 100%);
     -webkit-box-shadow: 0px 20px 40px 0px rgb(151 218 244 / 80%);
     box-shadow: 0px 20px 60px 0px rgb(151 218 244 / 80%);
@@ -3603,7 +3603,7 @@ a.icon:hover {
 }
 
 .text-blue {
-    color: #0069d9!important;
+    color: #0f7fd5!important;
 }
 
 .tabs{
@@ -3612,8 +3612,8 @@ a.icon:hover {
     width:100%;
     text-align:center;
   }
-
-
+  
+  
   .tab-buttons{
     margin-left: 1rem;
     margin-right: 1rem;
@@ -3624,7 +3624,7 @@ a.icon:hover {
     box-shadow: 0 2px 12px 0 rgba(0,0,0,0.2);
     border-radius: 12px;
   }
-
+  
   .tab-button{
     flex: 1;
     border-radius: 12px;
@@ -3639,7 +3639,7 @@ a.icon:hover {
     transition: all 0.3s ease;
     border-bottom:2px solid transparent;
     font-weight: 550;
-
+    
   }
   .tab-button.active{
     color: white;
@@ -3655,3 +3655,72 @@ a.icon:hover {
     /* light dark */
     background-color: #f1f1f1;
   }
+  .gradient_bg_card{
+    /* background gradient green transparent */
+    
+    background: linear-gradient(to right, #d66d75, #e29587);
+    /* opacity background  but not content*/
+    background-clip: border-box;
+    /* background color */
+    background-color: #d66d75;
+    /* background color transparent */
+
+    /* add card shadow */
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.2);
+    margin: 0.1rem 1.rem;
+  }
+
+  .time_rundown{
+    font-size: 1rem;
+    font-weight: normal;
+    color: white;
+    margin: 0;
+  }
+.rounded-xl {
+    border-radius: 0.75rem;
+}
+.border-peach{
+    /* border-color: #ff7387 ; */
+    /* border size */
+    border-width: 2px;
+    border-radius: 12px;
+    margin: 2rem 1.2rem;
+}
+
+.bg-peach {
+    background-color: rgb(255 115 135);
+}
+.min-w-\[130px\] {
+    min-width: 130px;
+}
+.title-rundown{
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 0; 
+}
+
+.card-header-orange{
+    background-color: rgb(255,188,72)!important;    
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom: 0px;
+    padding: 0.5rem 1rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.header-rundown{
+    color: white;
+    font-weight: bold;
+    margin: 1rem;
+    font-size: 1.75rem;
+}
+
+.sub-rundown{
+    font-size: 0.95rem;
+    font-weight: normal;
+    /* color muted */
+    color: #6b7280;
+    margin: 0;
+}
