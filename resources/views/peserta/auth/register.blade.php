@@ -43,7 +43,7 @@
                                     @csrf
                                     <div class="form-group">
                                         <label class="form-label" for="nama">Nama</label>
-                                        <input type="text" class="form-control form-control-lg" id="nama" name="nama" placeholder="Masukkan Nama">
+                                        <input type="text" value="{{$name}}" class="form-control form-control-lg" id="nama" name="nama" placeholder="Masukkan Nama">
                                         <!-- error -->
                                         @error('nama')
                                         <small class="text-danger mt-2">
@@ -54,7 +54,7 @@
 
                                     <div class="form-group">
                                         <label class="form-label" for="email">Email</label>
-                                        <input type="text" class="form-control form-control-lg" id="email" name="email" placeholder="Masukkan Email">
+                                        <input type="text" value="{{$email}}" readonly class="form-control form-control-lg" id="email" name="email" placeholder="Masukkan Email">
                                         @error('email')
                                         <small class="text-danger mt-2">
                                             {{ $message }}

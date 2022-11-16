@@ -13,6 +13,7 @@ use App\Models\Token;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Str;
 
 class PesertaController extends Controller
@@ -41,26 +42,42 @@ class PesertaController extends Controller
 
     public function register()
     {
-        return view('peserta.auth.register');
+        $name = session()->get('nama.auth');
+        $email = session()->get('email.auth');
+
+        if($name && $email){
+            return view('peserta.auth.register', [
+                'name' => $name,
+                'email' => $email,
+            ]);
+        }else{
+            return redirect()->route('peserta.login');
+        }
     }
 
     public function signup(Request $request)
     {
-        $request->validate([
+        $validator = Validator::make($request->all(), [
             'nama' => 'required',
             'email' => 'required|email|unique:users',
             'password' => 'required|min:6',
         ]);
 
+        if ($validator->fails()) {
+            return redirect()->back()->withErrors($validator)->with(['email.auth' => $request->email, 'nama.auth' => $request->nama]);
+        }
         $peserta = new User();
         $peserta->nama = $request->nama;
         $peserta->email = $request->email;
         $peserta->password = bcrypt($request->password);
         $peserta->isVerified = 1;
         $peserta->save();
+        session(['login.peserta' => true]);
+        session(['email.peserta' => $peserta->email]);
+        session(['nama.peserta' => $peserta->nama]);
+        session(['check.peserta' => false]);
+        return redirect()->route('peserta.account');
 
-        Token::requestTokenRegister($peserta->email);
-        return redirect()->route('peserta.login')->with('success', 'Berhasil mendaftar, silahkan login');
     }
 
 
@@ -205,6 +222,7 @@ class PesertaController extends Controller
                 'nama' => 'required',
                 'instansi' => 'required',
                 'telp' => 'digits_between:10,15',
+
             ]);
         } else {
             $request->validate([
@@ -216,6 +234,7 @@ class PesertaController extends Controller
         $user = User::where('email', session()->get('email.peserta'))->first();
         $user->nama = $request->nama;
         $user->instansi = $request->instansi;
+        $user->kelamin = $request->kelamin;
         // check request telp
         if ($request->telp) {
             $user->telp = $request->telp;

@@ -96,7 +96,7 @@ var BannerTwo = function BannerTwo(_ref) {
       columnNumber: 13
     }
   }, __jsx("img", {
-    src: "/frontend/assets/images/resources/logo.png",
+    src: "/assets/images/resources/logo.png",
     className: "img-fluid w-25",
     alt: "Awesome Image",
     __self: _this,
@@ -171,6 +171,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _EventTime__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./EventTime */ "./components/EventTime.js");
 
 
 
@@ -187,6 +188,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement;
 function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = Object(_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_6__["default"])(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = Object(_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_6__["default"])(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return Object(_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_5__["default"])(this, result); }; }
 
 function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
 
 
 
@@ -217,7 +219,7 @@ var Curicullum = /*#__PURE__*/function (_React$Component) {
           columnNumber: 7
         }
       }, __jsx("img", {
-        src: "/frontend/assets/images/background/video-one-bg.png",
+        src: "/assets/images/background/video-one-bg.png",
         alt: "Awesome Image",
         className: "video-one__bg",
         __self: this,
@@ -257,7 +259,7 @@ var Curicullum = /*#__PURE__*/function (_React$Component) {
           lineNumber: 15,
           columnNumber: 15
         }
-      }, " Kurikulum "), " "), " "), " "), " ", __jsx("div", {
+      }, " Rundown "), " "), " "), " "), " ", __jsx("div", {
         className: "container",
         __self: this,
         __source: {
@@ -295,82 +297,58 @@ var Curicullum = /*#__PURE__*/function (_React$Component) {
           lineNumber: 24,
           columnNumber: 17
         }
-      }, __jsx("img", {
-        src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0xIAJciTxzjZZM-viJfHk_Ezlv0nn8fft3ORQ9UkoP2mPd5pm",
+      }, __jsx(_EventTime__WEBPACK_IMPORTED_MODULE_8__["default"], {
         __self: this,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 25,
-          columnNumber: 19
+          columnNumber: 18
         }
-      }), __jsx("p", {
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 26,
-          columnNumber: 19
-        }
-      }, "Tab 1 content"))), __jsx(Tab, {
+      }))), __jsx(Tab, {
         label: "Hari 2",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 29,
+          lineNumber: 28,
           columnNumber: 15
         }
       }, __jsx("div", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29,
+          columnNumber: 17
+        }
+      }, __jsx(_EventTime__WEBPACK_IMPORTED_MODULE_8__["default"], {
         __self: this,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 30,
           columnNumber: 17
         }
-      }, __jsx("img", {
-        src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2E3SrDqYWF9J_TDWNzjZkwJOAGxkLJVZPvUly7SqUL9WqLqEw",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 31,
-          columnNumber: 19
-        }
-      }), __jsx("p", {
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 32,
-          columnNumber: 19
-        }
-      }, "Tab 2 content"))), __jsx(Tab, {
+      }))), __jsx(Tab, {
         label: "Hari 3",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 35,
+          lineNumber: 33,
           columnNumber: 15
         }
       }, __jsx("div", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 36,
+          lineNumber: 34,
           columnNumber: 17
         }
-      }, __jsx("img", {
-        src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB7Y713wstirF-PvKJa6OioS83ozc-BeFAzjjyndv58ZnfyaZK0g",
+      }, __jsx(_EventTime__WEBPACK_IMPORTED_MODULE_8__["default"], {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 37,
+          lineNumber: 35,
           columnNumber: 19
         }
-      }), __jsx("p", {
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 38,
-          columnNumber: 19
-        }
-      }, "Tab 3 content")))))));
+      })))))));
     }
   }]);
 
@@ -419,7 +397,7 @@ var Tabs = /*#__PURE__*/function (_React$Component2) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 60,
+          lineNumber: 58,
           columnNumber: 7
         }
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.Children.map(this.props.children, function (child) {
@@ -432,7 +410,7 @@ var Tabs = /*#__PURE__*/function (_React$Component2) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 67,
+          lineNumber: 65,
           columnNumber: 9
         }
       }), __jsx("div", {
@@ -440,7 +418,7 @@ var Tabs = /*#__PURE__*/function (_React$Component2) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 72,
+          lineNumber: 70,
           columnNumber: 9
         }
       }, content));
@@ -459,7 +437,7 @@ var TabButtons = function TabButtons(_ref) {
     __self: _this3,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80,
+      lineNumber: 78,
       columnNumber: 5
     }
   }, buttons.map(function (button) {
@@ -471,7 +449,7 @@ var TabButtons = function TabButtons(_ref) {
       __self: _this3,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 83,
+        lineNumber: 81,
         columnNumber: 11
       }
     }, button);
@@ -483,11 +461,277 @@ var Tab = function Tab(props) {
     __self: _this3,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 98,
+      lineNumber: 96,
       columnNumber: 10
     }
   }, props.children);
 };
+
+/***/ }),
+
+/***/ "./components/EventTime.js":
+/*!*********************************!*\
+  !*** ./components/EventTime.js ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return EventTime; });
+/* harmony import */ var _babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var _babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
+
+
+
+
+
+var _jsxFileName = "C:\\Users\\Novandi\\Downloads\\fasilkomfestdashboard-master\\components\\EventTime.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement;
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = Object(_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__["default"])(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = Object(_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__["default"])(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return Object(_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__["default"])(this, result); }; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+
+
+var EventTime = /*#__PURE__*/function (_React$Component) {
+  Object(_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_2__["default"])(EventTime, _React$Component);
+
+  var _super = _createSuper(EventTime);
+
+  function EventTime() {
+    Object(_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, EventTime);
+
+    return _super.apply(this, arguments);
+  }
+
+  Object(_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(EventTime, [{
+    key: "render",
+    value: function render() {
+      return (// make card
+        __jsx("div", {
+          className: "container",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 6,
+            columnNumber: 13
+          }
+        }, __jsx("div", {
+          className: "card border-peach box-peach",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 7,
+            columnNumber: 17
+          }
+        }, __jsx("div", {
+          className: "card-header-orange",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 9,
+            columnNumber: 21
+          }
+        }, __jsx("h3", {
+          className: "header-rundown",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 10,
+            columnNumber: 25
+          }
+        }, "Event Rundown")), __jsx("div", {
+          className: "card-body body-rundown",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 13,
+            columnNumber: 21
+          }
+        }, __jsx("div", {
+          className: "d-flex align-items-center justify-content-center mb-4",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 14,
+            columnNumber: 25
+          }
+        }, __jsx("div", {
+          className: "min-w-[130px]",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 15,
+            columnNumber: 29
+          }
+        }, __jsx("div", {
+          className: "rounded-xl bg-peach p-2",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 16,
+            columnNumber: 33
+          }
+        }, __jsx("h5", {
+          className: "time_rundown",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 17,
+            columnNumber: 37
+          }
+        }, "08:00 - 19:20"))), __jsx("div", {
+          className: "flex-grow-1 text-left ml-4 content-rundown",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 20,
+            columnNumber: 29
+          }
+        }, __jsx("h5", {
+          className: "title-rundown",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 21,
+            columnNumber: 33
+          }
+        }, "Opening Ceremony"), __jsx("p", {
+          className: "sub-rundown",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 22,
+            columnNumber: 33
+          }
+        }, "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae."))), __jsx("div", {
+          className: "d-flex align-items-center justify-content-center mb-4",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 25,
+            columnNumber: 25
+          }
+        }, __jsx("div", {
+          className: "min-w-[130px]",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 26,
+            columnNumber: 29
+          }
+        }, __jsx("div", {
+          className: "rounded-xl bg-peach p-2",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 27,
+            columnNumber: 33
+          }
+        }, __jsx("h5", {
+          className: "time_rundown",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 28,
+            columnNumber: 37
+          }
+        }, "08:00 - 19:20"))), __jsx("div", {
+          className: "flex-grow-1 text-left ml-4 content-rundown",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 31,
+            columnNumber: 29
+          }
+        }, __jsx("h5", {
+          className: "title-rundown",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 32,
+            columnNumber: 33
+          }
+        }, "Opening Ceremony"), __jsx("p", {
+          className: "sub-rundown",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 33,
+            columnNumber: 33
+          }
+        }, "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae."))), __jsx("div", {
+          className: "d-flex align-items-center justify-content-center mb-4",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 37,
+            columnNumber: 25
+          }
+        }, __jsx("div", {
+          className: "min-w-[130px]",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 38,
+            columnNumber: 29
+          }
+        }, __jsx("div", {
+          className: "rounded-xl bg-peach p-2",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 39,
+            columnNumber: 33
+          }
+        }, __jsx("h5", {
+          className: "time_rundown",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 40,
+            columnNumber: 37
+          }
+        }, "08:00 - 19:20"))), __jsx("div", {
+          className: "flex-grow-1 text-left ml-4 content-rundown",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 43,
+            columnNumber: 29
+          }
+        }, __jsx("h5", {
+          className: "title-rundown",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 44,
+            columnNumber: 33
+          }
+        }, "Opening Ceremony"), __jsx("p", {
+          className: "sub-rundown",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 45,
+            columnNumber: 33
+          }
+        }, "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae."))))))
+      );
+    }
+  }]);
+
+  return EventTime;
+}(react__WEBPACK_IMPORTED_MODULE_5___default.a.Component);
+
+
 
 /***/ }),
 
@@ -601,7 +845,7 @@ var Events = function Events(_ref) {
           minHeight: "300px",
           objectFit: "contain"
         },
-        src: "/frontend/assets/images/resources/" + item.img,
+        src: "/assets/images/resources/" + item.img,
         __self: _this,
         __source: {
           fileName: _jsxFileName,
@@ -668,7 +912,7 @@ var Faq = function Faq(_ref) {
       columnNumber: 5
     }
   }, __jsx("img", {
-    src: "/frontend/assets/images/background/faq-one-bg.png",
+    src: "/assets/images/background/faq-one-bg.png",
     alt: "Awesome Image",
     className: "bg-timeline",
     __self: _this,
@@ -930,7 +1174,7 @@ var Blog = /*#__PURE__*/function (_Component) {
           columnNumber: 13
         }
       }, __jsx("a", {
-        href: "https://www.instagram.com/fasilkomfest/",
+        href: "https://www.instagram.com/itcamp/",
         className: "fa fa-instagram icon mr-3",
         __self: this,
         __source: {
@@ -983,7 +1227,7 @@ var Blog = /*#__PURE__*/function (_Component) {
           columnNumber: 13
         }
       }, __jsx("img", {
-        src: "/frontend/assets/images/resources/logo.png",
+        src: "/assets/images/resources/logo.png",
         width: "50",
         alt: "",
         className: "d-sm-none",
@@ -1009,7 +1253,7 @@ var Blog = /*#__PURE__*/function (_Component) {
           lineNumber: 90,
           columnNumber: 37
         }
-      }, "itcamp.com "), " "), " "), " "), " "), " "), " "), " ");
+      }, " itcamp.com "), " "), " "), " "), " "), " "), " "), " ");
     }
   }]);
 
@@ -1652,7 +1896,7 @@ var MediaPartner = function MediaPartner() {
       }
     }, __jsx("img", {
       className: "img-fluid w-100  my-2",
-      src: "/frontend/assets/images/medpart/medpart" + (index + 1) + ".webp",
+      src: "/assets/images/medpart/medpart" + (index + 1) + ".webp",
       alt: "",
       __self: _this,
       __source: {
@@ -1811,7 +2055,7 @@ var Navigation = /*#__PURE__*/function (_Component) {
           columnNumber: 15
         }
       }, __jsx("img", {
-        src: "/frontend/assets/images/resources/logo.png",
+        src: "/assets/images/resources/logo.png",
         className: "main-logo",
         width: "50",
         alt: "Awesome Image",
@@ -2095,7 +2339,7 @@ var Sponsor = function Sponsor(_ref) {
       }
     }, __jsx("img", {
       className: "img-fluid w-100  my-1",
-      src: "/frontend/assets/images/sponsor/" + item.logo_sponsor,
+      src: "/assets/images/sponsor/" + item.logo_sponsor,
       alt: item.nama_sponsor,
       __self: _this,
       __source: {
@@ -2262,7 +2506,7 @@ var Timeline = function Timeline(_ref) {
       columnNumber: 5
     }
   }, __jsx("img", {
-    src: "/frontend/assets/images/background/faq-one-bg.png",
+    src: "/assets/images/background/faq-one-bg.png",
     alt: "Awesome Image",
     className: "bg-timeline",
     __self: _this,
@@ -2486,7 +2730,7 @@ var Video = /*#__PURE__*/function (_Component) {
           columnNumber: 7
         }
       }, __jsx("img", {
-        src: "/frontend/assets/images/background/video-one-bg.png",
+        src: "/assets/images/background/video-one-bg.png",
         alt: "Awesome Image",
         className: "video-one__bg",
         __self: this,
@@ -6677,7 +6921,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var decode_json_1 = __importDefault(__webpack_require__(/*! ./maps/decode.json */ "./node_modules/entities/lib/maps/decode.json"));
 // Adapted from https://github.com/mathiasbynens/he/blob/master/src/he.js#L94-L119
-var fromCodePoint = 
+var fromCodePoint =
 // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
 String.fromCodePoint ||
     function (codePoint) {
@@ -6793,7 +7037,7 @@ function getInverseReplacer(inverse) {
 }
 // /[^\0-\x7F]/gu
 var reNonASCII = /(?:[\x80-\uD7FF\uE000-\uFFFF]|[\uD800-\uDBFF][\uDC00-\uDFFF]|[\uD800-\uDBFF](?![\uDC00-\uDFFF])|(?:[^\uD800-\uDBFF]|^)[\uDC00-\uDFFF])/g;
-var getCodePoint = 
+var getCodePoint =
 // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
 String.prototype.codePointAt != null
     ? // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
@@ -7978,7 +8222,7 @@ Parser.prototype.onclosetag = function(name) {
     if (this._lowerCaseTagNames) {
         name = name.toLowerCase();
     }
-    
+
     if (name in foreignContextElements || name in htmlIntegrationElements) {
         this._foreignContext.pop();
     }
@@ -8027,7 +8271,7 @@ Parser.prototype._closeCurrentTag = function() {
             this._cbs.onclosetag(name);
         }
         this._stack.pop();
-        
+
     }
 };
 
@@ -9233,7 +9477,7 @@ Tokenizer.prototype._emitPartial = function(value) {
 module.exports = Stream;
 
 var Parser = __webpack_require__(/*! ./Parser.js */ "./node_modules/htmlparser2/lib/Parser.js");
-var WritableStream = __webpack_require__(/*! readable-stream */ 4).Writable;
+var WritableStream = __webpack_require__(/*! readable-stream */ 3).Writable;
 var StringDecoder = __webpack_require__(/*! string_decoder */ "./node_modules/string_decoder/lib/string_decoder.js").StringDecoder;
 var Buffer = __webpack_require__(/*! buffer */ "./node_modules/buffer/index.js").Buffer;
 
@@ -9434,7 +9678,7 @@ DomHandler.prototype.onerror = function(error){
 
 DomHandler.prototype.onclosetag = function(){
 	//if(this._tagStack.pop().name !== name) this._handleCallback(Error("Tagname didn't match!"));
-	
+
 	var elem = this._tagStack.pop();
 
 	if(this._options.withEndIndices && elem){
@@ -10033,7 +10277,7 @@ exports.prepend = function(elem, prev){
 	if(elem.prev){
 		elem.prev.next = prev;
 	}
-	
+
 	prev.parent = parent;
 	prev.prev = elem.prev;
 	prev.next = elem;
@@ -10505,7 +10749,7 @@ var assign=Object.assign.bind(Object);function g(){return assign;}Object.defineP
       }
       return mod
     }]);
-  
+
 
 /***/ }),
 
@@ -25647,10 +25891,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_MediaPartner__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/MediaPartner */ "./components/MediaPartner.js");
 /* harmony import */ var _components_InformationHeader__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/InformationHeader */ "./components/InformationHeader.js");
 /* harmony import */ var _components_Subscribe__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/Subscribe */ "./components/Subscribe.js");
-/* harmony import */ var _public_assets_data_index_json__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../public/frontend/assets/data/index.json */ "./public/frontend/assets/data/index.json");
-var _public_assets_data_index_json__WEBPACK_IMPORTED_MODULE_10___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../public/frontend/assets/data/index.json */ "./public/frontend/assets/data/index.json", 1);
-/* harmony import */ var _public_assets_data_cso_json__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../public/frontend/assets/data/cso.json */ "./public/frontend/assets/data/cso.json");
-var _public_assets_data_cso_json__WEBPACK_IMPORTED_MODULE_11___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../public/frontend/assets/data/cso.json */ "./public/frontend/assets/data/cso.json", 1);
+/* harmony import */ var _public_assets_data_index_json__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../public/assets/data/index.json */ "./public/assets/data/index.json");
+var _public_assets_data_index_json__WEBPACK_IMPORTED_MODULE_10___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../public/assets/data/index.json */ "./public/assets/data/index.json", 1);
+/* harmony import */ var _public_assets_data_cso_json__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../public/assets/data/cso.json */ "./public/assets/data/cso.json");
+var _public_assets_data_cso_json__WEBPACK_IMPORTED_MODULE_11___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../public/assets/data/cso.json */ "./public/assets/data/cso.json", 1);
 /* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/Header */ "./components/Header.js");
 /* harmony import */ var _components_Sponsor__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../components/Sponsor */ "./components/Sponsor.js");
 /* harmony import */ var _components_Timeline__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../components/Timeline */ "./components/Timeline.js");
@@ -25788,29 +26032,29 @@ var HomePage = function HomePage() {
 
 /***/ }),
 
-/***/ "./public/frontend/assets/data/cso.json":
+/***/ "./public/assets/data/cso.json":
 /*!*************************************!*\
-  !*** ./public/frontend/assets/data/cso.json ***!
+  !*** ./public/assets/data/cso.json ***!
   \*************************************/
 /*! exports provided: nama_lomba, deskripsi_lomba1, link_guidebook, link_pendaftaran, gambar1, gambar2, deskripsi_lomba2, benefit, additional, prize, timeline, faq, kontak, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"nama_lomba\":\"HIMATIFA X Partnership UI/UX Mini Bootcamp\",\"deskripsi_lomba1\":\"HIMATIFA X Partnership UI/UX Mini Bootcamp merupakan rangkaian mini bootcamp yang diadakan oleh Himpunan Mahasiswa Informatika Universitas Pembangunan Nasional \\\"Veteran\\\" Jawa Timur dengan tujuan untuk mengenalkan UI/UX dikalangan pelajar/mahasiswa/umum.\",\"link_guidebook\":\"https://drive.google.com/file/d/1ttd1gO8-zN0m25K701XbuGbWSrqIA2aB/view\",\"link_pendaftaran\":\"close\",\"gambar1\":\"/frontend/assets/images/resources/design.png\",\"gambar2\":\"/frontend/assets/images/resources/design2.png\",\"deskripsi_lomba2\":\"<b>HIMATIFA X Partnership UI/UX Mini Bootcamp</b> diperuntukan untuk pelajar/mahasiswa/umum. Acara ini mengusung tema \\\"Show Your Skills and Build Your Career\\\" dengan harapan peserta dapat meningkatkan wawasan, kemampuan serta dapat karir di bidang UI/UX\",\"benefit\":[\"E-sertifikat\",\"Ilmu\",\"Menambah pengalaman dan networking\"],\"additional\":[],\"prize\":{\"juara1\":\"Rp.1.000.000\",\"juara2\":\"Rp.600.000\",\"juara3\":\"Rp.400.000\",\"tambahan\":[]},\"timeline\":[{\"tahap\":\"Pendaftaran Gelombang 1\",\"tanggal\":\"18 November 2021 - 25 November 2021\"},{\"tahap\":\"Pendaftaran Gelombang 2\",\"tanggal\":\"26 November - 14 Desember 2021\"},{\"tahap\":\"Try Out\",\"tanggal\":\"12 Desember 2021\"},{\"tahap\":\"Penyisihan\",\"tanggal\":\"18 Desember 2021\"},{\"tahap\":\"Pengumuman Finalis\",\"tanggal\":\"29 Desember 2021\"},{\"tahap\":\"Final\",\"tanggal\":\"8 Januari 2022\"}],\"faq\":[{\"pertanyaan\":\"Apa itu Computer Science Olympiad (CSO)?\",\"jawaban\":\"Kompetisi di bidang matematika dan logika yang diperuntukan bagi siswa SMA/SMK sederajat dengan tujuan mendorong siswa untuk meningkatkan minat dan kemampuan di bidang informatika.\"},{\"pertanyaan\":\"Berapa biaya kompetisi ini?\",\"jawaban\":\"Setiap tim akan dikenakan biaya 50.000,-\"},{\"pertanyaan\":\"Apakah kompetisi ini dilakukan secara daring?\",\"jawaban\":\"Ya, seluruh rangkaian kompertisi ini akan dilakukan secara daring\"},{\"pertanyaan\":\"Dokumen apa yang dibutuhkan untuk mendaftar Computer Science Olympiad (CSO)?\",\"jawaban\":\"Hanya memerlukan scan kartu pelajar atau surat keterangan aktif dari sekolah\"},{\"pertanyaan\":\"Berapa babak yang ada dalam Computer Science Olympiad (CSO)?\",\"jawaban\":\"Terdapat 3 babak, yaitu Try Out, Penyisihan, dan Final.\"},{\"pertanyaan\":\"Perbedaan mengikuti pendaftaran gelombang 1 dan 2 ?\",\"jawaban\":\"Peserta yang mendaftar gelombang 1 akan berkesempatan mengikuti tryout dengan hadiah pengembalian dana pendaftaran, sedangkan peserta yang mendaftar gelombang 2 tidak dapat mengikuti Try Out dan langsung mengikuti babak Penyisihan\"}],\"kontak\":[{\"judul\":\"Whatsapp\",\"icon\":\"whatsapp\",\"list\":[{\"nama\":\"ANIYSAH\",\"kontak\":\"+6287761134588\",\"link\":\"https://wa.me/6287761134588\"},{\"nama\":\"NIMAS \",\"kontak\":\"+6285749494267\",\"link\":\"https://wa.me/6285749494267\"}]},{\"judul\":\"Instagram\",\"icon\":\"instagram\",\"list\":[{\"nama\":\"\",\"kontak\":\"fasilkomfest.academic\",\"link\":\"https://www.instagram.com/fasilkomfest.academic/\"}]}]}");
+module.exports = JSON.parse("{\"nama_lomba\":\"HIMATIFA X Partnership UI/UX Mini Bootcamp\",\"deskripsi_lomba1\":\"HIMATIFA X Partnership UI/UX Mini Bootcamp merupakan rangkaian mini bootcamp yang diadakan oleh Himpunan Mahasiswa Informatika Universitas Pembangunan Nasional \\\"Veteran\\\" Jawa Timur dengan tujuan untuk mengenalkan UI/UX dikalangan pelajar/mahasiswa/umum.\",\"link_guidebook\":\"https://drive.google.com/file/d/1ttd1gO8-zN0m25K701XbuGbWSrqIA2aB/view\",\"link_pendaftaran\":\"close\",\"gambar1\":\"/assets/images/resources/design.png\",\"gambar2\":\"/assets/images/resources/design2.png\",\"deskripsi_lomba2\":\"<b>HIMATIFA X Partnership UI/UX Mini Bootcamp</b> diperuntukan untuk pelajar/mahasiswa/umum. Acara ini mengusung tema \\\"Show Your Skills and Build Your Career\\\" dengan harapan peserta dapat meningkatkan wawasan, kemampuan serta dapat karir di bidang UI/UX\",\"benefit\":[\"E-sertifikat\",\"Ilmu\",\"Menambah pengalaman dan networking\"],\"additional\":[],\"prize\":{\"juara1\":\"Rp.1.000.000\",\"juara2\":\"Rp.600.000\",\"juara3\":\"Rp.400.000\",\"tambahan\":[]},\"timeline\":[{\"tahap\":\"Pendaftaran Gelombang 1\",\"tanggal\":\"18 November 2021 - 25 November 2021\"},{\"tahap\":\"Pendaftaran Gelombang 2\",\"tanggal\":\"26 November - 14 Desember 2021\"},{\"tahap\":\"Try Out\",\"tanggal\":\"12 Desember 2021\"},{\"tahap\":\"Penyisihan\",\"tanggal\":\"18 Desember 2021\"},{\"tahap\":\"Pengumuman Finalis\",\"tanggal\":\"29 Desember 2021\"},{\"tahap\":\"Final\",\"tanggal\":\"8 Januari 2022\"}],\"faq\":[{\"pertanyaan\":\"Apa itu Computer Science Olympiad (CSO)?\",\"jawaban\":\"Kompetisi di bidang matematika dan logika yang diperuntukan bagi siswa SMA/SMK sederajat dengan tujuan mendorong siswa untuk meningkatkan minat dan kemampuan di bidang informatika.\"},{\"pertanyaan\":\"Berapa biaya kompetisi ini?\",\"jawaban\":\"Setiap tim akan dikenakan biaya 50.000,-\"},{\"pertanyaan\":\"Apakah kompetisi ini dilakukan secara daring?\",\"jawaban\":\"Ya, seluruh rangkaian kompertisi ini akan dilakukan secara daring\"},{\"pertanyaan\":\"Dokumen apa yang dibutuhkan untuk mendaftar Computer Science Olympiad (CSO)?\",\"jawaban\":\"Hanya memerlukan scan kartu pelajar atau surat keterangan aktif dari sekolah\"},{\"pertanyaan\":\"Berapa babak yang ada dalam Computer Science Olympiad (CSO)?\",\"jawaban\":\"Terdapat 3 babak, yaitu Try Out, Penyisihan, dan Final.\"},{\"pertanyaan\":\"Perbedaan mengikuti pendaftaran gelombang 1 dan 2 ?\",\"jawaban\":\"Peserta yang mendaftar gelombang 1 akan berkesempatan mengikuti tryout dengan hadiah pengembalian dana pendaftaran, sedangkan peserta yang mendaftar gelombang 2 tidak dapat mengikuti Try Out dan langsung mengikuti babak Penyisihan\"}],\"kontak\":[{\"judul\":\"Whatsapp\",\"icon\":\"whatsapp\",\"list\":[{\"nama\":\"ANIYSAH\",\"kontak\":\"+6287761134588\",\"link\":\"https://wa.me/6287761134588\"},{\"nama\":\"NIMAS \",\"kontak\":\"+6285749494267\",\"link\":\"https://wa.me/6285749494267\"}]},{\"judul\":\"Instagram\",\"icon\":\"instagram\",\"list\":[{\"nama\":\"\",\"kontak\":\"fasilkomfest.academic\",\"link\":\"https://www.instagram.com/fasilkomfest.academic/\"}]}]}");
 
 /***/ }),
 
-/***/ "./public/frontend/assets/data/index.json":
+/***/ "./public/assets/data/index.json":
 /*!***************************************!*\
-  !*** ./public/frontend/assets/data/index.json ***!
+  !*** ./public/assets/data/index.json ***!
   \***************************************/
 /*! exports provided: header, video, sponsor, competition, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"header\":{\"nama_lomba\":\"<span>IT Camp</span>\",\"deskripsi_lomba\":\"Mini Bootcamp yang diadakan oleh<br>Program Studi Informatika<br/>UPN Veteran Jawa Timur\",\"logo\":\"\"},\"video\":{\"videoId\":\"ULXjdzMZAZ4\",\"thumbnail\":\"/frontend/assets/images/resources/video.webp\"},\"sponsor\":[{\"nama_sponsor\":\"DewaWeb\",\"logo_sponsor\":\"dewaweb.webp\",\"ukuran\":\"col-4\",\"link\":\"https://www.dewaweb.com/\"}],\"competition\":[{\"nama\":\"NEOICT Competition\",\"title\":\"NEOICT <span>Competition</span>\",\"logo\":\"AKADEMIK.webp\",\"deskripsi\":\"NEOICT Competition merupakan acara dibawah naungan IT Camp 2021 yang diadakan oleh Fakultas Ilmu Komputer UPN Veteran Jawa Timur. NEOICT Competition memiliki berbagai lomba dalam bidang akademik. Berbagai lomba yang diadakan adalah Computer Science Olympiad, UI/UX Design, Business Plan, dan Business Case\",\"lomba\":[{\"sub\":\"Computer Science Olympiad\",\"link\":\"cso\",\"img\":\"cso.webp\"},{\"sub\":\"UI/UX Design\",\"link\":\"uiux\",\"img\":\"uiux.webp\"},{\"sub\":\"Business Plan\",\"link\":\"bp\",\"img\":\"bp.webp\"},{\"sub\":\"Business Case\",\"link\":\"bc\",\"img\":\"bp.webp\"}]},{\"nama\":\"Festive\",\"title\":\"<span>Festive</span>\",\"logo\":\"SENI.webp\",\"deskripsi\":\"Festive (IT Camp Art and Creative Competition) adalah perlombaan yang memiliki tujuan mengembangkan seni dan kreativitas bagi para pelajar maupun mahasiswa di seluruh Indonesia. Berbagai lomba yang diadakan ialah Music Cover Competition, Short Movie Competition dan Photography Competition.\",\"lomba\":[{\"sub\":\"Music Cover Competition\",\"link\":\"mcc\",\"img\":\"mcc.webp\"},{\"sub\":\"Short Movie Competition\",\"link\":\"smc\",\"img\":\"smc.webp\"},{\"sub\":\"Photography Competition\",\"link\":\"pgc\",\"img\":\"pgc.webp\"}]},{\"nama\":\"Fasilkom E-Sport Competition\",\"title\":\"<span>Fasilkom</span> E-Sport <span>Competition</span>\",\"logo\":\"ESPORT.webp\",\"deskripsi\":\"Fasilkom E-Sports Competition merupakan perlombaan E-sports di dalam rangkaian acara IT Camp 2021 yang diadakan oleh Fakultas Ilmu Komputer UPN \\\"Veteran\\\" Jawa Timur. Dalam Fasilkom E-Sports Competition kami mengundang dan menantang tim kalian para gamers dalam beberapa game yaitu Valorant, Mobile Legends dan PUBG Mobile.\",\"lomba\":[{\"sub\":\"Mobile Legend Competition\",\"link\":\"ml\",\"img\":\"ml.webp\"},{\"sub\":\"PUBG Mobile Competition\",\"link\":\"pmc\",\"img\":\"pubg.webp\"},{\"sub\":\"Valorant Competition\",\"link\":\"vlc\",\"img\":\"valo.png\"}]}]}");
+module.exports = JSON.parse("{\"header\":{\"nama_lomba\":\"<span>IT Camp</span>\",\"deskripsi_lomba\":\"Mini Bootcamp yang diadakan oleh<br>Program Studi Informatika<br/>UPN Veteran Jawa Timur\",\"logo\":\"\"},\"video\":{\"videoId\":\"ULXjdzMZAZ4\",\"thumbnail\":\"/assets/images/resources/video.webp\"},\"sponsor\":[{\"nama_sponsor\":\"DewaWeb\",\"logo_sponsor\":\"dewaweb.webp\",\"ukuran\":\"col-4\",\"link\":\"https://www.dewaweb.com/\"}],\"competition\":[{\"nama\":\"NEOICT Competition\",\"title\":\"NEOICT <span>Competition</span>\",\"logo\":\"AKADEMIK.webp\",\"deskripsi\":\"NEOICT Competition merupakan acara dibawah naungan IT Camp 2021 yang diadakan oleh Fakultas Ilmu Komputer UPN Veteran Jawa Timur. NEOICT Competition memiliki berbagai lomba dalam bidang akademik. Berbagai lomba yang diadakan adalah Computer Science Olympiad, UI/UX Design, Business Plan, dan Business Case\",\"lomba\":[{\"sub\":\"Computer Science Olympiad\",\"link\":\"cso\",\"img\":\"cso.webp\"},{\"sub\":\"UI/UX Design\",\"link\":\"uiux\",\"img\":\"uiux.webp\"},{\"sub\":\"Business Plan\",\"link\":\"bp\",\"img\":\"bp.webp\"},{\"sub\":\"Business Case\",\"link\":\"bc\",\"img\":\"bp.webp\"}]},{\"nama\":\"Festive\",\"title\":\"<span>Festive</span>\",\"logo\":\"SENI.webp\",\"deskripsi\":\"Festive (IT Camp Art and Creative Competition) adalah perlombaan yang memiliki tujuan mengembangkan seni dan kreativitas bagi para pelajar maupun mahasiswa di seluruh Indonesia. Berbagai lomba yang diadakan ialah Music Cover Competition, Short Movie Competition dan Photography Competition.\",\"lomba\":[{\"sub\":\"Music Cover Competition\",\"link\":\"mcc\",\"img\":\"mcc.webp\"},{\"sub\":\"Short Movie Competition\",\"link\":\"smc\",\"img\":\"smc.webp\"},{\"sub\":\"Photography Competition\",\"link\":\"pgc\",\"img\":\"pgc.webp\"}]},{\"nama\":\"Fasilkom E-Sport Competition\",\"title\":\"<span>Fasilkom</span> E-Sport <span>Competition</span>\",\"logo\":\"ESPORT.webp\",\"deskripsi\":\"Fasilkom E-Sports Competition merupakan perlombaan E-sports di dalam rangkaian acara IT Camp 2021 yang diadakan oleh Fakultas Ilmu Komputer UPN \\\"Veteran\\\" Jawa Timur. Dalam Fasilkom E-Sports Competition kami mengundang dan menantang tim kalian para gamers dalam beberapa game yaitu Valorant, Mobile Legends dan PUBG Mobile.\",\"lomba\":[{\"sub\":\"Mobile Legend Competition\",\"link\":\"ml\",\"img\":\"ml.webp\"},{\"sub\":\"PUBG Mobile Competition\",\"link\":\"pmc\",\"img\":\"pubg.webp\"},{\"sub\":\"Valorant Competition\",\"link\":\"vlc\",\"img\":\"valo.png\"}]}]}");
 
 /***/ }),
 
-/***/ 3:
+/***/ 2:
 /*!*****************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=C%3A%5CUsers%5CNovandi%5CDownloads%5Cfasilkomfestdashboard-master%5Cpages%5Cindex.js ***!
   \*****************************************************************************************************************************************************/
@@ -25822,7 +26066,7 @@ module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absol
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!*********************************!*\
   !*** readable-stream (ignored) ***!
   \*********************************/
@@ -25844,5 +26088,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js","styles"]]]);
+},[[2,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=index.js.map
