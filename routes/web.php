@@ -8,6 +8,7 @@ use App\Http\Controllers\MedpartController;
 use App\Http\Controllers\PesertaController;
 use App\Http\Controllers\SponsorController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\TugasController;
 use App\Http\Middleware\AdminMiddleware;
 use App\Http\Middleware\PesertaLoginMiddleware;
 use App\Http\Middleware\PesertaMiddleware;
@@ -52,6 +53,13 @@ Route::middleware(AdminMiddleware::class)->group(function () {
     Route::delete('/back/sponsor/delete/{id}/{gambar}', [SponsorController::class, 'destroy']);
     Route::get('/back/user', [UserController::class, 'index']);
     Route::get('/back/bayar', [UserController::class, 'bayar']);
+    // tugas
+    Route::get('/back/tugas', [TugasController::class, 'index']);
+    Route::get('/back/tugas/create', [TugasController::class, 'create']);
+    Route::post('/back/tugas/store', [TugasController::class, 'store']);
+    Route::get('/back/tugas/{id}/edit', [TugasController::class, 'show']);
+    Route::put('/back/tugas/update/{id}/{file}', [TugasController::class, 'update']);
+    Route::delete('/back/tugas/delete/{id}/{file}', [TugasController::class, 'destroy']);
     // confirmation
     Route::get('/back/confirmation/{id}', [UserController::class, 'confirmation'])->name('admin.confirmation');
     Route::get('/back/reject/{id}', [UserController::class, 'reject'])->name('admin.reject');

@@ -1,0 +1,16 @@
+tipe
+materi, tugas
+
+tugas
+idTugas, judul (string), materi(string), file(string), url
+
+jawaban
+idJawab, jwb/url(string), idUser, nilai (string), idTugas
+
+Tab materi
+judul input text
+materi text area
+file input file
+url input text
+
+login by google, jenis kelamin edit.

@@ -99,6 +99,14 @@
           <span>Pemberitahuan</span>
         </a>
       </li><!-- End Profile Page Nav -->
+      
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="{{ url('/back/tugas') }}">
+          <i class="bi bi-book"></i>
+          <span>Materi & Tugas</span>
+        </a>
+      </li><!-- End Profile Page Nav -->
+
       <li class="nav-item">
         <a class="nav-link collapsed" href="{{ url('/back/medpart') }}">
           <i class="ri ri-broadcast-fill"></i>
