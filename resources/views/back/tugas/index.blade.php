@@ -26,7 +26,7 @@
             <td><?php if($a->tipe == 1){echo 'Tugas';} else{echo 'Materi';} ?></td>
             <td class="text-primary"><a class="btn btn-outline-primary btn-sm" href="/back/tugas/{{$a->idTugas}}/edit"><i class="bi bi-pen"></i></a></td>
             <td class="text-primary">
-              <form action="/back/tugas/delete/{{$a->idTugas}}/{{$a->file}}" method="post">
+              <form action="/back/tugas/delete/{{$a->idTugas}}/<?php if($a->file == null){echo "kosong";}else{echo $a->file;}  ?>" method="post">
                 @method('delete')
                 @csrf
                 <button type="submit" class="btn btn-outline-danger btn-sm"><i class="bi bi-trash"></i></button>

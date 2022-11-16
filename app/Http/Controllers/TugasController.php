@@ -63,7 +63,10 @@ class TugasController extends Controller
 
     public function destroy($id,$file)
     {
-        File::delete(public_path('uploads/tugas/'.$file));
+        if ($file != "kosong") {
+            // Hapus file di storage
+            File::delete(public_path('uploads/tugas/'.$file));
+        }
 
         $tugas = Tugas::find($id);
         $tugas->delete();

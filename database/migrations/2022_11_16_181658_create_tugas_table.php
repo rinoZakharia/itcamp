@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('tugas', function (Blueprint $table) {
             $table->id('idTugas');
             $table->string('judul');
-            $table->string('materi')->nullable();
+            $table->text('materi')->nullable();
             $table->string('file')->nullable();
             $table->string('url')->nullable();
             $table->integer('tipe');
