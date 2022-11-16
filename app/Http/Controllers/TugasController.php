@@ -23,6 +23,9 @@ class TugasController extends Controller
 
     public function store(Request $request)
     {
+        $request->validate([
+            'judul' => 'required'
+        ]);
         $requestData = $request->except(['_token','submit']);
         if ($request->file('file')) {
             $file = $request->file('file');

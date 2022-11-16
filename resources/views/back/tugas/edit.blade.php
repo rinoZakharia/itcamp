@@ -2,7 +2,7 @@
 @section('content')
 <div class="card">
   <div class="card-body col-lg-9">
-  <h5 class="card-title">Insert <span>| Tugas & Materi</span></h5>
+  <h5 class="card-title">Edit <span>| <?php if($data->tipe == 1){echo 'Tugas';} else{echo 'Materi';} ?></span></h5>
 
     <!-- General Form Elements -->
     <form action="/back/tugas/update/{{$data->idTugas}}/<?php if($data->file == null){echo "kosong";}else{echo $data->file;}  ?>" method="POST" enctype="multipart/form-data">
@@ -12,15 +12,6 @@
         <label for="inputText" class="col-sm-2 col-form-label">Judul</label>
         <div class="col-sm-10">
           <input required type="text" value="{{ $data->judul }}" name="judul" class="form-control" autocomplete="off">
-        </div>
-      </div>
-      <div class="row mb-3">
-        <label class="col-sm-2 col-form-label">Tipe (Tugas / Materi)</label>
-        <div class="col-sm-10">
-          <select name="tipe" class="form-select" aria-label="Default select example">
-            <option value="1" @if($data->tipe == 1) selected @endif>Tugas</option>
-            <option value="2" @if($data->tipe == 2) selected @endif>Materi</option>
-          </select>
         </div>
       </div>
       <div class="row mb-3">
