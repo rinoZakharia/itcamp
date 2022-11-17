@@ -17,8 +17,8 @@ return new class extends Migration
             $table->id('idTugas');
             $table->string('judul');
             $table->text('materi')->nullable();
-            $table->string('file')->nullable();
-            $table->string('url')->nullable();
+            $table->text('file')->nullable();
+            $table->text('url')->nullable();
             $table->integer('tipe');
             $table->timestamps();
         });

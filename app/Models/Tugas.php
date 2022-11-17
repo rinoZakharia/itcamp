@@ -10,4 +10,6 @@ class Tugas extends Model
     use HasFactory;
     protected $primaryKey = 'idTugas';
     protected $guarded = [];
+
+
 }

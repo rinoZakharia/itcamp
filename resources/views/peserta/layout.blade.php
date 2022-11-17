@@ -63,8 +63,23 @@
                                         <span class="nk-menu-text">Informasi Peserta</span>
                                     </a>
                                 </li>
+                                <li class="nk-menu-item">
+                                    <a href="{{route('peserta.listtask')}}" class="nk-menu-link">
+                                        <!-- account icon-->
+                                        <span class="nk-menu-icon"><em class="icon ni ni-book"></em></span>
+                                        <span class="nk-menu-text">Materi dan Tugas</span>
+                                    </a>
+                                </li>
                                 @endif
-
+                                @if(session()->get('sertifikat.peserta'))
+                                <li class="nk-menu-item">
+                                    <a href="{{route('peserta.sertifikat')}}" class="nk-menu-link">
+                                        <!-- account icon-->
+                                        <span class="nk-menu-icon"><em class="icon ni ni-file"></em></span>
+                                        <span class="nk-menu-text">Sertifikat</span>
+                                    </a>
+                                </li>
+                                @endif
                                     <!-- signout -->
                                 <li class="nk-menu-item">
                                     <a href="{{route("peserta.logout")}}" class="nk-menu-link">

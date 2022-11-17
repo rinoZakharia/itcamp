@@ -10,6 +10,7 @@ use App\Models\Config;
 use App\Models\Notification;
 use App\Models\Peserta;
 use App\Models\Token;
+use App\Models\Tugas;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
@@ -278,6 +279,29 @@ class PesertaController extends Controller
             ]);
         }
 
+    }
+
+    public function listTask(){
+        $data = Tugas::all();
+        return view('peserta.dashboard.listtask', [
+            'title' => 'Daftar Tugas',
+            'data' => $data
+        ]);
+    }
+
+    public function task($id){
+        $data = Tugas::find($id);
+        return view('peserta.dashboard.task', [
+            'title' => 'Tugas',
+            'data' => $data
+        ]);
+    }
+
+    public function sertifikat(){
+
+        return view('peserta.dashboard.sertifikat', [
+            'title' => 'Sertifikat',
+        ]);
     }
 
     public function uploadPayment(Request $request)

@@ -80,6 +80,10 @@ Route::middleware(PesertaMiddleware::class)->group(function () {
     Route::post("/pay", [PesertaController::class, 'uploadPayment'])->name('peserta.pay');
     Route::post('/change_account', [PesertaController::class, 'changeProfile'])->name('peserta.change.account');
     Route::post('/change_password', [PesertaController::class, 'changePassword'])->name('peserta.change.password');
+    Route::get('/tugas', [PesertaController::class, 'listTask'])->name('peserta.listtask');
+
+    Route::get('/tugas/{id}', [PesertaController::class, 'task'])->name('peserta.task');
+    Route::get('/sertifikat', [PesertaController::class, 'sertifikat'])->name('peserta.sertifikat');
 });
 
 Route::middleware(PesertaLoginMiddleware::class)->group(function () {

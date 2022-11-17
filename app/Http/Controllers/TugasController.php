@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Tugas;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
-use Illuminate\Support\Facades\File; 
+use Illuminate\Support\Facades\File;
 
 class TugasController extends Controller
 {
@@ -40,7 +40,7 @@ class TugasController extends Controller
     public function show($id)
     {
         $data = Tugas::find($id);
-        
+
         return view('back.tugas.edit',compact(['data']));
     }
 
@@ -55,6 +55,7 @@ class TugasController extends Controller
 
             $file = $request->file('file');
             $filename = $file->getClientOriginalName();
+
             $requestData['file'] = $filename;
             $file->move(public_path('uploads/tugas'), $filename);
         }

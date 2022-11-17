@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id('idJawab');
             $table->string('email');
             $table->unsignedBigInteger('idTugas');
-            $table->string('jawaban');
+            $table->text('jawaban');
             $table->string('nilai');
             $table->timestamps();
             $table->foreign('email')->references('email')->on('users')->onDelete('cascade')->onUpdate('cascade');

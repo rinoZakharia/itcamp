@@ -32,6 +32,18 @@ class PesertaMiddleware
                         // return redirect()->route('peserta.information');
                     }
                 }
+                // check sertifikat is already by email .png
+                // if(!session()->get('sertifikat.peserta')) {
+                //     // next with success
+                //     if(file_exists(public_path('uploads/sertifikat/'.$email.'.png'))){
+                //         session()->put('sertifikat.peserta',true);
+                //     }
+                // }
+                if(file_exists(public_path('uploads/sertifikat/'.$email.'.png'))){
+                    session()->put('sertifikat.peserta',true);
+                }else{
+                    session()->put('sertifikat.peserta',false);
+                }
                 return $next($request);
             }
         }
