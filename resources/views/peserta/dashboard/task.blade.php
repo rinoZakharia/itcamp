@@ -23,7 +23,7 @@
             <div class="nk-block message_event">
                 <p class="text-soft">Dibuat pada : {{$data->created_at}}</p>
                 @if($data->file != null)
-                <p class="text-soft">File : <a class="ml-1 btn btn-sm btn-success" href="{{asset('uploads/tugas/'.$data->file)}}"><em class="icon ni ni-download mr-1"></em>{{$data->file}}</a></p>
+                <a download class="btn btn-sm btn-success" href="{{asset('uploads/tugas/'.$data->file)}}"><em class="icon ni ni-download mr-1"></em>{{$data->file}}</a>
                 @endif
             </div>
             <div class="nk-block message_event">
