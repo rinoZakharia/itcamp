@@ -87,7 +87,7 @@
                         <div class="col-md-12">
                             <!-- make button save -->
                             <div class="form-group mt-3">
-                                <button type="submit" class="btn btn-primary">Ubah Profil</button>
+                                <button type="submit" class="btn btn-primary"><em class="ni ni-save mr-1"></em> Ubah Profil</button>
                             </div>
                         </div>
 
@@ -159,7 +159,7 @@
                         <div class="col-md-12">
                             <!-- make button save -->
                             <div class="form-group mt-3">
-                                <button type="submit" class="btn btn-primary">Ubah Password</button>
+                                <button type="submit" class="btn btn-primary"><em class="ni ni-save mr-1"></em>Ubah Password</button>
                             </div>
                         </div>
                     </div>

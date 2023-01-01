@@ -19,16 +19,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="keywords" content="lomba it, lomba sma, lomba smk, lomba mahasiswa, fasilkom, upn veteran jawa timur, lomba bisnis, lomba seni, lomba esport, mobile legend competition, pubg competition, valorant competition, lomba bisnis case, lomba bisnis plan, bisnis case, bisnis plan, uiux design, uiux design competition, short video competition, lomba, olimpiade" />
     <meta name="next-head-count" content="16" />
-    <link rel="preload" href="{{url('')}}/frontend/_next/static/css/styles.747dca15.chunk.css" as="style" />
-    <link rel="stylesheet" href="{{url('')}}/frontend/_next/static/css/styles.747dca15.chunk.css" />
-    <link rel="preload" href="{{url('')}}/frontend/_next/static/-yF4Cuw08yoCsZgpUjLaQ/pages/index.js" as="script" />
-    <link rel="preload" href="{{url('')}}/frontend/_next/static/-yF4Cuw08yoCsZgpUjLaQ/pages/_app.js" as="script" />
-    <link rel="preload" href="{{url('')}}/frontend/_next/static/runtime/webpack-0744fffc018367bd1f9d.js" as="script" />
+    <link rel="preload" href="{{url('')}}/frontend/_next/static/css/styles.a8ee8fd6.chunk.css" as="style" />
+    <link rel="stylesheet" href="{{url('')}}/frontend/_next/static/css/styles.a8ee8fd6.chunk.css" />
+    <link rel="preload" href="{{url('')}}/frontend/_next/static/5RfoPlsYJBU61bEnl5ly4/pages/index.js" as="script" />
+    <link rel="preload" href="{{url('')}}/frontend/_next/static/5RfoPlsYJBU61bEnl5ly4/pages/_app.js" as="script" />
+    <link rel="preload" href="{{url('')}}/frontend/_next/static/runtime/webpack-35176d94be6ecb1365a6.js" as="script" />
     <link rel="preload" href="{{url('')}}/frontend/_next/static/chunks/framework.504af639ffd40f515d05.js" as="script" />
     <link rel="preload" href="{{url('')}}/frontend/_next/static/chunks/commons.19809b0290a3469b536b.js" as="script" />
-    <link rel="preload" href="{{url('')}}/frontend/_next/static/chunks/styles.b0fccb77bb4868d92fcb.js" as="script" />
-    <link rel="preload" href="{{url('')}}/frontend/_next/static/runtime/main-dd0b70ae1f10d8d09c85.js" as="script" />
-    <link rel="preload" href="{{url('')}}/frontend/_next/static/chunks/a4c92b5b.b13a80d16605e7b56b9c.js" as="script" />
+    <link rel="preload" href="{{url('')}}/frontend/_next/static/chunks/styles.3443c41ca6d48d8c70aa.js" as="script" />
+    <link rel="preload" href="{{url('')}}/frontend/_next/static/runtime/main-7bd9b8ccbd6e0574322e.js" as="script" />
 </head>
 
 <body>
@@ -46,7 +45,7 @@
                                     <li class="scrollToLink"><a href="#timeline">Timeline</a></li>
                                     <li class="scrollToLink"><a href="#faq">FAQ</a></li>
                                     <li class="scrollToLink"><a href="#sponsor">Sponsor</a></li>
-                                    <li class="scrollToLink"><a class="btn btn-primary" href="/login">Login</a></li>
+                                    <li class="scrollToLink"><a id="btn-login" class="btn btn-primary" href="{{url('login')}}">Login</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -83,7 +82,8 @@
                                         <!-- -->
                                     </p>
                                     <div class=" ">
-                                        <div class="d-flex "><a href="https://drive.google.com/file/d/1ttd1gO8-zN0m25K701XbuGbWSrqIA2aB/view" class="banner-one__btn thm-btn mt-1 "><span>Guidebook <i class="fa fa-download ml-3"> </i> </span> </a> <a href="close" class="banner-one__btn thm-btn ml-2 mt-1"><span>Daftar <i class="fa fa-sign-in ml-3"> </i> </span> </a> </div>
+                                        <div class="d-flex "><a href="https://drive.google.com/file/d/1ttd1gO8-zN0m25K701XbuGbWSrqIA2aB/view" class="banner-one__btn thm-btn mt-1 "><span>Guidebook <i class="fa fa-download ml-3"> </i> </span> </a>
+                                         </div>
                                     </div>
                                 </div>
                             </div>
@@ -101,23 +101,17 @@
                                     </p>
                                     <ul class="list-unstyled">
                                         <li>
-                                            <p class="list-text">
-                                                <!-- -->
-                                                <!-- --> <i class="fa fa-check mr-2 text-success"> </i> <!-- -->E-sertifikat
+                                            <p class="list-text"> <i class="fa fa-check mr-2 text-success"> </i> <!-- -->E-sertifikat
                                                 <!-- -->
                                             </p>
                                         </li>
                                         <li>
-                                            <p class="list-text">
-                                                <!-- -->
-                                                <!-- --> <i class="fa fa-check mr-2 text-success"> </i> <!-- -->Ilmu
+                                            <p class="list-text"> <i class="fa fa-check mr-2 text-success"> </i> <!-- -->Ilmu
                                                 <!-- -->
                                             </p>
                                         </li>
                                         <li>
-                                            <p class="list-text">
-                                                <!-- -->
-                                                <!-- --> <i class="fa fa-check mr-2 text-success"> </i> <!-- -->Menambah pengalaman dan networking
+                                            <p class="list-text"> <i class="fa fa-check mr-2 text-success"> </i> <!-- -->Menambah pengalaman dan networking
                                                 <!-- -->
                                             </p>
                                         </li>
@@ -414,9 +408,7 @@
                         <div class="block-title text-center pt-5 mt-3">
                             <h2 class="block-title__title"><span>Sponsor</span></h2>
                         </div>
-                        <div class="row justify-content-center medpart">
-                            <div class="col-4 item  text-center d-flex align-items-center "><a href="https://www.dewaweb.com/"><img class="img-fluid w-100  my-1" src="{{url('')}}/frontend/assets/images/sponsor/dewaweb.webp" alt="DewaWeb" /></a></div>
-                        </div>
+                        <div class="row justify-content-center medpart"></div>
                     </div>
                 </section>
                 <div class="brand-one my-5 py-5">
@@ -425,38 +417,7 @@
                             <h2 class="block-title__title"><span> Media Partner </span> </h2>
                         </div>
                         <div class="row justify-content-center medpart">
-                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="{{url('')}}/frontend/assets/images/medpart/medpart1.webp" alt="" /></div>
-                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="{{url('')}}/frontend/assets/images/medpart/medpart2.webp" alt="" /></div>
-                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="{{url('')}}/frontend/assets/images/medpart/medpart3.webp" alt="" /></div>
-                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="{{url('')}}/frontend/assets/images/medpart/medpart4.webp" alt="" /></div>
-                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="{{url('')}}/frontend/assets/images/medpart/medpart5.webp" alt="" /></div>
-                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="{{url('')}}/frontend/assets/images/medpart/medpart6.webp" alt="" /></div>
-                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="{{url('')}}/frontend/assets/images/medpart/medpart7.webp" alt="" /></div>
-                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="{{url('')}}/frontend/assets/images/medpart/medpart8.webp" alt="" /></div>
-                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="{{url('')}}/frontend/assets/images/medpart/medpart9.webp" alt="" /></div>
-                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="{{url('')}}/frontend/assets/images/medpart/medpart10.webp" alt="" /></div>
-                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="{{url('')}}/frontend/assets/images/medpart/medpart11.webp" alt="" /></div>
-                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="{{url('')}}/frontend/assets/images/medpart/medpart12.webp" alt="" /></div>
-                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="{{url('')}}/frontend/assets/images/medpart/medpart13.webp" alt="" /></div>
-                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="{{url('')}}/frontend/assets/images/medpart/medpart14.webp" alt="" /></div>
-                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="{{url('')}}/frontend/assets/images/medpart/medpart15.webp" alt="" /></div>
-                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="{{url('')}}/frontend/assets/images/medpart/medpart16.webp" alt="" /></div>
-                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="{{url('')}}/frontend/assets/images/medpart/medpart17.webp" alt="" /></div>
-                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="{{url('')}}/frontend/assets/images/medpart/medpart18.webp" alt="" /></div>
-                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="{{url('')}}/frontend/assets/images/medpart/medpart19.webp" alt="" /></div>
-                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="{{url('')}}/frontend/assets/images/medpart/medpart20.webp" alt="" /></div>
-                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="{{url('')}}/frontend/assets/images/medpart/medpart21.webp" alt="" /></div>
-                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="{{url('')}}/frontend/assets/images/medpart/medpart22.webp" alt="" /></div>
-                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="{{url('')}}/frontend/assets/images/medpart/medpart23.webp" alt="" /></div>
-                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="{{url('')}}/frontend/assets/images/medpart/medpart24.webp" alt="" /></div>
-                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="{{url('')}}/frontend/assets/images/medpart/medpart25.webp" alt="" /></div>
-                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="{{url('')}}/frontend/assets/images/medpart/medpart26.webp" alt="" /></div>
-                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="{{url('')}}/frontend/assets/images/medpart/medpart27.webp" alt="" /></div>
-                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="{{url('')}}/frontend/assets/images/medpart/medpart28.webp" alt="" /></div>
-                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="{{url('')}}/frontend/assets/images/medpart/medpart29.webp" alt="" /></div>
-                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="{{url('')}}/frontend/assets/images/medpart/medpart30.webp" alt="" /></div>
-                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="{{url('')}}/frontend/assets/images/medpart/medpart31.webp" alt="" /></div>
-                            <div class="item  col-md-2 col-3 text-center d-flex align-items-center "><img class="img-fluid w-100  my-2" src="{{url('')}}/frontend/assets/images/medpart/medpart32.webp" alt="" /></div>
+                            <!-- -->
                         </div>
                     </div>
                 </div>
@@ -491,24 +452,33 @@
             },
             "page": "/",
             "query": {},
-            "buildId": "-yF4Cuw08yoCsZgpUjLaQ",
-            "assetPrefix": "{{url('frontend')}}",
+            "buildId": "5RfoPlsYJBU61bEnl5ly4",
+            "assetPrefix": "{{url('')}}/frontend",
             "nextExport": true,
             "autoExport": true,
             "isFallback": false
         }
     </script>
-    <script nomodule="" src="{{url('')}}/frontend/_next/static/runtime/polyfills-839280c13975fe777c38.js"></script>
-    <script async="" data-next-page="/" src="{{url('')}}/frontend/_next/static/-yF4Cuw08yoCsZgpUjLaQ/pages/index.js"></script>
-    <script async="" data-next-page="/_app" src="{{url('')}}/frontend/_next/static/-yF4Cuw08yoCsZgpUjLaQ/pages/_app.js"></script>
-    <script src="{{url('')}}/frontend/_next/static/runtime/webpack-0744fffc018367bd1f9d.js" async=""></script>
+    <script nomodule="" src="{{url('')}}/frontend/_next/static/runtime/polyfills-d038222aac70ab238905.js"></script>
+    <script async="" data-next-page="/" src="{{url('')}}/frontend/_next/static/5RfoPlsYJBU61bEnl5ly4/pages/index.js"></script>
+    <script async="" data-next-page="/_app" src="{{url('')}}/frontend/_next/static/5RfoPlsYJBU61bEnl5ly4/pages/_app.js"></script>
+    <script src="{{url('')}}/frontend/_next/static/runtime/webpack-35176d94be6ecb1365a6.js" async=""></script>
     <script src="{{url('')}}/frontend/_next/static/chunks/framework.504af639ffd40f515d05.js" async=""></script>
     <script src="{{url('')}}/frontend/_next/static/chunks/commons.19809b0290a3469b536b.js" async=""></script>
-    <script src="{{url('')}}/frontend/_next/static/chunks/styles.b0fccb77bb4868d92fcb.js" async=""></script>
-    <script src="{{url('')}}/frontend/_next/static/runtime/main-dd0b70ae1f10d8d09c85.js" async=""></script>
-    <script src="{{url('')}}/frontend/_next/static/chunks/a4c92b5b.b13a80d16605e7b56b9c.js" async=""></script>
-    <script src="{{url('')}}/frontend/_next/static/-yF4Cuw08yoCsZgpUjLaQ/_buildManifest.js" async=""></script>
-    <script src="{{url('')}}/frontend/_next/static/-yF4Cuw08yoCsZgpUjLaQ/_ssgManifest.js" async=""></script>
+    <script src="{{url('')}}/frontend/_next/static/chunks/styles.3443c41ca6d48d8c70aa.js" async=""></script>
+    <script src="{{url('')}}/frontend/_next/static/runtime/main-7bd9b8ccbd6e0574322e.js" async=""></script>
+    <script src="{{url('')}}/frontend/_next/static/5RfoPlsYJBU61bEnl5ly4/_buildManifest.js" async=""></script>
+    <script src="{{url('')}}/frontend/_next/static/5RfoPlsYJBU61bEnl5ly4/_ssgManifest.js" async=""></script>
+    <script>
+        // load after page load
+        window.addEventListener('load', function() {
+            // load after 1 second
+            const btn = document.getElementById('btn-login');
+            @if(session()->has('login.peserta'))
+                btn.innerHTML ="<em class='fa fa-user fa-lg mr-1'></em> <span class='d-md-none'>Halaman Peserta</span>"
+            @endif
+        })
+    </script>
 </body>
 
 </html>

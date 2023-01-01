@@ -24,7 +24,15 @@
           <tr>
             <th scope="row"><a href="#">{{$count;}}</a></th>
             <td>{{$a->namaSponsor}}</td>
-            <td>{{$a->ukuranSponsor}}</td>
+            @if ($a->ukuranSponsor == 'col-3')
+                <td>S</td>
+            @elseif ($a->ukuranSponsor == 'col-4')
+                <td>M</td>
+            @elseif ($a->ukuranSponsor == 'col-6')
+                <td>L</td>
+            @else
+                <td>XL</td>
+            @endif
             <td>{{$a->urlSponsor}}</td>
             <td class="text-primary"><a class="btn btn-outline-primary btn-sm" href="/back/sponsor/{{$a->idSponsor}}/edit"><i class="bi bi-pen"></i></a></td>
             <td class="text-primary">

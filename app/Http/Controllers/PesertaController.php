@@ -19,15 +19,9 @@ use Illuminate\Support\Str;
 
 class PesertaController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
         $user = User::where('email', session()->get('email.peserta'))->first();
-        // return view layout
         return view('peserta.dashboard.account', [
             'user' => $user,
             'title' => 'Akunku',

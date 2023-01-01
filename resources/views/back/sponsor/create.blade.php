@@ -23,10 +23,10 @@
         <label class="col-sm-3 col-form-label">Ukuran Gambar</label>
         <div class="col-sm-9">
           <select name="ukuranSponsor" class="form-select" aria-label="Default select example">
-            <option value="s">Small (s)</option>
-            <option value="m">Medium (m)</option>
-            <option value="l">Large (l)</option>
-            <option value="xl">Extra Large (xl)</option>
+            <option value="col-3">Small (s)</option>
+            <option value="col-4">Medium (m)</option>
+            <option value="col-6">Large (l)</option>
+            <option value="col-12">Extra Large (xl)</option>
           </select>
         </div>
       </div>

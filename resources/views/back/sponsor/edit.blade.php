@@ -28,10 +28,10 @@
         <label class="col-sm-3 col-form-label">Ukuran Gambar</label>
         <div class="col-sm-9">
           <select name="ukuranSponsor" class="form-select" aria-label="Default select example">
-            <option value="s" @if($data->ukuranSponsor == "s") selected @endif>Small (s)</option>
-            <option value="m" @if($data->ukuranSponsor == "m") selected @endif>Medium (m)</option>
-            <option value="l" @if($data->ukuranSponsor == "l") selected @endif>Large (l)</option>
-            <option value="xl" @if($data->ukuranSponsor == "xl") selected @endif>Extra Large (xl)</option>
+            <option value="col-3" @if($data->ukuranSponsor == "col-3") selected @endif>Small (s)</option>
+            <option value="col-4" @if($data->ukuranSponsor == "col-4") selected @endif>Medium (m)</option>
+            <option value="col-6" @if($data->ukuranSponsor == "col-6") selected @endif>Large (l)</option>
+            <option value="col-12" @if($data->ukuranSponsor == "col-12") selected @endif>Extra Large (xl)</option>
           </select>
         </div>
       </div>

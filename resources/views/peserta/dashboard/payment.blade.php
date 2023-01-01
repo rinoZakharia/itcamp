@@ -5,6 +5,7 @@
         <div class="col-md-6">
             <div class="card">
                 <div class="card-inner card-inner-lg">
+                    <input type="text" class="d-none" id="rek" value="">
                     <!-- chose payment -->
                     <div class="nk-block-head">
                         <div class="nk-block-head-content">
@@ -29,7 +30,8 @@
                             <div class="nk-block-actions flex-shrink-sm-0">
                                 <ul class="align-center flex-wrap flex-sm-nowrap gx-3 gy-2">
                                     <li class="order-md-last">
-                                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modalDefault">Ganti</button>
+                                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modalDefault"><em class="ni ni-exchange mr-1"></em> Ganti</button>
+                                        <button type="button" id="btn-copy" class="btn btn-secondary" ><em class="ni ni-copy mr-1"></em> Salin</button>
                                     </li>
                                 </ul>
                             </div>
@@ -55,14 +57,14 @@
                             <div class="dz-message" data-dz-message>
                                 <span class="dz-message-text">Drag and drop file</span>
                                 <span class="dz-message-or">or</span>
-                                <button  type="button" class="btn btn-primary">SELECT</button>
+                                <button  type="button" class="btn btn-info"> <em class="ni ni-upload-cloud mr-1"></em> SELECT</button>
                             </div>
 
                         </div>
                         <button class="btn mt-1 btn-sm btn-danger dz-remove">Hapus Foto</button>
                         <!-- save button -->
                         <div class="form-group mt-2">
-                            <button type="submit" class="btn btn-primary btn-block">Simpan</button>
+                            <button type="submit" class="btn btn-primary btn-block"><em class="ni ni-save mr-1"></em> Simpan</button>
                         </div>
 
                     </form>
@@ -123,43 +125,103 @@
         let akun = [
             {
                 'bank' : 'BRI',
-                'no_rek' : '123123123',
+                'no_rek' : '6414 0102 3109 531',
+                'rek':'641401023109531',
                 'nama' : 'Salma Fathiyatur',
                 'logo': "{{url('peserta/assets/images/bri.png')}}"
             },
             {
                 'bank' : 'Mandiri',
-                'no_rek' : '3',
+                'no_rek' : '1710007429759',
+                'rek' : '1710007429759',
                 'nama' : 'Salma Fathiyatur',
                 'logo': "{{url('peserta/assets/images/mandiri.png')}}"
             },
             {
                 'bank' : 'DANA',
-                'no_rek' : '123123123',
+                'no_rek' : '+62-812-1784-1264',
+                'rek' : '6281217841264',
                 'nama' : 'Salma Fathiyatur',
                 'logo': "{{url('peserta/assets/images/dana.png')}}"
             },
             {
                 'bank' : 'OVO',
-                'no_rek' : '123123123',
+                'no_rek' : '+62-812-1784-1264',
+                'rek' : '6281217841264',
                 'nama' : 'Salma Fathiyatur',
                 'logo': "{{url('peserta/assets/images/ovo.png')}}"
             },
             {
-                'bank' : 'Gopay',
-                'no_rek' : '123123123',
+                'bank' : 'Shopee Pay',
+                'no_rek' : '+62-812-1784-1264',
+                'rek' : '6281217841264',
                 'nama' : 'Salma Fathiyatur',
-                'logo': "{{url('peserta/assets/images/gopay.png')}}"
+                'logo': "{{url('peserta/assets/images/shopee.png')}}"
             }
         ]
+        var itemSelected;
 
-        function setAkun(){
+        window.Clipboard = (function(window, document, navigator) {
+                var textArea,
+                    copy;
+
+                function isOS() {
+                    return navigator.userAgent.match(/ipad|iphone/i);
+                }
+
+                function createTextArea(text) {
+                    textArea = document.createElement('textArea');
+                    textArea.value = text;
+                    document.body.appendChild(textArea);
+                }
+
+                function selectText() {
+                    var range,
+                        selection;
+
+                    if (isOS()) {
+                        range = document.createRange();
+                        range.selectNodeContents(textArea);
+                        selection = window.getSelection();
+                        selection.removeAllRanges();
+                        selection.addRange(range);
+                        textArea.setSelectionRange(0, 999999);
+                    } else {
+                        textArea.select();
+                    }
+                }
+
+                function copyToClipboard() {
+                    document.execCommand('copy');
+                    document.body.removeChild(textArea);
+                }
+
+                copy = function(text) {
+                    createTextArea(text);
+                    selectText();
+                    copyToClipboard();
+                };
+
+                return {
+                    copy: copy
+                };
+            })(window, document, navigator);
+        function setCopy(){
+            // copy to clipboard #rek
+            var copyText = document.getElementById("rek");
+            Clipboard.copy(copyText.value);
+            toastr.clear();
+            NioApp.Toast('Berhasil disalin', 'success', {position: 'bottom-center'});
+        }
+            function setAkun(){
             let itemFirst = akun[0]
+            itemSelected = itemFirst
             $(".payment .icon-pay").attr("src",itemFirst.logo)
             $(".payment .lead-text").text(itemFirst.bank)
             $(".payment .sub-text").text(itemFirst.no_rek + " A.N " + itemFirst.nama)
             $("input[name=bank]").val(itemFirst.bank)
             $("#payment_list").html('')
+            $("#rek").val(itemFirst.rek)
             akun.forEach(function(item, index){
 
                 $("#payment_list").append(`
@@ -175,13 +237,17 @@
             })
             $(".card-pay-list").on("click",(e)=>{
                 let data = $(e.currentTarget).data("item")
-
+                $("#rek").val(data.rek)
                 $(".payment .icon-pay").attr("src",data.logo)
                 $(".payment .lead-text").text(data.bank)
                 $(".payment .sub-text").text(data.no_rek + " A.N " + data.nama)
                 $("input[name=bank]").val(data.bank)
                 // close modal
                 $("#modalDefault").modal("hide")
+            })
+
+            $("#btn-copy").on("click",()=>{
+                setCopy()
             })
         }
         setAkun()

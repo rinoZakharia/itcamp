@@ -3,9 +3,13 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="author" content="Softnio">
+    <meta name="author" content="HIMATIFA">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="HIMATIFA X Partnership UI/UX Mini Bootcamp merupakan rangkaian mini bootcamp yang diadakan oleh Himpunan Mahasiswa Informatika Universitas Pembangunan Nasional Veteran Jawa Timur dengan tujuan untuk mengenalkan UI/UX dikalangan pelajar/mahasiswa/umum.">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{url('')}}/frontend/assets/images/resources/logo.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="{{url('')}}/frontend/assets/images/resources/logo.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="{{url('')}}/frontend/assets/images/resources/logo.png" />
+
     <!-- Fav Icon  -->
     <link rel="shortcut icon" href="./images/favicon.png">
     <!-- Page Title  -->
@@ -63,6 +67,8 @@
                                         <span class="nk-menu-text">Informasi Peserta</span>
                                     </a>
                                 </li>
+                                @endif
+                                @if(false)
                                 <li class="nk-menu-item">
                                     <a href="{{route('peserta.listtask')}}" class="nk-menu-link">
                                         <!-- account icon-->
@@ -71,7 +77,7 @@
                                     </a>
                                 </li>
                                 @endif
-                                @if(session()->get('sertifikat.peserta'))
+                                @if(session()->get('sertifikat.peserta') && false)
                                 <li class="nk-menu-item">
                                     <a href="{{route('peserta.sertifikat')}}" class="nk-menu-link">
                                         <!-- account icon-->
