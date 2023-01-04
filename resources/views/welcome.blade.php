@@ -21,13 +21,13 @@
     <meta name="next-head-count" content="16" />
     <link rel="preload" href="{{url('')}}/frontend/_next/static/css/styles.a8ee8fd6.chunk.css" as="style" />
     <link rel="stylesheet" href="{{url('')}}/frontend/_next/static/css/styles.a8ee8fd6.chunk.css" />
-    <link rel="preload" href="{{url('')}}/frontend/_next/static/5RfoPlsYJBU61bEnl5ly4/pages/index.js?v=1" as="script" />
-    <link rel="preload" href="{{url('')}}/frontend/_next/static/5RfoPlsYJBU61bEnl5ly4/pages/_app.js?v=1" as="script" />
-    <link rel="preload" href="{{url('')}}/frontend/_next/static/runtime/webpack-35176d94be6ecb1365a6.js?v=1" as="script" />
-    <link rel="preload" href="{{url('')}}/frontend/_next/static/chunks/framework.504af639ffd40f515d05.js?v=1" as="script" />
-    <link rel="preload" href="{{url('')}}/frontend/_next/static/chunks/commons.19809b0290a3469b536b.js?v=1" as="script" />
-    <link rel="preload" href="{{url('')}}/frontend/_next/static/chunks/styles.3443c41ca6d48d8c70aa.js?v=1" as="script" />
-    <link rel="preload" href="{{url('')}}/frontend/_next/static/runtime/main-7bd9b8ccbd6e0574322e.js?v=1" as="script" />
+    <link rel="preload" href="{{url('')}}/frontend/_next/static/5RfoPlsYJBU61bEnl5ly4/pages/index.js?v=2" as="script" />
+    <link rel="preload" href="{{url('')}}/frontend/_next/static/5RfoPlsYJBU61bEnl5ly4/pages/_app.js?v=2" as="script" />
+    <link rel="preload" href="{{url('')}}/frontend/_next/static/runtime/webpack-35176d94be6ecb1365a6.js?v=2" as="script" />
+    <link rel="preload" href="{{url('')}}/frontend/_next/static/chunks/framework.504af639ffd40f515d05.js?v=2" as="script" />
+    <link rel="preload" href="{{url('')}}/frontend/_next/static/chunks/commons.19809b0290a3469b536b.js?v=2" as="script" />
+    <link rel="preload" href="{{url('')}}/frontend/_next/static/chunks/styles.3443c41ca6d48d8c70aa.js?v=2" as="script" />
+    <link rel="preload" href="{{url('')}}/frontend/_next/static/runtime/main-7bd9b8ccbd6e0574322e.js?v=2" as="script" />
 </head>
 
 <body>
@@ -459,16 +459,16 @@
             "isFallback": false
         }
     </script>
-    <script nomodule="" src="{{url('')}}/frontend/_next/static/runtime/polyfills-d038222aac70ab238905.js?v=1"></script>
-    <script async="" data-next-page="/" src="{{url('')}}/frontend/_next/static/5RfoPlsYJBU61bEnl5ly4/pages/index.js?v=1"></script>
-    <script async="" data-next-page="/_app" src="{{url('')}}/frontend/_next/static/5RfoPlsYJBU61bEnl5ly4/pages/_app.js?v=1"></script>
-    <script src="{{url('')}}/frontend/_next/static/runtime/webpack-35176d94be6ecb1365a6.js?v=1" async=""></script>
-    <script src="{{url('')}}/frontend/_next/static/chunks/framework.504af639ffd40f515d05.js?v=1" async=""></script>
-    <script src="{{url('')}}/frontend/_next/static/chunks/commons.19809b0290a3469b536b.js?v=1" async=""></script>
-    <script src="{{url('')}}/frontend/_next/static/chunks/styles.3443c41ca6d48d8c70aa.js?v=1" async=""></script>
-    <script src="{{url('')}}/frontend/_next/static/runtime/main-7bd9b8ccbd6e0574322e.js?v=1" async=""></script>
-    <script src="{{url('')}}/frontend/_next/static/5RfoPlsYJBU61bEnl5ly4/_buildManifest.js?v=1" async=""></script>
-    <script src="{{url('')}}/frontend/_next/static/5RfoPlsYJBU61bEnl5ly4/_ssgManifest.js?v=1" async=""></script>
+    <script nomodule="" src="{{url('')}}/frontend/_next/static/runtime/polyfills-d038222aac70ab238905.js?v=2"></script>
+    <script async="" data-next-page="/" src="{{url('')}}/frontend/_next/static/5RfoPlsYJBU61bEnl5ly4/pages/index.js?v=2"></script>
+    <script async="" data-next-page="/_app" src="{{url('')}}/frontend/_next/static/5RfoPlsYJBU61bEnl5ly4/pages/_app.js?v=2"></script>
+    <script src="{{url('')}}/frontend/_next/static/runtime/webpack-35176d94be6ecb1365a6.js?v=2" async=""></script>
+    <script src="{{url('')}}/frontend/_next/static/chunks/framework.504af639ffd40f515d05.js?v=2" async=""></script>
+    <script src="{{url('')}}/frontend/_next/static/chunks/commons.19809b0290a3469b536b.js?v=2" async=""></script>
+    <script src="{{url('')}}/frontend/_next/static/chunks/styles.3443c41ca6d48d8c70aa.js?v=2" async=""></script>
+    <script src="{{url('')}}/frontend/_next/static/runtime/main-7bd9b8ccbd6e0574322e.js?v=2" async=""></script>
+    <script src="{{url('')}}/frontend/_next/static/5RfoPlsYJBU61bEnl5ly4/_buildManifest.js?v=2" async=""></script>
+    <script src="{{url('')}}/frontend/_next/static/5RfoPlsYJBU61bEnl5ly4/_ssgManifest.js?v=2" async=""></script>
     <script>
         // load after page load
         window.addEventListener('load', function() {
