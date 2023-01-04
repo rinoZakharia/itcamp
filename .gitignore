@@ -16,4 +16,4 @@ yarn-error.log
 /.vscode
 /public/uploads/bukti_pembayaran
 # add git ignore appserviceprovider
-app/Providers/AppServiceProvider.php
+/app/Providers/AppServiceProvider.php
