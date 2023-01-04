@@ -14,6 +14,18 @@
           <input required type="text" value="{{ $data->judul }}" name="judul" class="form-control" autocomplete="off">
         </div>
       </div>
+      <input type="hidden" name="tipe" value="{{ $data->tipe }}">
+      @if($data->tipe == 1)
+      <?php
+      $date=date_create($data->deadline);
+      ?>
+      <div class="row mb-3" id="deadline">
+        <label for="inputText" class="col-sm-2 col-form-label">Deadline</label>
+        <div class="col-sm-10">
+            <input type="datetime-local" value={{ date_format($date,'Y-m-d').'T'.date_format($date,'H:i') }} name="deadline" class="form-control" autocomplete="off">
+        </div>
+    </div>
+      @endif
       <div class="row mb-3">
         <label for="inputText" class="col-sm-2 col-form-label">Materi (opsional)</label>
         <div class="col-sm-10">

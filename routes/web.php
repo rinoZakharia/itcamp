@@ -5,6 +5,7 @@ use App\Http\Controllers\BackController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Auth\SocialiteController;
 use App\Http\Controllers\ConfigController;
+use App\Http\Controllers\JawabController;
 use App\Http\Controllers\MedpartController;
 use App\Http\Controllers\PesertaController;
 use App\Http\Controllers\SponsorController;
@@ -81,7 +82,8 @@ Route::middleware(PesertaMiddleware::class)->group(function () {
     Route::post('/change_account', [PesertaController::class, 'changeProfile'])->name('peserta.change.account');
     Route::post('/change_password', [PesertaController::class, 'changePassword'])->name('peserta.change.password');
     Route::get('/tugas', [PesertaController::class, 'listTask'])->name('peserta.listtask');
-
+    Route::post('/jawab', [JawabController::class, 'post'])->name('peserta.jawab');
+    Route::delete('/jawab/delete', [JawabController::class, 'destroy'])->name('peserta.delete.jawab');
     Route::get('/tugas/{id}', [PesertaController::class, 'task'])->name('peserta.task');
     Route::get('/sertifikat', [PesertaController::class, 'sertifikat'])->name('peserta.sertifikat');
 });

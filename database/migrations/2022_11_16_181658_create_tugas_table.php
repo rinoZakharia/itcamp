@@ -19,6 +19,7 @@ return new class extends Migration
             $table->text('materi')->nullable();
             $table->text('file')->nullable();
             $table->text('url')->nullable();
+            $table->timestamp('deadline')->nullable();
             $table->integer('tipe');
             $table->timestamps();
         });

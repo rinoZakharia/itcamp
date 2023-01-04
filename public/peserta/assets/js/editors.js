@@ -67,7 +67,18 @@
         menubar: false
       });
     }
+    var _tinymce_min = '.tinymce-min';
 
+    if ($(_tinymce_min).exists()) {
+      tinymce.init({
+        selector: _tinymce_min,
+        content_css: true,
+        skin: false,
+        branding: false,
+        menubar: false,
+        toolbar: false
+      });
+    }
     var _tinymce_inline = '.tinymce-inline';
 
     if ($(_tinymce_inline).exists()) {

@@ -11,7 +11,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="{{url('')}}/frontend/assets/images/resources/logo.png" />
 
     <!-- Fav Icon  -->
-    <link rel="shortcut icon" href="./images/favicon.png">
+    <link rel="shortcut icon" href="{{url('')}}/frontend/assets/images/resources/logo.png">
     <!-- Page Title  -->
     <title>{{$title}} | ITCamp</title>
     <link rel="stylesheet" href="{{url('')}}/peserta/assets/css/dashlite.min.css?ver=2.4.0">
@@ -67,7 +67,6 @@
                                         <span class="nk-menu-text">Informasi Peserta</span>
                                     </a>
                                 </li>
-                                @endif
                                 @if(false)
                                 <li class="nk-menu-item">
                                     <a href="{{route('peserta.listtask')}}" class="nk-menu-link">
@@ -76,6 +75,7 @@
                                         <span class="nk-menu-text">Materi dan Tugas</span>
                                     </a>
                                 </li>
+                                @endif
                                 @endif
                                 @if(session()->get('sertifikat.peserta') && false)
                                 <li class="nk-menu-item">

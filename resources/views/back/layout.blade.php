@@ -99,7 +99,7 @@
           <span>Pemberitahuan</span>
         </a>
       </li><!-- End Profile Page Nav -->
-      
+
       <li class="nav-item">
         <a class="nav-link collapsed" href="{{ url('/back/tugas') }}">
           <i class="bi bi-book"></i>
@@ -151,7 +151,7 @@
   <script src="{{ url('/assets/vendor/tinymce/tinymce.min.js') }}"></script>
   <!-- Template Main JS File -->
   <script src="{{ url('/assets/js/main.js') }}"></script>
-
+ @yield('script')
 </body>
 
 </html>

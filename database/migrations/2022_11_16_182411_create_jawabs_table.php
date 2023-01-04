@@ -19,6 +19,7 @@ return new class extends Migration
             $table->unsignedBigInteger('idTugas');
             $table->text('jawaban');
             $table->string('nilai');
+            $table->integer('status')->default(0);
             $table->timestamps();
             $table->foreign('email')->references('email')->on('users')->onDelete('cascade')->onUpdate('cascade');
             $table->foreign('idTugas')->references('idTugas')->on('tugas')->onDelete('cascade')->onUpdate('cascade');

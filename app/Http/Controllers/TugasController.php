@@ -33,6 +33,9 @@ class TugasController extends Controller
             $requestData['file'] = $filename;
             $file->move(public_path('uploads/tugas'), $filename);
         }
+        if ($requestData['tipe'] != 1) {
+            $requestData['deadline'] = null;
+        }
         Tugas::create($requestData);
         return redirect('/back/tugas');
     }
@@ -40,7 +43,6 @@ class TugasController extends Controller
     public function show($id)
     {
         $data = Tugas::find($id);
-
         return view('back.tugas.edit',compact(['data']));
     }
 
@@ -59,7 +61,9 @@ class TugasController extends Controller
             $requestData['file'] = $filename;
             $file->move(public_path('uploads/tugas'), $filename);
         }
-
+        if ($requestData['tipe'] != 1) {
+            $requestData['deadline'] = null;
+        }
         $tugas = Tugas::find($id);
         $tugas->update($requestData);
         return redirect('/back/tugas');

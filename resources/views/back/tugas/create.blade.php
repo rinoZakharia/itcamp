@@ -22,6 +22,12 @@
           </select>
         </div>
       </div>
+    <div class="row mb-3" id="deadline">
+        <label for="inputText" class="col-sm-2 col-form-label">Deadline</label>
+        <div class="col-sm-10">
+            <input type="datetime-local" name="deadline" class="form-control" autocomplete="off">
+        </div>
+    </div>
       <div class="row mb-3">
         <label for="inputText" class="col-sm-2 col-form-label">Materi (opsional)</label>
         <div class="col-sm-10">
@@ -50,4 +56,43 @@
 
   </div>
 </div>
+@endsection
+@section('script')
+<script>
+    const spinnerTipe = document.querySelector('select[name="tipe"]');
+    const deadline = document.querySelector('#deadline');
+    const deadlineInput = document.querySelector('input[name="deadline"]');
+    const setNow = () => {
+        const now = new Date();
+        const year = now.getFullYear();
+        let month = now.getMonth() + 1;
+        if (month < 10) {
+            month = '0' + month;
+        }
+        let day = now.getDate();
+        if (day < 10) {
+            day = '0' + day;
+        }
+        let hour = now.getHours();
+        if (hour < 10) {
+            hour = '0' + hour;
+        }
+        let minute = now.getMinutes();
+        if (minute < 10) {
+            minute = '0' + minute;
+        }
+        const nowString = `${year}-${month}-${day}T${hour}:${minute}`;
+        deadlineInput.value = nowString;
+    }
+    setNow();
+    spinnerTipe.addEventListener('change', function() {
+        if (this.value == 1) {
+            deadline.style.display = 'flex';
+            setNow();
+        } else {
+            deadline.style.display = 'none';
+            setNow();
+        }
+    });
+</script>
 @endsection

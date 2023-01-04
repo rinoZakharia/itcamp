@@ -7,6 +7,7 @@ use App\Http\Requests\UpdatePesertaRequest;
 use App\Mail\ResetMail;
 use App\Models\Bayar;
 use App\Models\Config;
+use App\Models\Jawab;
 use App\Models\Notification;
 use App\Models\Peserta;
 use App\Models\Token;
@@ -225,7 +226,6 @@ class PesertaController extends Controller
                 'instansi' => 'required',
             ]);
         }
-
         $user = User::where('email', session()->get('email.peserta'))->first();
         $user->nama = $request->nama;
         $user->instansi = $request->instansi;
@@ -235,8 +235,6 @@ class PesertaController extends Controller
             $user->telp = $request->telp;
         }
         $user->save();
-
-
         return redirect()->route('peserta.account')->with('success', 'Berhasil mengubah profil');
     }
 
@@ -285,6 +283,9 @@ class PesertaController extends Controller
 
     public function task($id){
         $data = Tugas::find($id);
+        if($data->tipe == 1){
+            $data['jawaban'] = Jawab::where('idTugas', $id)->where('email',session()->get('email.peserta'))->first();
+        }
         return view('peserta.dashboard.task', [
             'title' => 'Tugas',
             'data' => $data

@@ -6,9 +6,9 @@
             <div class="nk-block-head nk-block-head-sm">
                 <div class="nk-block-between">
                     <div class="nk-block-head-content">
-                        <h3 class="nk-block-title page-title">Tugas dan Materi</h3>
+                        <h4 class="nk-block-title page-title">Tugas dan Materi</h4>
                         <div class="nk-block-des text-soft">
-                            <p>You have total 95 projects.</p>
+                            <p>Tugas dan Materimu sejumlah {{count($data)}}</p>
                         </div>
                     </div><!-- .nk-block-head-content -->
                 </div><!-- .nk-block-between -->
@@ -17,13 +17,18 @@
                 <table class="nk-tb-list is-separate nk-tb-ulist">
                     <thead>
                         <tr class="nk-tb-item nk-tb-head">
-                            <th class="nk-tb-col"><span class="sub-text">Judul</span></th>
-                            <th class="nk-tb-col tb-col-xxl"><span class="sub-text">Status</span></th>
-                            <th class="nk-tb-col tb-col-mb"><span class="sub-text">Deadline</span></th>
+                            <th class="nk-tb-col text-center"><span class="sub-text">Judul</span></th>
+
+                            <th class="nk-tb-col tb-col-mb text-center"><span class="sub-text">Deadline</span></th>
 
                         </tr><!-- .nk-tb-item -->
                     </thead>
                     <tbody>
+                        @if(count($data) == 0)
+                        <tr class="nk-tb-item nk-tb-head">
+                            <td colspan="2" class="text-center"><span class="sub-text my-3  text-danger">Tidak ada tugas</span></td>
+                        </tr>
+                        @endif
                         @foreach($data as $d)
                         <tr class="nk-tb-item">
                             <td class="nk-tb-col">
@@ -44,11 +49,18 @@
                                     </div>
                                 </a>
                             </td>
-                            <td class="nk-tb-col tb-col-xxl">
-                                <span>Open</span>
-                            </td>
                             <td class="nk-tb-col tb-col-mb">
-                                <span class="badge badge-dim badge-warning"><em class="icon ni ni-clock"></em><span>5 Days Left</span></span>
+                                @if($d->tipe==1)
+                                        @if(!isset($d->collect))
+                                        <span class="badge badge-dim badge-warning"><em class="icon ni ni-clock"></em><span>{{$d->diffDeadline}}</span></span>
+                                        @elseif($d->collect < $d->deadline)
+                                        <span class="badge badge-dim badge-success"><em class="icon ni ni-check-circle"></em><span>Dikumpulkan</span></span>
+                                        @else
+                                        <span class="badge badge-dim badge-danger"><em class="icon ni ni-cross-circle"></em><span>Terlambat</span></span>
+                                        @endif
+                                @else
+                                <span class="badge badge-dim badge-primary"><em class="icon ni ni-check-circle"></em><span>None</span></span>
+                                @endif
                             </td>
                         </tr><!-- .nk-tb-item -->
                         @endforeach
