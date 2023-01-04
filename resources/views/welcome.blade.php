@@ -440,7 +440,7 @@
                             <div class="accrodion active">
                                 <div class="accrodion-inner">
                                     <div class="accrodion-title">
-                                        <h4>Apakah kompetisi ini dilakukan secara daring?</h4>
+                                        <h4>Apakah bootcamp ini dilakukan secara daring?</h4>
                                     </div>
                                     <div class="accrodion-content">
                                         <div class="inner">
@@ -498,7 +498,7 @@
                                 </h5>
                                 <div class="footer-widget my-4">
                                     <div class="justify-content-center mt-2 d-flex pb-4">
-                                        <a href="https://www.instagram.com/itcamp/" class="fa fa-instagram icon mr-3"></a>
+                                        <a href="https://www.innstagram.com/itcamp2023/" class="fa fa-instagram icon mr-3"></a>
                                         <a href="https://www.youtube.com/channel/UCj6FDNuEMnfgcuWydW1ys9Q" style="
                           background: linear-gradient(
                             to right,
@@ -555,12 +555,15 @@
         // load after page load
         window.addEventListener('load', function() {
             // load after 1 second
+            const btnDaftar = document.querySelector(".banner-one__btn.thm-btn.ml-2.mt-1")
+            btnDaftar.remove();
             const btn = document.getElementById('btn-login');
             @if(session()->has('login.peserta'))
                 btn.innerHTML ="<em class='fa fa-user fa-lg mr-1'></em> <span class='d-md-none'>Halaman Peserta</span>"
             @endif
         })
     </script>
+
 </body>
 
 </html>
