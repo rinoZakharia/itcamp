@@ -17,6 +17,14 @@
     <!-- StyleSheets  -->
     <link rel="stylesheet" href="{{url('')}}/peserta/assets/css/dashlite.css?ver=2.4.0">
     <link id="skin-default" rel="stylesheet" href="{{url('')}}/peserta/assets/css/theme.css?ver=2.4.0">
+    <style>
+        /* for phone */
+        @media only screen and (max-width: 500px) {
+            .modal-dialog{
+                padding: 12px;
+            }
+        }
+    </style>
 </head>
 
 <body class="nk-body bg-white npc-default pg-auth">
@@ -94,6 +102,19 @@
         </div>
         <!-- main @e -->
     </div>
+    <div class="modal fade" tabindex="-1" id="promoDewaWeb">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <a href="#" class="close bg-danger text-white rounded-circle" style="opacity: 1;top:-1rem;right:-1rem" data-dismiss="modal" aria-label="Close">
+                    <em class="icon ni ni-cross"></em>
+                </a>
+                <a target="_blank" href="https://www.dewaweb.com">
+                <img  src="{{url('')}}/promo.jpg" alt="" class="img-fluid">
+                </a>
+            </div>
+        </div>
+    </div>
+
     <!-- app-root @e -->
     <!-- JavaScript -->
     <script src="{{url('')}}/peserta/assets/js/bundle.js?ver=2.4.0"></script>
@@ -106,6 +127,8 @@
             NioApp.Toast('{{ session()->get('success') }}', 'success', {
                     position: 'top-right'
                 });
+
+
         })(NioApp, jQuery);
     </script>
     @endif
@@ -120,5 +143,9 @@
         })(NioApp, jQuery);
     </script>
     @endif
-
+    <script>
+        $(document).ready(function() {
+            $('#promoDewaWeb').modal('show');
+        });
+    </script>
 </html>

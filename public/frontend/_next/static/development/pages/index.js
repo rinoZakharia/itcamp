@@ -1247,7 +1247,7 @@ var Blog = /*#__PURE__*/function (_Component) {
           lineNumber: 87,
           columnNumber: 13
         }
-      }, "& copy; Copyright 2021 by ", __jsx("a", {
+      }, "© Copyright 2023 by ", __jsx("a", {
         href: "#",
         __self: this,
         __source: {
@@ -1255,7 +1255,7 @@ var Blog = /*#__PURE__*/function (_Component) {
           lineNumber: 90,
           columnNumber: 37
         }
-      }, " itcamp.com "), " "), " "), " "), " "), " "), " "), " ");
+      }, " itcamp2023.com "), " "), " "), " "), " "), " "), " "), " ");
     }
   }]);
 
@@ -2313,7 +2313,7 @@ var Sponsor = function Sponsor() {
       lineNumber: 16,
       columnNumber: 9
     }
-  }, __jsx("h2", {
+  }, __jsx("h4", {
     className: "block-title__title",
     __self: _this,
     __source: {
@@ -2328,7 +2328,7 @@ var Sponsor = function Sponsor() {
       lineNumber: 18,
       columnNumber: 13
     }
-  }, "Sponsor"))), __jsx("div", {
+  }, "Didukung oleh"))), __jsx("div", {
     className: "row justify-content-center medpart",
     __self: _this,
     __source: {
@@ -2356,7 +2356,7 @@ var Sponsor = function Sponsor() {
         columnNumber: 17
       }
     }, __jsx("img", {
-      className: "img-fluid w-100  my-1",
+      className: "img-fluid w-100  my-2",
       src: _config_config__WEBPACK_IMPORTED_MODULE_1__["baseURL"] + "uploads/sponsor/" + item.gambarSponsor,
       alt: item.nama_sponsor,
       __self: _this,
@@ -5386,7 +5386,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var decode_json_1 = __importDefault(__webpack_require__(/*! ./maps/decode.json */ "./node_modules/entities/lib/maps/decode.json"));
 // Adapted from https://github.com/mathiasbynens/he/blob/master/src/he.js#L94-L119
-var fromCodePoint =
+var fromCodePoint = 
 // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
 String.fromCodePoint ||
     function (codePoint) {
@@ -5502,7 +5502,7 @@ function getInverseReplacer(inverse) {
 }
 // /[^\0-\x7F]/gu
 var reNonASCII = /(?:[\x80-\uD7FF\uE000-\uFFFF]|[\uD800-\uDBFF][\uDC00-\uDFFF]|[\uD800-\uDBFF](?![\uDC00-\uDFFF])|(?:[^\uD800-\uDBFF]|^)[\uDC00-\uDFFF])/g;
-var getCodePoint =
+var getCodePoint = 
 // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
 String.prototype.codePointAt != null
     ? // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
@@ -6687,7 +6687,7 @@ Parser.prototype.onclosetag = function(name) {
     if (this._lowerCaseTagNames) {
         name = name.toLowerCase();
     }
-
+    
     if (name in foreignContextElements || name in htmlIntegrationElements) {
         this._foreignContext.pop();
     }
@@ -6736,7 +6736,7 @@ Parser.prototype._closeCurrentTag = function() {
             this._cbs.onclosetag(name);
         }
         this._stack.pop();
-
+        
     }
 };
 
@@ -8143,7 +8143,7 @@ DomHandler.prototype.onerror = function(error){
 
 DomHandler.prototype.onclosetag = function(){
 	//if(this._tagStack.pop().name !== name) this._handleCallback(Error("Tagname didn't match!"));
-
+	
 	var elem = this._tagStack.pop();
 
 	if(this._options.withEndIndices && elem){
@@ -8742,7 +8742,7 @@ exports.prepend = function(elem, prev){
 	if(elem.prev){
 		elem.prev.next = prev;
 	}
-
+	
 	prev.parent = parent;
 	prev.prev = elem.prev;
 	prev.next = elem;
@@ -9214,7 +9214,7 @@ var assign=Object.assign.bind(Object);function g(){return assign;}Object.defineP
       }
       return mod
     }]);
-
+  
 
 /***/ }),
 
@@ -16320,7 +16320,7 @@ var HomePage = function HomePage() {
 /*! exports provided: nama_lomba, deskripsi_lomba1, link_guidebook, link_pendaftaran, gambar1, gambar2, deskripsi_lomba2, benefit, additional, prize, timeline, faq, kontak, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"nama_lomba\":\"HIMATIFA X Fowtedu UI/UX Mini Bootcamp\",\"deskripsi_lomba1\":\"HIMATIFA X Fowtedu UI/UX Mini Bootcamp merupakan rangkaian mini bootcamp yang diadakan oleh Himpunan Mahasiswa Informatika Universitas Pembangunan Nasional \\\"Veteran\\\" Jawa Timur dengan tujuan untuk mengenalkan UI/UX dikalangan pelajar/mahasiswa/umum.\",\"link_guidebook\":\"https://drive.google.com/file/d/1ttd1gO8-zN0m25K701XbuGbWSrqIA2aB/view\",\"link_pendaftaran\":\"close\",\"gambar1\":\"/assets/images/resources/design.png\",\"gambar2\":\"/assets/images/resources/design2.png\",\"deskripsi_lomba2\":\"<b>HIMATIFA X Fowtedu UI/UX Mini Bootcamp</b> diperuntukan untuk pelajar/mahasiswa/umum. Acara ini mengusung tema \\\"Show Your Skills and Build Your Career\\\" dengan harapan peserta dapat meningkatkan wawasan, kemampuan serta dapat karir di bidang UI/UX\",\"benefit\":[\"E-sertifikat\",\"Ilmu\",\"Menambah pengalaman dan networking\"],\"additional\":[],\"prize\":{\"juara1\":\"Rp.1.000.000\",\"juara2\":\"Rp.600.000\",\"juara3\":\"Rp.400.000\",\"tambahan\":[]},\"timeline\":[{\"tahap\":\"Pendaftaran Gelombang 1\",\"tanggal\":\"18 November 2021 - 25 November 2021\"},{\"tahap\":\"Pendaftaran Gelombang 2\",\"tanggal\":\"26 November - 14 Desember 2021\"},{\"tahap\":\"Try Out\",\"tanggal\":\"12 Desember 2021\"},{\"tahap\":\"Penyisihan\",\"tanggal\":\"18 Desember 2021\"},{\"tahap\":\"Pengumuman Finalis\",\"tanggal\":\"29 Desember 2021\"},{\"tahap\":\"Final\",\"tanggal\":\"8 Januari 2022\"}],\"faq\":[{\"pertanyaan\":\"Apa itu Computer Science Olympiad (CSO)?\",\"jawaban\":\"Kompetisi di bidang matematika dan logika yang diperuntukan bagi siswa SMA/SMK sederajat dengan tujuan mendorong siswa untuk meningkatkan minat dan kemampuan di bidang informatika.\"},{\"pertanyaan\":\"Berapa biaya kompetisi ini?\",\"jawaban\":\"Setiap tim akan dikenakan biaya 50.000,-\"},{\"pertanyaan\":\"Apakah kompetisi ini dilakukan secara daring?\",\"jawaban\":\"Ya, seluruh rangkaian kompertisi ini akan dilakukan secara daring\"},{\"pertanyaan\":\"Dokumen apa yang dibutuhkan untuk mendaftar Computer Science Olympiad (CSO)?\",\"jawaban\":\"Hanya memerlukan scan kartu pelajar atau surat keterangan aktif dari sekolah\"},{\"pertanyaan\":\"Berapa babak yang ada dalam Computer Science Olympiad (CSO)?\",\"jawaban\":\"Terdapat 3 babak, yaitu Try Out, Penyisihan, dan Final.\"},{\"pertanyaan\":\"Perbedaan mengikuti pendaftaran gelombang 1 dan 2 ?\",\"jawaban\":\"Peserta yang mendaftar gelombang 1 akan berkesempatan mengikuti tryout dengan hadiah pengembalian dana pendaftaran, sedangkan peserta yang mendaftar gelombang 2 tidak dapat mengikuti Try Out dan langsung mengikuti babak Penyisihan\"}],\"kontak\":[{\"judul\":\"Whatsapp\",\"icon\":\"whatsapp\",\"list\":[{\"nama\":\"ANIYSAH\",\"kontak\":\"+6287761134588\",\"link\":\"https://wa.me/6287761134588\"},{\"nama\":\"NIMAS \",\"kontak\":\"+6285749494267\",\"link\":\"https://wa.me/6285749494267\"}]},{\"judul\":\"Instagram\",\"icon\":\"instagram\",\"list\":[{\"nama\":\"\",\"kontak\":\"fasilkomfest.academic\",\"link\":\"https://www.instagram.com/fasilkomfest.academic/\"}]}]}");
+module.exports = JSON.parse("{\"nama_lomba\":\"IT-CAMP X FOWTEDU 2023 UI/UX Mini Bootcamp\",\"deskripsi_lomba1\":\"IT-CAMP X FOWTEDU 2023 UI/UX Mini Bootcamp merupakan rangkaian mini bootcamp yang diadakan oleh Himpunan Mahasiswa Informatika Universitas Pembangunan Nasional \\\"Veteran\\\" Jawa Timur dengan tujuan untuk mengenalkan UI/UX dikalangan pelajar/mahasiswa/umum.\",\"link_guidebook\":\"https://drive.google.com/file/d/1ttd1gO8-zN0m25K701XbuGbWSrqIA2aB/view\",\"link_pendaftaran\":\"close\",\"gambar1\":\"/assets/images/resources/design.png\",\"gambar2\":\"/assets/images/resources/design2.png\",\"deskripsi_lomba2\":\"<b>IT-CAMP X FOWTEDU 2023 UI/UX Mini Bootcamp</b> diperuntukan untuk pelajar/mahasiswa/umum. Acara ini mengusung tema \\\"Show Your Skills and Build Your Career\\\" dengan harapan peserta dapat meningkatkan wawasan, kemampuan serta dapat karir di bidang UI/UX\",\"benefit\":[\"E-sertifikat\",\"Ilmu\",\"Menambah pengalaman dan networking\"],\"additional\":[],\"prize\":{\"juara1\":\"Rp.1.000.000\",\"juara2\":\"Rp.600.000\",\"juara3\":\"Rp.400.000\",\"tambahan\":[]},\"timeline\":[{\"tahap\":\"Pendaftaran\",\"tanggal\":\"1 Januari 2023 – 13 Januari 2023\"},{\"tahap\":\"Pembukaan\",\"tanggal\":\"13 Januari 2023\"},{\"tahap\":\"Boot Camp Day 1\",\"tanggal\":\"21 Januari 2023\"},{\"tahap\":\"Pengumpulan Progress Tugas 1\",\"tanggal\":\"27 Januari 2023\"},{\"tahap\":\"Boot Camp Day 2\",\"tanggal\":\"28 Januari 2023\"},{\"tahap\":\"Pengumpulan Progress Tugas 2\",\"tanggal\":\"3 Februari 2023\"},{\"tahap\":\"Boot Camp Day 3\",\"tanggal\":\"4 Februari 2023\"},{\"tahap\":\"Pengumpulan Tugas Akhir\",\"tanggal\":\"9 Februari 2023\"},{\"tahap\":\"Pengumuman Tugas Terbaik\",\"tanggal\":\"11 Februari 2023\"}],\"faq\":[{\"pertanyaan\":\"Apa itu IT-CAMP X FOWTEDU 2023?\",\"jawaban\":\"IT-CAMP X FOWTEDU 2023 merupakan kegiatan akhir tahun dari HIMATIFA UPN Veteran Jawa Timur Tahun 2023. Kegiatan ini berbentuk mini bootcamp yang ditujukan untuk seluruh mahasiswa dan pelajar serta umum. Untuk acara ini, tema yang diangkat adalah \\\"Show Your Skills and Build Your Career\\\" dengan materi umumnya mengenai UI/UX.\"},{\"pertanyaan\":\"Berapa biaya mengikuti acara ini ini?\",\"jawaban\":\"Setiap peserta akan dikenakan biaya 50.000,-\"},{\"pertanyaan\":\"Apakah kompetisi ini dilakukan secara daring?\",\"jawaban\":\"Ya, seluruh rangkaian kompertisi ini akan dilakukan secara daring\"},{\"pertanyaan\":\"Dokumen apa yang dibutuhkan untuk mendaftar IT-CAMP X FOWTEDU 2023?\",\"jawaban\":\"Hanya dengan melakukan registrasi menggunakan email di website ini.\"}],\"kontak\":[{\"judul\":\"Whatsapp\",\"icon\":\"whatsapp\",\"list\":[{\"nama\":\"ANIYSAH\",\"kontak\":\"+6287761134588\",\"link\":\"https://wa.me/6287761134588\"},{\"nama\":\"NIMAS \",\"kontak\":\"+6285749494267\",\"link\":\"https://wa.me/6285749494267\"}]},{\"judul\":\"Instagram\",\"icon\":\"instagram\",\"list\":[{\"nama\":\"\",\"kontak\":\"fasilkomfest.academic\",\"link\":\"https://www.instagram.com/fasilkomfest.academic/\"}]}]}");
 
 /***/ }),
 
@@ -16331,7 +16331,7 @@ module.exports = JSON.parse("{\"nama_lomba\":\"HIMATIFA X Fowtedu UI/UX Mini Boo
 /*! exports provided: header, video, sponsor, competition, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"header\":{\"nama_lomba\":\"<span>IT Camp</span>\",\"deskripsi_lomba\":\"Mini Bootcamp yang diadakan oleh<br>Program Studi Informatika<br/>UPN Veteran Jawa Timur\",\"logo\":\"\"},\"video\":{\"videoId\":\"ULXjdzMZAZ4\",\"thumbnail\":\"/assets/images/resources/video.webp\"},\"sponsor\":[{\"nama_sponsor\":\"DewaWeb\",\"logo_sponsor\":\"dewaweb.webp\",\"ukuran\":\"col-4\",\"link\":\"https://www.dewaweb.com/\"}],\"competition\":[{\"nama\":\"NEOICT Competition\",\"title\":\"NEOICT <span>Competition</span>\",\"logo\":\"AKADEMIK.webp\",\"deskripsi\":\"NEOICT Competition merupakan acara dibawah naungan IT Camp 2021 yang diadakan oleh Fakultas Ilmu Komputer UPN Veteran Jawa Timur. NEOICT Competition memiliki berbagai lomba dalam bidang akademik. Berbagai lomba yang diadakan adalah Computer Science Olympiad, UI/UX Design, Business Plan, dan Business Case\",\"lomba\":[{\"sub\":\"Computer Science Olympiad\",\"link\":\"cso\",\"img\":\"cso.webp\"},{\"sub\":\"UI/UX Design\",\"link\":\"uiux\",\"img\":\"uiux.webp\"},{\"sub\":\"Business Plan\",\"link\":\"bp\",\"img\":\"bp.webp\"},{\"sub\":\"Business Case\",\"link\":\"bc\",\"img\":\"bp.webp\"}]},{\"nama\":\"Festive\",\"title\":\"<span>Festive</span>\",\"logo\":\"SENI.webp\",\"deskripsi\":\"Festive (IT Camp Art and Creative Competition) adalah perlombaan yang memiliki tujuan mengembangkan seni dan kreativitas bagi para pelajar maupun mahasiswa di seluruh Indonesia. Berbagai lomba yang diadakan ialah Music Cover Competition, Short Movie Competition dan Photography Competition.\",\"lomba\":[{\"sub\":\"Music Cover Competition\",\"link\":\"mcc\",\"img\":\"mcc.webp\"},{\"sub\":\"Short Movie Competition\",\"link\":\"smc\",\"img\":\"smc.webp\"},{\"sub\":\"Photography Competition\",\"link\":\"pgc\",\"img\":\"pgc.webp\"}]},{\"nama\":\"Fasilkom E-Sport Competition\",\"title\":\"<span>Fasilkom</span> E-Sport <span>Competition</span>\",\"logo\":\"ESPORT.webp\",\"deskripsi\":\"Fasilkom E-Sports Competition merupakan perlombaan E-sports di dalam rangkaian acara IT Camp 2021 yang diadakan oleh Fakultas Ilmu Komputer UPN \\\"Veteran\\\" Jawa Timur. Dalam Fasilkom E-Sports Competition kami mengundang dan menantang tim kalian para gamers dalam beberapa game yaitu Valorant, Mobile Legends dan PUBG Mobile.\",\"lomba\":[{\"sub\":\"Mobile Legend Competition\",\"link\":\"ml\",\"img\":\"ml.webp\"},{\"sub\":\"PUBG Mobile Competition\",\"link\":\"pmc\",\"img\":\"pubg.webp\"},{\"sub\":\"Valorant Competition\",\"link\":\"vlc\",\"img\":\"valo.png\"}]}]}");
+module.exports = JSON.parse("{\"header\":{\"nama_lomba\":\"<span>IT-CAMP X FOWTEDU 2023</span>\",\"deskripsi_lomba\":\"Mini Bootcamp yang diadakan oleh<br>Program Studi Informatika<br/>UPN Veteran Jawa Timur\",\"logo\":\"\"},\"video\":{\"videoId\":\"ULXjdzMZAZ4\",\"thumbnail\":\"/assets/images/resources/video.webp\"},\"sponsor\":[{\"nama_sponsor\":\"DewaWeb\",\"logo_sponsor\":\"dewaweb.webp\",\"ukuran\":\"col-4\",\"link\":\"https://www.dewaweb.com/\"}],\"competition\":[{\"nama\":\"NEOICT Competition\",\"title\":\"NEOICT <span>Competition</span>\",\"logo\":\"AKADEMIK.webp\",\"deskripsi\":\"NEOICT Competition merupakan acara dibawah naungan IT Camp 2021 yang diadakan oleh Fakultas Ilmu Komputer UPN Veteran Jawa Timur. NEOICT Competition memiliki berbagai lomba dalam bidang akademik. Berbagai lomba yang diadakan adalah Computer Science Olympiad, UI/UX Design, Business Plan, dan Business Case\",\"lomba\":[{\"sub\":\"Computer Science Olympiad\",\"link\":\"cso\",\"img\":\"cso.webp\"},{\"sub\":\"UI/UX Design\",\"link\":\"uiux\",\"img\":\"uiux.webp\"},{\"sub\":\"Business Plan\",\"link\":\"bp\",\"img\":\"bp.webp\"},{\"sub\":\"Business Case\",\"link\":\"bc\",\"img\":\"bp.webp\"}]},{\"nama\":\"Festive\",\"title\":\"<span>Festive</span>\",\"logo\":\"SENI.webp\",\"deskripsi\":\"Festive (IT Camp Art and Creative Competition) adalah perlombaan yang memiliki tujuan mengembangkan seni dan kreativitas bagi para pelajar maupun mahasiswa di seluruh Indonesia. Berbagai lomba yang diadakan ialah Music Cover Competition, Short Movie Competition dan Photography Competition.\",\"lomba\":[{\"sub\":\"Music Cover Competition\",\"link\":\"mcc\",\"img\":\"mcc.webp\"},{\"sub\":\"Short Movie Competition\",\"link\":\"smc\",\"img\":\"smc.webp\"},{\"sub\":\"Photography Competition\",\"link\":\"pgc\",\"img\":\"pgc.webp\"}]},{\"nama\":\"Fasilkom E-Sport Competition\",\"title\":\"<span>Fasilkom</span> E-Sport <span>Competition</span>\",\"logo\":\"ESPORT.webp\",\"deskripsi\":\"Fasilkom E-Sports Competition merupakan perlombaan E-sports di dalam rangkaian acara IT Camp 2021 yang diadakan oleh Fakultas Ilmu Komputer UPN \\\"Veteran\\\" Jawa Timur. Dalam Fasilkom E-Sports Competition kami mengundang dan menantang tim kalian para gamers dalam beberapa game yaitu Valorant, Mobile Legends dan PUBG Mobile.\",\"lomba\":[{\"sub\":\"Mobile Legend Competition\",\"link\":\"ml\",\"img\":\"ml.webp\"},{\"sub\":\"PUBG Mobile Competition\",\"link\":\"pmc\",\"img\":\"pubg.webp\"},{\"sub\":\"Valorant Competition\",\"link\":\"vlc\",\"img\":\"valo.png\"}]}]}");
 
 /***/ }),
 

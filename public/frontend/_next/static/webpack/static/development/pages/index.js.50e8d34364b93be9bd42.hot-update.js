@@ -215,7 +215,7 @@ var Blog = /*#__PURE__*/function (_Component) {
           lineNumber: 87,
           columnNumber: 13
         }
-      }, "& copy; Copyright 2021 by ", __jsx("a", {
+      }, "© Copyright 2023 by ", __jsx("a", {
         href: "#",
         __self: this,
         __source: {
@@ -223,7 +223,7 @@ var Blog = /*#__PURE__*/function (_Component) {
           lineNumber: 90,
           columnNumber: 37
         }
-      }, " itcamp.com "), " "), " "), " "), " "), " "), " "), " ");
+      }, " itcamp2023.com "), " "), " "), " "), " "), " "), " "), " ");
     }
   }]);
 
