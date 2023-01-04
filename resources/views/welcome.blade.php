@@ -498,7 +498,7 @@
                                 </h5>
                                 <div class="footer-widget my-4">
                                     <div class="justify-content-center mt-2 d-flex pb-4">
-                                        <a href="https://www.innstagram.com/itcamp2023/" class="fa fa-instagram icon mr-3"></a>
+                                        <a href="https://www.instagram.com/itcamp2023/" class="fa fa-instagram icon mr-3"></a>
                                         <a href="https://www.youtube.com/channel/UCj6FDNuEMnfgcuWydW1ys9Q" style="
                           background: linear-gradient(
                             to right,

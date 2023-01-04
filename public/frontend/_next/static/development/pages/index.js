@@ -1176,7 +1176,7 @@ var Blog = /*#__PURE__*/function (_Component) {
           columnNumber: 13
         }
       }, __jsx("a", {
-        href: "https://www.innstagram.com/itcamp2023/",
+        href: "https://www.instagram.com/itcamp2023/",
         className: "fa fa-instagram icon mr-3",
         __self: this,
         __source: {
