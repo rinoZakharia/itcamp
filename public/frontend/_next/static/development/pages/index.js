@@ -2845,7 +2845,7 @@ var Video = /*#__PURE__*/function (_Component) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "baseURL", function() { return baseURL; });
-var baseURL = "http://127.0.0.1:8000/";
+var baseURL = "https://itcamp2023.com/";
 
 /***/ }),
 
@@ -5386,7 +5386,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var decode_json_1 = __importDefault(__webpack_require__(/*! ./maps/decode.json */ "./node_modules/entities/lib/maps/decode.json"));
 // Adapted from https://github.com/mathiasbynens/he/blob/master/src/he.js#L94-L119
-var fromCodePoint = 
+var fromCodePoint =
 // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
 String.fromCodePoint ||
     function (codePoint) {
@@ -5502,7 +5502,7 @@ function getInverseReplacer(inverse) {
 }
 // /[^\0-\x7F]/gu
 var reNonASCII = /(?:[\x80-\uD7FF\uE000-\uFFFF]|[\uD800-\uDBFF][\uDC00-\uDFFF]|[\uD800-\uDBFF](?![\uDC00-\uDFFF])|(?:[^\uD800-\uDBFF]|^)[\uDC00-\uDFFF])/g;
-var getCodePoint = 
+var getCodePoint =
 // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
 String.prototype.codePointAt != null
     ? // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
@@ -6687,7 +6687,7 @@ Parser.prototype.onclosetag = function(name) {
     if (this._lowerCaseTagNames) {
         name = name.toLowerCase();
     }
-    
+
     if (name in foreignContextElements || name in htmlIntegrationElements) {
         this._foreignContext.pop();
     }
@@ -6736,7 +6736,7 @@ Parser.prototype._closeCurrentTag = function() {
             this._cbs.onclosetag(name);
         }
         this._stack.pop();
-        
+
     }
 };
 
@@ -8143,7 +8143,7 @@ DomHandler.prototype.onerror = function(error){
 
 DomHandler.prototype.onclosetag = function(){
 	//if(this._tagStack.pop().name !== name) this._handleCallback(Error("Tagname didn't match!"));
-	
+
 	var elem = this._tagStack.pop();
 
 	if(this._options.withEndIndices && elem){
@@ -8742,7 +8742,7 @@ exports.prepend = function(elem, prev){
 	if(elem.prev){
 		elem.prev.next = prev;
 	}
-	
+
 	prev.parent = parent;
 	prev.prev = elem.prev;
 	prev.next = elem;
@@ -9214,7 +9214,7 @@ var assign=Object.assign.bind(Object);function g(){return assign;}Object.defineP
       }
       return mod
     }]);
-  
+
 
 /***/ }),
 
