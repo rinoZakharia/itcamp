@@ -70,15 +70,15 @@
                 <section class="mb-5 pt-5 py-4" id="event">
                     <div class="container">
                         <div class="row flex-row-reverse pb-3 pt-4">
-                            <div class="col-xl-6"><img class="img-fluid mx-2 p-5" src="{{url('')}}/frontend/assets/images/resources/design.png" alt="HIMATIFA X Partnership UI/UX Mini Bootcamp" /> </div>
+                            <div class="col-xl-6"><img class="img-fluid mx-2 p-5" src="{{url('')}}/frontend/assets/images/resources/design.png" alt="HIMATIFA X Fowtedu UI/UX Mini Bootcamp" /> </div>
                             <div class="col-xl-6">
                                 <div class="banner-one__content mt-5">
                                     <h5 class="banner-one__title">
-                                        <!-- -->HIMATIFA X Partnership UI/UX Mini Bootcamp
+                                        <!-- -->HIMATIFA X Fowtedu UI/UX Mini Bootcamp
                                         <!-- -->
                                     </h5>
                                     <p class="banner-one__text">
-                                        <!-- -->HIMATIFA X Partnership UI/UX Mini Bootcamp merupakan rangkaian mini bootcamp yang diadakan oleh Himpunan Mahasiswa Informatika Universitas Pembangunan Nasional &quot;Veteran&quot; Jawa Timur dengan tujuan untuk mengenalkan UI/UX dikalangan pelajar/mahasiswa/umum.
+                                        <!-- -->HIMATIFA X Fowtedu UI/UX Mini Bootcamp merupakan rangkaian mini bootcamp yang diadakan oleh Himpunan Mahasiswa Informatika Universitas Pembangunan Nasional &quot;Veteran&quot; Jawa Timur dengan tujuan untuk mengenalkan UI/UX dikalangan pelajar/mahasiswa/umum.
                                         <!-- -->
                                     </p>
                                     <div class=" ">
@@ -93,10 +93,10 @@
                 <section class="pb-5 mb-5 display-relative" style="z-index:1200" id="detail">
                     <div class="container">
                         <div class="row ">
-                            <div class="col-xl-6 m-auto"><img class="img-fluid text-center img-section" src="{{url('')}}/frontend/assets/images/resources/design2.png" alt="HIMATIFA X Partnership UI/UX Mini Bootcamp" /> </div>
+                            <div class="col-xl-6 m-auto"><img class="img-fluid text-center img-section" src="{{url('')}}/frontend/assets/images/resources/design2.png" alt="HIMATIFA X Fowtedu UI/UX Mini Bootcamp" /> </div>
                             <div class="col-xl-6">
                                 <div class="banner-one__content justify-content-center align-items-center">
-                                    <p class="banner-one__text"> <b>HIMATIFA X Partnership UI/UX Mini Bootcamp</b> diperuntukan untuk pelajar/mahasiswa/umum. Acara ini mengusung tema &quot;Show Your Skills and Build Your Career&quot; dengan harapan peserta dapat meningkatkan wawasan, kemampuan serta dapat karir di bidang UI/UX
+                                    <p class="banner-one__text"> <b>HIMATIFA X Fowtedu UI/UX Mini Bootcamp</b> diperuntukan untuk pelajar/mahasiswa/umum. Acara ini mengusung tema &quot;Show Your Skills and Build Your Career&quot; dengan harapan peserta dapat meningkatkan wawasan, kemampuan serta dapat karir di bidang UI/UX
                                         <!-- -->
                                     </p>
                                     <ul class="list-unstyled">
@@ -135,7 +135,7 @@
                         <div class="block-title text-center my-5">
                             <h2 class="block-title__title"><span> Timeline </span> </h2>
                             <p>
-                                <!-- -->HIMATIFA X Partnership UI/UX Mini Bootcamp
+                                <!-- -->HIMATIFA X Fowtedu UI/UX Mini Bootcamp
                                 <!-- -->
                             </p>
                         </div>
