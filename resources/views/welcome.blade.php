@@ -8,26 +8,26 @@
     <link rel="icon" type="image/png" sizes="32x32" href="{{url('')}}/frontend/assets/images/resources/logo.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="{{url('')}}/frontend/assets/images/resources/logo.png" />
     <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900&amp;display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="{{url('')}}/frontend/assets/css/animate.min.css" />
-    <link rel="stylesheet" href="{{url('')}}/frontend/assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="{{url('')}}/frontend/assets/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="{{url('')}}/frontend/assets/plugins/dimon-icons/style.css" />
-    <link rel="stylesheet" href="{{url('')}}/frontend/assets/css/style.css" />
-    <link rel="stylesheet" href="{{url('')}}/frontend/assets/css/responsive.css" />
+    <link rel="stylesheet" href="{{url('')}}/frontend/assets/css/animate.min.css?v=4" />
+    <link rel="stylesheet" href="{{url('')}}/frontend/assets/css/bootstrap.min.css?v=4" />
+    <link rel="stylesheet" href="{{url('')}}/frontend/assets/css/font-awesome.min.css?v=4" />
+    <link rel="stylesheet" href="{{url('')}}/frontend/assets/plugins/dimon-icons/style.css?v=4" />
+    <link rel="stylesheet" href="{{url('')}}/frontend/assets/css/style.css?v=4" />
+    <link rel="stylesheet" href="{{url('')}}/frontend/assets/css/responsive.css?v=4" />
     <title>ITCamp</title>
     <meta name="description" content="ITCamp Perlombaan yang diadakan oleh Fakultas Ilmu Komputer UPN Veteran Jawa Timur untuk Mahasiswa dan Siswa/Siswi SMA/SMK sederajat bidang akademik,seni, dan e-sport" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="keywords" content="lomba it, lomba sma, lomba smk, lomba mahasiswa, fasilkom, upn veteran jawa timur, lomba bisnis, lomba seni, lomba esport, mobile legend competition, pubg competition, valorant competition, lomba bisnis case, lomba bisnis plan, bisnis case, bisnis plan, uiux design, uiux design competition, short video competition, lomba, olimpiade" />
     <meta name="next-head-count" content="16" />
-    <link rel="preload" href="{{url('')}}/frontend/_next/static/css/styles.a8ee8fd6.chunk.css" as="style" />
-    <link rel="stylesheet" href="{{url('')}}/frontend/_next/static/css/styles.a8ee8fd6.chunk.css" />
-    <link rel="preload" href="{{url('')}}/frontend/_next/static/cI2nTWstX7dsxdNOt_sVs/pages/index.js" as="script" />
-    <link rel="preload" href="{{url('')}}/frontend/_next/static/cI2nTWstX7dsxdNOt_sVs/pages/_app.js" as="script" />
-    <link rel="preload" href="{{url('')}}/frontend/_next/static/runtime/webpack-35176d94be6ecb1365a6.js" as="script" />
-    <link rel="preload" href="{{url('')}}/frontend/_next/static/chunks/framework.504af639ffd40f515d05.js" as="script" />
-    <link rel="preload" href="{{url('')}}/frontend/_next/static/chunks/commons.19809b0290a3469b536b.js" as="script" />
-    <link rel="preload" href="{{url('')}}/frontend/_next/static/chunks/styles.3443c41ca6d48d8c70aa.js" as="script" />
-    <link rel="preload" href="{{url('')}}/frontend/_next/static/runtime/main-7bd9b8ccbd6e0574322e.js" as="script" />
+    <link rel="preload" href="{{url('')}}/frontend/_next/static/css/styles.a8ee8fd6.chunk.css?v=4" as="style" />
+    <link rel="stylesheet" href="{{url('')}}/frontend/_next/static/css/styles.a8ee8fd6.chunk.css?v=4" />
+    <link rel="preload" href="{{url('')}}/frontend/_next/static/cI2nTWstX7dsxdNOt_sVs/pages/index.js?v=4" as="script" />
+    <link rel="preload" href="{{url('')}}/frontend/_next/static/cI2nTWstX7dsxdNOt_sVs/pages/_app.js?v=4" as="script" />
+    <link rel="preload" href="{{url('')}}/frontend/_next/static/runtime/webpack-35176d94be6ecb1365a6.js?v=4" as="script" />
+    <link rel="preload" href="{{url('')}}/frontend/_next/static/chunks/framework.504af639ffd40f515d05.js?v=4" as="script" />
+    <link rel="preload" href="{{url('')}}/frontend/_next/static/chunks/commons.19809b0290a3469b536b.js?v=4" as="script" />
+    <link rel="preload" href="{{url('')}}/frontend/_next/static/chunks/styles.3443c41ca6d48d8c70aa.js?v=4" as="script" />
+    <link rel="preload" href="{{url('')}}/frontend/_next/static/runtime/main-7bd9b8ccbd6e0574322e.js?v=4" as="script" />
 </head>
 
 <body>
@@ -541,16 +541,16 @@
             "isFallback": false
         }
     </script>
-    <script nomodule="" src="{{url('')}}/frontend/_next/static/runtime/polyfills-d038222aac70ab238905.js"></script>
-    <script async="" data-next-page="/" src="{{url('')}}/frontend/_next/static/cI2nTWstX7dsxdNOt_sVs/pages/index.js"></script>
-    <script async="" data-next-page="/_app" src="{{url('')}}/frontend/_next/static/cI2nTWstX7dsxdNOt_sVs/pages/_app.js"></script>
-    <script src="{{url('')}}/frontend/_next/static/runtime/webpack-35176d94be6ecb1365a6.js" async=""></script>
-    <script src="{{url('')}}/frontend/_next/static/chunks/framework.504af639ffd40f515d05.js" async=""></script>
-    <script src="{{url('')}}/frontend/_next/static/chunks/commons.19809b0290a3469b536b.js" async=""></script>
-    <script src="{{url('')}}/frontend/_next/static/chunks/styles.3443c41ca6d48d8c70aa.js" async=""></script>
-    <script src="{{url('')}}/frontend/_next/static/runtime/main-7bd9b8ccbd6e0574322e.js" async=""></script>
-    <script src="{{url('')}}/frontend/_next/static/cI2nTWstX7dsxdNOt_sVs/_buildManifest.js" async=""></script>
-    <script src="{{url('')}}/frontend/_next/static/cI2nTWstX7dsxdNOt_sVs/_ssgManifest.js" async=""></script>
+    <script nomodule="" src="{{url('')}}/frontend/_next/static/runtime/polyfills-d038222aac70ab238905.js?v=4"></script>
+    <script async="" data-next-page="/" src="{{url('')}}/frontend/_next/static/cI2nTWstX7dsxdNOt_sVs/pages/index.js?v=4"></script>
+    <script async="" data-next-page="/_app" src="{{url('')}}/frontend/_next/static/cI2nTWstX7dsxdNOt_sVs/pages/_app.js?v=4"></script>
+    <script src="{{url('')}}/frontend/_next/static/runtime/webpack-35176d94be6ecb1365a6.js?v=4" async=""></script>
+    <script src="{{url('')}}/frontend/_next/static/chunks/framework.504af639ffd40f515d05.js?v=4" async=""></script>
+    <script src="{{url('')}}/frontend/_next/static/chunks/commons.19809b0290a3469b536b.js?v=4" async=""></script>
+    <script src="{{url('')}}/frontend/_next/static/chunks/styles.3443c41ca6d48d8c70aa.js?v=4" async=""></script>
+    <script src="{{url('')}}/frontend/_next/static/runtime/main-7bd9b8ccbd6e0574322e.js?v=4" async=""></script>
+    <script src="{{url('')}}/frontend/_next/static/cI2nTWstX7dsxdNOt_sVs/_buildManifest.js?v=4" async=""></script>
+    <script src="{{url('')}}/frontend/_next/static/cI2nTWstX7dsxdNOt_sVs/_ssgManifest.js?v=4" async=""></script>
     <script>
         // load after page load
         window.addEventListener('load', function() {
