@@ -107,7 +107,7 @@
                 </section>
                 <section class="video-one mx-2 mb-5" id="video"><img src="{{url('frontend')}}/assets/images/background/video-one-bg.png" alt="Awesome Image" class="video-one__bg" />
                     <div class="container wow fadeInUp" data-wow-duration="1500ms">
-                        <div class="video-one__box "><img src="{{url('frontend')}}/assets/images/resources/video.webp" alt="" />
+                        <div class="video-one__box "><img src="{{url('frontend')}}/assets/images/resources/video.webp?v=1" alt="" />
                             <div class="video-one__content">
                                 <div class="video-popup video-one__btn"><i class="fa fa-play"></i></div>
                             </div>
