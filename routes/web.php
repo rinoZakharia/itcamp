@@ -32,6 +32,15 @@ Route::get('/', function () {
 });
 
 
+Route::get('/cara_mudah_membuat_website_pertamamu', function () {
+    return view('blog1');
+});
+
+Route::get('/cara_praktis_membuat_web_portofolio_sendiri', function () {
+    return view('blog2');
+});
+
+
 // Admin
 Route::get('/back/login', [AdminController::class, 'login'])->name('admin.login');
 Route::get('/back/logout', [AdminController::class, 'logout'])->name('admin.logout');

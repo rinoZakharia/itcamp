@@ -23,21 +23,18 @@
         ]
     },
     "timeline": [
-        { "tahap": "Pendaftaran", "tanggal": "1 Januari 2023 – 20 Januari 2023" },
+        { "tahap": "Pendaftaran", "tanggal": "8 Januari 2023 – 20 Januari 2023" },
         { "tahap": "Boot Camp Day 1", "tanggal": "21 Januari 2023" },
-        { "tahap": "Pengumpulan Progress Tugas 1", "tanggal": "27 Januari 2023" },
         { "tahap": "Boot Camp Day 2", "tanggal": "28 Januari 2023" },
-        { "tahap": "Pengumpulan Progress Tugas 2", "tanggal": "3 Februari 2023" },
         { "tahap": "Boot Camp Day 3", "tanggal": "4 Februari 2023" },
-        { "tahap": "Pengumpulan Tugas Akhir", "tanggal": "9 Februari 2023" },
-        { "tahap": "Pengumuman Tugas Terbaik", "tanggal": "11 Februari 2023" }
+        { "tahap": "Penutupan", "tanggal": "11 Februari 2023" }
     ],
     "faq": [
         { "pertanyaan": "Apa itu IT-CAMP X FOWTEDU 2023?", "jawaban": "IT-CAMP X FOWTEDU 2023 merupakan kegiatan akhir tahun dari HIMATIFA UPN Veteran Jawa Timur Tahun 2023. Kegiatan ini berbentuk mini bootcamp yang ditujukan untuk seluruh mahasiswa dan pelajar serta umum. Untuk acara ini, tema yang diangkat adalah \"Show Your Skills and Build Your Career\" dengan materi umumnya mengenai UI/UX." },
         { "pertanyaan": "Berapa biaya mengikuti acara ini ini?", "jawaban": "Setiap peserta akan dikenakan biaya 50.000,-" },
         { "pertanyaan": "Apakah bootcamp ini dilakukan secara daring?", "jawaban": "Ya, seluruh rangkaian kompertisi ini akan dilakukan secara daring" },
-        { "pertanyaan": "Dokumen apa yang dibutuhkan untuk mendaftar IT-CAMP X FOWTEDU 2023?", "jawaban": "Hanya dengan melakukan registrasi menggunakan email di website ini." }
-        { "pertanyaan": "Apakah ada yang bisa dihubungi lebih lanjut mengenai acara ini?", "jawaban": "Bisa, lewat no telepon berikut.  Dhimas - +62 851-5774-6492" }
+        { "pertanyaan": "Dokumen apa yang dibutuhkan untuk mendaftar IT-CAMP X FOWTEDU 2023?", "jawaban": "Hanya dengan melakukan registrasi menggunakan email di website ini." },
+        { "pertanyaan": "Apakah ada yang bisa dihubungi lebih lanjut mengenai acara ini?", "jawaban": "Bisa, lewat no telepon berikut.  Dhimas - <a target='_blank' href='https://wa.me/6285157746492'>+62 851-5774-6492</a>" }
     ],
     "kontak": [{
             "judul": "Whatsapp",

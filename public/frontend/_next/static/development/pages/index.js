@@ -123,7 +123,7 @@ var BannerTwo = function BannerTwo(_ref) {
     }
   }, " ", react_html_parser__WEBPACK_IMPORTED_MODULE_1___default()(header.deskripsi_lomba), " "), " ", __jsx("a", {
     href: "#event",
-    className: "banner-one__btn thm-btn mb-5",
+    className: "banner-one__btn thm-btn mb-3",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -172,6 +172,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var _EventTime__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./EventTime */ "./components/EventTime.js");
+/* harmony import */ var _EventTime1__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./EventTime1 */ "./components/EventTime1.js");
+/* harmony import */ var _EventTime2__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./EventTime2 */ "./components/EventTime2.js");
 
 
 
@@ -188,6 +190,8 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement;
 function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = Object(_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_6__["default"])(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = Object(_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_6__["default"])(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return Object(_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_5__["default"])(this, result); }; }
 
 function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+
 
 
 
@@ -215,7 +219,7 @@ var Curicullum = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 6,
+          lineNumber: 8,
           columnNumber: 7
         }
       }, __jsx("img", {
@@ -225,7 +229,7 @@ var Curicullum = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 11,
+          lineNumber: 13,
           columnNumber: 9
         }
       }), __jsx("div", {
@@ -233,7 +237,7 @@ var Curicullum = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 12,
+          lineNumber: 14,
           columnNumber: 9
         }
       }, __jsx("div", {
@@ -241,7 +245,7 @@ var Curicullum = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 13,
+          lineNumber: 15,
           columnNumber: 11
         }
       }, __jsx("h2", {
@@ -249,14 +253,14 @@ var Curicullum = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 14,
+          lineNumber: 16,
           columnNumber: 13
         }
       }, __jsx("span", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 15,
+          lineNumber: 17,
           columnNumber: 15
         }
       }, " Rundown "), " "), " "), " "), " ", __jsx("div", {
@@ -264,7 +268,7 @@ var Curicullum = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 20,
+          lineNumber: 22,
           columnNumber: 9
         }
       }, __jsx("div", {
@@ -272,14 +276,14 @@ var Curicullum = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 21,
+          lineNumber: 23,
           columnNumber: 9
         }
       }, __jsx(Tabs, {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 22,
+          lineNumber: 24,
           columnNumber: 13
         }
       }, __jsx(Tab, {
@@ -287,21 +291,21 @@ var Curicullum = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 23,
+          lineNumber: 25,
           columnNumber: 15
         }
       }, __jsx("div", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 24,
+          lineNumber: 26,
           columnNumber: 17
         }
       }, __jsx(_EventTime__WEBPACK_IMPORTED_MODULE_8__["default"], {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 25,
+          lineNumber: 27,
           columnNumber: 18
         }
       }))), __jsx(Tab, {
@@ -309,21 +313,21 @@ var Curicullum = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 28,
+          lineNumber: 30,
           columnNumber: 15
         }
       }, __jsx("div", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 29,
+          lineNumber: 31,
           columnNumber: 17
         }
-      }, __jsx(_EventTime__WEBPACK_IMPORTED_MODULE_8__["default"], {
+      }, __jsx(_EventTime1__WEBPACK_IMPORTED_MODULE_9__["default"], {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 30,
+          lineNumber: 32,
           columnNumber: 17
         }
       }))), __jsx(Tab, {
@@ -331,21 +335,21 @@ var Curicullum = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 33,
+          lineNumber: 35,
           columnNumber: 15
         }
       }, __jsx("div", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 34,
+          lineNumber: 36,
           columnNumber: 17
         }
-      }, __jsx(_EventTime__WEBPACK_IMPORTED_MODULE_8__["default"], {
+      }, __jsx(_EventTime2__WEBPACK_IMPORTED_MODULE_10__["default"], {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 35,
+          lineNumber: 37,
           columnNumber: 19
         }
       })))))));
@@ -397,7 +401,7 @@ var Tabs = /*#__PURE__*/function (_React$Component2) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 58,
+          lineNumber: 60,
           columnNumber: 7
         }
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.Children.map(this.props.children, function (child) {
@@ -410,7 +414,7 @@ var Tabs = /*#__PURE__*/function (_React$Component2) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 65,
+          lineNumber: 67,
           columnNumber: 9
         }
       }), __jsx("div", {
@@ -418,7 +422,7 @@ var Tabs = /*#__PURE__*/function (_React$Component2) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 70,
+          lineNumber: 72,
           columnNumber: 9
         }
       }, content));
@@ -437,7 +441,7 @@ var TabButtons = function TabButtons(_ref) {
     __self: _this3,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 78,
+      lineNumber: 80,
       columnNumber: 5
     }
   }, buttons.map(function (button, index) {
@@ -450,7 +454,7 @@ var TabButtons = function TabButtons(_ref) {
       __self: _this3,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 81,
+        lineNumber: 83,
         columnNumber: 11
       }
     }, button);
@@ -462,7 +466,7 @@ var Tab = function Tab(props) {
     __self: _this3,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 97,
+      lineNumber: 99,
       columnNumber: 10
     }
   }, props.children);
@@ -565,35 +569,11 @@ var EventTime = /*#__PURE__*/function (_React$Component) {
             columnNumber: 25
           }
         }, __jsx("div", {
-          className: "min-w-[130px]",
-          __self: this,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 15,
-            columnNumber: 29
-          }
-        }, __jsx("div", {
-          className: "rounded-xl bg-peach p-2",
-          __self: this,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 16,
-            columnNumber: 33
-          }
-        }, __jsx("h5", {
-          className: "time_rundown",
-          __self: this,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 17,
-            columnNumber: 37
-          }
-        }, "08:00 - 19:20"))), __jsx("div", {
           className: "flex-grow-1 text-left ml-4 content-rundown",
           __self: this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 20,
+            lineNumber: 16,
             columnNumber: 29
           }
         }, __jsx("h5", {
@@ -601,7 +581,7 @@ var EventTime = /*#__PURE__*/function (_React$Component) {
           __self: this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 21,
+            lineNumber: 17,
             columnNumber: 33
           }
         }, "Opening Ceremony"), __jsx("p", {
@@ -609,7 +589,7 @@ var EventTime = /*#__PURE__*/function (_React$Component) {
           __self: this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 22,
+            lineNumber: 18,
             columnNumber: 33
           }
         }, "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae."))), __jsx("div", {
@@ -617,34 +597,42 @@ var EventTime = /*#__PURE__*/function (_React$Component) {
           __self: this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 25,
+            lineNumber: 21,
             columnNumber: 25
           }
         }, __jsx("div", {
-          className: "min-w-[130px]",
+          className: "flex-grow-1 text-left ml-4 content-rundown",
           __self: this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 26,
+            lineNumber: 23,
             columnNumber: 29
           }
-        }, __jsx("div", {
-          className: "rounded-xl bg-peach p-2",
+        }, __jsx("h5", {
+          className: "title-rundown",
           __self: this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 27,
+            lineNumber: 24,
             columnNumber: 33
           }
-        }, __jsx("h5", {
-          className: "time_rundown",
+        }, "Opening Ceremony"), __jsx("p", {
+          className: "sub-rundown",
           __self: this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 28,
-            columnNumber: 37
+            lineNumber: 25,
+            columnNumber: 33
           }
-        }, "08:00 - 19:20"))), __jsx("div", {
+        }, "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae."))), __jsx("div", {
+          className: "d-flex align-items-center justify-content-center mb-4",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 29,
+            columnNumber: 25
+          }
+        }, __jsx("div", {
           className: "flex-grow-1 text-left ml-4 content-rundown",
           __self: this,
           __source: {
@@ -668,44 +656,118 @@ var EventTime = /*#__PURE__*/function (_React$Component) {
             lineNumber: 33,
             columnNumber: 33
           }
-        }, "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae."))), __jsx("div", {
+        }, "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae."))))))
+      );
+    }
+  }]);
+
+  return EventTime;
+}(react__WEBPACK_IMPORTED_MODULE_5___default.a.Component);
+
+
+
+/***/ }),
+
+/***/ "./components/EventTime1.js":
+/*!**********************************!*\
+  !*** ./components/EventTime1.js ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return EventTime1; });
+/* harmony import */ var _babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var _babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
+
+
+
+
+
+var _jsxFileName = "C:\\Users\\Novandi\\Downloads\\fasilkomfestdashboard-master\\components\\EventTime1.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement;
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = Object(_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__["default"])(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = Object(_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__["default"])(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return Object(_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__["default"])(this, result); }; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+
+
+var EventTime1 = /*#__PURE__*/function (_React$Component) {
+  Object(_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_2__["default"])(EventTime1, _React$Component);
+
+  var _super = _createSuper(EventTime1);
+
+  function EventTime1() {
+    Object(_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, EventTime1);
+
+    return _super.apply(this, arguments);
+  }
+
+  Object(_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(EventTime1, [{
+    key: "render",
+    value: function render() {
+      return (// make card
+        __jsx("div", {
+          className: "container",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 7,
+            columnNumber: 13
+          }
+        }, __jsx("div", {
+          className: "card border-peach box-peach",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 8,
+            columnNumber: 17
+          }
+        }, __jsx("div", {
+          className: "card-header-orange",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 10,
+            columnNumber: 21
+          }
+        }, __jsx("h3", {
+          className: "header-rundown",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 11,
+            columnNumber: 25
+          }
+        }, "Event Rundown")), __jsx("div", {
+          className: "card-body body-rundown",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 14,
+            columnNumber: 21
+          }
+        }, __jsx("div", {
           className: "d-flex align-items-center justify-content-center mb-4",
           __self: this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 37,
+            lineNumber: 15,
             columnNumber: 25
           }
         }, __jsx("div", {
-          className: "min-w-[130px]",
-          __self: this,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 38,
-            columnNumber: 29
-          }
-        }, __jsx("div", {
-          className: "rounded-xl bg-peach p-2",
-          __self: this,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 39,
-            columnNumber: 33
-          }
-        }, __jsx("h5", {
-          className: "time_rundown",
-          __self: this,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 40,
-            columnNumber: 37
-          }
-        }, "08:00 - 19:20"))), __jsx("div", {
           className: "flex-grow-1 text-left ml-4 content-rundown",
           __self: this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 43,
+            lineNumber: 17,
             columnNumber: 29
           }
         }, __jsx("h5", {
@@ -713,15 +775,79 @@ var EventTime = /*#__PURE__*/function (_React$Component) {
           __self: this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 44,
+            lineNumber: 18,
             columnNumber: 33
           }
-        }, "Opening Ceremony"), __jsx("p", {
+        }, "Half Ceremony"), __jsx("p", {
           className: "sub-rundown",
           __self: this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 45,
+            lineNumber: 19,
+            columnNumber: 33
+          }
+        }, "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae."))), __jsx("div", {
+          className: "d-flex align-items-center justify-content-center mb-4",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 22,
+            columnNumber: 25
+          }
+        }, __jsx("div", {
+          className: "flex-grow-1 text-left ml-4 content-rundown",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 24,
+            columnNumber: 29
+          }
+        }, __jsx("h5", {
+          className: "title-rundown",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 25,
+            columnNumber: 33
+          }
+        }, "Half Ceremony"), __jsx("p", {
+          className: "sub-rundown",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 26,
+            columnNumber: 33
+          }
+        }, "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae."))), __jsx("div", {
+          className: "d-flex align-items-center justify-content-center mb-4",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 30,
+            columnNumber: 25
+          }
+        }, __jsx("div", {
+          className: "flex-grow-1 text-left ml-4 content-rundown",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 32,
+            columnNumber: 29
+          }
+        }, __jsx("h5", {
+          className: "title-rundown",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 33,
+            columnNumber: 33
+          }
+        }, "Half Ceremony"), __jsx("p", {
+          className: "sub-rundown",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 34,
             columnNumber: 33
           }
         }, "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae."))))))
@@ -729,7 +855,201 @@ var EventTime = /*#__PURE__*/function (_React$Component) {
     }
   }]);
 
-  return EventTime;
+  return EventTime1;
+}(react__WEBPACK_IMPORTED_MODULE_5___default.a.Component);
+
+
+
+/***/ }),
+
+/***/ "./components/EventTime2.js":
+/*!**********************************!*\
+  !*** ./components/EventTime2.js ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return EventTime2; });
+/* harmony import */ var _babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var _babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
+
+
+
+
+
+var _jsxFileName = "C:\\Users\\Novandi\\Downloads\\fasilkomfestdashboard-master\\components\\EventTime2.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement;
+
+function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = Object(_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__["default"])(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = Object(_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__["default"])(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return Object(_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__["default"])(this, result); }; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); return true; } catch (e) { return false; } }
+
+
+
+var EventTime2 = /*#__PURE__*/function (_React$Component) {
+  Object(_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_2__["default"])(EventTime2, _React$Component);
+
+  var _super = _createSuper(EventTime2);
+
+  function EventTime2() {
+    Object(_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, EventTime2);
+
+    return _super.apply(this, arguments);
+  }
+
+  Object(_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(EventTime2, [{
+    key: "render",
+    value: function render() {
+      return (// make card
+        __jsx("div", {
+          className: "container",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 6,
+            columnNumber: 13
+          }
+        }, __jsx("div", {
+          className: "card border-peach box-peach",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 7,
+            columnNumber: 17
+          }
+        }, __jsx("div", {
+          className: "card-header-orange",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 9,
+            columnNumber: 21
+          }
+        }, __jsx("h3", {
+          className: "header-rundown",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 10,
+            columnNumber: 25
+          }
+        }, "Event Rundown")), __jsx("div", {
+          className: "card-body body-rundown",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 13,
+            columnNumber: 21
+          }
+        }, __jsx("div", {
+          className: "d-flex align-items-center justify-content-center mb-4",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 14,
+            columnNumber: 25
+          }
+        }, __jsx("div", {
+          className: "flex-grow-1 text-left ml-4 content-rundown",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 16,
+            columnNumber: 29
+          }
+        }, __jsx("h5", {
+          className: "title-rundown",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 17,
+            columnNumber: 33
+          }
+        }, "closing Ceremony"), __jsx("p", {
+          className: "sub-rundown",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 18,
+            columnNumber: 33
+          }
+        }, "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae."))), __jsx("div", {
+          className: "d-flex align-items-center justify-content-center mb-4",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 21,
+            columnNumber: 25
+          }
+        }, __jsx("div", {
+          className: "flex-grow-1 text-left ml-4 content-rundown",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 23,
+            columnNumber: 29
+          }
+        }, __jsx("h5", {
+          className: "title-rundown",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 24,
+            columnNumber: 33
+          }
+        }, "closing Ceremony"), __jsx("p", {
+          className: "sub-rundown",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 25,
+            columnNumber: 33
+          }
+        }, "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae."))), __jsx("div", {
+          className: "d-flex align-items-center justify-content-center mb-4",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 29,
+            columnNumber: 25
+          }
+        }, __jsx("div", {
+          className: "flex-grow-1 text-left ml-4 content-rundown",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 31,
+            columnNumber: 29
+          }
+        }, __jsx("h5", {
+          className: "title-rundown",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 32,
+            columnNumber: 33
+          }
+        }, "closing Ceremony"), __jsx("p", {
+          className: "sub-rundown",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 33,
+            columnNumber: 33
+          }
+        }, "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae."))))))
+      );
+    }
+  }]);
+
+  return EventTime2;
 }(react__WEBPACK_IMPORTED_MODULE_5___default.a.Component);
 
 
@@ -895,10 +1215,13 @@ var Events = function Events(_ref) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_html_parser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-html-parser */ "./node_modules/react-html-parser/lib/index.js");
+/* harmony import */ var react_html_parser__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_html_parser__WEBPACK_IMPORTED_MODULE_1__);
 var _this = undefined,
     _jsxFileName = "C:\\Users\\Novandi\\Downloads\\fasilkomfestdashboard-master\\components\\Faq.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 var Faq = function Faq(_ref) {
@@ -1024,7 +1347,7 @@ var Faq = function Faq(_ref) {
         lineNumber: 26,
         columnNumber: 21
       }
-    }, faq.jawaban)))));
+    }, react_html_parser__WEBPACK_IMPORTED_MODULE_1___default()(faq.jawaban))))));
   }))));
 };
 
@@ -1184,24 +1507,12 @@ var Blog = /*#__PURE__*/function (_Component) {
           lineNumber: 56,
           columnNumber: 13
         }
-      }), " ", __jsx("a", {
-        href: "https://www.youtube.com/channel/UCj6FDNuEMnfgcuWydW1ys9Q",
-        style: {
-          background: "linear-gradient(to right, #ed213a, #93291e)"
-        },
-        className: "fa fa-youtube icon ml-3",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 60,
-          columnNumber: 17
-        }
-      }), " "), " "), " "), " "), " ", __jsx("div", {
+      }), "  "), " "), " "), " "), " ", __jsx("div", {
         className: "site-footer__bottom  mt-4",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 73,
+          lineNumber: 64,
           columnNumber: 19
         }
       }, __jsx("div", {
@@ -1209,7 +1520,7 @@ var Blog = /*#__PURE__*/function (_Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75,
+          lineNumber: 66,
           columnNumber: 13
         }
       }, __jsx("div", {
@@ -1217,7 +1528,7 @@ var Blog = /*#__PURE__*/function (_Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 77,
+          lineNumber: 68,
           columnNumber: 13
         }
       }, __jsx("div", {
@@ -1225,7 +1536,7 @@ var Blog = /*#__PURE__*/function (_Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 79,
+          lineNumber: 70,
           columnNumber: 13
         }
       }, __jsx("img", {
@@ -1236,7 +1547,7 @@ var Blog = /*#__PURE__*/function (_Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 81,
+          lineNumber: 72,
           columnNumber: 13
         }
       }), __jsx("p", {
@@ -1244,16 +1555,16 @@ var Blog = /*#__PURE__*/function (_Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 87,
+          lineNumber: 78,
           columnNumber: 13
         }
-      }, "© Copyright 2023 by ", __jsx("a", {
+      }, "\xA9 Copyright 2023 by ", __jsx("a", {
         href: "#",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 90,
-          columnNumber: 37
+          lineNumber: 80,
+          columnNumber: 33
         }
       }, " itcamp2023.com "), " "), " "), " "), " "), " "), " "), " ");
     }
@@ -1303,7 +1614,7 @@ var Header = function Header() {
     }
   }, "ITCamp"), __jsx("meta", {
     name: "description",
-    content: "ITCamp Perlombaan yang diadakan oleh Fakultas Ilmu Komputer UPN Veteran Jawa Timur untuk Mahasiswa dan Siswa/Siswi SMA/SMK sederajat bidang akademik,seni, dan e-sport",
+    content: "IT-CAMP X FOWTEDU 2023 UI/UX Mini Bootcamp merupakan rangkaian mini bootcamp yang diadakan oleh Himpunan Mahasiswa Informatika Universitas Pembangunan Nasional \"Veteran\" Jawa Timur dengan tujuan untuk mengenalkan UI/UX dikalangan pelajar/mahasiswa/umum.",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -1321,7 +1632,7 @@ var Header = function Header() {
     }
   }), __jsx("meta", {
     name: "keywords",
-    content: "lomba it, lomba sma, lomba smk, lomba mahasiswa, fasilkom, upn veteran jawa timur, lomba bisnis, lomba seni, lomba esport, mobile legend competition, pubg competition, valorant competition, lomba bisnis case, lomba bisnis plan, bisnis case, bisnis plan, uiux design, uiux design competition, short video competition, lomba, olimpiade",
+    content: "it-camp x fowtedu 2023,mini bootcamp,ui/ux,himpunan mahasiswa informatika,universitas pembangunan nasional \"veteran\" jawa timur,pelajar,mahasiswa,umum,mengenalkan,informatika,bootcamp,ui,ux,design,ui ux",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -1605,31 +1916,7 @@ var InformationHeader = function InformationHeader(_ref) {
       lineNumber: 33,
       columnNumber: 35
     }
-  }, " "), " "), " "), " ", data.link_pendaftaran == "close" && __jsx("a", {
-    href: data.link_pendaftaran,
-    className: "banner-one__btn thm-btn ml-2 mt-1",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 37,
-      columnNumber: 23
-    }
-  }, __jsx("span", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 41,
-      columnNumber: 25
-    }
-  }, "Daftar ", __jsx("i", {
-    className: "fa fa-sign-in ml-3",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 42,
-      columnNumber: 34
-    }
-  }, " "), " "), " "), " "), " "), " "), " "), " "), " "), " "), " ");
+  }, " "), " "), " "), " ", " "), " "), " "), " "), " "), " "), " "), " ");
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (InformationHeader);
@@ -2022,7 +2309,7 @@ var Navigation = /*#__PURE__*/function (_Component) {
       return __jsx("header", {
         className: "site-header site-header__header-one",
         style: {
-          "z-index": "10200"
+          "zIndex": "10200"
         },
         __self: this,
         __source: {
@@ -2226,15 +2513,38 @@ var Navigation = /*#__PURE__*/function (_Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 104,
+          lineNumber: 103,
           columnNumber: 17
         }
       }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
-        href: "https://facebook.com",
+        href: "#artikel",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 104,
+          columnNumber: 19
+        }
+      }, __jsx("a", {
         __self: this,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 105,
+          columnNumber: 21
+        }
+      }, "Artikel"))), __jsx("li", {
+        className: "scrollToLink",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 109,
+          columnNumber: 17
+        }
+      }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
+        href: "/login",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 110,
           columnNumber: 19
         }
       }, __jsx("a", {
@@ -2242,7 +2552,7 @@ var Navigation = /*#__PURE__*/function (_Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 106,
+          lineNumber: 111,
           columnNumber: 21
         }
       }, "Login"))))))));
@@ -2253,6 +2563,338 @@ var Navigation = /*#__PURE__*/function (_Component) {
 }(react__WEBPACK_IMPORTED_MODULE_7__["Component"]);
 
 
+
+/***/ }),
+
+/***/ "./components/NewsHome.js":
+/*!********************************!*\
+  !*** ./components/NewsHome.js ***!
+  \********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
+var _this = undefined,
+    _jsxFileName = "C:\\Users\\Novandi\\Downloads\\fasilkomfestdashboard-master\\components\\NewsHome.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+var NewsHome = function NewsHome() {
+  return __jsx("section", {
+    className: "blog-one blog-one__home",
+    id: "artikel",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6,
+      columnNumber: 5
+    }
+  }, __jsx("div", {
+    className: "container",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7,
+      columnNumber: 7
+    }
+  }, __jsx("div", {
+    className: "block-title text-center",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8,
+      columnNumber: 9
+    }
+  }, __jsx("h2", {
+    className: "block-title__title",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9,
+      columnNumber: 11
+    }
+  }, __jsx("span", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10,
+      columnNumber: 13
+    }
+  }, "Artikel"))), __jsx("div", {
+    className: "row",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13,
+      columnNumber: 9
+    }
+  }, __jsx("div", {
+    className: "col-lg-6 col-md-12 col-sm-12 wow fadeInUp",
+    "data-wow-duration": "1500ms",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14,
+      columnNumber: 11
+    }
+  }, __jsx("div", {
+    className: "blog-one__single",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18,
+      columnNumber: 13
+    }
+  }, __jsx("div", {
+    className: "blog-one__image",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19,
+      columnNumber: 15
+    }
+  }, __jsx("img", {
+    src: "https://dwblog-ecdf.kxcdn.com/wp-content/uploads/2021/06/dewaweb-blog-panduan-lengkap-cara-membuat-website.jpg",
+    alt: "",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20,
+      columnNumber: 17
+    }
+  }), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/cara_mudah_membuat_website_pertamamu",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24,
+      columnNumber: 17
+    }
+  }, __jsx("a", {
+    className: "blog-one__more-link",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25,
+      columnNumber: 19
+    }
+  }, __jsx("i", {
+    className: "fa fa-link",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26,
+      columnNumber: 21
+    }
+  })))), __jsx("div", {
+    className: "blog-one__content",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30,
+      columnNumber: 15
+    }
+  }, __jsx("ul", {
+    className: "list-unstyled blog-one__meta",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31,
+      columnNumber: 17
+    }
+  }, __jsx("li", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32,
+      columnNumber: 19
+    }
+  }, __jsx("a", {
+    href: "#",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 33,
+      columnNumber: 21
+    }
+  }, "05 Jan, 2022"))), __jsx("h3", {
+    className: "blog-one__title",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36,
+      columnNumber: 17
+    }
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/cara_mudah_membuat_website_pertamamu",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37,
+      columnNumber: 19
+    }
+  }, __jsx("a", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 38,
+      columnNumber: 21
+    }
+  }, "Cara Mudah Membuat Website Pertamamu (Tanpa Koding!)"))), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/cara_mudah_membuat_website_pertamamu",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 41,
+      columnNumber: 17
+    }
+  }, __jsx("a", {
+    className: "blog-one__link",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 42,
+      columnNumber: 19
+    }
+  }, "Read More"))))), __jsx("div", {
+    className: "col-lg-6 col-md-12 col-sm-12 wow fadeInDown",
+    "data-wow-duration": "1500ms",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 47,
+      columnNumber: 11
+    }
+  }, __jsx("div", {
+    className: "blog-one__single",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 51,
+      columnNumber: 13
+    }
+  }, __jsx("div", {
+    className: "blog-one__image",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 52,
+      columnNumber: 15
+    }
+  }, __jsx("img", {
+    src: "https://dwblog-ecdf.kxcdn.com/wp-content/uploads/2021/11/dewaweb-blog-image-coming-soon.jpg",
+    alt: "",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53,
+      columnNumber: 17
+    }
+  }), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/cara_praktis_membuat_web_portofolio_sendiri",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 57,
+      columnNumber: 17
+    }
+  }, __jsx("a", {
+    className: "blog-one__more-link",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 58,
+      columnNumber: 19
+    }
+  }, __jsx("i", {
+    className: "fa fa-link",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 59,
+      columnNumber: 21
+    }
+  })))), __jsx("div", {
+    className: "blog-one__content",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 63,
+      columnNumber: 15
+    }
+  }, __jsx("ul", {
+    className: "list-unstyled blog-one__meta",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 64,
+      columnNumber: 17
+    }
+  }, __jsx("li", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 65,
+      columnNumber: 19
+    }
+  }, __jsx("a", {
+    href: "#",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 66,
+      columnNumber: 21
+    }
+  }, "03 Jan, 2022"))), __jsx("h3", {
+    className: "blog-one__title",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 69,
+      columnNumber: 17
+    }
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/cara_praktis_membuat_web_portofolio_sendiri",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 70,
+      columnNumber: 19
+    }
+  }, __jsx("a", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 71,
+      columnNumber: 21
+    }
+  }, "7 Cara Praktis Membuat Web Portofolio Sendiri, Tanpa Koding!"))), __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/cara_praktis_membuat_web_portofolio_sendiri",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 77,
+      columnNumber: 17
+    }
+  }, __jsx("a", {
+    className: "blog-one__link",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 78,
+      columnNumber: 19
+    }
+  }, "Read More"))))))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (NewsHome);
 
 /***/ }),
 
@@ -2339,6 +2981,7 @@ var Sponsor = function Sponsor() {
   }, sponsor.map(function (item, index) {
     return __jsx("div", {
       id: item.idSponsor,
+      key: item.idSponsor,
       className: item.ukuranSponsor + " item  text-center d-flex align-items-center justify-content-center item-sponsor",
       __self: _this,
       __source: {
@@ -2348,11 +2991,11 @@ var Sponsor = function Sponsor() {
       }
     }, __jsx("a", {
       className: "text-center",
-      href: item.link,
+      href: item.urlSponsor,
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 30,
+        lineNumber: 31,
         columnNumber: 17
       }
     }, __jsx("img", {
@@ -2362,7 +3005,7 @@ var Sponsor = function Sponsor() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 31,
+        lineNumber: 32,
         columnNumber: 19
       }
     })));
@@ -5386,7 +6029,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var decode_json_1 = __importDefault(__webpack_require__(/*! ./maps/decode.json */ "./node_modules/entities/lib/maps/decode.json"));
 // Adapted from https://github.com/mathiasbynens/he/blob/master/src/he.js#L94-L119
-var fromCodePoint = 
+var fromCodePoint =
 // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
 String.fromCodePoint ||
     function (codePoint) {
@@ -5502,7 +6145,7 @@ function getInverseReplacer(inverse) {
 }
 // /[^\0-\x7F]/gu
 var reNonASCII = /(?:[\x80-\uD7FF\uE000-\uFFFF]|[\uD800-\uDBFF][\uDC00-\uDFFF]|[\uD800-\uDBFF](?![\uDC00-\uDFFF])|(?:[^\uD800-\uDBFF]|^)[\uDC00-\uDFFF])/g;
-var getCodePoint = 
+var getCodePoint =
 // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
 String.prototype.codePointAt != null
     ? // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
@@ -6687,7 +7330,7 @@ Parser.prototype.onclosetag = function(name) {
     if (this._lowerCaseTagNames) {
         name = name.toLowerCase();
     }
-    
+
     if (name in foreignContextElements || name in htmlIntegrationElements) {
         this._foreignContext.pop();
     }
@@ -6736,7 +7379,7 @@ Parser.prototype._closeCurrentTag = function() {
             this._cbs.onclosetag(name);
         }
         this._stack.pop();
-        
+
     }
 };
 
@@ -8143,7 +8786,7 @@ DomHandler.prototype.onerror = function(error){
 
 DomHandler.prototype.onclosetag = function(){
 	//if(this._tagStack.pop().name !== name) this._handleCallback(Error("Tagname didn't match!"));
-	
+
 	var elem = this._tagStack.pop();
 
 	if(this._options.withEndIndices && elem){
@@ -8742,7 +9385,7 @@ exports.prepend = function(elem, prev){
 	if(elem.prev){
 		elem.prev.next = prev;
 	}
-	
+
 	prev.parent = parent;
 	prev.prev = elem.prev;
 	prev.next = elem;
@@ -9214,7 +9857,7 @@ var assign=Object.assign.bind(Object);function g(){return assign;}Object.defineP
       }
       return mod
     }]);
-  
+
 
 /***/ }),
 
@@ -16182,11 +16825,13 @@ var _public_assets_data_cso_json__WEBPACK_IMPORTED_MODULE_11___namespace = /*#__
 /* harmony import */ var _components_Faq__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../components/Faq */ "./components/Faq.js");
 /* harmony import */ var _components_Curicullum__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../components/Curicullum */ "./components/Curicullum.js");
 /* harmony import */ var _components_InformationDetail__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../components/InformationDetail */ "./components/InformationDetail.js");
+/* harmony import */ var _components_NewsHome__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../components/NewsHome */ "./components/NewsHome.js");
 var _this = undefined,
     _jsxFileName = "C:\\Users\\Novandi\\Downloads\\fasilkomfestdashboard-master\\pages\\index.js";
 
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -16211,14 +16856,14 @@ var HomePage = function HomePage() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25,
+      lineNumber: 26,
       columnNumber: 14
     }
   }, __jsx(_components_Header__WEBPACK_IMPORTED_MODULE_12__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27,
+      lineNumber: 28,
       columnNumber: 9
     }
   }), __jsx(_components_Navigation__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -16226,7 +16871,7 @@ var HomePage = function HomePage() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29,
+      lineNumber: 30,
       columnNumber: 9
     }
   }), " ", __jsx(_components_Banner__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -16234,7 +16879,7 @@ var HomePage = function HomePage() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31,
+      lineNumber: 32,
       columnNumber: 12
     }
   }), " ", __jsx(_components_InformationHeader__WEBPACK_IMPORTED_MODULE_8__["default"], {
@@ -16242,7 +16887,7 @@ var HomePage = function HomePage() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33,
+      lineNumber: 34,
       columnNumber: 12
     }
   }), " ", __jsx(_components_InformationDetail__WEBPACK_IMPORTED_MODULE_17__["default"], {
@@ -16250,7 +16895,7 @@ var HomePage = function HomePage() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35,
+      lineNumber: 36,
       columnNumber: 12
     }
   }), " ", __jsx(_components_Video__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -16258,7 +16903,7 @@ var HomePage = function HomePage() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37,
+      lineNumber: 38,
       columnNumber: 12
     }
   }), "  ", __jsx(_components_Timeline__WEBPACK_IMPORTED_MODULE_14__["default"], {
@@ -16266,14 +16911,7 @@ var HomePage = function HomePage() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39,
-      columnNumber: 13
-    }
-  }), "  ", __jsx(_components_Curicullum__WEBPACK_IMPORTED_MODULE_16__["default"], {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 41,
+      lineNumber: 40,
       columnNumber: 13
     }
   }), __jsx(_components_Faq__WEBPACK_IMPORTED_MODULE_15__["default"], {
@@ -16281,7 +16919,7 @@ var HomePage = function HomePage() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43,
+      lineNumber: 44,
       columnNumber: 9
     }
   }), " ", __jsx(_components_Sponsor__WEBPACK_IMPORTED_MODULE_13__["default"], {
@@ -16289,21 +16927,28 @@ var HomePage = function HomePage() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45,
+      lineNumber: 46,
       columnNumber: 12
     }
   }), " ", __jsx(_components_MediaPartner__WEBPACK_IMPORTED_MODULE_7__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47,
+      lineNumber: 48,
       columnNumber: 12
+    }
+  }), __jsx(_components_NewsHome__WEBPACK_IMPORTED_MODULE_18__["default"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 50,
+      columnNumber: 9
     }
   }), __jsx(_components_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49,
+      lineNumber: 51,
       columnNumber: 9
     }
   }));
@@ -16320,7 +16965,7 @@ var HomePage = function HomePage() {
 /*! exports provided: nama_lomba, deskripsi_lomba1, link_guidebook, link_pendaftaran, gambar1, gambar2, deskripsi_lomba2, benefit, additional, prize, timeline, faq, kontak, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"nama_lomba\":\"IT-CAMP X FOWTEDU 2023 UI/UX Mini Bootcamp\",\"deskripsi_lomba1\":\"IT-CAMP X FOWTEDU 2023 UI/UX Mini Bootcamp merupakan rangkaian mini bootcamp yang diadakan oleh Himpunan Mahasiswa Informatika Universitas Pembangunan Nasional \\\"Veteran\\\" Jawa Timur dengan tujuan untuk mengenalkan UI/UX dikalangan pelajar/mahasiswa/umum.\",\"link_guidebook\":\"https://drive.google.com/file/d/1ttd1gO8-zN0m25K701XbuGbWSrqIA2aB/view\",\"link_pendaftaran\":\"close\",\"gambar1\":\"/assets/images/resources/design.png\",\"gambar2\":\"/assets/images/resources/design2.png\",\"deskripsi_lomba2\":\"<b>IT-CAMP X FOWTEDU 2023 UI/UX Mini Bootcamp</b> diperuntukan untuk pelajar/mahasiswa/umum. Acara ini mengusung tema \\\"Show Your Skills and Build Your Career\\\" dengan harapan peserta dapat meningkatkan wawasan, kemampuan serta dapat karir di bidang UI/UX\",\"benefit\":[\"E-sertifikat\",\"Ilmu\",\"Menambah pengalaman dan networking\"],\"additional\":[],\"prize\":{\"juara1\":\"Rp.1.000.000\",\"juara2\":\"Rp.600.000\",\"juara3\":\"Rp.400.000\",\"tambahan\":[]},\"timeline\":[{\"tahap\":\"Pendaftaran\",\"tanggal\":\"1 Januari 2023 – 13 Januari 2023\"},{\"tahap\":\"Pembukaan\",\"tanggal\":\"13 Januari 2023\"},{\"tahap\":\"Boot Camp Day 1\",\"tanggal\":\"21 Januari 2023\"},{\"tahap\":\"Pengumpulan Progress Tugas 1\",\"tanggal\":\"27 Januari 2023\"},{\"tahap\":\"Boot Camp Day 2\",\"tanggal\":\"28 Januari 2023\"},{\"tahap\":\"Pengumpulan Progress Tugas 2\",\"tanggal\":\"3 Februari 2023\"},{\"tahap\":\"Boot Camp Day 3\",\"tanggal\":\"4 Februari 2023\"},{\"tahap\":\"Pengumpulan Tugas Akhir\",\"tanggal\":\"9 Februari 2023\"},{\"tahap\":\"Pengumuman Tugas Terbaik\",\"tanggal\":\"11 Februari 2023\"}],\"faq\":[{\"pertanyaan\":\"Apa itu IT-CAMP X FOWTEDU 2023?\",\"jawaban\":\"IT-CAMP X FOWTEDU 2023 merupakan kegiatan akhir tahun dari HIMATIFA UPN Veteran Jawa Timur Tahun 2023. Kegiatan ini berbentuk mini bootcamp yang ditujukan untuk seluruh mahasiswa dan pelajar serta umum. Untuk acara ini, tema yang diangkat adalah \\\"Show Your Skills and Build Your Career\\\" dengan materi umumnya mengenai UI/UX.\"},{\"pertanyaan\":\"Berapa biaya mengikuti acara ini ini?\",\"jawaban\":\"Setiap peserta akan dikenakan biaya 50.000,-\"},{\"pertanyaan\":\"Apakah bootcamp ini dilakukan secara daring?\",\"jawaban\":\"Ya, seluruh rangkaian kompertisi ini akan dilakukan secara daring\"},{\"pertanyaan\":\"Dokumen apa yang dibutuhkan untuk mendaftar IT-CAMP X FOWTEDU 2023?\",\"jawaban\":\"Hanya dengan melakukan registrasi menggunakan email di website ini.\"}],\"kontak\":[{\"judul\":\"Whatsapp\",\"icon\":\"whatsapp\",\"list\":[{\"nama\":\"ANIYSAH\",\"kontak\":\"+6287761134588\",\"link\":\"https://wa.me/6287761134588\"},{\"nama\":\"NIMAS \",\"kontak\":\"+6285749494267\",\"link\":\"https://wa.me/6285749494267\"}]},{\"judul\":\"Instagram\",\"icon\":\"instagram\",\"list\":[{\"nama\":\"\",\"kontak\":\"fasilkomfest.academic\",\"link\":\"https://www.instagram.com/fasilkomfest.academic/\"}]}]}");
+module.exports = JSON.parse("{\"nama_lomba\":\"IT-CAMP X FOWTEDU 2023 UI/UX Mini Bootcamp\",\"deskripsi_lomba1\":\"IT-CAMP X FOWTEDU 2023 UI/UX Mini Bootcamp merupakan rangkaian mini bootcamp yang diadakan oleh Himpunan Mahasiswa Informatika Universitas Pembangunan Nasional \\\"Veteran\\\" Jawa Timur dengan tujuan untuk mengenalkan UI/UX dikalangan pelajar/mahasiswa/umum.\",\"link_guidebook\":\"https://drive.google.com/file/d/1ttd1gO8-zN0m25K701XbuGbWSrqIA2aB/view\",\"link_pendaftaran\":\"close\",\"gambar1\":\"/assets/images/resources/design.png\",\"gambar2\":\"/assets/images/resources/design2.png\",\"deskripsi_lomba2\":\"<b>IT-CAMP X FOWTEDU 2023 UI/UX Mini Bootcamp</b> diperuntukan untuk pelajar/mahasiswa/umum. Acara ini mengusung tema \\\"Show Your Skills and Build Your Career\\\" dengan harapan peserta dapat meningkatkan wawasan, kemampuan serta dapat karir di bidang UI/UX\",\"benefit\":[\"E-sertifikat\",\"Ilmu\",\"Menambah pengalaman dan networking\"],\"additional\":[],\"prize\":{\"juara1\":\"Rp.1.000.000\",\"juara2\":\"Rp.600.000\",\"juara3\":\"Rp.400.000\",\"tambahan\":[]},\"timeline\":[{\"tahap\":\"Pendaftaran\",\"tanggal\":\"8 Januari 2023 – 20 Januari 2023\"},{\"tahap\":\"Boot Camp Day 1\",\"tanggal\":\"21 Januari 2023\"},{\"tahap\":\"Boot Camp Day 2\",\"tanggal\":\"28 Januari 2023\"},{\"tahap\":\"Boot Camp Day 3\",\"tanggal\":\"4 Februari 2023\"},{\"tahap\":\"Penutupan\",\"tanggal\":\"11 Februari 2023\"}],\"faq\":[{\"pertanyaan\":\"Apa itu IT-CAMP X FOWTEDU 2023?\",\"jawaban\":\"IT-CAMP X FOWTEDU 2023 merupakan kegiatan akhir tahun dari HIMATIFA UPN Veteran Jawa Timur Tahun 2023. Kegiatan ini berbentuk mini bootcamp yang ditujukan untuk seluruh mahasiswa dan pelajar serta umum. Untuk acara ini, tema yang diangkat adalah \\\"Show Your Skills and Build Your Career\\\" dengan materi umumnya mengenai UI/UX.\"},{\"pertanyaan\":\"Berapa biaya mengikuti acara ini ini?\",\"jawaban\":\"Setiap peserta akan dikenakan biaya 50.000,-\"},{\"pertanyaan\":\"Apakah bootcamp ini dilakukan secara daring?\",\"jawaban\":\"Ya, seluruh rangkaian kompertisi ini akan dilakukan secara daring\"},{\"pertanyaan\":\"Dokumen apa yang dibutuhkan untuk mendaftar IT-CAMP X FOWTEDU 2023?\",\"jawaban\":\"Hanya dengan melakukan registrasi menggunakan email di website ini.\"},{\"pertanyaan\":\"Apakah ada yang bisa dihubungi lebih lanjut mengenai acara ini?\",\"jawaban\":\"Bisa, lewat no telepon berikut.  Dhimas - <a target='_blank' href='https://wa.me/6285157746492'>+62 851-5774-6492</a>\"}],\"kontak\":[{\"judul\":\"Whatsapp\",\"icon\":\"whatsapp\",\"list\":[{\"nama\":\"ANIYSAH\",\"kontak\":\"+6287761134588\",\"link\":\"https://wa.me/6287761134588\"},{\"nama\":\"NIMAS \",\"kontak\":\"+6285749494267\",\"link\":\"https://wa.me/6285749494267\"}]},{\"judul\":\"Instagram\",\"icon\":\"instagram\",\"list\":[{\"nama\":\"\",\"kontak\":\"fasilkomfest.academic\",\"link\":\"https://www.instagram.com/fasilkomfest.academic/\"}]}]}");
 
 /***/ }),
 
