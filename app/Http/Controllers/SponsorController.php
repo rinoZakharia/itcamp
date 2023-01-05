@@ -34,6 +34,11 @@ class SponsorController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            'namaSponsor' => 'required',
+            'urlSponsor' => 'required',
+            'gambarSponsor' => 'required'
+        ]);
         $file = $request->file('gambarSponsor');
         $fileName = Str::random(20) . '.' . $file->getClientOriginalExtension();
         $file->move(public_path('uploads/sponsor'), $fileName);
@@ -69,6 +74,10 @@ class SponsorController extends Controller
      */
     public function update($id,$gambarSponsor,Request $request)
     {
+        $request->validate([
+            'namaSponsor' => 'required',
+            'urlSponsor' => 'required'
+        ]);
         $data = [
             "namaSponsor" => $request->namaSponsor,
             "urlSponsor" => $request->urlSponsor,

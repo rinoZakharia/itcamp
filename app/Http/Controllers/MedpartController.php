@@ -34,6 +34,11 @@ class MedpartController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            'namaMed' => 'required',
+            'urlMed' => 'required',
+            'gambarMed' => 'required'
+        ]);
         $file = $request->file('gambarMed');
         $fileName = Str::random(20) . '.' . $file->getClientOriginalExtension();
         $file->move(public_path('uploads/media'), $fileName);
@@ -68,6 +73,10 @@ class MedpartController extends Controller
      */
     public function update($id,$gambarMed,Request $request)
     {
+        $request->validate([
+            'namaMed' => 'required',
+            'urlMed' => 'required'
+        ]);
         $data = [
             "namaMed" => $request->namaMed,
             "urlMed" => $request->urlMed,

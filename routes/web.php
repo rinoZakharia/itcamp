@@ -62,6 +62,8 @@ Route::middleware(AdminMiddleware::class)->group(function () {
     Route::get('/back/tugas/{id}/edit', [TugasController::class, 'show']);
     Route::put('/back/tugas/update/{id}/{file}', [TugasController::class, 'update']);
     Route::delete('/back/tugas/delete/{id}/{file}', [TugasController::class, 'destroy']);
+    Route::get('/back/penilaian/{id?}', [TugasController::class, 'nilai']);
+    Route::put('/back/penilaian/edit/{id}/{idTugas}', [TugasController::class, 'edit']);
     // confirmation
     Route::get('/back/confirmation/{id}', [UserController::class, 'confirmation'])->name('admin.confirmation');
     Route::get('/back/reject/{id}', [UserController::class, 'reject'])->name('admin.reject');
