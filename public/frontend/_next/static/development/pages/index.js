@@ -2034,7 +2034,7 @@ var Layout = function Layout(props) {
     }
   }), __jsx("link", {
     rel: "stylesheet",
-    href: "/assets/css/animate.min.css",
+    href: "/assets/css/animate.min.css?x=5",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -2043,7 +2043,7 @@ var Layout = function Layout(props) {
     }
   }), __jsx("link", {
     rel: "stylesheet",
-    href: "/assets/css/bootstrap.min.css",
+    href: "/assets/css/bootstrap.min.css?x=5",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -2052,7 +2052,7 @@ var Layout = function Layout(props) {
     }
   }), __jsx("link", {
     rel: "stylesheet",
-    href: "/assets/css/font-awesome.min.css",
+    href: "/assets/css/font-awesome.min.css?x=5",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -2061,7 +2061,7 @@ var Layout = function Layout(props) {
     }
   }), __jsx("link", {
     rel: "stylesheet",
-    href: "/assets/plugins/dimon-icons/style.css",
+    href: "/assets/plugins/dimon-icons/style.css?x=5",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -2070,7 +2070,7 @@ var Layout = function Layout(props) {
     }
   }), __jsx("link", {
     rel: "stylesheet",
-    href: "/assets/css/style.css",
+    href: "/assets/css/style.css?x=5",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -2079,7 +2079,7 @@ var Layout = function Layout(props) {
     }
   }), __jsx("link", {
     rel: "stylesheet",
-    href: "/assets/css/responsive.css",
+    href: "/assets/css/responsive.css?x=5",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -2540,7 +2540,7 @@ var Navigation = /*#__PURE__*/function (_Component) {
           columnNumber: 17
         }
       }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
-        href: "/login",
+        href: "https://facebook.com",
         __self: this,
         __source: {
           fileName: _jsxFileName,
@@ -6029,7 +6029,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var decode_json_1 = __importDefault(__webpack_require__(/*! ./maps/decode.json */ "./node_modules/entities/lib/maps/decode.json"));
 // Adapted from https://github.com/mathiasbynens/he/blob/master/src/he.js#L94-L119
-var fromCodePoint =
+var fromCodePoint = 
 // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
 String.fromCodePoint ||
     function (codePoint) {
@@ -6145,7 +6145,7 @@ function getInverseReplacer(inverse) {
 }
 // /[^\0-\x7F]/gu
 var reNonASCII = /(?:[\x80-\uD7FF\uE000-\uFFFF]|[\uD800-\uDBFF][\uDC00-\uDFFF]|[\uD800-\uDBFF](?![\uDC00-\uDFFF])|(?:[^\uD800-\uDBFF]|^)[\uDC00-\uDFFF])/g;
-var getCodePoint =
+var getCodePoint = 
 // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
 String.prototype.codePointAt != null
     ? // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
@@ -7330,7 +7330,7 @@ Parser.prototype.onclosetag = function(name) {
     if (this._lowerCaseTagNames) {
         name = name.toLowerCase();
     }
-
+    
     if (name in foreignContextElements || name in htmlIntegrationElements) {
         this._foreignContext.pop();
     }
@@ -7379,7 +7379,7 @@ Parser.prototype._closeCurrentTag = function() {
             this._cbs.onclosetag(name);
         }
         this._stack.pop();
-
+        
     }
 };
 
@@ -8786,7 +8786,7 @@ DomHandler.prototype.onerror = function(error){
 
 DomHandler.prototype.onclosetag = function(){
 	//if(this._tagStack.pop().name !== name) this._handleCallback(Error("Tagname didn't match!"));
-
+	
 	var elem = this._tagStack.pop();
 
 	if(this._options.withEndIndices && elem){
@@ -9385,7 +9385,7 @@ exports.prepend = function(elem, prev){
 	if(elem.prev){
 		elem.prev.next = prev;
 	}
-
+	
 	prev.parent = parent;
 	prev.prev = elem.prev;
 	prev.next = elem;
@@ -9857,7 +9857,7 @@ var assign=Object.assign.bind(Object);function g(){return assign;}Object.defineP
       }
       return mod
     }]);
-
+  
 
 /***/ }),
 
@@ -16976,7 +16976,7 @@ module.exports = JSON.parse("{\"nama_lomba\":\"IT-CAMP X FOWTEDU 2023 UI/UX Mini
 /*! exports provided: header, video, sponsor, competition, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"header\":{\"nama_lomba\":\"<span>IT-CAMP X FOWTEDU 2023</span>\",\"deskripsi_lomba\":\"Mini Bootcamp yang diadakan oleh<br>Program Studi Informatika<br/>UPN Veteran Jawa Timur\",\"logo\":\"\"},\"video\":{\"videoId\":\"ULXjdzMZAZ4\",\"thumbnail\":\"/assets/images/resources/video.webp?v=1\"},\"sponsor\":[{\"nama_sponsor\":\"DewaWeb\",\"logo_sponsor\":\"dewaweb.webp\",\"ukuran\":\"col-4\",\"link\":\"https://www.dewaweb.com/\"}],\"competition\":[{\"nama\":\"NEOICT Competition\",\"title\":\"NEOICT <span>Competition</span>\",\"logo\":\"AKADEMIK.webp\",\"deskripsi\":\"NEOICT Competition merupakan acara dibawah naungan IT Camp 2021 yang diadakan oleh Fakultas Ilmu Komputer UPN Veteran Jawa Timur. NEOICT Competition memiliki berbagai lomba dalam bidang akademik. Berbagai lomba yang diadakan adalah Computer Science Olympiad, UI/UX Design, Business Plan, dan Business Case\",\"lomba\":[{\"sub\":\"Computer Science Olympiad\",\"link\":\"cso\",\"img\":\"cso.webp\"},{\"sub\":\"UI/UX Design\",\"link\":\"uiux\",\"img\":\"uiux.webp\"},{\"sub\":\"Business Plan\",\"link\":\"bp\",\"img\":\"bp.webp\"},{\"sub\":\"Business Case\",\"link\":\"bc\",\"img\":\"bp.webp\"}]},{\"nama\":\"Festive\",\"title\":\"<span>Festive</span>\",\"logo\":\"SENI.webp\",\"deskripsi\":\"Festive (IT Camp Art and Creative Competition) adalah perlombaan yang memiliki tujuan mengembangkan seni dan kreativitas bagi para pelajar maupun mahasiswa di seluruh Indonesia. Berbagai lomba yang diadakan ialah Music Cover Competition, Short Movie Competition dan Photography Competition.\",\"lomba\":[{\"sub\":\"Music Cover Competition\",\"link\":\"mcc\",\"img\":\"mcc.webp\"},{\"sub\":\"Short Movie Competition\",\"link\":\"smc\",\"img\":\"smc.webp\"},{\"sub\":\"Photography Competition\",\"link\":\"pgc\",\"img\":\"pgc.webp\"}]},{\"nama\":\"Fasilkom E-Sport Competition\",\"title\":\"<span>Fasilkom</span> E-Sport <span>Competition</span>\",\"logo\":\"ESPORT.webp\",\"deskripsi\":\"Fasilkom E-Sports Competition merupakan perlombaan E-sports di dalam rangkaian acara IT Camp 2021 yang diadakan oleh Fakultas Ilmu Komputer UPN \\\"Veteran\\\" Jawa Timur. Dalam Fasilkom E-Sports Competition kami mengundang dan menantang tim kalian para gamers dalam beberapa game yaitu Valorant, Mobile Legends dan PUBG Mobile.\",\"lomba\":[{\"sub\":\"Mobile Legend Competition\",\"link\":\"ml\",\"img\":\"ml.webp\"},{\"sub\":\"PUBG Mobile Competition\",\"link\":\"pmc\",\"img\":\"pubg.webp\"},{\"sub\":\"Valorant Competition\",\"link\":\"vlc\",\"img\":\"valo.png\"}]}]}");
+module.exports = JSON.parse("{\"header\":{\"nama_lomba\":\"<span>IT-CAMP X FOWTEDU 2023</span>\",\"deskripsi_lomba\":\"Mini Bootcamp yang diadakan oleh<br>Program Studi Informatika<br/>UPN Veteran Jawa Timur\",\"logo\":\"\"},\"video\":{\"videoId\":\"ULXjdzMZAZ4\",\"thumbnail\":\"/assets/images/resources/video.webp?x=5\"},\"sponsor\":[{\"nama_sponsor\":\"DewaWeb\",\"logo_sponsor\":\"dewaweb.webp\",\"ukuran\":\"col-4\",\"link\":\"https://www.dewaweb.com/\"}],\"competition\":[{\"nama\":\"NEOICT Competition\",\"title\":\"NEOICT <span>Competition</span>\",\"logo\":\"AKADEMIK.webp\",\"deskripsi\":\"NEOICT Competition merupakan acara dibawah naungan IT Camp 2021 yang diadakan oleh Fakultas Ilmu Komputer UPN Veteran Jawa Timur. NEOICT Competition memiliki berbagai lomba dalam bidang akademik. Berbagai lomba yang diadakan adalah Computer Science Olympiad, UI/UX Design, Business Plan, dan Business Case\",\"lomba\":[{\"sub\":\"Computer Science Olympiad\",\"link\":\"cso\",\"img\":\"cso.webp\"},{\"sub\":\"UI/UX Design\",\"link\":\"uiux\",\"img\":\"uiux.webp\"},{\"sub\":\"Business Plan\",\"link\":\"bp\",\"img\":\"bp.webp\"},{\"sub\":\"Business Case\",\"link\":\"bc\",\"img\":\"bp.webp\"}]},{\"nama\":\"Festive\",\"title\":\"<span>Festive</span>\",\"logo\":\"SENI.webp\",\"deskripsi\":\"Festive (IT Camp Art and Creative Competition) adalah perlombaan yang memiliki tujuan mengembangkan seni dan kreativitas bagi para pelajar maupun mahasiswa di seluruh Indonesia. Berbagai lomba yang diadakan ialah Music Cover Competition, Short Movie Competition dan Photography Competition.\",\"lomba\":[{\"sub\":\"Music Cover Competition\",\"link\":\"mcc\",\"img\":\"mcc.webp\"},{\"sub\":\"Short Movie Competition\",\"link\":\"smc\",\"img\":\"smc.webp\"},{\"sub\":\"Photography Competition\",\"link\":\"pgc\",\"img\":\"pgc.webp\"}]},{\"nama\":\"Fasilkom E-Sport Competition\",\"title\":\"<span>Fasilkom</span> E-Sport <span>Competition</span>\",\"logo\":\"ESPORT.webp\",\"deskripsi\":\"Fasilkom E-Sports Competition merupakan perlombaan E-sports di dalam rangkaian acara IT Camp 2021 yang diadakan oleh Fakultas Ilmu Komputer UPN \\\"Veteran\\\" Jawa Timur. Dalam Fasilkom E-Sports Competition kami mengundang dan menantang tim kalian para gamers dalam beberapa game yaitu Valorant, Mobile Legends dan PUBG Mobile.\",\"lomba\":[{\"sub\":\"Mobile Legend Competition\",\"link\":\"ml\",\"img\":\"ml.webp\"},{\"sub\":\"PUBG Mobile Competition\",\"link\":\"pmc\",\"img\":\"pubg.webp\"},{\"sub\":\"Valorant Competition\",\"link\":\"vlc\",\"img\":\"valo.png\"}]}]}");
 
 /***/ }),
 

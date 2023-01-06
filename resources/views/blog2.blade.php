@@ -8,12 +8,12 @@
     <link rel="icon" type="image/png" sizes="32x32" href="{{url('frontend')}}/assets/images/resources/logo.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="{{url('frontend')}}/assets/images/resources/logo.png" />
     <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900&amp;display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="{{url('frontend')}}/assets/css/animate.min.css" />
-    <link rel="stylesheet" href="{{url('frontend')}}/assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="{{url('frontend')}}/assets/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="{{url('frontend')}}/assets/plugins/dimon-icons/style.css" />
-    <link rel="stylesheet" href="{{url('frontend')}}/assets/css/style.css" />
-    <link rel="stylesheet" href="{{url('frontend')}}/assets/css/responsive.css" />
+    <link rel="stylesheet" href="{{url('frontend')}}/assets/css/animate.min.css?x=5" />
+    <link rel="stylesheet" href="{{url('frontend')}}/assets/css/bootstrap.min.css?x=5" />
+    <link rel="stylesheet" href="{{url('frontend')}}/assets/css/font-awesome.min.css?x=5" />
+    <link rel="stylesheet" href="{{url('frontend')}}/assets/plugins/dimon-icons/style.css?x=5" />
+    <link rel="stylesheet" href="{{url('frontend')}}/assets/css/style.css?x=5" />
+    <link rel="stylesheet" href="{{url('frontend')}}/assets/css/responsive.css?x=5" />
     <title>ITCamp</title>
     <meta name="description" content="IT-CAMP X FOWTEDU 2023 UI/UX Mini Bootcamp merupakan rangkaian mini bootcamp yang diadakan oleh Himpunan Mahasiswa Informatika Universitas Pembangunan Nasional &quot;Veteran&quot; Jawa Timur dengan tujuan untuk mengenalkan UI/UX dikalangan pelajar/mahasiswa/umum." />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -21,14 +21,14 @@
     <meta name="next-head-count" content="16" />
     <link rel="preload" href="{{url('frontend')}}/_next/static/css/styles.a8ee8fd6.chunk.css" as="style" />
     <link rel="stylesheet" href="{{url('frontend')}}/_next/static/css/styles.a8ee8fd6.chunk.css" />
-    <link rel="preload" href="{{url('frontend')}}/_next/static/pC7uDNg30p-ZCmE1EvTON/pages/cara_praktis_membuat_web_portofolio_sendiri.js" as="script" />
-    <link rel="preload" href="{{url('frontend')}}/_next/static/pC7uDNg30p-ZCmE1EvTON/pages/_app.js" as="script" />
+    <link rel="preload" href="{{url('frontend')}}/_next/static/xveHxv6QPJ3ICgUSDyljI/pages/cara_praktis_membuat_web_portofolio_sendiri.js" as="script" />
+    <link rel="preload" href="{{url('frontend')}}/_next/static/xveHxv6QPJ3ICgUSDyljI/pages/_app.js" as="script" />
     <link rel="preload" href="{{url('frontend')}}/_next/static/runtime/webpack-ed5d6c4d07d8f99176e6.js" as="script" />
     <link rel="preload" href="{{url('frontend')}}/_next/static/chunks/framework.504af639ffd40f515d05.js" as="script" />
     <link rel="preload" href="{{url('frontend')}}/_next/static/chunks/commons.19809b0290a3469b536b.js" as="script" />
     <link rel="preload" href="{{url('frontend')}}/_next/static/chunks/styles.44d02f049166631cb963.js" as="script" />
     <link rel="preload" href="{{url('frontend')}}/_next/static/runtime/main-309387cbcb9b059544d9.js" as="script" />
-    <link rel="preload" href="{{url('frontend')}}/_next/static/chunks/e68476c42b68c1e6cce2c1120603c7793621fc67.e497fd3ac56f9dc278d6.js" as="script" />
+    <link rel="preload" href="{{url('frontend')}}/_next/static/chunks/a3faf6e0edf7135356415cefa738b37e61493c07.8503c823d5284db2f31c.js" as="script" />
 </head>
 
 <body>
@@ -38,7 +38,7 @@
                 <header class="site-header site-header__header-one" style="z-index:10200">
                     <nav class="navbar navbar-expand-lg navbar-light header-navigation stricky ">
                         <div class="container clearfix">
-                            <div class="logo-box clearfix"><a class="navbar-brand" href="/"><img src="{{url('frontend')}}/assets/images/resources/logo.png" class="main-logo" width="50" alt="Awesome Image" /></a><button class="menu-toggler"><span class="fa fa-bars"></span></button></div>
+                            <div class="logo-box clearfix"><a class="navbar-brand" href="/"><img src="{{url("frontend")}}/assets/images/resources/logo.png" class="main-logo" width="50" alt="Awesome Image" /></a><button class="menu-toggler"><span class="fa fa-bars"></span></button></div>
                             <div class="main-navigation">
                                 <ul class=" one-page-scroll-menu navigation-box">
                                     <li class="scrollToLink"><a href="/">Home</a></li>
@@ -222,7 +222,7 @@
                         <div class="site-footer__bottom  mt-4">
                             <div class="container">
                                 <div class="inner-container text-center">
-                                    <div class="d-md-flex d-sm-block w-100 align-items-center justify-content-between"><img src="{{url('frontend')}}/assets/images/resources/logo.png" width="50" alt="" class="d-sm-none" />
+                                    <div class="d-md-flex d-sm-block w-100 align-items-center justify-content-between"><img src="{{url("frontend")}}/assets/images/resources/logo.png" width="50" alt="" class="d-sm-none" />
                                         <p class="site-footer__copy mt-2">© Copyright 2023 by <a href="#"> itcamp2023.com </a> </p>
                                     </div>
                                 </div>
@@ -240,7 +240,7 @@
             },
             "page": "/cara_praktis_membuat_web_portofolio_sendiri",
             "query": {},
-            "buildId": "pC7uDNg30p-ZCmE1EvTON",
+            "buildId": "xveHxv6QPJ3ICgUSDyljI",
             "assetPrefix": "{{url('frontend')}}",
             "nextExport": true,
             "autoExport": true,
@@ -248,16 +248,16 @@
         }
     </script>
     <script nomodule="" src="{{url('frontend')}}/_next/static/runtime/polyfills-a2d2f1093947f40b8ea7.js"></script>
-    <script async="" data-next-page="/cara_praktis_membuat_web_portofolio_sendiri" src="{{url('frontend')}}/_next/static/pC7uDNg30p-ZCmE1EvTON/pages/cara_praktis_membuat_web_portofolio_sendiri.js"></script>
-    <script async="" data-next-page="/_app" src="{{url('frontend')}}/_next/static/pC7uDNg30p-ZCmE1EvTON/pages/_app.js"></script>
+    <script async="" data-next-page="/cara_praktis_membuat_web_portofolio_sendiri" src="{{url('frontend')}}/_next/static/xveHxv6QPJ3ICgUSDyljI/pages/cara_praktis_membuat_web_portofolio_sendiri.js"></script>
+    <script async="" data-next-page="/_app" src="{{url('frontend')}}/_next/static/xveHxv6QPJ3ICgUSDyljI/pages/_app.js"></script>
     <script src="{{url('frontend')}}/_next/static/runtime/webpack-ed5d6c4d07d8f99176e6.js" async=""></script>
     <script src="{{url('frontend')}}/_next/static/chunks/framework.504af639ffd40f515d05.js" async=""></script>
     <script src="{{url('frontend')}}/_next/static/chunks/commons.19809b0290a3469b536b.js" async=""></script>
     <script src="{{url('frontend')}}/_next/static/chunks/styles.44d02f049166631cb963.js" async=""></script>
     <script src="{{url('frontend')}}/_next/static/runtime/main-309387cbcb9b059544d9.js" async=""></script>
-    <script src="{{url('frontend')}}/_next/static/chunks/e68476c42b68c1e6cce2c1120603c7793621fc67.e497fd3ac56f9dc278d6.js" async=""></script>
-    <script src="{{url('frontend')}}/_next/static/pC7uDNg30p-ZCmE1EvTON/_buildManifest.js" async=""></script>
-    <script src="{{url('frontend')}}/_next/static/pC7uDNg30p-ZCmE1EvTON/_ssgManifest.js" async=""></script>
+    <script src="{{url('frontend')}}/_next/static/chunks/a3faf6e0edf7135356415cefa738b37e61493c07.8503c823d5284db2f31c.js" async=""></script>
+    <script src="{{url('frontend')}}/_next/static/xveHxv6QPJ3ICgUSDyljI/_buildManifest.js" async=""></script>
+    <script src="{{url('frontend')}}/_next/static/xveHxv6QPJ3ICgUSDyljI/_ssgManifest.js" async=""></script>
 </body>
 
 </html>
