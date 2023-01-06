@@ -21,14 +21,14 @@
     <meta name="next-head-count" content="16" />
     <link rel="preload" href="{{url('frontend')}}/_next/static/css/styles.a8ee8fd6.chunk.css" as="style" />
     <link rel="stylesheet" href="{{url('frontend')}}/_next/static/css/styles.a8ee8fd6.chunk.css" />
-    <link rel="preload" href="{{url('frontend')}}/_next/static/xveHxv6QPJ3ICgUSDyljI/pages/index.js" as="script" />
-    <link rel="preload" href="{{url('frontend')}}/_next/static/xveHxv6QPJ3ICgUSDyljI/pages/_app.js" as="script" />
-    <link rel="preload" href="{{url('frontend')}}/_next/static/runtime/webpack-ed5d6c4d07d8f99176e6.js" as="script" />
-    <link rel="preload" href="{{url('frontend')}}/_next/static/chunks/framework.504af639ffd40f515d05.js" as="script" />
-    <link rel="preload" href="{{url('frontend')}}/_next/static/chunks/commons.19809b0290a3469b536b.js" as="script" />
-    <link rel="preload" href="{{url('frontend')}}/_next/static/chunks/styles.44d02f049166631cb963.js" as="script" />
-    <link rel="preload" href="{{url('frontend')}}/_next/static/runtime/main-309387cbcb9b059544d9.js" as="script" />
-    <link rel="preload" href="{{url('frontend')}}/_next/static/chunks/a3faf6e0edf7135356415cefa738b37e61493c07.8503c823d5284db2f31c.js" as="script" />
+    <link rel="preload" href="{{url('frontend')}}/_next/static/xveHxv6QPJ3ICgUSDyljI/pages/index.js?x=5" as="script" />
+    <link rel="preload" href="{{url('frontend')}}/_next/static/xveHxv6QPJ3ICgUSDyljI/pages/_app.js?x=5" as="script" />
+    <link rel="preload" href="{{url('frontend')}}/_next/static/runtime/webpack-ed5d6c4d07d8f99176e6.js?x=5" as="script" />
+    <link rel="preload" href="{{url('frontend')}}/_next/static/chunks/framework.504af639ffd40f515d05.js?x=5" as="script" />
+    <link rel="preload" href="{{url('frontend')}}/_next/static/chunks/commons.19809b0290a3469b536b.js?x=5" as="script" />
+    <link rel="preload" href="{{url('frontend')}}/_next/static/chunks/styles.44d02f049166631cb963.js?x=5" as="script" />
+    <link rel="preload" href="{{url('frontend')}}/_next/static/runtime/main-309387cbcb9b059544d9.js?x=5" as="script" />
+    <link rel="preload" href="{{url('frontend')}}/_next/static/chunks/a3faf6e0edf7135356415cefa738b37e61493c07.8503c823d5284db2f31c.js?x=5" as="script" />
 </head>
 
 <body>
@@ -347,17 +347,17 @@
             "isFallback": false
         }
     </script>
-    <script nomodule="" src="{{url('frontend')}}/_next/static/runtime/polyfills-a2d2f1093947f40b8ea7.js"></script>
-    <script async="" data-next-page="/" src="{{url('frontend')}}/_next/static/xveHxv6QPJ3ICgUSDyljI/pages/index.js"></script>
-    <script async="" data-next-page="/_app" src="{{url('frontend')}}/_next/static/xveHxv6QPJ3ICgUSDyljI/pages/_app.js"></script>
-    <script src="{{url('frontend')}}/_next/static/runtime/webpack-ed5d6c4d07d8f99176e6.js" async=""></script>
-    <script src="{{url('frontend')}}/_next/static/chunks/framework.504af639ffd40f515d05.js" async=""></script>
-    <script src="{{url('frontend')}}/_next/static/chunks/commons.19809b0290a3469b536b.js" async=""></script>
-    <script src="{{url('frontend')}}/_next/static/chunks/styles.44d02f049166631cb963.js" async=""></script>
-    <script src="{{url('frontend')}}/_next/static/runtime/main-309387cbcb9b059544d9.js" async=""></script>
-    <script src="{{url('frontend')}}/_next/static/chunks/a3faf6e0edf7135356415cefa738b37e61493c07.8503c823d5284db2f31c.js" async=""></script>
-    <script src="{{url('frontend')}}/_next/static/xveHxv6QPJ3ICgUSDyljI/_buildManifest.js" async=""></script>
-    <script src="{{url('frontend')}}/_next/static/xveHxv6QPJ3ICgUSDyljI/_ssgManifest.js" async=""></script>
+    <script nomodule="" src="{{url('frontend')}}/_next/static/runtime/polyfills-a2d2f1093947f40b8ea7.js?x=5"></script>
+    <script async="" data-next-page="/" src="{{url('frontend')}}/_next/static/xveHxv6QPJ3ICgUSDyljI/pages/index.js?x=5"></script>
+    <script async="" data-next-page="/_app" src="{{url('frontend')}}/_next/static/xveHxv6QPJ3ICgUSDyljI/pages/_app.js?x=5"></script>
+    <script src="{{url('frontend')}}/_next/static/runtime/webpack-ed5d6c4d07d8f99176e6.js?x=5" async=""></script>
+    <script src="{{url('frontend')}}/_next/static/chunks/framework.504af639ffd40f515d05.js?x=5" async=""></script>
+    <script src="{{url('frontend')}}/_next/static/chunks/commons.19809b0290a3469b536b.js?x=5" async=""></script>
+    <script src="{{url('frontend')}}/_next/static/chunks/styles.44d02f049166631cb963.js?x=5" async=""></script>
+    <script src="{{url('frontend')}}/_next/static/runtime/main-309387cbcb9b059544d9.js?x=5" async=""></script>
+    <script src="{{url('frontend')}}/_next/static/chunks/a3faf6e0edf7135356415cefa738b37e61493c07.8503c823d5284db2f31c.js?x=5" async=""></script>
+    <script src="{{url('frontend')}}/_next/static/xveHxv6QPJ3ICgUSDyljI/_buildManifest.js?x=5" async=""></script>
+    <script src="{{url('frontend')}}/_next/static/xveHxv6QPJ3ICgUSDyljI/_ssgManifest.js?x=5" async=""></script>
 </body>
 
 </html>
