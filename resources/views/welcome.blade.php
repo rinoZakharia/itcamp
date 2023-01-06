@@ -47,7 +47,7 @@
                                     <li class="scrollToLink"><a href="#faq">FAQ</a></li>
                                     <li class="scrollToLink"><a href="#sponsor">Sponsor</a></li>
                                     <li class="scrollToLink"><a href="#artikel">Artikel</a></li>
-                                    <li class="scrollToLink"><a class="btn btn-primary" href="https://facebook.com">Login</a></li>
+                                    <li class="scrollToLink"><a class="btn btn-primary" href="/login">Login</a></li>
                                 </ul>
                             </div>
                         </div>
