@@ -358,6 +358,15 @@
     <script src="{{url('frontend')}}/_next/static/chunks/3249b3ef41b58dbe2bee8c105c7162a936ede647.5ff83f77ea20475b5c68.js?x=6" async=""></script>
     <script src="{{url('frontend')}}/_next/static/x6FASCCdqrU0W0vkDU9bq/_buildManifest.js?x=6" async=""></script>
     <script src="{{url('frontend')}}/_next/static/x6FASCCdqrU0W0vkDU9bq/_ssgManifest.js?x=6" async=""></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QW75F0KBRC"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-QW75F0KBRC');
+    </script>
 </body>
 
 </html>
