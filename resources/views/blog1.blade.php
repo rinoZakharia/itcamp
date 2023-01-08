@@ -21,14 +21,14 @@
     <meta name="next-head-count" content="16" />
     <link rel="preload" href="{{url('frontend')}}/_next/static/css/styles.a8ee8fd6.chunk.css" as="style" />
     <link rel="stylesheet" href="{{url('frontend')}}/_next/static/css/styles.a8ee8fd6.chunk.css" />
-    <link rel="preload" href="{{url('frontend')}}/_next/static/x6FASCCdqrU0W0vkDU9bq/pages/cara_mudah_membuat_website_pertamamu.js?v=7" as="script" />
-    <link rel="preload" href="{{url('frontend')}}/_next/static/x6FASCCdqrU0W0vkDU9bq/pages/_app.js?v=7" as="script" />
-    <link rel="preload" href="{{url('frontend')}}/_next/static/runtime/webpack-ed5d6c4d07d8f99176e6.js?v=7" as="script" />
-    <link rel="preload" href="{{url('frontend')}}/_next/static/chunks/framework.504af639ffd40f515d05.js?v=7" as="script" />
-    <link rel="preload" href="{{url('frontend')}}/_next/static/chunks/commons.19809b0290a3469b536b.js?v=7" as="script" />
-    <link rel="preload" href="{{url('frontend')}}/_next/static/chunks/styles.44d02f049166631cb963.js?v=7" as="script" />
-    <link rel="preload" href="{{url('frontend')}}/_next/static/runtime/main-309387cbcb9b059544d9.js?v=7" as="script" />
-    <link rel="preload" href="{{url('frontend')}}/_next/static/chunks/3249b3ef41b58dbe2bee8c105c7162a936ede647.5ff83f77ea20475b5c68.js?v=7" as="script" />
+    <link rel="preload" href="{{url('frontend')}}/_next/static/yyYz8ICh2AKCleyG29rTz/pages/cara_mudah_membuat_website_pertamamu.js?x=12" as="script" />
+    <link rel="preload" href="{{url('frontend')}}/_next/static/yyYz8ICh2AKCleyG29rTz/pages/_app.js?x=12" as="script" />
+    <link rel="preload" href="{{url('frontend')}}/_next/static/runtime/webpack-ed5d6c4d07d8f99176e6.js?x=12" as="script" />
+    <link rel="preload" href="{{url('frontend')}}/_next/static/chunks/framework.504af639ffd40f515d05.js?x=12" as="script" />
+    <link rel="preload" href="{{url('frontend')}}/_next/static/chunks/commons.19809b0290a3469b536b.js?x=12" as="script" />
+    <link rel="preload" href="{{url('frontend')}}/_next/static/chunks/styles.44d02f049166631cb963.js?x=12" as="script" />
+    <link rel="preload" href="{{url('frontend')}}/_next/static/runtime/main-309387cbcb9b059544d9.js?x=12" as="script" />
+    <link rel="preload" href="{{url('frontend')}}/_next/static/chunks/0c0fe8293dfeffe107b4a8ab605bfa0a979369d2.8f48510200ea37a24031.js?x=12" as="script" />
 </head>
 
 <body>
@@ -258,9 +258,9 @@
                     <footer class="site-footer">
                         <div class="pt-5 mt-2">
                             <div class="container justify-content-center">
-                                <h5 class="footer-title-sosmed" style="color:black">Kunjungi sosial media IT Camp </h5>
+                                <h5 class="footer-title-sosmed" style="color:black">Kunjungi sosial media IT Camp<!-- --> </h5>
                                 <div class="footer-widget my-4">
-                                    <div class="justify-content-center mt-2 d-flex pb-4"><a href="https://www.instagram.com/itcamp2023/" class="fa fa-instagram icon mr-3"></a> </div>
+                                    <div class="justify-content-center mt-2 d-flex pb-4"><a href="https://www.instagram.com/itcamp2023/" class="fa fa-instagram icon mr-3"></a><a href="https://wa.me/6281556986279" class="fa fa-whatsapp icon mr-3"></a> </div>
                                 </div>
                             </div>
                         </div>
@@ -285,24 +285,24 @@
             },
             "page": "/cara_mudah_membuat_website_pertamamu",
             "query": {},
-            "buildId": "x6FASCCdqrU0W0vkDU9bq",
+            "buildId": "yyYz8ICh2AKCleyG29rTz",
             "assetPrefix": "{{url('frontend')}}",
             "nextExport": true,
             "autoExport": true,
             "isFallback": false
         }
     </script>
-    <script nomodule="" src="{{url('frontend')}}/_next/static/runtime/polyfills-a2d2f1093947f40b8ea7.js?v=7"></script>
-    <script async="" data-next-page="/cara_mudah_membuat_website_pertamamu" src="{{url('frontend')}}/_next/static/x6FASCCdqrU0W0vkDU9bq/pages/cara_mudah_membuat_website_pertamamu.js?v=7"></script>
-    <script async="" data-next-page="/_app" src="{{url('frontend')}}/_next/static/x6FASCCdqrU0W0vkDU9bq/pages/_app.js?v=7"></script>
-    <script src="{{url('frontend')}}/_next/static/runtime/webpack-ed5d6c4d07d8f99176e6.js?v=7" async=""></script>
-    <script src="{{url('frontend')}}/_next/static/chunks/framework.504af639ffd40f515d05.js?v=7" async=""></script>
-    <script src="{{url('frontend')}}/_next/static/chunks/commons.19809b0290a3469b536b.js?v=7" async=""></script>
-    <script src="{{url('frontend')}}/_next/static/chunks/styles.44d02f049166631cb963.js?v=7" async=""></script>
-    <script src="{{url('frontend')}}/_next/static/runtime/main-309387cbcb9b059544d9.js?v=7" async=""></script>
-    <script src="{{url('frontend')}}/_next/static/chunks/3249b3ef41b58dbe2bee8c105c7162a936ede647.5ff83f77ea20475b5c68.js?v=7" async=""></script>
-    <script src="{{url('frontend')}}/_next/static/x6FASCCdqrU0W0vkDU9bq/_buildManifest.js?v=7" async=""></script>
-    <script src="{{url('frontend')}}/_next/static/x6FASCCdqrU0W0vkDU9bq/_ssgManifest.js?v=7" async=""></script>
+    <script nomodule="" src="{{url('frontend')}}/_next/static/runtime/polyfills-a2d2f1093947f40b8ea7.js?x=12"></script>
+    <script async="" data-next-page="/cara_mudah_membuat_website_pertamamu" src="{{url('frontend')}}/_next/static/yyYz8ICh2AKCleyG29rTz/pages/cara_mudah_membuat_website_pertamamu.js?x=12"></script>
+    <script async="" data-next-page="/_app" src="{{url('frontend')}}/_next/static/yyYz8ICh2AKCleyG29rTz/pages/_app.js?x=12"></script>
+    <script src="{{url('frontend')}}/_next/static/runtime/webpack-ed5d6c4d07d8f99176e6.js?x=12" async=""></script>
+    <script src="{{url('frontend')}}/_next/static/chunks/framework.504af639ffd40f515d05.js?x=12" async=""></script>
+    <script src="{{url('frontend')}}/_next/static/chunks/commons.19809b0290a3469b536b.js?x=12" async=""></script>
+    <script src="{{url('frontend')}}/_next/static/chunks/styles.44d02f049166631cb963.js?x=12" async=""></script>
+    <script src="{{url('frontend')}}/_next/static/runtime/main-309387cbcb9b059544d9.js?x=12" async=""></script>
+    <script src="{{url('frontend')}}/_next/static/chunks/0c0fe8293dfeffe107b4a8ab605bfa0a979369d2.8f48510200ea37a24031.js?x=12" async=""></script>
+    <script src="{{url('frontend')}}/_next/static/yyYz8ICh2AKCleyG29rTz/_buildManifest.js?x=12" async=""></script>
+    <script src="{{url('frontend')}}/_next/static/yyYz8ICh2AKCleyG29rTz/_ssgManifest.js?x=12" async=""></script>
 </body>
 
 </html>

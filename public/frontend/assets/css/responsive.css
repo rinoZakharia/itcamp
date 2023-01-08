@@ -404,6 +404,14 @@
     .blog-details .blog-one__title {
         font-size: 20px;
     }
+    .blog-one__title a{
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .blog-one__link a{
+        font-size: 12px;
+        line-height: 28px;
+    }
     .blog-details .blog-one__text{
         font-size: 14px;
         line-height: 28px;

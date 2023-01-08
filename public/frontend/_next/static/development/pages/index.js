@@ -98,7 +98,7 @@ var BannerTwo = function BannerTwo(_ref) {
   }, __jsx("img", {
     src: "/assets/images/resources/logo.png",
     className: "img-fluid w-25",
-    alt: "Awesome Image",
+    alt: "it-camp x fowtedu 2023 ui/ux mini bootcamp merupakan rangkaian mini bootcamp yang diadakan oleh himpunan mahasiswa informatika universitas pembangunan nasional veteran jawa timur dengan tujuan untuk mengenalkan ui/ux dikalangan pelajar/mahasiswa/umum.",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -1444,8 +1444,8 @@ var Blog = /*#__PURE__*/function (_Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 38,
-          columnNumber: 18
+          lineNumber: 39,
+          columnNumber: 7
         }
       }, __jsx("footer", {
         className: "site-footer",
@@ -1453,22 +1453,22 @@ var Blog = /*#__PURE__*/function (_Component) {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 40,
-          columnNumber: 13
+          columnNumber: 9
         }
       }, __jsx("div", {
         className: "pt-5 mt-2",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 42,
-          columnNumber: 13
+          lineNumber: 41,
+          columnNumber: 11
         }
       }, __jsx("div", {
         className: "container justify-content-center",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 44,
+          lineNumber: 42,
           columnNumber: 13
         }
       }, __jsx("h5", {
@@ -1479,24 +1479,24 @@ var Blog = /*#__PURE__*/function (_Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 46,
-          columnNumber: 13
+          lineNumber: 43,
+          columnNumber: 15
         }
-      }, "Kunjungi sosial media IT Camp "), " ", __jsx("div", {
+      }, "Kunjungi sosial media IT Camp", " "), " ", __jsx("div", {
         className: "footer-widget my-4",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 52,
-          columnNumber: 18
+          lineNumber: 46,
+          columnNumber: 15
         }
       }, __jsx("div", {
         className: "justify-content-center mt-2 d-flex pb-4",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 54,
-          columnNumber: 13
+          lineNumber: 47,
+          columnNumber: 17
         }
       }, __jsx("a", {
         href: "https://www.instagram.com/itcamp2023/",
@@ -1504,23 +1504,32 @@ var Blog = /*#__PURE__*/function (_Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 56,
-          columnNumber: 13
+          lineNumber: 48,
+          columnNumber: 19
         }
-      }), "  "), " "), " "), " "), " ", __jsx("div", {
+      }), __jsx("a", {
+        href: "https://wa.me/6281556986279",
+        className: "fa fa-whatsapp icon mr-3",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 52,
+          columnNumber: 19
+        }
+      }), " "), " "), " "), " "), " ", __jsx("div", {
         className: "site-footer__bottom  mt-4",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 64,
-          columnNumber: 19
+          lineNumber: 60,
+          columnNumber: 11
         }
       }, __jsx("div", {
         className: "container",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 66,
+          lineNumber: 61,
           columnNumber: 13
         }
       }, __jsx("div", {
@@ -1528,16 +1537,16 @@ var Blog = /*#__PURE__*/function (_Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 68,
-          columnNumber: 13
+          lineNumber: 62,
+          columnNumber: 15
         }
       }, __jsx("div", {
         className: "d-md-flex d-sm-block w-100 align-items-center justify-content-between",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 70,
-          columnNumber: 13
+          lineNumber: 63,
+          columnNumber: 17
         }
       }, __jsx("img", {
         src: "/assets/images/resources/logo.png",
@@ -1547,24 +1556,24 @@ var Blog = /*#__PURE__*/function (_Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 72,
-          columnNumber: 13
+          lineNumber: 64,
+          columnNumber: 19
         }
       }), __jsx("p", {
         className: "site-footer__copy mt-2",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 78,
-          columnNumber: 13
+          lineNumber: 70,
+          columnNumber: 19
         }
       }, "\xA9 Copyright 2023 by ", __jsx("a", {
         href: "#",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 80,
-          columnNumber: 33
+          lineNumber: 71,
+          columnNumber: 41
         }
       }, " itcamp2023.com "), " "), " "), " "), " "), " "), " "), " ");
     }
@@ -1835,9 +1844,9 @@ var InformationHeader = function InformationHeader(_ref) {
       columnNumber: 13
     }
   }, __jsx("img", {
-    className: "img-fluid mx-2 p-5",
+    className: "img-fluid mx-2 px-3",
     src: data.gambar1,
-    alt: data.nama_lomba,
+    alt: "femmy liana purmono adalah ui ux designer pegadaian yang akan menjadi mentor it-camp x fowtedu 2023 ui/ux mini bootcamp ",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -2034,7 +2043,7 @@ var Layout = function Layout(props) {
     }
   }), __jsx("link", {
     rel: "stylesheet",
-    href: "/assets/css/animate.min.css?x=5",
+    href: "/assets/css/animate.min.css?x=6",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -2043,7 +2052,7 @@ var Layout = function Layout(props) {
     }
   }), __jsx("link", {
     rel: "stylesheet",
-    href: "/assets/css/bootstrap.min.css?x=5",
+    href: "/assets/css/bootstrap.min.css?x=6",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -2052,7 +2061,7 @@ var Layout = function Layout(props) {
     }
   }), __jsx("link", {
     rel: "stylesheet",
-    href: "/assets/css/font-awesome.min.css?x=5",
+    href: "/assets/css/font-awesome.min.css?x=6",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -2061,7 +2070,7 @@ var Layout = function Layout(props) {
     }
   }), __jsx("link", {
     rel: "stylesheet",
-    href: "/assets/plugins/dimon-icons/style.css?x=5",
+    href: "/assets/plugins/dimon-icons/style.css?x=6",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -2070,7 +2079,7 @@ var Layout = function Layout(props) {
     }
   }), __jsx("link", {
     rel: "stylesheet",
-    href: "/assets/css/style.css?x=5",
+    href: "/assets/css/style.css?x=6",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -2079,7 +2088,7 @@ var Layout = function Layout(props) {
     }
   }), __jsx("link", {
     rel: "stylesheet",
-    href: "/assets/css/responsive.css?x=5",
+    href: "/assets/css/responsive.css?x=6",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -2193,7 +2202,7 @@ var MediaPartner = function MediaPartner() {
     }, __jsx("img", {
       className: "img-fluid w-100  my-3",
       src: _config_config__WEBPACK_IMPORTED_MODULE_1__["baseURL"] + "uploads/media/" + item.gambarMed,
-      alt: "",
+      alt: item.namaMed,
       __self: _this,
       __source: {
         fileName: _jsxFileName,
@@ -2539,23 +2548,16 @@ var Navigation = /*#__PURE__*/function (_Component) {
           lineNumber: 109,
           columnNumber: 17
         }
-      }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_8___default.a, {
-        href: "https://facebook.com",
-        __self: this,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 110,
-          columnNumber: 19
-        }
       }, __jsx("a", {
+        href: "https://itcamp2023.com/login",
         className: "btn btn-primary",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 111,
+          lineNumber: 110,
           columnNumber: 21
         }
-      }, "Login"))))))));
+      }, "Login")))))));
     }
   }]);
 
@@ -3001,7 +3003,7 @@ var Sponsor = function Sponsor() {
     }, __jsx("img", {
       className: "img-fluid w-100  my-2",
       src: _config_config__WEBPACK_IMPORTED_MODULE_1__["baseURL"] + "uploads/sponsor/" + item.gambarSponsor,
-      alt: item.nama_sponsor,
+      alt: item.namaSponsor,
       __self: _this,
       __source: {
         fileName: _jsxFileName,
@@ -16965,7 +16967,7 @@ var HomePage = function HomePage() {
 /*! exports provided: nama_lomba, deskripsi_lomba1, link_guidebook, link_pendaftaran, gambar1, gambar2, deskripsi_lomba2, benefit, additional, prize, timeline, faq, kontak, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"nama_lomba\":\"IT-CAMP X FOWTEDU 2023 UI/UX Mini Bootcamp\",\"deskripsi_lomba1\":\"IT-CAMP X FOWTEDU 2023 UI/UX Mini Bootcamp merupakan rangkaian mini bootcamp yang diadakan oleh Himpunan Mahasiswa Informatika Universitas Pembangunan Nasional \\\"Veteran\\\" Jawa Timur dengan tujuan untuk mengenalkan UI/UX dikalangan pelajar/mahasiswa/umum.\",\"link_guidebook\":\"https://drive.google.com/file/d/1ttd1gO8-zN0m25K701XbuGbWSrqIA2aB/view\",\"link_pendaftaran\":\"close\",\"gambar1\":\"/assets/images/resources/design.png\",\"gambar2\":\"/assets/images/resources/design2.png\",\"deskripsi_lomba2\":\"<b>IT-CAMP X FOWTEDU 2023 UI/UX Mini Bootcamp</b> diperuntukan untuk pelajar/mahasiswa/umum. Acara ini mengusung tema \\\"Show Your Skills and Build Your Career\\\" dengan harapan peserta dapat meningkatkan wawasan, kemampuan serta dapat karir di bidang UI/UX\",\"benefit\":[\"E-sertifikat\",\"Ilmu\",\"Menambah pengalaman dan networking\"],\"additional\":[],\"prize\":{\"juara1\":\"Rp.1.000.000\",\"juara2\":\"Rp.600.000\",\"juara3\":\"Rp.400.000\",\"tambahan\":[]},\"timeline\":[{\"tahap\":\"Pendaftaran\",\"tanggal\":\"8 Januari 2023 – 20 Januari 2023\"},{\"tahap\":\"Boot Camp Day 1\",\"tanggal\":\"21 Januari 2023\"},{\"tahap\":\"Boot Camp Day 2\",\"tanggal\":\"28 Januari 2023\"},{\"tahap\":\"Boot Camp Day 3\",\"tanggal\":\"4 Februari 2023\"},{\"tahap\":\"Penutupan\",\"tanggal\":\"11 Februari 2023\"}],\"faq\":[{\"pertanyaan\":\"Apa itu IT-CAMP X FOWTEDU 2023?\",\"jawaban\":\"IT-CAMP X FOWTEDU 2023 merupakan kegiatan akhir tahun dari HIMATIFA UPN Veteran Jawa Timur Tahun 2023. Kegiatan ini berbentuk mini bootcamp yang ditujukan untuk seluruh mahasiswa dan pelajar serta umum. Untuk acara ini, tema yang diangkat adalah \\\"Show Your Skills and Build Your Career\\\" dengan materi umumnya mengenai UI/UX.\"},{\"pertanyaan\":\"Berapa biaya mengikuti acara ini ini?\",\"jawaban\":\"Setiap peserta akan dikenakan biaya 50.000,-\"},{\"pertanyaan\":\"Apakah bootcamp ini dilakukan secara daring?\",\"jawaban\":\"Ya, seluruh rangkaian kompertisi ini akan dilakukan secara daring\"},{\"pertanyaan\":\"Dokumen apa yang dibutuhkan untuk mendaftar IT-CAMP X FOWTEDU 2023?\",\"jawaban\":\"Hanya dengan melakukan registrasi menggunakan email di website ini.\"},{\"pertanyaan\":\"Apakah ada yang bisa dihubungi lebih lanjut mengenai acara ini?\",\"jawaban\":\"Bisa, lewat no telepon berikut.  Dhimas - <a target='_blank' href='https://wa.me/6285157746492'>+62 851-5774-6492</a>\"}],\"kontak\":[{\"judul\":\"Whatsapp\",\"icon\":\"whatsapp\",\"list\":[{\"nama\":\"ANIYSAH\",\"kontak\":\"+6287761134588\",\"link\":\"https://wa.me/6287761134588\"},{\"nama\":\"NIMAS \",\"kontak\":\"+6285749494267\",\"link\":\"https://wa.me/6285749494267\"}]},{\"judul\":\"Instagram\",\"icon\":\"instagram\",\"list\":[{\"nama\":\"\",\"kontak\":\"fasilkomfest.academic\",\"link\":\"https://www.instagram.com/fasilkomfest.academic/\"}]}]}");
+module.exports = JSON.parse("{\"nama_lomba\":\"IT-CAMP X FOWTEDU 2023 UI/UX Mini Bootcamp\",\"deskripsi_lomba1\":\"IT-CAMP X FOWTEDU 2023 UI/UX Mini Bootcamp merupakan rangkaian mini bootcamp yang diadakan oleh Himpunan Mahasiswa Informatika Universitas Pembangunan Nasional \\\"Veteran\\\" Jawa Timur dengan tujuan untuk mengenalkan UI/UX dikalangan pelajar/mahasiswa/umum.\",\"link_guidebook\":\"https://drive.google.com/file/d/1hiKJ9lSEr1WjGdK1tmbsLjCSE07kCBci/view\",\"link_pendaftaran\":\"close\",\"gambar1\":\"/assets/images/resources/design1.png\",\"gambar2\":\"/assets/images/resources/design2.png\",\"deskripsi_lomba2\":\"<b>IT-CAMP X FOWTEDU 2023 UI/UX Mini Bootcamp</b> diperuntukan untuk pelajar/mahasiswa/umum. Acara ini mengusung tema \\\"Show Your Skills and Build Your Career\\\" dengan harapan peserta dapat meningkatkan wawasan, kemampuan serta dapat karir di bidang UI/UX\",\"benefit\":[\"E-sertifikat\",\"Ilmu\",\"Menambah pengalaman dan networking\"],\"additional\":[],\"prize\":{\"juara1\":\"Rp.1.000.000\",\"juara2\":\"Rp.600.000\",\"juara3\":\"Rp.400.000\",\"tambahan\":[]},\"timeline\":[{\"tahap\":\"Pendaftaran\",\"tanggal\":\"8 Januari 2023 – 20 Januari 2023\"},{\"tahap\":\"Boot Camp Day 1\",\"tanggal\":\"21 Januari 2023\"},{\"tahap\":\"Boot Camp Day 2\",\"tanggal\":\"28 Januari 2023\"},{\"tahap\":\"Boot Camp Day 3\",\"tanggal\":\"4 Februari 2023\"},{\"tahap\":\"Penutupan\",\"tanggal\":\"11 Februari 2023\"}],\"faq\":[{\"pertanyaan\":\"Apa itu IT-CAMP X FOWTEDU 2023?\",\"jawaban\":\"IT-CAMP X FOWTEDU 2023 merupakan kegiatan akhir tahun dari HIMATIFA UPN Veteran Jawa Timur Tahun 2023. Kegiatan ini berbentuk mini bootcamp yang ditujukan untuk seluruh mahasiswa dan pelajar serta umum. Untuk acara ini, tema yang diangkat adalah \\\"Show Your Skills and Build Your Career\\\" dengan materi umumnya mengenai UI/UX.\"},{\"pertanyaan\":\"Berapa biaya mengikuti acara ini ini?\",\"jawaban\":\"Setiap peserta akan dikenakan biaya 50.000,-\"},{\"pertanyaan\":\"Apakah bootcamp ini dilakukan secara daring?\",\"jawaban\":\"Ya, seluruh rangkaian kompertisi ini akan dilakukan secara daring\"},{\"pertanyaan\":\"Dokumen apa yang dibutuhkan untuk mendaftar IT-CAMP X FOWTEDU 2023?\",\"jawaban\":\"Hanya dengan melakukan registrasi menggunakan email di website ini.\"},{\"pertanyaan\":\"Apakah ada yang bisa dihubungi lebih lanjut mengenai acara ini?\",\"jawaban\":\"Bisa, lewat no telepon berikut.  Nur Aisyiah - <a target='_blank' href='https://wa.me/6281556986279'>+62 815-5698-6279</a>\"}],\"kontak\":[{\"judul\":\"Whatsapp\",\"icon\":\"whatsapp\",\"list\":[{\"nama\":\"ANIYSAH\",\"kontak\":\"+6287761134588\",\"link\":\"https://wa.me/6287761134588\"},{\"nama\":\"NIMAS \",\"kontak\":\"+6285749494267\",\"link\":\"https://wa.me/6285749494267\"}]},{\"judul\":\"Instagram\",\"icon\":\"instagram\",\"list\":[{\"nama\":\"\",\"kontak\":\"fasilkomfest.academic\",\"link\":\"https://www.instagram.com/fasilkomfest.academic/\"}]}]}");
 
 /***/ }),
 
@@ -16976,7 +16978,7 @@ module.exports = JSON.parse("{\"nama_lomba\":\"IT-CAMP X FOWTEDU 2023 UI/UX Mini
 /*! exports provided: header, video, sponsor, competition, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"header\":{\"nama_lomba\":\"<span>IT-CAMP X FOWTEDU 2023</span>\",\"deskripsi_lomba\":\"Mini Bootcamp yang diadakan oleh<br>Program Studi Informatika<br/>UPN Veteran Jawa Timur\",\"logo\":\"\"},\"video\":{\"videoId\":\"ULXjdzMZAZ4\",\"thumbnail\":\"/assets/images/resources/video.webp?x=5\"},\"sponsor\":[{\"nama_sponsor\":\"DewaWeb\",\"logo_sponsor\":\"dewaweb.webp\",\"ukuran\":\"col-4\",\"link\":\"https://www.dewaweb.com/\"}],\"competition\":[{\"nama\":\"NEOICT Competition\",\"title\":\"NEOICT <span>Competition</span>\",\"logo\":\"AKADEMIK.webp\",\"deskripsi\":\"NEOICT Competition merupakan acara dibawah naungan IT Camp 2021 yang diadakan oleh Fakultas Ilmu Komputer UPN Veteran Jawa Timur. NEOICT Competition memiliki berbagai lomba dalam bidang akademik. Berbagai lomba yang diadakan adalah Computer Science Olympiad, UI/UX Design, Business Plan, dan Business Case\",\"lomba\":[{\"sub\":\"Computer Science Olympiad\",\"link\":\"cso\",\"img\":\"cso.webp\"},{\"sub\":\"UI/UX Design\",\"link\":\"uiux\",\"img\":\"uiux.webp\"},{\"sub\":\"Business Plan\",\"link\":\"bp\",\"img\":\"bp.webp\"},{\"sub\":\"Business Case\",\"link\":\"bc\",\"img\":\"bp.webp\"}]},{\"nama\":\"Festive\",\"title\":\"<span>Festive</span>\",\"logo\":\"SENI.webp\",\"deskripsi\":\"Festive (IT Camp Art and Creative Competition) adalah perlombaan yang memiliki tujuan mengembangkan seni dan kreativitas bagi para pelajar maupun mahasiswa di seluruh Indonesia. Berbagai lomba yang diadakan ialah Music Cover Competition, Short Movie Competition dan Photography Competition.\",\"lomba\":[{\"sub\":\"Music Cover Competition\",\"link\":\"mcc\",\"img\":\"mcc.webp\"},{\"sub\":\"Short Movie Competition\",\"link\":\"smc\",\"img\":\"smc.webp\"},{\"sub\":\"Photography Competition\",\"link\":\"pgc\",\"img\":\"pgc.webp\"}]},{\"nama\":\"Fasilkom E-Sport Competition\",\"title\":\"<span>Fasilkom</span> E-Sport <span>Competition</span>\",\"logo\":\"ESPORT.webp\",\"deskripsi\":\"Fasilkom E-Sports Competition merupakan perlombaan E-sports di dalam rangkaian acara IT Camp 2021 yang diadakan oleh Fakultas Ilmu Komputer UPN \\\"Veteran\\\" Jawa Timur. Dalam Fasilkom E-Sports Competition kami mengundang dan menantang tim kalian para gamers dalam beberapa game yaitu Valorant, Mobile Legends dan PUBG Mobile.\",\"lomba\":[{\"sub\":\"Mobile Legend Competition\",\"link\":\"ml\",\"img\":\"ml.webp\"},{\"sub\":\"PUBG Mobile Competition\",\"link\":\"pmc\",\"img\":\"pubg.webp\"},{\"sub\":\"Valorant Competition\",\"link\":\"vlc\",\"img\":\"valo.png\"}]}]}");
+module.exports = JSON.parse("{\"header\":{\"nama_lomba\":\"<span>IT-CAMP X FOWTEDU 2023</span>\",\"deskripsi_lomba\":\"Mini Bootcamp yang diadakan oleh<br>Program Studi Informatika<br/>UPN Veteran Jawa Timur\",\"logo\":\"\"},\"video\":{\"videoId\":\"6NeTiv-7yCg\",\"thumbnail\":\"/assets/images/resources/video.webp?x=5\"},\"sponsor\":[{\"nama_sponsor\":\"DewaWeb\",\"logo_sponsor\":\"dewaweb.webp\",\"ukuran\":\"col-4\",\"link\":\"https://www.dewaweb.com/\"}],\"competition\":[{\"nama\":\"NEOICT Competition\",\"title\":\"NEOICT <span>Competition</span>\",\"logo\":\"AKADEMIK.webp\",\"deskripsi\":\"NEOICT Competition merupakan acara dibawah naungan IT Camp 2021 yang diadakan oleh Fakultas Ilmu Komputer UPN Veteran Jawa Timur. NEOICT Competition memiliki berbagai lomba dalam bidang akademik. Berbagai lomba yang diadakan adalah Computer Science Olympiad, UI/UX Design, Business Plan, dan Business Case\",\"lomba\":[{\"sub\":\"Computer Science Olympiad\",\"link\":\"cso\",\"img\":\"cso.webp\"},{\"sub\":\"UI/UX Design\",\"link\":\"uiux\",\"img\":\"uiux.webp\"},{\"sub\":\"Business Plan\",\"link\":\"bp\",\"img\":\"bp.webp\"},{\"sub\":\"Business Case\",\"link\":\"bc\",\"img\":\"bp.webp\"}]},{\"nama\":\"Festive\",\"title\":\"<span>Festive</span>\",\"logo\":\"SENI.webp\",\"deskripsi\":\"Festive (IT Camp Art and Creative Competition) adalah perlombaan yang memiliki tujuan mengembangkan seni dan kreativitas bagi para pelajar maupun mahasiswa di seluruh Indonesia. Berbagai lomba yang diadakan ialah Music Cover Competition, Short Movie Competition dan Photography Competition.\",\"lomba\":[{\"sub\":\"Music Cover Competition\",\"link\":\"mcc\",\"img\":\"mcc.webp\"},{\"sub\":\"Short Movie Competition\",\"link\":\"smc\",\"img\":\"smc.webp\"},{\"sub\":\"Photography Competition\",\"link\":\"pgc\",\"img\":\"pgc.webp\"}]},{\"nama\":\"Fasilkom E-Sport Competition\",\"title\":\"<span>Fasilkom</span> E-Sport <span>Competition</span>\",\"logo\":\"ESPORT.webp\",\"deskripsi\":\"Fasilkom E-Sports Competition merupakan perlombaan E-sports di dalam rangkaian acara IT Camp 2021 yang diadakan oleh Fakultas Ilmu Komputer UPN \\\"Veteran\\\" Jawa Timur. Dalam Fasilkom E-Sports Competition kami mengundang dan menantang tim kalian para gamers dalam beberapa game yaitu Valorant, Mobile Legends dan PUBG Mobile.\",\"lomba\":[{\"sub\":\"Mobile Legend Competition\",\"link\":\"ml\",\"img\":\"ml.webp\"},{\"sub\":\"PUBG Mobile Competition\",\"link\":\"pmc\",\"img\":\"pubg.webp\"},{\"sub\":\"Valorant Competition\",\"link\":\"vlc\",\"img\":\"valo.png\"}]}]}");
 
 /***/ }),
 

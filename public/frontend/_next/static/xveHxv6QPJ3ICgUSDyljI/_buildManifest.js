@@ -1,1 +1,0 @@
-self.__BUILD_MANIFEST = (function(a){return {"/":[a],"/cara_mudah_membuat_website_pertamamu":[a],"/cara_praktis_membuat_web_portofolio_sendiri":[a],"/index":[a]}}("static\u002Fchunks\u002Fa3faf6e0edf7135356415cefa738b37e61493c07.8503c823d5284db2f31c.js"));self.__BUILD_MANIFEST_CB && self.__BUILD_MANIFEST_CB()

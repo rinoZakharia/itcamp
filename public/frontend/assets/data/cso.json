@@ -1,9 +1,9 @@
 {
     "nama_lomba": "IT-CAMP X FOWTEDU 2023 UI/UX Mini Bootcamp",
     "deskripsi_lomba1": "IT-CAMP X FOWTEDU 2023 UI/UX Mini Bootcamp merupakan rangkaian mini bootcamp yang diadakan oleh Himpunan Mahasiswa Informatika Universitas Pembangunan Nasional \"Veteran\" Jawa Timur dengan tujuan untuk mengenalkan UI/UX dikalangan pelajar/mahasiswa/umum.",
-    "link_guidebook": "https://drive.google.com/file/d/1ttd1gO8-zN0m25K701XbuGbWSrqIA2aB/view",
+    "link_guidebook": "https://drive.google.com/file/d/1hiKJ9lSEr1WjGdK1tmbsLjCSE07kCBci/view",
     "link_pendaftaran": "close",
-    "gambar1": "/assets/images/resources/design.png",
+    "gambar1": "/assets/images/resources/design1.png",
     "gambar2": "/assets/images/resources/design2.png",
     "deskripsi_lomba2": "<b>IT-CAMP X FOWTEDU 2023 UI/UX Mini Bootcamp</b> diperuntukan untuk pelajar/mahasiswa/umum. Acara ini mengusung tema \"Show Your Skills and Build Your Career\" dengan harapan peserta dapat meningkatkan wawasan, kemampuan serta dapat karir di bidang UI/UX",
     "benefit": [
@@ -34,7 +34,7 @@
         { "pertanyaan": "Berapa biaya mengikuti acara ini ini?", "jawaban": "Setiap peserta akan dikenakan biaya 50.000,-" },
         { "pertanyaan": "Apakah bootcamp ini dilakukan secara daring?", "jawaban": "Ya, seluruh rangkaian kompertisi ini akan dilakukan secara daring" },
         { "pertanyaan": "Dokumen apa yang dibutuhkan untuk mendaftar IT-CAMP X FOWTEDU 2023?", "jawaban": "Hanya dengan melakukan registrasi menggunakan email di website ini." },
-        { "pertanyaan": "Apakah ada yang bisa dihubungi lebih lanjut mengenai acara ini?", "jawaban": "Bisa, lewat no telepon berikut.  Dhimas - <a target='_blank' href='https://wa.me/6285157746492'>+62 851-5774-6492</a>" }
+        { "pertanyaan": "Apakah ada yang bisa dihubungi lebih lanjut mengenai acara ini?", "jawaban": "Bisa, lewat no telepon berikut.  Nur Aisyiah - <a target='_blank' href='https://wa.me/6281556986279'>+62 815-5698-6279</a>" }
     ],
     "kontak": [{
             "judul": "Whatsapp",
