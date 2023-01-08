@@ -5,6 +5,7 @@ use App\Http\Controllers\BackController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Auth\SocialiteController;
 use App\Http\Controllers\ConfigController;
+use App\Http\Controllers\DetailAbsensiController;
 use App\Http\Controllers\JawabController;
 use App\Http\Controllers\MedpartController;
 use App\Http\Controllers\PesertaController;
@@ -15,6 +16,7 @@ use App\Http\Middleware\AdminMiddleware;
 use App\Http\Middleware\PesertaLoginMiddleware;
 use App\Http\Middleware\PesertaMiddleware;
 use App\Models\Config;
+use App\Models\DetailAbsensi;
 
 /*
 |--------------------------------------------------------------------------
@@ -93,6 +95,8 @@ Route::middleware(PesertaMiddleware::class)->group(function () {
     Route::post('/change_account', [PesertaController::class, 'changeProfile'])->name('peserta.change.account');
     Route::post('/change_password', [PesertaController::class, 'changePassword'])->name('peserta.change.password');
     Route::get('/tugas', [PesertaController::class, 'listTask'])->name('peserta.listtask');
+    Route::get('/absensi', [DetailAbsensiController::class, 'index'])->name('peserta.absensi');
+    Route::get('/absensi/{data}', [DetailAbsensiController::class, 'show'])->name('peserta.absen');
     Route::post('/jawab', [JawabController::class, 'post'])->name('peserta.jawab');
     Route::delete('/jawab/delete', [JawabController::class, 'destroy'])->name('peserta.delete.jawab');
     Route::get('/tugas/{id}', [PesertaController::class, 'task'])->name('peserta.task');
