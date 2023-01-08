@@ -18,7 +18,7 @@ class AdminMiddleware
     {
         if(session()->has('key.admin'))
         {
-            if(session()->get('key.admin') == env('APP_KEY'))
+            if(session()->get('key.admin') == env('ADMIN_KEY'))
             {
                 return $next($request);
             }

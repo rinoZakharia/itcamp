@@ -18,7 +18,7 @@ class AdminController extends Controller
     {
         if(session()->has('key.admin'))
         {
-            if(session()->get('key.admin') == env('APP_KEY'))
+            if(session()->get('key.admin') == env('ADMIN_KEY'))
             {
                 return redirect()->route('admin.dashboard');
             }
@@ -35,7 +35,7 @@ class AdminController extends Controller
         $admin = Admin::where('emailAdmin',$request->email)->first();
         if($admin){
             if(Hash::check($request->password,$admin->passwordAdmin)){
-                session()->put('key.admin', env('APP_KEY'));
+                session()->put('key.admin', env('ADMIN_KEY'));
                 return redirect()->route('admin.dashboard');
             }else{
                 return redirect()->back()->withErrors(['password' => 'Password salah']);

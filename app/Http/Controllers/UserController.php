@@ -31,7 +31,7 @@ class UserController extends Controller
 
     public function confirmation($id){
         // check if key.admin
-        if(session()->get('key.admin') == env('APP_KEY')){
+        if(session()->get('key.admin') == env('ADMIN_KEY')){
             $data = Bayar::find($id);
             $data->flag = 1;
             $data->tglAcc = date("Y-m-d H:i:s");
@@ -50,7 +50,7 @@ class UserController extends Controller
     }
     public function reject($id){
         // check if key.admin
-        if(session()->get('key.admin') == env('APP_KEY')){
+        if(session()->get('key.admin') == env('ADMIN_KEY')){
             $data = Bayar::find($id);
             $data->flag = 2;
             $data->save();
