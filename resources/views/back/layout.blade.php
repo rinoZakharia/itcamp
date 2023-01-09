@@ -106,7 +106,14 @@
           <span>Materi & Tugas</span>
         </a>
       </li><!-- End Profile Page Nav -->
-      
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="{{ route('admin.absen.index') }}">
+          <i class="bi bi-book"></i>
+          <span>Absen</span>
+        </a>
+      </li><!-- End Profile Page Nav -->
+
       <li class="nav-item">
         <a class="nav-link collapsed" href="{{ url('/back/penilaian') }}">
           <i class="ri ri-todo-line"></i>
@@ -140,7 +147,7 @@
           <span>Peserta</span>
         </a>
       </li><!-- End Profile Page Nav -->
-      
+
 
     </ul>
 

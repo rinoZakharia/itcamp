@@ -5,82 +5,57 @@ namespace App\Http\Controllers;
 use App\Models\Absensi;
 use App\Http\Requests\StoreAbsensiRequest;
 use App\Http\Requests\UpdateAbsensiRequest;
+use App\Models\DetailAbsensi;
 
 class AbsensiController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
-        //
+        $data = Absensi::all();
+        return view("back.absen.index",compact('data'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function create()
     {
-        //
+        return view("back.absen.create");
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \App\Http\Requests\StoreAbsensiRequest  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(StoreAbsensiRequest $request)
     {
-        //
+        $request->validate([
+            'mulai'=>'required',
+            'selesai'=>'required',
+            'judul'=>'required'
+            ]
+        );
+
+        Absensi::create($request->all());
+        return redirect(route("admin.absen.index"));
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Absensi  $absensi
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Absensi $absensi)
+
+    public function edit(Absensi $data)
     {
-        //
+        return view("back.absen.edit",compact("data"));
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Absensi  $absensi
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Absensi $absensi)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \App\Http\Requests\UpdateAbsensiRequest  $request
-     * @param  \App\Models\Absensi  $absensi
-     * @return \Illuminate\Http\Response
-     */
     public function update(UpdateAbsensiRequest $request, Absensi $absensi)
     {
-        //
+        $request->validate([
+            'mulai'=>'required',
+            'selesai'=>'required',
+            'judul'=>'required'
+            ]
+        );
+        $absensi->update($request->all());
+
+        return redirect(route("admin.absen.index"));
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\Absensi  $absensi
-     * @return \Illuminate\Http\Response
-     */
     public function destroy(Absensi $absensi)
     {
-        //
+        DetailAbsensi::where("absensi_id",$absensi->id)->delete();
+        $absensi->delete();
+        return redirect(route("admin.absen.index"));
     }
 }

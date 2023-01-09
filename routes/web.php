@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AbsensiController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BackController;
 use App\Http\Controllers\AdminController;
@@ -80,6 +81,14 @@ Route::middleware(AdminMiddleware::class)->group(function () {
     Route::get('/back/reject/{id}', [UserController::class, 'reject'])->name('admin.reject');
     Route::get('/back/editor', [ConfigController::class, 'create'])->name('admin.editor');
     Route::post('/back/editor/save', [ConfigController::class, 'store'])->name('admin.save.editor');
+    // Absensi
+    Route::get("/back/absen",[AbsensiController::class,"index"])->name("admin.absen.index");
+    Route::get("/back/absen/edit/{data}",[AbsensiController::class,"edit"])->name("admin.absen.edit");
+    Route::delete("/back/absen/{absensi}",[AbsensiController::class,"destroy"])->name("admin.absen.destroy");
+    Route::put("/back/absen/{absensi}",[AbsensiController::class,"update"])->name("admin.absen.update");
+    Route::get("/back/absen/create",[AbsensiController::class,"create"])->name("admin.absen.create");
+    Route::post("/back/absen/store",[AbsensiController::class,"store"])->name("admin.absen.store");
+
 });
 
 

@@ -9,6 +9,11 @@ class Absensi extends Model
 {
     use HasFactory;
     protected $appends = ['diffDeadline','collect'];
+    protected $fillable = [
+        'judul',
+        'mulai',
+        'selesai'
+    ];
 
     public function getCollectAttribute(){
         if(session()->get("email.peserta")){
