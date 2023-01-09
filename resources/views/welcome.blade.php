@@ -459,9 +459,9 @@
                     <div class="accrodion-content">
                       <div class="inner">
                         <p>
-                          Bisa, lewat no telepon berikut. Nur Aisyiah -
-                          <a target="_blank" href="https://wa.me/6281556986279"
-                            >+62 815-5698-6279</a
+                          Bisa, lewat no telepon berikut. Dhimas -
+                          <a target="_blank" href="https://wa.me/6285157746492"
+                            >+62 851-5774-6492</a
                           >
                         </p>
                       </div>
@@ -576,7 +576,7 @@
                         class="fa fa-instagram icon mr-3"
                       ></a
                       ><a
-                        href="https://wa.me/6281556986279"
+                        href="https://wa.me/6285157746492"
                         class="fa fa-whatsapp icon mr-3"
                       ></a>
                     </div>

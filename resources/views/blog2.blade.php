@@ -215,7 +215,7 @@
                             <div class="container justify-content-center">
                                 <h5 class="footer-title-sosmed" style="color:black">Kunjungi sosial media IT Camp<!-- --> </h5>
                                 <div class="footer-widget my-4">
-                                    <div class="justify-content-center mt-2 d-flex pb-4"><a href="https://www.instagram.com/itcamp2023/" class="fa fa-instagram icon mr-3"></a><a href="https://wa.me/6281556986279" class="fa fa-whatsapp icon mr-3"></a> </div>
+                                    <div class="justify-content-center mt-2 d-flex pb-4"><a href="https://www.instagram.com/itcamp2023/" class="fa fa-instagram icon mr-3"></a><a href="https://wa.me/6285157746492" class="fa fa-whatsapp icon mr-3"></a> </div>
                                 </div>
                             </div>
                         </div>

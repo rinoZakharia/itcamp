@@ -1508,7 +1508,7 @@ var Blog = /*#__PURE__*/function (_Component) {
           columnNumber: 19
         }
       }), __jsx("a", {
-        href: "https://wa.me/6281556986279",
+        href: "https://wa.me/6285157746492",
         className: "fa fa-whatsapp icon mr-3",
         __self: this,
         __source: {
@@ -6031,7 +6031,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var decode_json_1 = __importDefault(__webpack_require__(/*! ./maps/decode.json */ "./node_modules/entities/lib/maps/decode.json"));
 // Adapted from https://github.com/mathiasbynens/he/blob/master/src/he.js#L94-L119
-var fromCodePoint = 
+var fromCodePoint =
 // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
 String.fromCodePoint ||
     function (codePoint) {
@@ -6147,7 +6147,7 @@ function getInverseReplacer(inverse) {
 }
 // /[^\0-\x7F]/gu
 var reNonASCII = /(?:[\x80-\uD7FF\uE000-\uFFFF]|[\uD800-\uDBFF][\uDC00-\uDFFF]|[\uD800-\uDBFF](?![\uDC00-\uDFFF])|(?:[^\uD800-\uDBFF]|^)[\uDC00-\uDFFF])/g;
-var getCodePoint = 
+var getCodePoint =
 // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
 String.prototype.codePointAt != null
     ? // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
@@ -7332,7 +7332,7 @@ Parser.prototype.onclosetag = function(name) {
     if (this._lowerCaseTagNames) {
         name = name.toLowerCase();
     }
-    
+
     if (name in foreignContextElements || name in htmlIntegrationElements) {
         this._foreignContext.pop();
     }
@@ -7381,7 +7381,7 @@ Parser.prototype._closeCurrentTag = function() {
             this._cbs.onclosetag(name);
         }
         this._stack.pop();
-        
+
     }
 };
 
@@ -8788,7 +8788,7 @@ DomHandler.prototype.onerror = function(error){
 
 DomHandler.prototype.onclosetag = function(){
 	//if(this._tagStack.pop().name !== name) this._handleCallback(Error("Tagname didn't match!"));
-	
+
 	var elem = this._tagStack.pop();
 
 	if(this._options.withEndIndices && elem){
@@ -9387,7 +9387,7 @@ exports.prepend = function(elem, prev){
 	if(elem.prev){
 		elem.prev.next = prev;
 	}
-	
+
 	prev.parent = parent;
 	prev.prev = elem.prev;
 	prev.next = elem;
@@ -9859,7 +9859,7 @@ var assign=Object.assign.bind(Object);function g(){return assign;}Object.defineP
       }
       return mod
     }]);
-  
+
 
 /***/ }),
 
@@ -16967,7 +16967,7 @@ var HomePage = function HomePage() {
 /*! exports provided: nama_lomba, deskripsi_lomba1, link_guidebook, link_pendaftaran, gambar1, gambar2, deskripsi_lomba2, benefit, additional, prize, timeline, faq, kontak, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"nama_lomba\":\"IT-CAMP X FOWTEDU 2023 UI/UX Mini Bootcamp\",\"deskripsi_lomba1\":\"IT-CAMP X FOWTEDU 2023 UI/UX Mini Bootcamp merupakan rangkaian mini bootcamp yang diadakan oleh Himpunan Mahasiswa Informatika Universitas Pembangunan Nasional \\\"Veteran\\\" Jawa Timur dengan tujuan untuk mengenalkan UI/UX dikalangan pelajar/mahasiswa/umum.\",\"link_guidebook\":\"https://drive.google.com/file/d/1hiKJ9lSEr1WjGdK1tmbsLjCSE07kCBci/view\",\"link_pendaftaran\":\"close\",\"gambar1\":\"/assets/images/resources/design1.png\",\"gambar2\":\"/assets/images/resources/design2.png\",\"deskripsi_lomba2\":\"<b>IT-CAMP X FOWTEDU 2023 UI/UX Mini Bootcamp</b> diperuntukan untuk pelajar/mahasiswa/umum. Acara ini mengusung tema \\\"Show Your Skills and Build Your Career\\\" dengan harapan peserta dapat meningkatkan wawasan, kemampuan serta dapat karir di bidang UI/UX\",\"benefit\":[\"E-sertifikat\",\"Ilmu\",\"Menambah pengalaman dan networking\"],\"additional\":[],\"prize\":{\"juara1\":\"Rp.1.000.000\",\"juara2\":\"Rp.600.000\",\"juara3\":\"Rp.400.000\",\"tambahan\":[]},\"timeline\":[{\"tahap\":\"Pendaftaran\",\"tanggal\":\"8 Januari 2023 – 20 Januari 2023\"},{\"tahap\":\"Boot Camp Day 1\",\"tanggal\":\"21 Januari 2023\"},{\"tahap\":\"Boot Camp Day 2\",\"tanggal\":\"28 Januari 2023\"},{\"tahap\":\"Boot Camp Day 3\",\"tanggal\":\"4 Februari 2023\"},{\"tahap\":\"Penutupan\",\"tanggal\":\"11 Februari 2023\"}],\"faq\":[{\"pertanyaan\":\"Apa itu IT-CAMP X FOWTEDU 2023?\",\"jawaban\":\"IT-CAMP X FOWTEDU 2023 merupakan kegiatan akhir tahun dari HIMATIFA UPN Veteran Jawa Timur Tahun 2023. Kegiatan ini berbentuk mini bootcamp yang ditujukan untuk seluruh mahasiswa dan pelajar serta umum. Untuk acara ini, tema yang diangkat adalah \\\"Show Your Skills and Build Your Career\\\" dengan materi umumnya mengenai UI/UX.\"},{\"pertanyaan\":\"Berapa biaya mengikuti acara ini ini?\",\"jawaban\":\"Setiap peserta akan dikenakan biaya 50.000,-\"},{\"pertanyaan\":\"Apakah bootcamp ini dilakukan secara daring?\",\"jawaban\":\"Ya, seluruh rangkaian kompertisi ini akan dilakukan secara daring\"},{\"pertanyaan\":\"Dokumen apa yang dibutuhkan untuk mendaftar IT-CAMP X FOWTEDU 2023?\",\"jawaban\":\"Hanya dengan melakukan registrasi menggunakan email di website ini.\"},{\"pertanyaan\":\"Apakah ada yang bisa dihubungi lebih lanjut mengenai acara ini?\",\"jawaban\":\"Bisa, lewat no telepon berikut.  Nur Aisyiah - <a target='_blank' href='https://wa.me/6281556986279'>+62 815-5698-6279</a>\"}],\"kontak\":[{\"judul\":\"Whatsapp\",\"icon\":\"whatsapp\",\"list\":[{\"nama\":\"ANIYSAH\",\"kontak\":\"+6287761134588\",\"link\":\"https://wa.me/6287761134588\"},{\"nama\":\"NIMAS \",\"kontak\":\"+6285749494267\",\"link\":\"https://wa.me/6285749494267\"}]},{\"judul\":\"Instagram\",\"icon\":\"instagram\",\"list\":[{\"nama\":\"\",\"kontak\":\"fasilkomfest.academic\",\"link\":\"https://www.instagram.com/fasilkomfest.academic/\"}]}]}");
+module.exports = JSON.parse("{\"nama_lomba\":\"IT-CAMP X FOWTEDU 2023 UI/UX Mini Bootcamp\",\"deskripsi_lomba1\":\"IT-CAMP X FOWTEDU 2023 UI/UX Mini Bootcamp merupakan rangkaian mini bootcamp yang diadakan oleh Himpunan Mahasiswa Informatika Universitas Pembangunan Nasional \\\"Veteran\\\" Jawa Timur dengan tujuan untuk mengenalkan UI/UX dikalangan pelajar/mahasiswa/umum.\",\"link_guidebook\":\"https://drive.google.com/file/d/1hiKJ9lSEr1WjGdK1tmbsLjCSE07kCBci/view\",\"link_pendaftaran\":\"close\",\"gambar1\":\"/assets/images/resources/design1.png\",\"gambar2\":\"/assets/images/resources/design2.png\",\"deskripsi_lomba2\":\"<b>IT-CAMP X FOWTEDU 2023 UI/UX Mini Bootcamp</b> diperuntukan untuk pelajar/mahasiswa/umum. Acara ini mengusung tema \\\"Show Your Skills and Build Your Career\\\" dengan harapan peserta dapat meningkatkan wawasan, kemampuan serta dapat karir di bidang UI/UX\",\"benefit\":[\"E-sertifikat\",\"Ilmu\",\"Menambah pengalaman dan networking\"],\"additional\":[],\"prize\":{\"juara1\":\"Rp.1.000.000\",\"juara2\":\"Rp.600.000\",\"juara3\":\"Rp.400.000\",\"tambahan\":[]},\"timeline\":[{\"tahap\":\"Pendaftaran\",\"tanggal\":\"8 Januari 2023 – 20 Januari 2023\"},{\"tahap\":\"Boot Camp Day 1\",\"tanggal\":\"21 Januari 2023\"},{\"tahap\":\"Boot Camp Day 2\",\"tanggal\":\"28 Januari 2023\"},{\"tahap\":\"Boot Camp Day 3\",\"tanggal\":\"4 Februari 2023\"},{\"tahap\":\"Penutupan\",\"tanggal\":\"11 Februari 2023\"}],\"faq\":[{\"pertanyaan\":\"Apa itu IT-CAMP X FOWTEDU 2023?\",\"jawaban\":\"IT-CAMP X FOWTEDU 2023 merupakan kegiatan akhir tahun dari HIMATIFA UPN Veteran Jawa Timur Tahun 2023. Kegiatan ini berbentuk mini bootcamp yang ditujukan untuk seluruh mahasiswa dan pelajar serta umum. Untuk acara ini, tema yang diangkat adalah \\\"Show Your Skills and Build Your Career\\\" dengan materi umumnya mengenai UI/UX.\"},{\"pertanyaan\":\"Berapa biaya mengikuti acara ini ini?\",\"jawaban\":\"Setiap peserta akan dikenakan biaya 50.000,-\"},{\"pertanyaan\":\"Apakah bootcamp ini dilakukan secara daring?\",\"jawaban\":\"Ya, seluruh rangkaian kompertisi ini akan dilakukan secara daring\"},{\"pertanyaan\":\"Dokumen apa yang dibutuhkan untuk mendaftar IT-CAMP X FOWTEDU 2023?\",\"jawaban\":\"Hanya dengan melakukan registrasi menggunakan email di website ini.\"},{\"pertanyaan\":\"Apakah ada yang bisa dihubungi lebih lanjut mengenai acara ini?\",\"jawaban\":\"Bisa, lewat no telepon berikut.  Dhimas - <a target='_blank' href='https://wa.me/6285157746492'>+62 851-5774-6492</a>\"}],\"kontak\":[{\"judul\":\"Whatsapp\",\"icon\":\"whatsapp\",\"list\":[{\"nama\":\"ANIYSAH\",\"kontak\":\"+6287761134588\",\"link\":\"https://wa.me/6287761134588\"},{\"nama\":\"NIMAS \",\"kontak\":\"+6285749494267\",\"link\":\"https://wa.me/6285749494267\"}]},{\"judul\":\"Instagram\",\"icon\":\"instagram\",\"list\":[{\"nama\":\"\",\"kontak\":\"fasilkomfest.academic\",\"link\":\"https://www.instagram.com/fasilkomfest.academic/\"}]}]}");
 
 /***/ }),
 
