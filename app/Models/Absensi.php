@@ -8,11 +8,25 @@ use Illuminate\Database\Eloquent\Model;
 class Absensi extends Model
 {
     use HasFactory;
-    protected $appends = ['diffDeadline'];
+    protected $appends = ['diffDeadline','collect'];
+
+    public function getCollectAttribute(){
+        if(session()->get("email.peserta")){
+            if(DetailAbsensi::where(["email"=>session()->get("email.peserta"),'absensi_id'=>$this->id])->first()){
+                return true;
+            }
+            return false;
+        }else{
+            return false;
+        }
+    }
 
 
     public function getDiffDeadlineAttribute(){
         // cek deadline diff hari
+        if($this->selesai < now()){
+            return 'Waktu Habis';
+        }
         $now = date("Y-m-d H:i:s");
         $diff = strtotime($this->selesai) - strtotime($now);
         //  if detik > 0 return diff . ' hari lagi';

@@ -422,18 +422,22 @@
 
   NioApp.Dropzone.init = function () {
     NioApp.Dropzone('.upload-zone',{
+        maxFiles :1,
         url: "https://httpbin.org/post",
         autoProcessQueue: false,
         init: function(){
             $("button[type=submit]").attr("disabled", "disabled")
             $(".dz-remove").show()
             let myDropzone = this;
+            const event = new Event('change');
             this.on("addedfile", function(file) {
                 let inputfile = $("input.dropzone-file")
                 if(inputfile.length > 0){
                     let dataTransfer = new DataTransfer();
                     dataTransfer.items.add(file);
                     inputfile[0].files = dataTransfer.files;
+
+                    inputfile[0].dispatchEvent(event);
                     // active button submit
                     $("button[type=submit]").removeAttr("disabled")
                 }
@@ -448,6 +452,8 @@
                     if(inputfile.length > 0){
                         // remove files from input
                         inputfile[0].files = new DataTransfer().files;
+
+                        inputfile[0].dispatchEvent(event);
                     }
                     // disable button submit
                     $("button[type=submit]").attr("disabled", "disabled")
@@ -461,6 +467,7 @@
                 NioApp.Toast(message, 'error', {
                     position: 'top-right'
                 });
+                inputfile[0].dispatchEvent(event);
                 $("button[type=submit]").attr("disabled", "disabled")
             });
         },

@@ -97,6 +97,7 @@ Route::middleware(PesertaMiddleware::class)->group(function () {
     Route::get('/tugas', [PesertaController::class, 'listTask'])->name('peserta.listtask');
     Route::get('/absensi', [DetailAbsensiController::class, 'index'])->name('peserta.absensi');
     Route::get('/absensi/{data}', [DetailAbsensiController::class, 'show'])->name('peserta.absen');
+    Route::post('/absen', [DetailAbsensiController::class, 'store'])->name('peserta.absen.post');
     Route::post('/jawab', [JawabController::class, 'post'])->name('peserta.jawab');
     Route::delete('/jawab/delete', [JawabController::class, 'destroy'])->name('peserta.delete.jawab');
     Route::get('/tugas/{id}', [PesertaController::class, 'task'])->name('peserta.task');

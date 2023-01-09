@@ -71,7 +71,7 @@
                                 <li class="nk-menu-item">
                                     <a href="{{route('peserta.absensi')}}" class="nk-menu-link">
                                         <!-- account icon-->
-                                        <span class="nk-menu-icon"><em class="icon ni ni-book"></em></span>
+                                        <span class="nk-menu-icon"><em class="icon ni ni-calendar-booking-fill"></em></span>
                                         <span class="nk-menu-text">Absensi</span>
                                     </a>
                                 </li>

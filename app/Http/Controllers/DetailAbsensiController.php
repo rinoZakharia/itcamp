@@ -6,37 +6,44 @@ use App\Models\DetailAbsensi;
 use App\Http\Requests\StoreDetailAbsensiRequest;
 use App\Http\Requests\UpdateDetailAbsensiRequest;
 use App\Models\Absensi;
+use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class DetailAbsensiController extends Controller
 {
 
     public function index()
     {
-        $data = Absensi::all();
+        $data = Absensi::where("mulai","<",date_format(now(),"Y/m/d H:i:s"))->get();
         $title = 'List Absensi';
         return view('peserta.dashboard.listabsensi', compact('data', 'title'));
 
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \App\Http\Requests\StoreDetailAbsensiRequest  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(StoreDetailAbsensiRequest $request)
+    public function store(Request $request)
     {
-        //
+        $request->validate([
+            'review'=>'required',
+            'screenshoot'=>'required'
+        ]);
+        $file = $request->file('screenshoot');
+        $fileName = Str::random(20) . '.' . $file->getClientOriginalExtension();
+        $file->move(public_path('uploads/absensi'), $fileName);
+        if(!$request->kesan){
+            $kesan = "-";
+        }else{
+            $kesan =$request->kesan;
+        }
+        $data = [
+            'screenshoot'=>$fileName,
+            'review'=>$request->review,
+            'kesan'=>$kesan,
+            'email'=>session()->get('email.peserta'),
+            'absensi_id'=>$request->absensi_id
+        ];
+        DetailAbsensi::create($data);
+        return redirect(route("peserta.absensi"));
     }
 
     /**
@@ -48,7 +55,12 @@ class DetailAbsensiController extends Controller
     public function show(Absensi $data)
     {
         $title = 'Absensi '.$data->judul;
-        return view('peserta.dashboard.absen', compact('data','title'));
+        if(!$data->collect){
+            return view('peserta.dashboard.absen', compact('data','title'));
+        }
+        $detail = DetailAbsensi::with("user")->where(["email"=>session()->get("email.peserta"),'absensi_id'=>$data->id])->first();
+        return view('peserta.dashboard.absen_status', compact('data','title','detail'));
+
     }
 
     /**

@@ -21,7 +21,7 @@
         <tbody>
             @if(count($data) == 0)
             <tr class="nk-tb-item nk-tb-head">
-                <td colspan="2" class="text-center"><span class="sub-text my-3  text-danger">Tidak ada tugas</span></td>
+                <td colspan="2" class="text-center"><span class="sub-text my-3  text-danger">Tidak ada absensi</span></td>
             </tr>
             @endif
             @foreach($data as $d)
@@ -49,7 +49,12 @@
                     </a>
                 </td>
                 <td class="nk-tb-col tb-col-mb text-center">
+                    @if($d->collect)
+                    <span class="badge badge-dim badge-success"><em class="icon ni ni-check"></em><span>Selesai</span></span>
+                    @else
                     <span class="badge badge-dim badge-warning"><em class="icon ni ni-clock"></em><span>{{$d->diffDeadline}}</span></span>
+                    @endif
+
                 </td>
             </tr><!-- .nk-tb-item -->
             @endforeach
