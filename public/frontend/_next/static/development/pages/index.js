@@ -2043,7 +2043,7 @@ var Layout = function Layout(props) {
     }
   }), __jsx("link", {
     rel: "stylesheet",
-    href: "/assets/css/animate.min.css?x=6",
+    href: "/assets/css/animate.min.css?x=7",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -2052,7 +2052,7 @@ var Layout = function Layout(props) {
     }
   }), __jsx("link", {
     rel: "stylesheet",
-    href: "/assets/css/bootstrap.min.css?x=6",
+    href: "/assets/css/bootstrap.min.css?x=7",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -2061,7 +2061,7 @@ var Layout = function Layout(props) {
     }
   }), __jsx("link", {
     rel: "stylesheet",
-    href: "/assets/css/font-awesome.min.css?x=6",
+    href: "/assets/css/font-awesome.min.css?x=7",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -2070,7 +2070,7 @@ var Layout = function Layout(props) {
     }
   }), __jsx("link", {
     rel: "stylesheet",
-    href: "/assets/plugins/dimon-icons/style.css?x=6",
+    href: "/assets/plugins/dimon-icons/style.css?x=7",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -2079,7 +2079,7 @@ var Layout = function Layout(props) {
     }
   }), __jsx("link", {
     rel: "stylesheet",
-    href: "/assets/css/style.css?x=6",
+    href: "/assets/css/style.css?x=7",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -2088,7 +2088,7 @@ var Layout = function Layout(props) {
     }
   }), __jsx("link", {
     rel: "stylesheet",
-    href: "/assets/css/responsive.css?x=6",
+    href: "/assets/css/responsive.css?x=7",
     __self: _this,
     __source: {
       fileName: _jsxFileName,

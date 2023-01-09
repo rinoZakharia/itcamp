@@ -8,12 +8,12 @@
     <link rel="icon" type="image/png" sizes="32x32" href="{{url('frontend')}}/assets/images/resources/logo.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="{{url('frontend')}}/assets/images/resources/logo.png" />
     <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900&amp;display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="{{url('frontend')}}/assets/css/animate.min.css?x=6" />
-    <link rel="stylesheet" href="{{url('frontend')}}/assets/css/bootstrap.min.css?x=6" />
-    <link rel="stylesheet" href="{{url('frontend')}}/assets/css/font-awesome.min.css?x=6" />
-    <link rel="stylesheet" href="{{url('frontend')}}/assets/plugins/dimon-icons/style.css?x=6" />
-    <link rel="stylesheet" href="{{url('frontend')}}/assets/css/style.css?x=6" />
-    <link rel="stylesheet" href="{{url('frontend')}}/assets/css/responsive.css?x=6" />
+    <link rel="stylesheet" href="{{url('frontend')}}/assets/css/animate.min.css?x=7" />
+    <link rel="stylesheet" href="{{url('frontend')}}/assets/css/bootstrap.min.css?x=7" />
+    <link rel="stylesheet" href="{{url('frontend')}}/assets/css/font-awesome.min.css?x=7" />
+    <link rel="stylesheet" href="{{url('frontend')}}/assets/plugins/dimon-icons/style.css?x=7" />
+    <link rel="stylesheet" href="{{url('frontend')}}/assets/css/style.css?x=7" />
+    <link rel="stylesheet" href="{{url('frontend')}}/assets/css/responsive.css?x=7" />
     <title>ITCamp</title>
     <meta name="description" content="IT-CAMP X FOWTEDU 2023 UI/UX Mini Bootcamp merupakan rangkaian mini bootcamp yang diadakan oleh Himpunan Mahasiswa Informatika Universitas Pembangunan Nasional &quot;Veteran&quot; Jawa Timur dengan tujuan untuk mengenalkan UI/UX dikalangan pelajar/mahasiswa/umum." />
     <meta name="viewport" content="width=device-width, initial-scale=1" />

@@ -24,12 +24,12 @@
       href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900&amp;display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="{{url('frontend')}}/assets/css/animate.min.css?x=6" />
-    <link rel="stylesheet" href="{{url('frontend')}}/assets/css/bootstrap.min.css?x=6" />
-    <link rel="stylesheet" href="{{url('frontend')}}/assets/css/font-awesome.min.css?x=6" />
-    <link rel="stylesheet" href="{{url('frontend')}}/assets/plugins/dimon-icons/style.css?x=6" />
-    <link rel="stylesheet" href="{{url('frontend')}}/assets/css/style.css?x=6" />
-    <link rel="stylesheet" href="{{url('frontend')}}/assets/css/responsive.css?x=6" />
+    <link rel="stylesheet" href="{{url('frontend')}}/assets/css/animate.min.css?x=7" />
+    <link rel="stylesheet" href="{{url('frontend')}}/assets/css/bootstrap.min.css?x=7" />
+    <link rel="stylesheet" href="{{url('frontend')}}/assets/css/font-awesome.min.css?x=7" />
+    <link rel="stylesheet" href="{{url('frontend')}}/assets/plugins/dimon-icons/style.css?x=7" />
+    <link rel="stylesheet" href="{{url('frontend')}}/assets/css/style.css?x=7" />
+    <link rel="stylesheet" href="{{url('frontend')}}/assets/css/responsive.css?x=7" />
     <title>ITCamp</title>
     <meta
       name="description"
