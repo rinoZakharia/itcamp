@@ -58,4 +58,11 @@ class AbsensiController extends Controller
         $absensi->delete();
         return redirect(route("admin.absen.index"));
     }
+
+
+    public function detail(Absensi $absensi)
+    {
+        $data = DetailAbsensi::with("user")->where("absensi_id",$absensi->id)->get();
+        return view("back.absen.detail",compact("data","absensi"));
+    }
 }

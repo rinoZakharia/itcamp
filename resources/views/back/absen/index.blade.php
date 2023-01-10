@@ -26,7 +26,7 @@
                         <td>{{$a->mulai}}</td>
                         <td>{{$a->selesai}}</td>
                         <td class="text-primary">
-                            <a class="btn btn-outline-primary btn-sm" href='{{route("admin.absen.edit",["data"=>$a])}}'><i class="bi bi-info-circle"></i></a>
+                            <a class="btn btn-outline-primary btn-sm" href='{{route("admin.absen.detail",["absensi"=>$a])}}'><i class="bi bi-info-circle"></i></a>
                             <a class="btn btn-outline-primary btn-sm" href='{{route("admin.absen.edit",["data"=>$a])}}'><i class="bi bi-pen"></i></a>
 
                             <form class="d-inline" action='{{route("admin.absen.destroy",["absensi"=>$a])}}' method="post">

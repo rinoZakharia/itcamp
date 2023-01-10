@@ -86,6 +86,7 @@ Route::middleware(AdminMiddleware::class)->group(function () {
     Route::get("/back/absen/edit/{data}",[AbsensiController::class,"edit"])->name("admin.absen.edit");
     Route::delete("/back/absen/{absensi}",[AbsensiController::class,"destroy"])->name("admin.absen.destroy");
     Route::put("/back/absen/{absensi}",[AbsensiController::class,"update"])->name("admin.absen.update");
+    Route::get("/back/absen/detail/{absensi}",[AbsensiController::class,"detail"])->name("admin.absen.detail");
     Route::get("/back/absen/create",[AbsensiController::class,"create"])->name("admin.absen.create");
     Route::post("/back/absen/store",[AbsensiController::class,"store"])->name("admin.absen.store");
 

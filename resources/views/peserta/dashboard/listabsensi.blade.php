@@ -27,7 +27,11 @@
             @foreach($data as $d)
             <tr class="nk-tb-item">
                 <td class="nk-tb-col">
-                    <a href="{{route('peserta.absen',['data'=>$d])}}" class="project-title">
+                @if($d->selesai > now() || $d->collect)
+                <a href="{{route('peserta.absen',['data'=>$d])}}" class="project-title">
+                @else
+                <a  class="project-title">
+                @endif
                         <?php
                         // get initial two word
                         $words = explode(" ", $d->judul);
