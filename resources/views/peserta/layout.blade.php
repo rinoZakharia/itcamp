@@ -67,7 +67,7 @@
                                         <span class="nk-menu-text">Informasi Peserta</span>
                                     </a>
                                 </li>
-                                @if(false)
+                                @if(env('APP_DEBUG'))
                                 <li class="nk-menu-item">
                                     <a href="{{route('peserta.absensi')}}" class="nk-menu-link">
                                         <!-- account icon-->
@@ -84,7 +84,7 @@
                                 </li>
                                 @endif
                                 @endif
-                                @if(session()->get('sertifikat.peserta') && false)
+                                @if(session()->get('sertifikat.peserta') && env('APP_DEBUG'))
                                 <li class="nk-menu-item">
                                     <a href="{{route('peserta.sertifikat')}}" class="nk-menu-link">
                                         <!-- account icon-->
