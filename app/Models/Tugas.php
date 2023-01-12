@@ -13,11 +13,6 @@ class Tugas extends Model
 
     protected $appends = ['collect','diffDeadline'];
 
-    public function jawab()
-    {
-        return $this->hasMany(Jawab::class, 'idTugas', 'idTugas');
-    }
-
     public function getCollectAttribute(){
         // get max jawab from this idTugas
         return  Jawab::where(['idTugas'=>$this->idTugas,'email'=>session()->get("email.peserta")])->max("created_at");

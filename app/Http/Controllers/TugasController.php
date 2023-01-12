@@ -82,16 +82,21 @@ class TugasController extends Controller
         return redirect('/back/tugas');
     }
 
-    public function nilai($id = 0)
+    public function nilai($id = 0, $email = 0)
     {
-        $data1 = Tugas::with('jawab')->where('tipe',1)->get();
-        if ($id == 0) {
-            $data2 = Tugas::with('jawab')->get();
+        $data1 = Tugas::where('tipe',1)->get();
+        if ($id == 0 && $email == null) {
+            $data2 = Jawab::with('tugas')->with('user')->get();
         } else {
-            $data2 = Tugas::with('jawab')->where('idTugas',$id)->get();
+            if ($id == 0) {
+                $where = [['email',$email]];
+            } else {    
+                $where = [['idTugas',$id],['email',$email]];
+            }
+            $data2 = Jawab::with('tugas')->with('user')->where($where)->get();
         }
         $data = [$data1,$data2];
-        return view('back.tugas.nilai',compact(['data']));
+        return view('back.tugas.nilai',compact('data'));
     }
 
     // edit nilai
@@ -100,9 +105,12 @@ class TugasController extends Controller
         $request->validate([
             'nilai' => 'required'
         ]);
-        $requestData = $request->except(['_token','submit']);
+        $data = [
+            'nilai' => $request->nilai,
+            'status' => 1
+        ];
         $jawab = Jawab::find($id);
-        $jawab->update($requestData);
-        return redirect('/back/penilaian/'.$idTugas);
+        $jawab->update($data);
+        return redirect()->back();
     }
 }
