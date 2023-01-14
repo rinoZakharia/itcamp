@@ -7,6 +7,7 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Auth\SocialiteController;
 use App\Http\Controllers\ConfigController;
 use App\Http\Controllers\DetailAbsensiController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\JawabController;
 use App\Http\Controllers\MedpartController;
 use App\Http\Controllers\PesertaController;
@@ -33,6 +34,9 @@ use App\Models\DetailAbsensi;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('/coba', [HomeController::class, 'index']);
 
 
 Route::get('/cara_mudah_membuat_website_pertamamu', function () {

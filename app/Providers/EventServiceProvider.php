@@ -2,6 +2,10 @@
 
 namespace App\Providers;
 
+use App\Models\Jawab;
+use App\Models\Tugas;
+use App\Observers\JawabObserver;
+use App\Observers\TugasObserver;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Auth\Listeners\SendEmailVerificationNotification;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
@@ -28,6 +32,7 @@ class EventServiceProvider extends ServiceProvider
     public function boot()
     {
         //
+
     }
 
     /**

@@ -34,8 +34,8 @@
           <textarea name="materi" class="tinymce-editor form-control"></textarea>
         </div>
       </div>
-      <div class="row mb-3">
-        <label for="inputText" class="col-sm-2 col-form-label">Url Video (Opsional)</label>
+      <div id="spreadsheet" class="row mb-3">
+        <label for="inputText" class="col-sm-2 col-form-label">ID Spreadsheet</label>
         <div class="col-sm-10">
           <input type="text" name="url" class="form-control" autocomplete="off">
         </div>
@@ -62,6 +62,9 @@
     const spinnerTipe = document.querySelector('select[name="tipe"]');
     const deadline = document.querySelector('#deadline');
     const deadlineInput = document.querySelector('input[name="deadline"]');
+    const spreadsheet = document.querySelector('#spreadsheet');
+    const inputSpreadsheet = document.querySelector('input[name="url"]');
+
     const setNow = () => {
         const now = new Date();
         const year = now.getFullYear();
@@ -88,9 +91,15 @@
     spinnerTipe.addEventListener('change', function() {
         if (this.value == 1) {
             deadline.style.display = 'flex';
+            spreadsheet.style.display = 'flex';
+            // add require input spreadsheet
+            inputSpreadsheet.setAttribute('required', 'required');
             setNow();
         } else {
             deadline.style.display = 'none';
+            spreadsheet.style.display = 'none';
+            // remove require input spreadsheet
+            inputSpreadsheet.removeAttribute('required');
             setNow();
         }
     });

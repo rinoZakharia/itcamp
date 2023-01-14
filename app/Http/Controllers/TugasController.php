@@ -5,9 +5,11 @@ namespace App\Http\Controllers;
 use App\Models\Tugas;
 use App\Models\Jawab;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Redirect;
+use Revolution\Google\Sheets\Facades\Sheets;
 
 class TugasController extends Controller
 {
@@ -16,7 +18,7 @@ class TugasController extends Controller
         $data = Tugas::all();
         return view('back.tugas.index',compact(['data']));
     }
-    
+
     public function create()
     {
         return view('back.tugas.create');
@@ -37,16 +39,30 @@ class TugasController extends Controller
         if ($requestData['tipe'] != 1) {
             $requestData['deadline'] = null;
         }
-        Tugas::create($requestData);
+        $tugas = Tugas::create($requestData);
+        if($tugas->tipe == 1 && $tugas->url != null){
+            $sheet = Sheets::spreadsheet($tugas->url);
+            $sheet->addSheet("Jawaban");
+            $sheet = $sheet->sheet("Jawaban");
+            $sheet->clear();
+            $sheet->append([[
+                'Email',
+                'Nama',
+                'Tanggal Pengumpulan',
+                'Jawaban',
+                'Nilai',
+            ]]);
+        }
+
         return redirect('/back/tugas');
     }
-    
+
     public function show($id)
     {
         $data = Tugas::find($id);
         return view('back.tugas.edit',compact(['data']));
     }
-    
+
     public function update($id,$file,Request $request)
     {
         $requestData = $request->except(['_token','submit']);
@@ -58,7 +74,7 @@ class TugasController extends Controller
 
             $file = $request->file('file');
             $filename = $file->getClientOriginalName();
-            
+
             $requestData['file'] = $filename;
             $file->move(public_path('uploads/tugas'), $filename);
         }
@@ -67,16 +83,32 @@ class TugasController extends Controller
         }
         $tugas = Tugas::find($id);
         $tugas->update($requestData);
+        if($tugas->tipe == 1 && $tugas->url != null){
+            $sheet = Sheets::spreadsheet($tugas->url);
+            $sheet = $sheet->sheet("Jawaban");
+            $sheet->clear();
+            $data = DB::table("jawabs")->join("users",'jawabs.email','=','users.email')->select(
+                "jawabs.email","nama","jawabs.created_at","jawaban","nilai"
+            )->where("idTugas",$tugas->idTugas)->get();
+            $data =array_merge([[
+                'email'=>'Email',
+                'nama'=>'Nama',
+                'created_at'=>'Tanggal Pengumpulan',
+                'jawaban'=>'Jawaban',
+                'nilai'=>'Nilai',
+            ]],json_decode(json_encode($data->toArray()), true));
+            $sheet->append(($data));
+        }
         return redirect('/back/tugas');
     }
-    
+
     public function destroy($id,$file)
     {
         if ($file != "kosong") {
             // Hapus file di storage
             File::delete(public_path('uploads/tugas/'.$file));
         }
-        
+
         $tugas = Tugas::find($id);
         $tugas->delete();
         return redirect('/back/tugas');
@@ -90,7 +122,7 @@ class TugasController extends Controller
         } else {
             if ($id == 0) {
                 $where = [['email',$email]];
-            } else {    
+            } else {
                 $where = [['idTugas',$id],['email',$email]];
             }
             $data2 = Jawab::with('tugas')->with('user')->where($where)->get();
