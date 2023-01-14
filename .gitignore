@@ -18,3 +18,4 @@ yarn-error.log
 # add git ignore appserviceprovider
 /app/Providers/AppServiceProvider.php
 composer.lock
+cred.json
