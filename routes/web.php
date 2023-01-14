@@ -7,6 +7,7 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Auth\SocialiteController;
 use App\Http\Controllers\ConfigController;
 use App\Http\Controllers\DetailAbsensiController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\JawabController;
 use App\Http\Controllers\MedpartController;
 use App\Http\Controllers\PesertaController;
@@ -33,6 +34,9 @@ use App\Models\DetailAbsensi;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('/coba', [HomeController::class, 'index']);
 
 
 Route::get('/cara_mudah_membuat_website_pertamamu', function () {
@@ -74,7 +78,7 @@ Route::middleware(AdminMiddleware::class)->group(function () {
     Route::get('/back/tugas/{id}/edit', [TugasController::class, 'show']);
     Route::put('/back/tugas/update/{id}/{file}', [TugasController::class, 'update']);
     Route::delete('/back/tugas/delete/{id}/{file}', [TugasController::class, 'destroy']);
-    Route::get('/back/penilaian/{id?}', [TugasController::class, 'nilai']);
+    Route::get('/back/penilaian/{id?}/{email?}', [TugasController::class, 'nilai']);
     Route::put('/back/penilaian/edit/{id}/{idTugas}', [TugasController::class, 'edit']);
     // confirmation
     Route::get('/back/confirmation/{id}', [UserController::class, 'confirmation'])->name('admin.confirmation');

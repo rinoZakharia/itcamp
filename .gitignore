@@ -17,3 +17,5 @@ yarn-error.log
 /public/uploads/bukti_pembayaran
 # add git ignore appserviceprovider
 /app/Providers/AppServiceProvider.php
+composer.lock
+cred.json

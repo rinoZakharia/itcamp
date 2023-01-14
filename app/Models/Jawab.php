@@ -20,4 +20,13 @@ class Jawab extends Model
         'status'
     ];
 
+    public function user()
+    {
+        return $this->belongsTo(User::class, 'email', 'email');
+    }
+
+    public function tugas()
+    {
+        return $this->belongsTo(Tugas::class, 'idTugas', 'idTugas');
+    }
 }

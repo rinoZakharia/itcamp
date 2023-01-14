@@ -11,11 +11,14 @@ class Tugas extends Model
     protected $primaryKey = 'idTugas';
     protected $guarded = [];
 
-    protected $appends = ['collect','diffDeadline'];
+    protected $appends = ['collect','diffDeadline','google_sheet_id'];
 
-    public function jawab()
-    {
-        return $this->hasMany(Jawab::class, 'idTugas', 'idTugas');
+    public function jawaban(){
+        return $this->hasMany(Jawab::class,'idTugas','idTugas');
+    }
+
+    public function getGoogleSheetIdAttribute(){
+        return $this->url;
     }
 
     public function getCollectAttribute(){

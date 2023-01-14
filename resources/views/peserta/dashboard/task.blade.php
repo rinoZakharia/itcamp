@@ -124,6 +124,25 @@
                                     </div>
                                 </div>
                             @endif
+                            @if ($data->jawaban->status == 0 && $data->jawaban->nilai == 0)
+                                <div class="row">
+                                    <div class="col-5">
+                                        <p class="text-weight-bold">Nilai :</p>
+                                    </div>
+                                    <div class="col-7">
+                                        <p class="text-muted">Belum Dinilai</p>
+                                    </div>
+                                </div>
+                            @else
+                                <div class="row">
+                                    <div class="col-5">
+                                        <p class="text-weight-bold">Nilai :</p>
+                                    </div>
+                                    <div class="col-7">
+                                        <p class="text-muted">{{$data->jawaban->nilai}}</p>
+                                    </div>
+                                </div>
+                            @endif
                             <p class="text-weight-bold mt-1">Jawaban Anda :</p>
                             <textarea class="form-control" readonly>{{$data->jawaban->jawaban}}</textarea>
                             @if(now() < $data->deadline)
