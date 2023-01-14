@@ -67,7 +67,7 @@ class JawabController extends Controller
             ]],json_decode(json_encode($data->toArray()), true));
             $sheet->append(($data));
             }
-        return redirect(route('peserta.task',['id'=>$data->idTugas]));
+        return redirect(route('peserta.task',['id'=>$idtugas]));
 
     }
 }
