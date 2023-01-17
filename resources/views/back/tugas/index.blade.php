@@ -15,6 +15,7 @@
             <th scope="col">Tipe</th>
             <th scope="col">Edit</th>
             <th scope="col">Delete</th>
+            <th scope="col">Action</th>
           </tr>
         </thead>
         <tbody>
@@ -32,6 +33,11 @@
                 <button type="submit" class="btn btn-outline-danger btn-sm"><i class="bi bi-trash"></i></button>
               </form>
             </td>
+            @if ($a->tipe == 1)
+            <td><a class="btn btn-success btn-sm" href="{{ url('/back/penilaian/'.$a->idTugas) }}">Lihat Jawaban</a></td>
+            @else
+            <td><button disabled="disabled" class="btn btn-secondary btn-sm">None</button></td>
+            @endif
           </tr>
           <?php $count++ ?>
           @endforeach

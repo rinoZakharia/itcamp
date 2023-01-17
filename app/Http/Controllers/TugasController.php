@@ -122,6 +122,8 @@ class TugasController extends Controller
         } else {
             if ($id == 0) {
                 $where = [['email',$email]];
+            } elseif ($email == 0) {
+                $where = [['idTugas',$id]];
             } else {
                 $where = [['idTugas',$id],['email',$email]];
             }
@@ -132,7 +134,7 @@ class TugasController extends Controller
     }
 
     // edit nilai
-    public function edit($id,$idTugas,Request $request)
+    public function edit($id,Request $request)
     {
         $request->validate([
             'nilai' => 'required'
