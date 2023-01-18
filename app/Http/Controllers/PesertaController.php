@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StorePesertaRequest;
 use App\Http\Requests\UpdatePesertaRequest;
 use App\Mail\ResetMail;
+use App\Mail\WhastappInvite;
 use App\Models\Bayar;
 use App\Models\Config;
 use App\Models\Jawab;
@@ -179,6 +180,9 @@ class PesertaController extends Controller
         Mail::to($email)->send(new ResetMail($data));
         return redirect()->route('peserta.login')->with('success', 'Silahkan cek email anda');
     }
+
+
+
 
     public function resetPassword($token)
     {

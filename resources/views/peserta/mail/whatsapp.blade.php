@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,13 +10,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Krub:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        body{
+        body {
             font-family: 'Krub', sans-serif;
         }
+
         .btn {
-            background-color: #0f7fd5; /* Green */
+            background-color: #0f7fd5;
+            /* Green */
             border: none;
-            color: white!important;
+            color: white !important;
             padding: 9px 15px;
             text-align: center;
             text-decoration: none;
@@ -24,7 +27,8 @@
             margin-bottom: 30px;
             color: #fff;
         }
-        .card{
+
+        .card {
             width: 85%;
             margin: auto;
             margin-top: 2%;
@@ -32,25 +36,37 @@
             border: 1px solid #ccc;
             border-radius: 5px;
         }
-        .card-body{
+
+        .card-body {
             padding: 10px;
         }
-
     </style>
 </head>
+
 <body>
     <!-- card -->
     <div class="card">
         <div class="card-body">
 
-    <div style="text-align: center;">
-        <img src="{{url('icon.png')}}" alt="logo" width="100px">
-    </div>
-    <h3>Reset Password</h3>
-    <p>Hi, {{$nama}}</p>
-    <p>Untuk mereset password kamu, silahkan klik tombol dibawah ini.</p>
-    <a href="{{$url}}" class="btn">Reset Password</a>
+            <div style="text-align: center;">
+                <img src="{{url('icon.png')}}" alt="logo" width="100px">
+            </div>
+            <h3>Pemberitahuan</h3>
+            <p>Halo Kak {{$nama}}, semoga kamu dalam keadaan sehat!
+                <br /><br />
+                Terima kasih atas antusiasme kamu dalam mengikuti IT CAMP X FOWTEDU UI/UX Mini Bootcamp
+                <br /><br />
+                Dalam email ini kami ingin menyatakan,
+                <br /><br />
+                Langkah selanjutnya adalah mohon untuk mengunjungi platform it camp lalu login ke akun kamu, dan di sana akan terdapat link grup WA yang menjadi tempat koordinasi selama acara berlangsung
+                <br /><br />
+                Terima kasih atas antusiasme kamu, sampai berjumpa di Live Zoom besok.
+                <br /><br />
+                Salam,
+                <br />
+                IT Camp team
+            </p>
 
 </body>
-</html>
 
+</html>

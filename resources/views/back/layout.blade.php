@@ -114,12 +114,6 @@
         </a>
       </li><!-- End Profile Page Nav -->
 
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="{{ url('/back/penilaian') }}">
-          <i class="ri ri-todo-line"></i>
-          <span>Penilaian</span>
-        </a>
-      </li><!-- End Profile Page Nav -->
 
       <li class="nav-item">
         <a class="nav-link collapsed" href="{{ url('/back/medpart') }}">
