@@ -53,7 +53,7 @@
                         <input type="hidden" name="bank">
                         <input type="hidden" name="email" value="{{session()->get('email.peserta')}}">
                         <label class="form-label mt-3 mb-2">Upload bukti pembayaran</label>
-                        <div class="upload-zone" data-accepted-files="image/*">
+                        <div class="upload-zone" data-max-file-size="1"  data-accepted-files="image/*">
                             <div class="dz-message" data-dz-message>
                                 <span class="dz-message-text">Drag and drop file</span>
                                 <span class="dz-message-or">or</span>
@@ -61,6 +61,7 @@
                             </div>
 
                         </div>
+                        <small class="d-block"><span class="text-danger">*)</span>Harap upload gambar maksimal 1 MB</small>
                         <button class="btn mt-1 btn-sm btn-danger dz-remove">Hapus Foto</button>
                         <!-- save button -->
                         <div class="form-group mt-2">
