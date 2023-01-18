@@ -82,7 +82,7 @@ Route::middleware(AdminMiddleware::class)->group(function () {
     Route::delete('/back/tugas/delete/{id}/{file}', [TugasController::class, 'destroy']);
     Route::get('/back/penilaian/collect/{id}', [TugasController::class, 'collect'])->name('admin.collect');
     Route::get('/back/penilaian/update/{id}', [TugasController::class, 'update_sheet'])->name('admin.updatesheet');
-    Route::put('/back/penilaian/edit/{id}/{idTugas}', [TugasController::class, 'edit']);
+    Route::put('/back/penilaian/edit/{id}', [TugasController::class, 'edit'])->name('admin.nilai.edit');
     Route::get('/back/penilaian/{id?}/{email?}', [TugasController::class, 'nilai'])->name('admin.nilai');
 
 
