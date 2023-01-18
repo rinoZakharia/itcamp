@@ -36,7 +36,7 @@
               <td>{{$a['user']["email"]}}</td>
               <td>{{$a['tugas']['judul']}}</td>
               <td>
-                  <form action="/back/penilaian/edit/{{$a['idJawab']}}" method="post">
+                  <form action="{{route("admin.nilai.edit",['id'=>$a->idJawab])}}" method="post">
                       @method('put')
                       @csrf
                       <div class="row">
