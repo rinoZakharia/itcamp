@@ -18,13 +18,14 @@
                         <input type="hidden" name="absensi_id" value="{{$data->id}}" />
                         <input type="file" name="screenshoot" class="dropzone-file d-none">
                         <label class="form-label" for="default-06">Screenshot Acara <sup class="text-danger">*) Wajib Diisi</sup></label>
-                        <div class="upload-zone" data-accepted-files="image/*">
+                        <div class="upload-zone" data-max-file-size="1" data-accepted-files="image/*">
                             <div class="dz-message" data-dz-message>
                                 <span class="dz-message-text">Drag and drop file</span>
                                 <span class="dz-message-or">or</span>
                                 <button type="button" class="btn btn-info"> <em class="ni ni-upload-cloud mr-1"></em> SELECT</button>
                             </div>
                         </div>
+                        <small class="d-block"><span class="text-danger">*)</span>Harap upload gambar maksimal 1 MB</small>
                         <button type="button" class="btn mt-1 btn-sm btn-danger dz-remove">Hapus Foto</button>
                         <!-- text area review -->
                         <div class="form-group mt-2">
