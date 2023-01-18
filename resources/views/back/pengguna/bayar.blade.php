@@ -5,7 +5,7 @@
 
     <div class="card-body">
       <h5 class="card-title">Pembayaran belum dikonfirmasi</span></h5>
-
+        <a class="btn btn-sm my-1 btn-primary" href="{{route('admin.bayar.wa')}}">Kirim Pemberitahuan Whatsapp</a>
       <table class="table table-borderless datatable">
         <thead>
           <tr>

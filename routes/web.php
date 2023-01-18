@@ -70,15 +70,20 @@ Route::middleware(AdminMiddleware::class)->group(function () {
     Route::put('/back/sponsor/update/{id}/{gambar}', [SponsorController::class, 'update']);
     Route::delete('/back/sponsor/delete/{id}/{gambar}', [SponsorController::class, 'destroy']);
     Route::get('/back/user', [UserController::class, 'index']);
-    Route::get('/back/bayar', [UserController::class, 'bayar']);
+    Route::get('/back/bayar', [UserController::class, 'bayar'])->name('admin.bayar');
+    Route::get('/back/bayar/wa', [AdminController::class, 'kirimInvitanWhatsapp'])->name('admin.bayar.wa');
     // tugas
     Route::get('/back/tugas', [TugasController::class, 'index']);
+    Route::get('/back/tugas/send_email/{id}', [TugasController::class, 'send_email'])->name('admin.task.send_email');
     Route::get('/back/tugas/create', [TugasController::class, 'create']);
     Route::post('/back/tugas/store', [TugasController::class, 'store']);
     Route::get('/back/tugas/{id}/edit', [TugasController::class, 'show']);
     Route::put('/back/tugas/update/{id}/{file}', [TugasController::class, 'update']);
     Route::delete('/back/tugas/delete/{id}/{file}', [TugasController::class, 'destroy']);
-    Route::get('/back/penilaian/{id?}/{email?}', [TugasController::class, 'nilai']);
+    Route::get('/back/penilaian/collect/{id}', [TugasController::class, 'collect'])->name('admin.collect');
+    Route::get('/back/penilaian/update/{id}', [TugasController::class, 'update_sheet'])->name('admin.updatesheet');
+    Route::get('/back/penilaian/{id?}/{email?}', [TugasController::class, 'nilai'])->name('admin.nilai');
+
     Route::put('/back/penilaian/edit/{id}/{idTugas}', [TugasController::class, 'edit']);
     // confirmation
     Route::get('/back/confirmation/{id}', [UserController::class, 'confirmation'])->name('admin.confirmation');

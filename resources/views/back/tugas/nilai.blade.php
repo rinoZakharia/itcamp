@@ -4,19 +4,14 @@
   <div class="card recent-sales overflow-auto">
 
     <div class="card-body">
-      <h5 class="card-title">Tabel Data <span>| Tugas</span></h5>
-      <div class="row p-3">
-        <a class="btn btn-secondary col-sm-1 col-form-label" id="cari" href="{{ url('/back/penilaian/') }}">Cari Tugas</a>
-        <div class="col-sm-3">
-          <select name="tugas" id="tugas" class="form-select" aria-label="Default select example">
-            <option value="" disabled selected hidden>All</option>
-            @foreach($data[0] as $a)
-                <option value="{{$a->idTugas}}">{{$a->judul}}</option>
-            @endforeach
-          </select>
-        </div>
-      </div>
 
+    <h5 class="card-title">Tabel Data <span>|Jawaban</span></h5>
+
+
+    <a href="{{route('admin.updatesheet',['id'=>$data[0]->idTugas])}}" class="btn btn-sm btn-secondary my-2">Refresh Spredsheet</a>
+    <a href="https://docs.google.com/spreadsheets/d/{{$data[0]->url}}/edit#gid=706680559" target="_blank" class="btn btn-sm btn-success my-2 ml-2" >Spreadsheet</a>
+    <a href="{{route('admin.collect',['id'=>$data[0]->idTugas])}}" class="btn btn-sm btn-primary my-2">Ambil Nilai Spreadsheet</a>
+    <a href="{{route('admin.task.send_email',['id'=>$data[0]->idTugas])}}" class="btn btn-sm btn-warning text-white my-2">Kirim Peringatan Pengumpulan</a>
       <table class="table table-borderless datatable">
         <thead>
           <tr>
@@ -41,7 +36,7 @@
               <td>{{$a['user']["email"]}}</td>
               <td>{{$a['tugas']['judul']}}</td>
               <td>
-                  <form action="/back/penilaian/edit/{{$a['idJawab']}}/{{$a['idTugas']}}" method="post">
+                  <form action="/back/penilaian/edit/{{$a['idJawab']}}" method="post">
                       @method('put')
                       @csrf
                       <div class="row">
@@ -77,12 +72,4 @@
 
   </div>
 </div>
-@endsection
-@section("script")
-<script>
-  const tugas = document.querySelector('#tugas');
-  tugas.addEventListener('change', function() {
-      document.getElementById('cari').href = `${window.location.origin}/back/penilaian/${this.value}`;
-  });
-</script>
 @endsection

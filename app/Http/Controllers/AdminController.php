@@ -2,9 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\WhastappInvite;
 use App\Models\Admin;
+use App\Models\Notification;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Mail;
 
 class AdminController extends Controller
 {
@@ -45,6 +49,21 @@ class AdminController extends Controller
         }
     }
 
+    public function kirimInvitanWhatsapp(){
+        $data = Notification::where('notification', 'Pembayaran anda telah dikonfirmasi')->where('is_read',0)->groupBy("email")->get("email");
+        Notification::where('notification', 'Pembayaran anda telah dikonfirmasi')->where('is_read',0)->update(['is_read' => 1]);
+        foreach($data as $d){
+            $user = User::where('email', $d->email)->first("nama");
+            $email = $d->email;
+            $nama = $user->nama;
+            $data = [
+                'nama' => $nama
+            ];
+            // send emails
+            Mail::to($email)->send(new WhastappInvite($data));
+        }
+        return redirect()->route('admin.bayar');
+    }
 
     public function logout(){
         session()->forget('key.admin');
