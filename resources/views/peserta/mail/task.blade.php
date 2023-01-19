@@ -40,6 +40,20 @@
         .card-body {
             padding: 10px;
         }
+        .card-body h3{
+            text-align: center;
+            color: black;
+            margin-bottom: 25px;
+            margin-top: 10px;
+        }
+        .card-body p{
+            text-align: justify;
+            /* text-muted */
+            color: #6c757d;
+        }
+        .img{
+            margin-top: 10px;
+        }
     </style>
 </head>
 
@@ -54,15 +68,15 @@
             <h3>Pemberitahuan</h3>
             <p>Halo Kak {{$nama}}, semoga kamu dalam keadaan sehat!
                 <br /><br />
-                Terima kasih atas antusiasme kamu dalam mengikuti IT CAMP X FOWTEDU UI/UX Mini Bootcamp
+                Terima kasih atas antusiasme kamu dalam mengikuti <b>IT CAMP X FOWTEDU UI/UX Mini Bootcamp</b>
                 <br /><br />
                 Dalam email ini,
                 <br/>
-                kami ingin mengingatkan bahwa ada penugasan yang harus segera dikerjakan pada website e <a href="https://itcamp2023.com">itcamp2023.com</a>. Mohon segera login ke akun kamu dan menyelesaikan tugas-tugas yang telah diberikan.
+                kami ingin mengingatkan bahwa ada penugasan yang harus segera dikerjakan pada website <a href="https://itcamp2023.com">itcamp2023.com</a>. Mohon segera login ke akun kamu dan menyelesaikan tugas-tugas yang telah diberikan.
                 <br /><br />
                 Terima kasih atas antusiasme kamu.
                 <br /><br />
-                Salam,
+                <b>Salam</b>,
                 <br />
                 IT Camp team
             </p>
