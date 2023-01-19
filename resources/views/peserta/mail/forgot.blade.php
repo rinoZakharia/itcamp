@@ -35,6 +35,20 @@
         .card-body{
             padding: 10px;
         }
+        .card-body h3{
+            text-align: center;
+            color: black;
+            margin-bottom: 25px;
+            margin-top: 10px;
+        }
+        .card-body p{
+            text-align: justify;
+            /* text-muted */
+            color: #6c757d;
+        }
+        .img{
+            margin-top: 10px;
+        }
 
     </style>
 </head>
