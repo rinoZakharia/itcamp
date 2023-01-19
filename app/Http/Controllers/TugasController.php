@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Mail\TaskMailer;
 use App\Models\Tugas;
 use App\Models\Jawab;
+use App\Models\Notification;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
@@ -146,21 +147,26 @@ class TugasController extends Controller
         foreach ($data as $key => $value) {
             Jawab::where('email', $value[0])->where('idTugas', $id)->update([
                 'nilai' => $value[4],
-                'status'=>1
+                'status' => 1
             ]);
         }
         return redirect(route('admin.nilai', ['id' => $id]));
     }
 
 
-    public function send_email($id){
-        $data =DB::table('users')->select("nama","email")->whereRaw("email not in (select email from jawabs where idTugas=".$id.")")->get();
-        foreach($data as $key=>$value){
+    public function send_email($id)
+    {
+        $data = DB::table('users')->select("nama", "email")->whereRaw("email not in (select email from jawabs where idTugas=" . $id . ")")->get();
+        foreach ($data as $key => $value) {
             $data = array(
                 'nama' => $value->nama
             );
             $email = $value->email;
             Mail::to($email)->send(new TaskMailer($data));
+            $notif = new Notification();
+            $notif->email = $email;
+            $notif->notification = 'Deadline tugas hampir dekat, jangan lupa untuk mengumpulkan tugas';
+            $notif->save();
         }
         return redirect(route('admin.nilai', ['id' => $id]));
     }
