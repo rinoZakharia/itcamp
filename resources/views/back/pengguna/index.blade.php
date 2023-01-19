@@ -14,7 +14,7 @@
             <th scope="col">Email</th>
             <th scope="col">Instansi</th>
             <th scope="col">Tanggal Daftar</th>
-            <th scope="col">Action</th>
+
           </tr>
         </thead>
         <tbody>
@@ -26,7 +26,6 @@
             <td>{{$a->email}}</td>
             <td>{{$a->instansi}}</td>
             <td>{{$a->created_at}}</td>
-            <td><a class="btn btn-success btn-sm" href="{{ url('/back/penilaian/0/'.$a->email) }}">Lihat Tugas</a></td>
           </tr>
           <?php $count++ ?>
           @endforeach
