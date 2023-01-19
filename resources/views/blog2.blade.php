@@ -21,14 +21,14 @@
     <meta name="next-head-count" content="16" />
     <link rel="preload" href="{{url('frontend')}}/_next/static/css/styles.a8ee8fd6.chunk.css" as="style" />
     <link rel="stylesheet" href="{{url('frontend')}}/_next/static/css/styles.a8ee8fd6.chunk.css" />
-    <link rel="preload" href="{{url('frontend')}}/_next/static/yyYz8ICh2AKCleyG29rTz/pages/cara_praktis_membuat_web_portofolio_sendiri.js?x=12" as="script" />
-    <link rel="preload" href="{{url('frontend')}}/_next/static/yyYz8ICh2AKCleyG29rTz/pages/_app.js?x=12" as="script" />
-    <link rel="preload" href="{{url('frontend')}}/_next/static/runtime/webpack-ed5d6c4d07d8f99176e6.js?x=12" as="script" />
-    <link rel="preload" href="{{url('frontend')}}/_next/static/chunks/framework.504af639ffd40f515d05.js?x=12" as="script" />
-    <link rel="preload" href="{{url('frontend')}}/_next/static/chunks/commons.19809b0290a3469b536b.js?x=12" as="script" />
-    <link rel="preload" href="{{url('frontend')}}/_next/static/chunks/styles.44d02f049166631cb963.js?x=12" as="script" />
-    <link rel="preload" href="{{url('frontend')}}/_next/static/runtime/main-309387cbcb9b059544d9.js?x=12" as="script" />
-    <link rel="preload" href="{{url('frontend')}}/_next/static/chunks/0c0fe8293dfeffe107b4a8ab605bfa0a979369d2.8f48510200ea37a24031.js?x=12" as="script" />
+    <link rel="preload" href="{{url('frontend')}}/_next/static/yyYz8ICh2AKCleyG29rTz/pages/cara_praktis_membuat_web_portofolio_sendiri.js?x=13" as="script" />
+    <link rel="preload" href="{{url('frontend')}}/_next/static/yyYz8ICh2AKCleyG29rTz/pages/_app.js?x=13" as="script" />
+    <link rel="preload" href="{{url('frontend')}}/_next/static/runtime/webpack-ed5d6c4d07d8f99176e6.js?x=13" as="script" />
+    <link rel="preload" href="{{url('frontend')}}/_next/static/chunks/framework.504af639ffd40f515d05.js?x=13" as="script" />
+    <link rel="preload" href="{{url('frontend')}}/_next/static/chunks/commons.19809b0290a3469b536b.js?x=13" as="script" />
+    <link rel="preload" href="{{url('frontend')}}/_next/static/chunks/styles.44d02f049166631cb963.js?x=13" as="script" />
+    <link rel="preload" href="{{url('frontend')}}/_next/static/runtime/main-309387cbcb9b059544d9.js?x=13" as="script" />
+    <link rel="preload" href="{{url('frontend')}}/_next/static/chunks/0c0fe8293dfeffe107b4a8ab605bfa0a979369d2.8f48510200ea37a24031.js?x=13" as="script" />
 </head>
 
 <body>
@@ -247,17 +247,17 @@
             "isFallback": false
         }
     </script>
-    <script nomodule="" src="{{url('frontend')}}/_next/static/runtime/polyfills-a2d2f1093947f40b8ea7.js?x=12"></script>
-    <script async="" data-next-page="/cara_praktis_membuat_web_portofolio_sendiri" src="{{url('frontend')}}/_next/static/yyYz8ICh2AKCleyG29rTz/pages/cara_praktis_membuat_web_portofolio_sendiri.js?x=12"></script>
-    <script async="" data-next-page="/_app" src="{{url('frontend')}}/_next/static/yyYz8ICh2AKCleyG29rTz/pages/_app.js?x=12"></script>
-    <script src="{{url('frontend')}}/_next/static/runtime/webpack-ed5d6c4d07d8f99176e6.js?x=12" async=""></script>
-    <script src="{{url('frontend')}}/_next/static/chunks/framework.504af639ffd40f515d05.js?x=12" async=""></script>
-    <script src="{{url('frontend')}}/_next/static/chunks/commons.19809b0290a3469b536b.js?x=12" async=""></script>
-    <script src="{{url('frontend')}}/_next/static/chunks/styles.44d02f049166631cb963.js?x=12" async=""></script>
-    <script src="{{url('frontend')}}/_next/static/runtime/main-309387cbcb9b059544d9.js?x=12" async=""></script>
-    <script src="{{url('frontend')}}/_next/static/chunks/0c0fe8293dfeffe107b4a8ab605bfa0a979369d2.8f48510200ea37a24031.js?x=12" async=""></script>
-    <script src="{{url('frontend')}}/_next/static/yyYz8ICh2AKCleyG29rTz/_buildManifest.js?x=12" async=""></script>
-    <script src="{{url('frontend')}}/_next/static/yyYz8ICh2AKCleyG29rTz/_ssgManifest.js?x=12" async=""></script>
+    <script nomodule="" src="{{url('frontend')}}/_next/static/runtime/polyfills-a2d2f1093947f40b8ea7.js?x=13"></script>
+    <script async="" data-next-page="/cara_praktis_membuat_web_portofolio_sendiri" src="{{url('frontend')}}/_next/static/yyYz8ICh2AKCleyG29rTz/pages/cara_praktis_membuat_web_portofolio_sendiri.js?x=13"></script>
+    <script async="" data-next-page="/_app" src="{{url('frontend')}}/_next/static/yyYz8ICh2AKCleyG29rTz/pages/_app.js?x=13"></script>
+    <script src="{{url('frontend')}}/_next/static/runtime/webpack-ed5d6c4d07d8f99176e6.js?x=13" async=""></script>
+    <script src="{{url('frontend')}}/_next/static/chunks/framework.504af639ffd40f515d05.js?x=13" async=""></script>
+    <script src="{{url('frontend')}}/_next/static/chunks/commons.19809b0290a3469b536b.js?x=13" async=""></script>
+    <script src="{{url('frontend')}}/_next/static/chunks/styles.44d02f049166631cb963.js?x=13" async=""></script>
+    <script src="{{url('frontend')}}/_next/static/runtime/main-309387cbcb9b059544d9.js?x=13" async=""></script>
+    <script src="{{url('frontend')}}/_next/static/chunks/0c0fe8293dfeffe107b4a8ab605bfa0a979369d2.8f48510200ea37a24031.js?x=13" async=""></script>
+    <script src="{{url('frontend')}}/_next/static/yyYz8ICh2AKCleyG29rTz/_buildManifest.js?x=13" async=""></script>
+    <script src="{{url('frontend')}}/_next/static/yyYz8ICh2AKCleyG29rTz/_ssgManifest.js?x=13" async=""></script>
 </body>
 
 </html>

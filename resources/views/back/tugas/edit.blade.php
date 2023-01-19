@@ -3,7 +3,11 @@
 <div class="card">
   <div class="card-body col-lg-9">
   <h5 class="card-title">Edit <span>| <?php if($data->tipe == 1){echo 'Tugas';} else{echo 'Materi';} ?></span></h5>
-
+    @if (session('errorSheet'))
+    <div class="alert alert-danger my-2">
+        {{ session('errorSheet') }}
+    </div>
+    @endif
     <!-- General Form Elements -->
     <form action="/back/tugas/update/{{$data->idTugas}}/<?php if($data->file == null){echo "kosong";}else{echo $data->file;}  ?>" method="POST" enctype="multipart/form-data">
       @method('put')

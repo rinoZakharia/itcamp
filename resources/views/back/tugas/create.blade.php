@@ -4,6 +4,11 @@
   <div class="card-body col-lg-9">
   <h5 class="card-title">Insert <span>| Tugas & Materi</span></h5>
 
+    @if (session('errorSheet'))
+    <div class="alert alert-danger my-2">
+        {{ session('errorSheet') }}
+    </div>
+    @endif
     <!-- General Form Elements -->
     <form action="/back/tugas/store" method="POST" enctype="multipart/form-data">
       @csrf

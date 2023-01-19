@@ -33,6 +33,19 @@ class TugasController extends Controller
             'judul' => 'required'
         ]);
         $requestData = $request->except(['_token', 'submit']);
+        if ($request->get("tipe") == 1 ) {
+            try{
+                $sheet = Sheets::spreadsheet($request->input('url'));
+                $sheet->addSheet("Jawaban");
+            }catch(\Exception $e){
+                return redirect()->back()->with('errorSheet', 'Sheet tidak ditemukan')->withInput(($request->input()));
+            }
+            $sheet = Sheets::spreadsheet($request->get("url"));
+            // check sheet exist
+            if($sheet  == null){
+                return redirect()->back()->with('errorSheet', 'Sheet tidak ditemukan')->withInput();
+            }
+        }
         if ($request->file('file')) {
             $file = $request->file('file');
             $filename = $file->getClientOriginalName();
@@ -45,7 +58,6 @@ class TugasController extends Controller
         $tugas = Tugas::create($requestData);
         if ($tugas->tipe == 1 && $tugas->url != null) {
             $sheet = Sheets::spreadsheet($tugas->url);
-            $sheet->addSheet("Jawaban");
             $sheet = $sheet->sheet("Jawaban");
             $sheet->clear();
             $sheet->append([[
@@ -68,6 +80,17 @@ class TugasController extends Controller
 
     public function update($id, $file, Request $request)
     {
+        $tugas = Tugas::find($id);
+        // make v
+        if ($tugas->tipe == 1 ) {
+            $sheet = Sheets::spreadsheet($request->input("url"));
+            // check sheet exist
+            try{
+                $test = $sheet->sheet("Jawaban")->all();
+            }catch(\Exception $e){
+                return redirect()->back()->with('errorSheet', 'Sheet tidak ditemukan')->withInput($request->input());
+            }
+        }
         $requestData = $request->except(['_token', 'submit']);
         if ($request->file('file')) {
             if ($file != "kosong") {
@@ -84,7 +107,7 @@ class TugasController extends Controller
         if ($requestData['tipe'] != 1) {
             $requestData['deadline'] = null;
         }
-        $tugas = Tugas::find($id);
+
         $tugas->update($requestData);
         if ($tugas->tipe == 1 && $tugas->url != null) {
             $sheet = Sheets::spreadsheet($tugas->url);
