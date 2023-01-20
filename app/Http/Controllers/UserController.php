@@ -2,10 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\PromoMailer;
 use App\Models\Bayar;
 use App\Models\Notification;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Mail;
 
 class UserController extends Controller
 {
@@ -63,5 +66,18 @@ class UserController extends Controller
         }else{
             return redirect()->route('admin.login');
         }
+    }
+
+    public function promo(){
+        // check if key.admin
+       $data= DB::table('users')->whereRaw('email not in (select email from bayars where flag = 1)')->select('email','nama')->get();
+    //    foreach
+        foreach($data as $d){
+            $email = $d->email;
+            $nama = $d->nama;
+            // Promo Mailer
+            Mail::to($email)->send(new PromoMailer(['nama'=>$nama]));
+        }
+        echo "Promo Mailer Sent";
     }
 }

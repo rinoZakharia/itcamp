@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Penugasan</title>
+    <title>Pemberitahuan</title>
     <!-- font kubik -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Krub:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -26,6 +26,11 @@
             font-size: 16px;
             margin-bottom: 30px;
             color: #fff;
+        }
+
+        a .btn{
+            text-decoration: none;
+            color: white!important;
         }
 
         .card {
@@ -68,13 +73,9 @@
             <h3>Pemberitahuan</h3>
             <p>Halo Kak {{$nama}}, semoga kamu dalam keadaan sehat!
                 <br /><br />
-                Terima kasih atas antusiasme kamu dalam mengikuti <b>IT CAMP X FOWTEDU UI/UX Mini Bootcamp</b>
+                Jangan sia-siakan kesempatan emas ini untuk meningkatkan skill UI/UX kamu dan berkembang di IT-CAMP X FOWTEDU 2023 UI/UX Mini Bootcamp. Segera lanjutkan pendaftaranmu sekarang sebelum pendaftaran ditutup dan ketinggalan dari kesempatan yang menguntungkan ini.
                 <br /><br />
-                Dalam email ini,
-                <br/>
-                kami ingin mengingatkan bahwa ada penugasan yang harus segera dikerjakan pada website <a href="https://itcamp2023.com">itcamp2023.com</a>. Mohon segera login ke akun kamu dan menyelesaikan tugas-tugas yang telah diberikan.
-                <br /><br />
-                Terima kasih atas antusiasme kamu.
+                <a href="{{url('https://itcamp2023.com/payment')}}" class="btn">Lanjutkan Pendaftaran</a>
                 <br /><br />
                 <b>Salam</b>,
                 <br />
