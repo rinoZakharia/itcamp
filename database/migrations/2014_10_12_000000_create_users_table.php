@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('email')->primary();
             $table->string('nama');
             $table->string('password');
+            $table->string('kelompok')->nullable();
             $table->string('kelamin')->default('Laki-laki');
             $table->string('telp')->default('');
             $table->string('instansi')->default('Umum');

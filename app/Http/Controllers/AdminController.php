@@ -7,8 +7,10 @@ use App\Models\Admin;
 use App\Models\Notification;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Mail;
+use Revolution\Google\Sheets\Facades\Sheets;
 
 class AdminController extends Controller
 {
@@ -63,6 +65,66 @@ class AdminController extends Controller
             Mail::to($email)->send(new WhastappInvite($data));
         }
         return redirect()->route('admin.bayar');
+    }
+
+    public function grouping(Request $request){
+        $id = $request->id;
+        $data = DB::table("users")->whereRaw("email in (select email from bayars where flag=1)")->get(['nama','email','instansi','telp']);
+        // shuffle data user
+        $data = $data->shuffle();
+        // grouping data user in group has max 3 person and min 2 person
+        $group = $data->chunk(3);
+
+        $result = [];
+        // input all group to array with new filed group index
+        foreach($group as $key => $g){
+            foreach($g as $k => $v){
+                // array push
+                array_push($result, [
+                    'nama' => $v->nama,
+                    'email' => $v->email,
+                    'kelompok' => strval($key+1),
+                    'instansi' => $v->instansi,
+                    'no_hp' => $v->telp,
+                ]);
+            }
+        }
+        $header = [
+            'nama'=>'Nama',
+            'email'=>'Email',
+            'kelompok'=>'Kelompok',
+            'instansi'=>'Instansi',
+            'no_hp'=>'No HP',
+        ];
+
+        //  add header to first row result
+        $result = array_merge([$header], $result);
+        try {
+            $sheet = Sheets::spreadsheet($id);
+            $sh = $sheet->sheet('Peserta');
+            // clear sheet peserta
+            $sh->clear();
+            // add header to sheet peserta
+            $sh->append($result);
+            return redirect()->to("https://docs.google.com/spreadsheets/d/".$id."/edit");
+        } catch (\Throwable $th) {
+            //throw $th;
+            try {
+                $sheet = Sheets::spreadsheet($id);
+                $sheet->addSheet('Peserta');
+                $sh = $sheet->sheet('Peserta');
+
+                // clear sheet peserta
+                $sh->clear();
+                // add header to sheet peserta
+                $sh->append($result);
+                return redirect()->to("https://docs.google.com/spreadsheets/d/".$id."/edit");
+            } catch (\Throwable $th) {
+                //throw $th;
+                print_r($result);
+            }
+        }
+
     }
 
     public function logout(){

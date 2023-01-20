@@ -57,6 +57,7 @@ Route::post('/back/signin', [AdminController::class, 'signin'])->name('admin.sig
 
 Route::middleware(AdminMiddleware::class)->group(function () {
     Route::get('/back', [BackController::class, 'index'])->name('admin.dashboard');
+    Route::get('/back/grouping}', [AdminController::class, 'grouping'])->name('admin.grouping');
     Route::get('/back/medpart', [MedpartController::class, 'index']);
     Route::get('/back/medpart/create', [MedpartController::class, 'create']);
     Route::post('/back/medpart/store', [MedpartController::class, 'store']);
