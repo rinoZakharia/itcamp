@@ -122,7 +122,7 @@ class AdminController extends Controller
                 return redirect()->to("https://docs.google.com/spreadsheets/d/".$id."/edit");
             } catch (\Throwable $th) {
                 //throw $th;
-                print_r($result);
+                print_r($th);
             }
         }
 
