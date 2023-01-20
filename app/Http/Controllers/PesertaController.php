@@ -42,12 +42,12 @@ class PesertaController extends Controller
         $name = session()->get('nama.auth');
         $email = session()->get('email.auth');
 
-        if($name && $email){
+        if ($name && $email) {
             return view('peserta.auth.register', [
                 'name' => $name,
                 'email' => $email,
             ]);
-        }else{
+        } else {
             return redirect()->route('peserta.login');
         }
     }
@@ -74,7 +74,6 @@ class PesertaController extends Controller
         session(['nama.peserta' => $peserta->nama]);
         session(['check.peserta' => false]);
         return redirect()->route('peserta.account');
-
     }
 
 
@@ -95,6 +94,15 @@ class PesertaController extends Controller
                     session(['email.peserta' => $peserta->email]);
                     session(['nama.peserta' => $peserta->nama]);
                     session(['check.peserta' => User::isPayed()]);
+                    // check intended
+                    if (session()->has('url.intended')) {
+                        // get intended url
+                        $intended = session()->get('url.intended');
+                        // remove session intended url
+                        session()->forget('url.intended');
+                        // redirect to intended url
+                        return redirect($intended);
+                    }
                     return redirect()->route('peserta.account');
                 } else {
                     return redirect()->route('peserta.login')->withErrors(['email' => 'Akun belum diverifikasi'])->withInput();
@@ -127,16 +135,17 @@ class PesertaController extends Controller
         return view('peserta.auth.forgot');
     }
 
-    public function information(){
+    public function information()
+    {
         // check is payed
         if (!User::isPayed()) {
             return redirect()->route('peserta.account');
         }
         $data = Config::find("message.payed");
-        if($data==null){
-            $data= new Config();
-            $data->key= 'message.payed';
-            $data->value= '<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; line-height: normal; mso-outline-level: 2;"><strong><span style="font-family: helvetica, arial, sans-serif;"><span style="font-size: 18pt;">Terima Kasih</span></span></strong></p>
+        if ($data == null) {
+            $data = new Config();
+            $data->key = 'message.payed';
+            $data->value = '<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; line-height: normal; mso-outline-level: 2;"><strong><span style="font-family: helvetica, arial, sans-serif;"><span style="font-size: 18pt;">Terima Kasih</span></span></strong></p>
             <p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; line-height: normal;"><span style="font-size: 12pt; font-family: helvetica, arial, sans-serif;">Telah bergabung dengan <strong>HIMATIFA X Fowtedu UI/UX Mini Bootcamp</strong>. <strong>HIMATIFA X Fowtedu UI/UX Mini Bootcamp</strong> merupakan rangkaian mini bootcamp yang diadakan oleh <strong>Himpunan Mahasiswa Informatika Universitas Pembangunan Nasional "Veteran" Jawa Timur</strong> dengan tujuan untuk mengenalkan UI/UX dikalangan pelajar/mahasiswa/umum.</span></p>
             <p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; line-height: normal;"><span style="font-family: helvetica, arial, sans-serif;"><strong><span style="font-size: 12pt;">HIMATIFA X Fowtedu UI/UX Mini Bootcamp</span></strong><span style="font-size: 12pt;">&nbsp;diperuntukan untuk pelajar/mahasiswa/umum. Acara ini mengusung tema "<strong>Show Your Skills and Build Your Career</strong>" dengan harapan peserta dapat meningkatkan wawasan, kemampuan serta dapat karir di bidang UI/UX</span></span></p>
             <ul type="disc">
@@ -149,13 +158,14 @@ class PesertaController extends Controller
             <p><a class="btn btn-success" href="#">Bergabung dengan Whatsapp</a></p>';
             $data->save();
         }
-        return view('peserta.dashboard.information',[
+        return view('peserta.dashboard.information', [
             'title' => 'Informasi',
             'data' => $data
         ]);
     }
 
-    public function requestReset(Request $request){
+    public function requestReset(Request $request)
+    {
         $request->validate([
             'email' => 'required|email',
         ]);
@@ -263,21 +273,21 @@ class PesertaController extends Controller
 
     public function payment()
     {
-        if(User::isChecked()){
+        if (User::isChecked()) {
             $data = User::getLastPayment();
             return view('peserta.dashboard.payment_status', [
                 'title' => 'Status Pembayaran',
                 'data' => $data
             ]);
-        }else{
+        } else {
             return view('peserta.dashboard.payment', [
                 'title' => 'Pembayaran',
             ]);
         }
-
     }
 
-    public function listTask(){
+    public function listTask()
+    {
         $data = Tugas::all();
         return view('peserta.dashboard.listtask', [
             'title' => 'Daftar Tugas',
@@ -285,10 +295,11 @@ class PesertaController extends Controller
         ]);
     }
 
-    public function task($id){
+    public function task($id)
+    {
         $data = Tugas::find($id);
-        if($data->tipe == 1){
-            $data['jawaban'] = Jawab::where('idTugas', $id)->where('email',session()->get('email.peserta'))->first();
+        if ($data->tipe == 1) {
+            $data['jawaban'] = Jawab::where('idTugas', $id)->where('email', session()->get('email.peserta'))->first();
         }
         return view('peserta.dashboard.task', [
             'title' => 'Tugas',
@@ -296,7 +307,8 @@ class PesertaController extends Controller
         ]);
     }
 
-    public function sertifikat(){
+    public function sertifikat()
+    {
 
         return view('peserta.dashboard.sertifikat', [
             'title' => 'Sertifikat',
@@ -325,6 +337,5 @@ class PesertaController extends Controller
         $notif->save();
 
         return redirect()->route('peserta.payment')->with('success', 'Berhasil mengupload bukti pembayaran');
-
     }
 }

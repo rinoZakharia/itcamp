@@ -46,6 +46,14 @@ class SocialiteController extends Controller
             session(['email.peserta' => $peserta->email]);
             session(['nama.peserta' => $peserta->nama]);
             session(['check.peserta' => User::isPayed()]);
+            if (session()->has('url.intended')) {
+                // get intended url
+                $intended = session()->get('url.intended');
+                // remove session intended url
+                session()->forget('url.intended');
+                // redirect to intended url
+                return redirect($intended);
+            }
             return redirect()->route('peserta.account');
         }else{
             // redirect register with data

@@ -47,7 +47,7 @@ class PesertaMiddleware
                 return $next($request);
             }
         }
-
+        session()->put('url.intended', url()->current());
         return redirect()->route('peserta.login');
     }
 }
