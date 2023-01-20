@@ -67,7 +67,6 @@
                                         <span class="nk-menu-text">Informasi Peserta</span>
                                     </a>
                                 </li>
-                                @if(false)
                                 <li class="nk-menu-item">
                                     <a href="{{route('peserta.absensi')}}" class="nk-menu-link">
                                         <!-- account icon-->
@@ -82,7 +81,6 @@
                                         <span class="nk-menu-text">Materi dan Tugas</span>
                                     </a>
                                 </li>
-                                @endif
                                 @endif
                                 @if(session()->get('sertifikat.peserta') && false)
                                 <li class="nk-menu-item">

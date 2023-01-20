@@ -6,6 +6,7 @@ use App\Http\Requests\StorePesertaRequest;
 use App\Http\Requests\UpdatePesertaRequest;
 use App\Mail\ResetMail;
 use App\Mail\WhastappInvite;
+use App\Mail\ZoomMailer;
 use App\Models\Bayar;
 use App\Models\Config;
 use App\Models\Jawab;
@@ -15,6 +16,7 @@ use App\Models\Token;
 use App\Models\Tugas;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Str;
@@ -39,14 +41,12 @@ class PesertaController extends Controller
 
     public function register()
     {
+
         $name = session()->get('nama.auth');
         $email = session()->get('email.auth');
 
         if ($name && $email) {
-            return view('peserta.auth.register', [
-                'name' => $name,
-                'email' => $email,
-            ]);
+            return view('peserta.auth.close_register');
         } else {
             return redirect()->route('peserta.login');
         }
@@ -280,7 +280,7 @@ class PesertaController extends Controller
                 'data' => $data
             ]);
         } else {
-            return view('peserta.dashboard.payment', [
+            return view('peserta.dashboard.close_payment', [
                 'title' => 'Pembayaran',
             ]);
         }
@@ -337,5 +337,15 @@ class PesertaController extends Controller
         $notif->save();
 
         return redirect()->route('peserta.payment')->with('success', 'Berhasil mengupload bukti pembayaran');
+    }
+
+    public function invite_zoom(){
+        $data=DB::table('users')->whereRaw('email in (select email from bayars where flag = 1)')->select('email','nama')->get();
+        foreach($data as $d){
+            $email=$d->email;
+            $name=$d->nama;
+            Mail::to($email)->send(new ZoomMailer(['nama'=>$name]));
+        }
+        echo "berhasil";
     }
 }

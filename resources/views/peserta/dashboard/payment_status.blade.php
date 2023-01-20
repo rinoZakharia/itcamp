@@ -1,67 +1,22 @@
 @extends("peserta.layout")
 @section("content")
 <div class="nk-block">
+    <div class="alert alert-success mx-3 py-3">
+        <h5 class="mb-2 d-block "><em class="icon ni ni-bell mr-1"></em> Pemberitahuan</h5>
+        Pembayaran telah berhasil
+    </div>
+
     <div class="card mx-3">
         <div class="card-inner card-inner-lg">
             <!-- status pembayaran -->
-            <div class="nk-block-head">
-                <!-- add icon success center-->
-                <div class="nk-block-head-content text-center">
-                    <!-- icon checked -->
-                    @if($data->flag == 1)
-                    <h2 class="icon ni ni-check text-success"></h2>
-                    @elseif($data->flag == 0)
-                    <h2 class="icon ni ni-archived text-warning"></h2>
-                    @endif
-                    <h4 class="nk-block-title">Status Pembayaran</h4>
-                    @if($data->flag == 1)
-                    <div class="nk-block-des">
-                        <p>Terima kasih telah melakukan pembayaran</p>
-                    </div>
-                    @elseif($data->flag == 0)
-                    <div class="nk-block-des">
-                        <p>Terima kasih telah melakukan pembayaran, pembayaran anda sedang kami proses</p>
-                    </div>
-                    @endif
-                </div>
-                <!-- payment information two column  -->
-                <div class="nk-block-head-content mt-4 order-status">
-                    <ul>
-                        <li>
-                            <div>Nama:</div>
-                            <div>{{$data->user->nama}}</div>
-                        </li>
-                        <li>
-                            <div>Email:</div>
-                            <div>{{$data->email}}</div>
-                        </li>
-                        <li>
-                            <div>Tanggal Bayar:</div>
-                            <div>{{$data->tglDaftar}}</div>
-                        </li>
-                        <li>
-                            <div>Metode Pembayaran:</div>
-                            <div>{{$data->bank}}</div>
-                        </li>
-                        @if($data->flag == 1)
-                        <li>
-                            <div>Tanggal Konfirmasi:</div>
-                            <div>{{$data->tglAcc}}</div>
-                        </li>
-                        @endif
-                        <li>
-                            <div>Status:</div>
-                            @if($data->flag == 1)
-                            <div>Dikonfirmasi</div>
-                            @elseif($data->flag == 0)
-                            <div>Pending</div>
-                            @endif
-                        </li>
-                    </ul>
-                </div>
-
-
+            <div class="card-title">
+                <h5 class="title mb-3">Pemberitahuan</h5>
+                <p style="font-size: 0.9rem;">
+                Langkah selanjutnya adalah mohon untuk mengunjungi platform IT Camp lalu login ke akun kamu, dan di sana akan terdapat link grup WA yang menjadi tempat koordinasi selama acara berlangsung. Atau bisa juga klik link berikut ini:
+                </p>
+                <a target="_blank" href="https://chat.whatsapp.com/Iexdh3rQoep3vMakY6dbNP" class="btn btn-success btn-sm"><em class="icon ni ni-whatsapp mr-1"></em>Bergabung dengan Whatsapp</a>
             </div>
+
 
         </div>
     </div>

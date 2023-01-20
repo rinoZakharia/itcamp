@@ -48,6 +48,9 @@ Route::get('/cara_praktis_membuat_web_portofolio_sendiri', function () {
 });
 
 
+
+
+
 // Admin
 Route::get('/back/login', [AdminController::class, 'login'])->name('admin.login');
 Route::get('/back/logout', [AdminController::class, 'logout'])->name('admin.logout');
@@ -57,6 +60,7 @@ Route::post('/back/signin', [AdminController::class, 'signin'])->name('admin.sig
 
 Route::middleware(AdminMiddleware::class)->group(function () {
     Route::get('/back', [BackController::class, 'index'])->name('admin.dashboard');
+    Route::get('/back/mail_zoom', [PesertaController::class, 'invite_zoom']);
     Route::get('/back/promo', [UserController::class, 'promo'])->name('admin.promo');
     Route::get('/back/grouping}', [AdminController::class, 'grouping'])->name('admin.grouping');
     Route::get('/back/medpart', [MedpartController::class, 'index']);
