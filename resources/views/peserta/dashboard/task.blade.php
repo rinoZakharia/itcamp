@@ -31,7 +31,7 @@
         @if($data->tipe==1)
         <div class="col-lg-7">
             @else
-            <div class="col-lg-10 mx-auto">
+            <div class="col-lg-9 mx-auto">
                 @endif
                 <div class="card mb-1">
                     <div class="card-inner card-inner-lg">
