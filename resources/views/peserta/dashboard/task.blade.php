@@ -45,21 +45,14 @@
                             <p class="text-soft">Dibuat pada : {{$data->created_at}}</p>
 
                         </div>
-                        <div class="nk-block message_event materi d-none">
+                        <div class="nk-block message_event materi">
                             {!! $data->materi !!}
                         </div>
-                        <div class="nk-block message_event ringkasan d-block">
-                            <p></p>
 
-                        </div>
-
-                        <div class="mt-2 materi d-none">
+                        <div class="mt-2 materi">
                             @if($data->file != null)
                             <a download class="btn btn-sm btn-success" href="{{asset('uploads/tugas/'.$data->file)}}"><em class="icon ni ni-download mr-1"></em>{{$data->file}}</a>
                             @endif
-                        </div>
-                        <div class="nk-block mt-2 message_event ringkasan d-block">
-                            <a href="#" id="readmore" class="text-primary">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -187,17 +180,7 @@
     @if($data->tipe==1)
     <script>
         $(document).ready(function() {
-            if ($(".materi p").length > 0) {
-                $(".ringkasan p").text($(".materi p:first").text());
-                // add style align justify ringkasan p
-                $(".ringkasan p").css("text-align", "justify");
 
-            }
-            $("#readmore").click(function() {
-                $(".ringkasan").addClass("d-none");
-                $(".materi").removeClass("d-none");
-                $(this).addClass("d-none");
-            });
 
             const hapusJawaban = () => {
                 Swal.fire({
@@ -224,14 +207,6 @@
             $("#batalJawab").click(function() {
                 hapusJawaban();
             });
-        });
-    </script>
-    @else
-    <script>
-        $(document).ready(function() {
-            $(".ringkasan").addClass("d-none");
-            $(".materi").removeClass("d-none");
-            $("#readmore").addClass("d-none");
         });
     </script>
     @endif
