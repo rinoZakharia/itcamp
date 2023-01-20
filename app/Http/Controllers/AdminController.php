@@ -87,6 +87,7 @@ class AdminController extends Controller
                     'instansi' => $v->instansi,
                     'no_hp' => $v->telp,
                 ]);
+                User::where('email', $v->email)->update(['kelompok' => strval($key+1)]);
             }
         }
         $header = [
@@ -125,6 +126,18 @@ class AdminController extends Controller
             }
         }
 
+    }
+
+    public function setGroup(Request $request){
+        $id = $request->id;
+        $sheet = Sheets::spreadsheet($id);
+        $sh = $sheet->sheet('Peserta');
+        $data = $sh->all();
+        $data = array_slice($data, 1);
+        foreach($data as $d){
+            User::where('email', $d[1])->update(['kelompok' => $d[2]]);
+        }
+        return redirect()->route('admin.dashboard');
     }
 
     public function logout(){

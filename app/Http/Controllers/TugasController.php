@@ -114,16 +114,18 @@ class TugasController extends Controller
             $sheet = $sheet->sheet("Jawaban");
             $sheet->clear();
             $data = DB::table("jawabs")->join("users", 'jawabs.email', '=', 'users.email')->select(
+                "jawabs.created_at",
                 "jawabs.email",
                 "nama",
-                "jawabs.created_at",
+                "kelompok",
                 "jawaban",
                 "nilai"
             )->where("idTugas", $tugas->idTugas)->get();
             $data = array_merge([[
+                'created_at' => 'Tanggal Pengumpulan',
                 'email' => 'Email',
                 'nama' => 'Nama',
-                'created_at' => 'Tanggal Pengumpulan',
+                'kelompok' => 'Kelompok',
                 'jawaban' => 'Jawaban',
                 'nilai' => 'Nilai',
             ]], json_decode(json_encode($data->toArray()), true));
@@ -140,16 +142,18 @@ class TugasController extends Controller
             $sheet = $sheet->sheet("Jawaban");
             $sheet->clear();
             $data = DB::table("jawabs")->join("users", 'jawabs.email', '=', 'users.email')->select(
+                "jawabs.created_at",
                 "jawabs.email",
                 "nama",
-                "jawabs.created_at",
+                "kelompok",
                 "jawaban",
                 "nilai"
             )->where("idTugas", $tugas->idTugas)->get();
             $data = array_merge([[
+                'created_at' => 'Tanggal Pengumpulan',
                 'email' => 'Email',
                 'nama' => 'Nama',
-                'created_at' => 'Tanggal Pengumpulan',
+                'kelompok' => 'Kelompok',
                 'jawaban' => 'Jawaban',
                 'nilai' => 'Nilai',
             ]], json_decode(json_encode($data->toArray()), true));
@@ -168,8 +172,8 @@ class TugasController extends Controller
         // hapus header
         array_shift($data);
         foreach ($data as $key => $value) {
-            Jawab::where('email', $value[0])->where('idTugas', $id)->update([
-                'nilai' => $value[4],
+            Jawab::where('email', $value[1])->where('idTugas', $id)->update([
+                'nilai' => $value[5],
                 'status' => 1
             ]);
         }
