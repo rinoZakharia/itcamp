@@ -69,7 +69,7 @@ class AdminController extends Controller
 
     public function grouping(Request $request){
         $id = $request->id;
-        $data = DB::table("users")->whereRaw("email in (select email from bayars where flag=1)")->get(['nama','email','kelompok','instansi','telp']);
+        $data = DB::table("users")->whereRaw("kelompok is not null")->get(['nama','email','kelompok','instansi','telp']);
 
 
         $result = [];
