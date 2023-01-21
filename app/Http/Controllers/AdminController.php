@@ -84,7 +84,7 @@ class AdminController extends Controller
         ];
 
         //  add header to first row result
-        $result = array_merge([$header], $data);
+        $result = array_merge([$header], $data->toArray());
         try {
             $sheet = Sheets::spreadsheet($id);
             $sh = $sheet->sheet('Peserta');
