@@ -3,6 +3,22 @@
 
 <link href="{{ url('peserta/assets/css/editors/tinymce.css') }}" rel="stylesheet">
 <style>
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 35px;
+        height: 0;
+        overflow: hidden;
+    }
+
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
     .message_event strong {
         font-weight: bold;
         color: #364a63;
