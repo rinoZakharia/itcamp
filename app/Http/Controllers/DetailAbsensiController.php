@@ -59,10 +59,7 @@ class DetailAbsensiController extends Controller
             return view('peserta.dashboard.absen', compact('data','title'));
         }
 
-        if($data->selesai < date_format(now(),"Y/m/d H:i:s")){
-            return view('peserta.dashboard.absen', compact('data','title'));
-        }
-        if ($data->mulai > date_format(now(),"Y/m/d H:i:s")){
+        if($data->selesai < now()){
             return view('peserta.dashboard.absen', compact('data','title'));
         }
         $detail = DetailAbsensi::with("user")->where(["email"=>session()->get("email.peserta"),'absensi_id'=>$data->id])->first();
