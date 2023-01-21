@@ -54,14 +54,15 @@ class DetailAbsensiController extends Controller
      */
     public function show(Absensi $data)
     {
+        if(date($data->selesai) < now()){
+            return redirect(route("peserta.absensi"));
+        }
         $title = 'Absensi '.$data->judul;
         if(!$data->collect ){
             return view('peserta.dashboard.absen', compact('data','title'));
         }
 
-        if($data->selesai < now()){
-            return redirect(route("peserta.absensi"));
-        }
+
         $detail = DetailAbsensi::with("user")->where(["email"=>session()->get("email.peserta"),'absensi_id'=>$data->id])->first();
         return view('peserta.dashboard.absen_status', compact('data','title','detail'));
 
