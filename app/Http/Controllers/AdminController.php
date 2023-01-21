@@ -83,8 +83,20 @@ class AdminController extends Controller
             'no_hp'=>'No HP',
         ];
 
+        // make for each
+        foreach($data as $d){
+            $result[] = [
+                'nama'=>$d->nama,
+                'email'=>$d->email,
+                'kelompok'=>$d->kelompok,
+                'instansi'=>$d->instansi,
+                'no_hp'=>$d->telp,
+            ];
+        }
+
         //  add header to first row result
-        $result = array_merge([$header], $data->toArray());
+        $result = array_merge([$header], $result);
+
         try {
             $sheet = Sheets::spreadsheet($id);
             $sh = $sheet->sheet('Peserta');
@@ -107,7 +119,7 @@ class AdminController extends Controller
                 return redirect()->to("https://docs.google.com/spreadsheets/d/".$id."/edit");
             } catch (\Throwable $th) {
                 //throw $th;
-                print_r($th);
+                print_r($result);
             }
         }
 
