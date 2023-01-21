@@ -69,27 +69,12 @@ class AdminController extends Controller
 
     public function grouping(Request $request){
         $id = $request->id;
-        $data = DB::table("users")->whereRaw("email in (select email from bayars where flag=1)")->get(['nama','email','instansi','telp']);
-        // shuffle data user
-        $data = $data->shuffle();
-        // grouping data user in group has max 3 person and min 2 person
-        $group = $data->chunk(3);
+        $data = DB::table("users")->whereRaw("email in (select email from bayars where flag=1)")->get(['nama','email','kelompok','instansi','telp']);
+
 
         $result = [];
         // input all group to array with new filed group index
-        foreach($group as $key => $g){
-            foreach($g as $k => $v){
-                // array push
-                array_push($result, [
-                    'nama' => $v->nama,
-                    'email' => $v->email,
-                    'kelompok' => strval($key+1),
-                    'instansi' => $v->instansi,
-                    'no_hp' => $v->telp,
-                ]);
-                User::where('email', $v->email)->update(['kelompok' => strval($key+1)]);
-            }
-        }
+
         $header = [
             'nama'=>'Nama',
             'email'=>'Email',
@@ -99,7 +84,7 @@ class AdminController extends Controller
         ];
 
         //  add header to first row result
-        $result = array_merge([$header], $result);
+        $result = array_merge([$header], $data);
         try {
             $sheet = Sheets::spreadsheet($id);
             $sh = $sheet->sheet('Peserta');
