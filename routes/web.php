@@ -99,6 +99,7 @@ Route::middleware(AdminMiddleware::class)->group(function () {
     Route::post('/back/editor/save', [ConfigController::class, 'store'])->name('admin.save.editor');
     // Absensi
     Route::get("/back/absen",[AbsensiController::class,"index"])->name("admin.absen.index");
+    Route::get("/back/absen/sheet",[AbsensiController::class,"export"])->name("admin.absen.export");
     Route::get("/back/absen/edit/{data}",[AbsensiController::class,"edit"])->name("admin.absen.edit");
     Route::delete("/back/absen/{absensi}",[AbsensiController::class,"destroy"])->name("admin.absen.destroy");
     Route::put("/back/absen/{absensi}",[AbsensiController::class,"update"])->name("admin.absen.update");
