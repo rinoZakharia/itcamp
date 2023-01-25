@@ -6,7 +6,7 @@ use App\Models\Absensi;
 use App\Http\Requests\StoreAbsensiRequest;
 use App\Http\Requests\UpdateAbsensiRequest;
 use App\Models\DetailAbsensi;
-use Google\Service\Docs\Request;
+use Illuminate\Http\Request;
 use Revolution\Google\Sheets\Facades\Sheets;
 
 class AbsensiController extends Controller
@@ -14,7 +14,7 @@ class AbsensiController extends Controller
     public function index()
     {
         $data = Absensi::all();
-        return view("back.absen.index",compact('data'));
+        return view("back.absen.index", compact('data'));
     }
 
     public function create()
@@ -24,10 +24,11 @@ class AbsensiController extends Controller
 
     public function store(StoreAbsensiRequest $request)
     {
-        $request->validate([
-            'mulai'=>'required',
-            'selesai'=>'required',
-            'judul'=>'required'
+        $request->validate(
+            [
+                'mulai' => 'required',
+                'selesai' => 'required',
+                'judul' => 'required'
             ]
         );
 
@@ -38,15 +39,16 @@ class AbsensiController extends Controller
 
     public function edit(Absensi $data)
     {
-        return view("back.absen.edit",compact("data"));
+        return view("back.absen.edit", compact("data"));
     }
 
     public function update(UpdateAbsensiRequest $request, Absensi $absensi)
     {
-        $request->validate([
-            'mulai'=>'required',
-            'selesai'=>'required',
-            'judul'=>'required'
+        $request->validate(
+            [
+                'mulai' => 'required',
+                'selesai' => 'required',
+                'judul' => 'required'
             ]
         );
         $absensi->update($request->all());
@@ -56,7 +58,7 @@ class AbsensiController extends Controller
 
     public function destroy(Absensi $absensi)
     {
-        DetailAbsensi::where("absensi_id",$absensi->id)->delete();
+        DetailAbsensi::where("absensi_id", $absensi->id)->delete();
         $absensi->delete();
         return redirect(route("admin.absen.index"));
     }
@@ -64,66 +66,69 @@ class AbsensiController extends Controller
 
     public function detail(Absensi $absensi)
     {
-        $data = DetailAbsensi::with("user")->where("absensi_id",$absensi->id)->get();
-        return view("back.absen.detail",compact("data","absensi"));
+        $data = DetailAbsensi::with("user")->where("absensi_id", $absensi->id)->get();
+        return view("back.absen.detail", compact("data", "absensi"));
     }
 
 
     public function export(Request $request)
     {
         $id = $request->id;
-        $sheet = $request->sheet;
-        $data = DetailAbsensi::with("user")->where("absensi_id",$id)->get();
-        try{
-            $sheet  =Sheets::spreadsheet($sheet);
+        $idsheet = $request->sheet;
+        // make sheeet to string
+
+        $data = DetailAbsensi::with("user")->where("absensi_id", $id)->get();
+        try {
+            $sheet  = Sheets::spreadsheet($idsheet);
             $sheet = $sheet->sheet('Absensi');
             $sheet->clear();
-            $values = [
-                "nama"=>"Nama",
-                "email"=>"Email",
-                "review"=>"Review",
-                "kesan"=>"Kesan",
-                "screenshoot"=>"Screenshoot"
+            $values[] = [
+                "nama" => "Nama",
+                "email" => "Email",
+                "review" => "Review",
+                "kesan" => "Kesan",
+                "screenshoot" => "Screenshoot"
             ];
-            foreach($data as $key=>$value){
+            foreach ($data as $key => $value) {
                 $values[] = [
-                    "nama"=>$value->user->name,
-                    "email"=>$value->user->email,
-                    "review"=>$value->review,
-                    "kesan"=>$value->kesan,
-                    "screenshoot"=>"https://itcamp2023.com/uploads/absensi/".$value->screenshoot
+                    "nama" => $value->user->name,
+                    "email" => $value->user->email,
+                    "review" => $value->review,
+                    "kesan" => $value->kesan,
+                    "screenshoot" => "https://itcamp2023.com/uploads/absensi/" . $value->screenshoot
                 ];
             }
 
+            // var_dump($values);
             $sheet->append($values);
-
-        }catch(\Exception $e){
-            try{
-                $sheet  =Sheets::spreadsheet($sheet);
-                $sheet->createSheet('Absensi');
+            return redirect("https://docs.google.com/spreadsheets/d/".$idsheet."/edit");
+        } catch (\Exception $e) {
+            try {
+                $sheet  = Sheets::spreadsheet($idsheet);
+                $sheet->addSheet('Absensi');
                 $sheet = $sheet->sheet('Absensi');
                 $sheet->clear();
                 $values = [
-                    "nama"=>"Nama",
-                    "email"=>"Email",
-                    "review"=>"Review",
-                    "kesan"=>"Kesan",
-                    "screenshoot"=>"Screenshoot"
+                    "nama" => "Nama",
+                    "email" => "Email",
+                    "review" => "Review",
+                    "kesan" => "Kesan",
+                    "screenshoot" => "Screenshoot"
                 ];
-                foreach($data as $key=>$value){
+                foreach ($data as $key => $value) {
                     $values[] = [
-                        "nama"=>$value->user->name,
-                        "email"=>$value->user->email,
-                        "review"=>$value->review,
-                        "kesan"=>$value->kesan,
-                        "screenshoot"=>"https://itcamp2023.com/uploads/absensi/".$value->screenshoot
+                        "nama" => $value->user->name,
+                        "email" => $value->user->email,
+                        "review" => $value->review,
+                        "kesan" => $value->kesan,
+                        "screenshoot" => "https://itcamp2023.com/uploads/absensi/" . $value->screenshoot
                     ];
                 }
 
                 $sheet->append($values);
-
-            }catch(\Exception $e){
-               echo $e->getMessage();
+                return redirect("https://docs.google.com/spreadsheets/d/".$idsheet."/edit");
+            } catch (\Exception $e) {
+                echo $e->getMessage();
             }
         }
     }
