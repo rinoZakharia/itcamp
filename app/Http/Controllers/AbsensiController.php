@@ -91,7 +91,7 @@ class AbsensiController extends Controller
             ];
             foreach ($data as $key => $value) {
                 $values[] = [
-                    "nama" => $value->user->name,
+                    "nama" => $value->user->nama,
                     "email" => $value->user->email,
                     "review" => $value->review,
                     "kesan" => $value->kesan,
