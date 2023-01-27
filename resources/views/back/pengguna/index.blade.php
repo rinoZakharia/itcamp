@@ -13,6 +13,7 @@
             <th scope="col">Nama</th>
             <th scope="col">Email</th>
             <th scope="col">Instansi</th>
+            <th scope="col">Kelompok</th>
             <th scope="col">Tanggal Daftar</th>
 
           </tr>
@@ -25,6 +26,7 @@
             <td>{{$a->nama}}</td>
             <td>{{$a->email}}</td>
             <td>{{$a->instansi}}</td>
+            <td>{{$a->kelompok}}</td>
             <td>{{$a->created_at}}</td>
           </tr>
           <?php $count++ ?>
