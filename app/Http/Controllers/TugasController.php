@@ -158,6 +158,37 @@ class TugasController extends Controller
                 'nilai' => 'Nilai',
             ]], json_decode(json_encode($data->toArray()), true));
             $sheet->append(($data));
+
+
+
+            try{
+                $sheet2 = Sheets::spreadsheet($tugas->url);
+                $sheet2 = $sheet2->sheet("Belum Mengumpulkan");
+                $data2 = DB::table("users")->select("nama", "email","kelompok")->whereRaw("email not in (select email from jawabs where idTugas = $id)")->get();
+
+                $data2 = array_merge([[
+                    'nama' => 'Nama',
+                    'email' => 'Email',
+                    'kelompok' => 'Kelompok',
+                ]], json_decode(json_encode($data2->toArray()), true));
+                $sheet2->clear();
+                $sheet2->append(($data2));
+            }catch(\Exception $e){
+                $sheet2 = Sheets::spreadsheet($tugas->url);
+                $sheet2->addSheet("Belum Mengumpulkan");
+                $sheet2 = $sheet2->sheet("Belum Mengumpulkan");
+                $data2 = DB::table("users")->select("nama", "email","kelompok")->whereRaw("email not in (select email from jawabs where idTugas = $id)")->get();
+
+                $data2 = array_merge([[
+                    'nama' => 'Nama',
+                    'email' => 'Email',
+                    'kelompok' => 'Kelompok',
+                ]], json_decode(json_encode($data2->toArray()), true));
+                $sheet2->clear();
+                $sheet2->append(($data2));
+            }
+
+
         }
         return redirect(route('admin.nilai', ['id' => $id]));
     }
