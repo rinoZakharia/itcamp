@@ -164,7 +164,7 @@ class TugasController extends Controller
             try{
                 $sheet2 = Sheets::spreadsheet($tugas->url);
                 $sheet2 = $sheet2->sheet("Belum Mengumpulkan");
-                $data2 = DB::table("users")->select("nama", "email","kelompok")->whereRaw("email not in (select email from jawabs where idTugas = $id)")->get();
+                $data2 = DB::table("users")->select("nama", "email","kelompok")->whereRaw("kelompok is not null and email not in (select email from jawabs where idTugas = $id)")->get();
 
                 $data2 = array_merge([[
                     'nama' => 'Nama',
