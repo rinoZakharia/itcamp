@@ -174,7 +174,7 @@
                 <br /><br />
                 Dalam email ini kami ingin memberitahukan untuk link kelas pada hari ini,
                 <br />
-                <a class="btn" href="https://zoom.us/j/91747889981?pwd=VVlSdnVRRWxLQ3c4K0JUbHd0d1ZnQT09">Bergabung dengan Zoom</a>
+                <a class="btn" href="https://zoom.us/j/93182384649?pwd=cmVpZnk4UEpHckhsTldYbFhSR3loQT09">Bergabung dengan Zoom</a>
                 <br /><br />
                 Atau dapat bergabung pada grup Whatsapp yang menjadi tempat koordinasi selama acara berlangsung. Atau bisa juga klik link berikut ini:
                 <br />
