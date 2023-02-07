@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Mail\WhastappInvite;
 use App\Models\Admin;
 use App\Models\Notification;
+use App\Models\RekapNilai;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -140,5 +141,10 @@ class AdminController extends Controller
     public function logout(){
         session()->forget('key.admin');
         return redirect()->route('admin.login');
+    }
+
+    public function rekap_nilai(){
+        $data = RekapNilai::all();
+        return view('back.pengguna.rekap', compact('data'));
     }
 }
