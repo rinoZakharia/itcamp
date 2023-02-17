@@ -77,6 +77,7 @@ Route::middleware(AdminMiddleware::class)->group(function () {
     Route::delete('/back/sponsor/delete/{id}/{gambar}', [SponsorController::class, 'destroy']);
     Route::get('/back/user', [UserController::class, 'index']);
     Route::get('/back/rekap', [AdminController::class, 'rekap_nilai'])->name('admin.rekap');
+    Route::get('/back/rekap/export', [AdminController::class, 'rekap_sheet'])->name('admin.rekap.export');
     Route::get('/back/bayar', [UserController::class, 'bayar'])->name('admin.bayar');
     Route::get('/back/bayar/wa', [AdminController::class, 'kirimInvitanWhatsapp'])->name('admin.bayar.wa');
     // tugas

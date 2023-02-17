@@ -147,4 +147,47 @@ class AdminController extends Controller
         $data = RekapNilai::all();
         return view('back.pengguna.rekap', compact('data'));
     }
+
+    public function rekap_sheet(Request $request){
+        $id = $request->id;
+        $data = RekapNilai::all();
+        $columnHeader = [
+            'nama'=>'Nama',
+            'email'=>'Email',
+            'kelompok'=>'Kelompok',
+            'jumlahtugas'=>'Jumlah Tugas',
+            'ratanilai'=>'Rata-rata Nilai',
+            'totalnilai'=>'Total Nilai',
+            'jumlahabsen'=>'Jumlah Absen',
+        ];
+
+        $result = [];
+        //  merge data and column header
+        $result = array_merge([$columnHeader], $data);
+        try{
+            $sheet = Sheets::spreadsheet($id);
+            $sh = $sheet->sheet('Rekap Nilai');
+            // clear sheet peserta
+            $sh->clear();
+            // add header to sheet peserta
+            $sh->append($result);
+            return redirect()->to("https://docs.google.com/spreadsheets/d/".$id."/edit");
+        }catch(\Throwable $th){
+            try{
+                $sheet = Sheets::spreadsheet($id);
+                $sheet->addSheet('Rekap Nilai');
+                $sh = $sheet->sheet('Rekap Nilai');
+                // clear sheet peserta
+                $sh->clear();
+                // add header to sheet peserta
+                $sh->append($result);
+                return redirect()->to("https://docs.google.com/spreadsheets/d/".$id."/edit");
+            }catch(\Throwable $th){
+                print_r($result);
+            }
+        }
+
+
+
+    }
 }
