@@ -162,8 +162,19 @@ class AdminController extends Controller
         ];
 
         $result = [];
+        foreach($data as $d){
+            $result[] = [
+                'nama'=>$d->nama,
+                'email'=>$d->email,
+                'kelompok'=>$d->kelompok,
+                'jumlahtugas'=>$d->jumlahtugas,
+                'ratanilai'=>$d->ratanilai,
+                'totalnilai'=>$d->totalnilai,
+                'jumlahabsen'=>$d->jumlahabsen,
+            ];
+        }
         //  merge data and column header
-        $result = array_merge([$columnHeader], $data);
+        $result = array_merge([$columnHeader], $result);
         try{
             $sheet = Sheets::spreadsheet($id);
             $sh = $sheet->sheet('Rekap Nilai');
