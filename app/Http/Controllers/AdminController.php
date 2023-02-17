@@ -194,7 +194,7 @@ class AdminController extends Controller
                 $sh->append($result);
                 return redirect()->to("https://docs.google.com/spreadsheets/d/".$id."/edit");
             }catch(\Throwable $th){
-                print_r($result);
+                echo $th;
             }
         }
 
